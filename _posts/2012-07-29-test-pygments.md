@@ -2,8 +2,8 @@
 layout: post
 title: "在jekyll中显示代码高量"
 description: "简单测试下在jekyll中的代码高亮显示"
-category: 
-tags: []
+category: [jekyll]
+tags: [jekyll]
 ---
 
 ## Pygments的语法高亮

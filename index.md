@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "烟花易冷，人事易分"
-tagline: This is a blog just for fun.
+tagline: 简简单单生活
 titleline: 最近Post
 links: 
   - url: "https://www.fireayng.com/blog"
@@ -11,22 +11,17 @@ links:
 ---
 {% include JB/setup %}
 
-<h2 id="index_titleline">{{page.titleline}}</h2>
-<hr id="index_line" />
-<div class="span8 pull-left">
+<div class="front span8 pull-left">
 </ul>
-  <ul class="posts index_posts span8">
-  <!-- for post in site.posts -->
-  {% for post in site.posts limit:15 %}
-    <li>
-	  <div class="index_intro span6">
-	  <h3 class="index_title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-	  <p class="index_excerpt">{{ post.description }}</p>
-	  </div>
-	  <span class="index_date span2">{{ post.date | date_to_string }}</span>
-	</li>
-  {% endfor %}
-  </ul>
+<ul class="listing">
+{% for post in site.posts limit:20 %}
+
+  <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
   
 </div>
 
