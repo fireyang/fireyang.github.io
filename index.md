@@ -9,7 +9,7 @@ layout: page
 ps：原本打算迁移wp的文章，还是保持不动了
 
 * 旧地址:[www.fireyang.com/blog](http://www.fireyang.com/blog)
-
+* 订阅地址:[rss](/atom.xml)
 
 ## To-Do
   2012-7-27 开始使用jekyll
