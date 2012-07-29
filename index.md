@@ -2,7 +2,7 @@
 layout: page
 title: "烟花易冷，人事易分"
 tagline: This is a blog just for fun.
-titleline: 日志列表
+titleline: 最近Post
 links: 
   - url: "https://www.fireayng.com/blog"
     name: "旧fireyang's blog"
@@ -14,9 +14,10 @@ links:
 <h2 id="index_titleline">{{page.titleline}}</h2>
 <hr id="index_line" />
 <div class="span8 pull-left">
+</ul>
   <ul class="posts index_posts span8">
   <!-- for post in site.posts -->
-  {% for post in paginator.posts %}
+  {% for post in site.posts limit:15 %}
     <li>
 	  <div class="index_intro span6">
 	  <h3 class="index_title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -26,22 +27,7 @@ links:
 	</li>
   {% endfor %}
   </ul>
-  <ul class="pager">
-    {% if paginator.previous_page %}
-      <li class="previous">
-      {% if paginator.page == 2 %}
-        <a href="/" rel="bookmark">上一页</a>
-      {% else %}
-        <a href="/page{{ paginator.previous_page }}" rel="bookmark">Previous Page</a>
-      {% endif %}
-      </li>
-    {% endif %}
-    {% if paginator.next_page %}
-      <li class="next">
-        <a href="/page{{ paginator.next_page }}" rel="bookmark" style="float:right">下一页</a>
-      </li>
-    {% endif %}
-  </ul>
+  
 </div>
 
 <div id="aside" class="well sidebar-nav">
