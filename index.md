@@ -1,31 +1,72 @@
 ---
 layout: page
+title: "烟花易冷，人事易分"
+tagline: This is a blog just for fun.
+titleline: 日志列表
+links: 
+  - url: "https://www.fireayng.com/blog"
+    name: "旧fireyang's blog"
+    title: "旧版blog地址"
+
 ---
 {% include JB/setup %}
 
-# FireYang
-
-看到这篇文章: [如何高效利用GitHub](1) 很喜欢git的强大！
-
-再看到[理想的写作环境：Git+GitHub+Markdown+Jekyll](2)的时候，我决定我也要开始用jekyll来写博客了，以后可以在本地写日志，再同步过去，而且还有很好的版本管理了，非常喜欢！
-
-以后可以这样简单的写文章了，还可以用git来管理，个人表示很喜欢！
-
-ps：原本打算迁移wp的文章，还是保持不动了
-
-* 旧地址:[www.fireyang.com/blog](http://www.fireyang.com/blog)
-* 订阅地址:[rss](/atom.xml)
-  
-  
-### 最近文章:
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+<h2 id="index_titleline">{{page.titleline}}</h2>
+<hr id="index_line" />
+<div class="span8 pull-left">
+  <ul class="posts index_posts span8">
+  <!-- for post in site.posts -->
+  {% for post in paginator.posts %}
+    <li>
+	  <div class="index_intro span6">
+	  <h3 class="index_title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+	  <p class="index_excerpt">{{ post.description }}</p>
+	  </div>
+	  <span class="index_date span2">{{ post.date | date_to_string }}</span>
+	</li>
   {% endfor %}
+  </ul>
+  <ul class="pager">
+    {% if paginator.previous_page %}
+      <li class="previous">
+      {% if paginator.page == 2 %}
+        <a href="/" rel="bookmark">上一页</a>
+      {% else %}
+        <a href="/page{{ paginator.previous_page }}" rel="bookmark">Previous Page</a>
+      {% endif %}
+      </li>
+    {% endif %}
+    {% if paginator.next_page %}
+      <li class="next">
+        <a href="/page{{ paginator.next_page }}" rel="bookmark" style="float:right">下一页</a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
+
+<div id="aside" class="well sidebar-nav">
+<ul class="nav nav-list">
+<li class="nav-header">About me</li>
+ID：FireYang
+  <li class="nav-header">Categories</li>
+  {% assign categories_list = site.categories %}
+  {% include JB/categories_list %}
+
+  <li class="nav-header">Tags</li>
+  {% assign tags_list = site.tags %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %} 
+    	<li class="index_tags"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %} 
+    	<li class="index_tags"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+    {% endfor %}
+  {% endif %}
+  {% assign tags_list = nil %}
+  <li class="clear"></li>
+
+  {% include fy/friend_links %}
+
 </ul>
-
-[1]:http://www.yangzhiping.com/tech/github.html
-[2]:http://www.yangzhiping.com/tech/writing-space.html
-
-
+</div>

@@ -1,0 +1,11 @@
+{% if page.links %}
+  <li class="nav-header">友情链接</li>
+  {% for link in page.links %}
+	<li><a href="{{ link.url }}" rel="friend" title="{{ link.title }}" target="_blank">{{ link.name }}</a></li>
+  {% endfor %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+	  $("a[rel='friend']").tooltip();
+	});
+  </script>
+{% endif %}
