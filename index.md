@@ -4,7 +4,7 @@ title: "烟花易冷，人事易分"
 tagline: 简简单单生活
 titleline: 最近Post
 links: 
-  - url: "https://www.fireayng.com/blog"
+  - url: "http://www.fireyang.com/blog"
     name: "旧fireyang's blog"
     title: "旧版blog地址"
 
