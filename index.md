@@ -9,6 +9,7 @@ links:
     title: "旧版blog地址"
 
 ---
+
 {% include JB/setup %}
 
 <div class="front span8 pull-left">
@@ -28,7 +29,9 @@ links:
 <div id="aside" class="well sidebar-nav">
 <ul class="nav nav-list">
 <li class="nav-header">About me</li>
-ID：FireYang
+ID：FireYang<br>
+weibo: <a href="http://weibo.com/fireyang" target="_blank" "title="fireyang's weibo">fireyang</a><br>
+mail:   <a href="mailto:shenhuan007@gmail.com" title="fireyang's weibo">shenhuan007(a)gmail.com</a>
   <li class="nav-header">Categories</li>
   {% assign categories_list = site.categories %}
   {% include JB/categories_list %}
