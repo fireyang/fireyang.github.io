@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "在jekyll中显示代码高量"
-description: "简单测试下在jekyll中的代码高亮显示"
+title: "jekyll的使用技巧"
+description: "jekyll的使用"
 category: [jekyll]
 tags: [jekyll]
 ---
+## 模版收集
+* [mbleigh.github.com](https://github.com/mbleigh/mbleigh.github.com/)
+* [blog.lenage.com](http://blog.lenage.com/about/)
+
+
+
+
 
 ## Pygments的语法高亮
 ruby语法测试：
