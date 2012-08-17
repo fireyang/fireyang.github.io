@@ -35,6 +35,7 @@ function a(c:int):void{
 {% endhighlight %}
 
 ## gist的代码嵌入
+插件：[gist-tag](https://gist.github.com/803483)
 
 坚持测试下语法高亮，可惜无法显示行号
 
