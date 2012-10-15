@@ -2,7 +2,7 @@
 layout: post
 title: "[转]AS文本位图描边"
 description: ""
-category: 
+category: ActionScript
 tags: [ActionScript]
 ---
 {% include JB/setup %}

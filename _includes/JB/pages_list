@@ -23,9 +23,8 @@ Usage:
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
-    {% for weight in (1..10) %}
       {% for node in pages_list %}
-        {% if node.weight == weight && node.title != null %}
+        {% if node.title != null %}
           {% if group == null or group == node.group %}
             {% if page.url == node.url %}
             <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
@@ -34,7 +33,6 @@ Usage:
             {% endif %}
           {% endif %}
         {% endif %}
-      {% endfor %}
     {% endfor %}
 {% endif %}
 {% assign pages_list = nil %}
