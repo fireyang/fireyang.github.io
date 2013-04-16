@@ -2,7 +2,7 @@
 layout: post
 title: "游戏框架--Entity Framework(实体框架)"
 description: ""
-category: [develop]
+category: develop
 tags: [entity framework, develop]
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 layout: post
 title: "jekyll的使用技巧"
 description: "jekyll的使用"
-category: [jekyll]
+category: jekyll
 tags: [jekyll]
 ---
 ## 模版收集
