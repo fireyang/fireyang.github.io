@@ -282,7 +282,7 @@ body{font-size:14px;font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",
 .front hr{margin:.7em 0;border-top:1px dashed #d0d0d0;border-bottom:1px dashed #f9f9f9;}
 p{padding:.5em 0;}
 li{padding:.2em 0;}
-.front ol,ul{list-style-position:inside;}
+//.front ol,ul{list-style-position:inside;}
 .front ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 pre code{margin:1em 0;font-size:13px;line-height:1.6;display:block;overflow:auto;}
 blockquote{display:block;text-align:justify;border-left:4px solid #eeeeee;}
