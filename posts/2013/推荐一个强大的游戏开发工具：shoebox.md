@@ -1,0 +1,25 @@
+---
+layout: post
+title: 推荐一个强大的游戏开发工具：ShoeBox
+date: '2013-03-27'
+categories:
+- actionscript
+- Air
+tags: []
+published: true
+comments: true
+---
+<p><img class="alignnone size-full wp-image-1003" title="9B74E658-6B07-4208-BC99-0D459E646242" src="{{urls.media}}/2013/03/9B74E658-6B07-4208-BC99-0D459E646242.png" alt="" width="650" height="224" /></p>
+
+<p>地址：<a title="http://renderhjs.net/shoebox/" href="http://renderhjs.net/shoebox/" target="_blank">http://renderhjs.net/shoebox/</a></p>
+
+<p>免费的游戏开发的素材整理工具，免费的，界面不错，基于AIR，跨平台。</p>
+
+<p>功能：
+<ol>
+	<li>打包图片，支持各种导出格式：cocos2d，starling，unity3d……</li>
+	<li>图片的9宫格处理</li>
+	<li>支持命令行调用，可以自定义脚本，批量处理</li>
+	<li>等等……（我太懒了！）</li>
+</ol>
+英文详细介绍：<a title="http://renderhjs.net/shoebox/manual.htm" href="http://renderhjs.net/shoebox/manual.htm" target="_blank">http://renderhjs.net/shoebox/manual.htm</a></p>

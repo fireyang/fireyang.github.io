@@ -1,0 +1,21 @@
+---
+layout: post
+title: JS开发手机应用
+date: '2011-02-18'
+categories:
+- 其他
+tags:
+- android
+- JavaScript
+published: true
+comments: true
+---
+<p><p style="text-align: center;"><a href="{{urls.media}}/2011/02/201102182.jpg"><img class="size-full wp-image-823 aligncenter" title="201102182" src="{{urls.media}}/2011/02/201102182.jpg" alt="" width="463" height="187" /></a></p>
+<p style="text-align: left;"><a href="{{urls.media}}/2011/02/201102182.jpg"></a><span style="font-size: small;">Appcelerator公司推出了Titanium sdk，让开发者可以用js语言开发的语言在任何平台上开发了……</span></p>
+通过它的架构图可以看出，只需要开发一次，就可以在若干平台上运行，真的有这么神奇么……你不妨自己试试……</p>
+
+<p><a href="{{urls.media}}/2011/02/gs_overview.png"><img class="alignnone size-full wp-image-824" title="gs_overview" src="{{urls.media}}/2011/02/gs_overview.png" alt="" width="600" height="313" /></a></p>
+
+<p>模拟器什么的？android还是iphone的开发语言什么的？统统都是浮云了……</p>
+
+<p><a href="{{urls.media}}/2011/02/gs_android_testandpackage.png"><img class="alignnone size-full wp-image-825" title="gs_android_testandpackage" src="{{urls.media}}/2011/02/gs_android_testandpackage.png" alt="" width="600" height="389" /></a></p>

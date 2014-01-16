@@ -1,0 +1,16 @@
+---
+layout: post
+title: Linux服务器管理研讨活动(温州）
+date: '2008-06-07'
+categories:
+- ubuntu
+- 胡说八道
+tags:
+- linux
+- ubuntu
+published: true
+comments: true
+---
+<p>不论你是第一次接触linux服务器管理，还是这方面的高手，相信都能获得收获。</p>
+
+<p>报名地址：<a href="http://czk.8866.org/wiki/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E7%A0%94%E8%AE%A8%E6%B4%BB%E5%8A%A8">服务器管理研讨活动</a></p>

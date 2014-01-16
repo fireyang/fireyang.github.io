@@ -1,0 +1,19 @@
+---
+layout: post
+title: 基于GAE的blog
+date: '2010-06-08'
+categories:
+- python
+tags:
+- gae
+- python
+published: true
+comments: true
+---
+<p>如果你要开发基于GAE的开发，这个系统很值得参考哦：</p>
+
+<p><a href="http://code.google.com/p/cpedialog/" target="_blank">http://code.google.com/p/cpedialog/</a></p>
+
+<p>在google code上有开源代码，学习去吧。</p>
+
+<p>好像不是用django这个框架哦，呵呵</p>

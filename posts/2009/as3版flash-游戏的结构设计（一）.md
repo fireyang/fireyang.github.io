@@ -1,0 +1,375 @@
+---
+layout: post
+title: as3版flash 游戏的结构设计（一）
+date: '2009-04-27'
+categories:
+- actionscript
+tags:
+- actionscript
+- Flash
+- game
+published: true
+comments: true
+---
+<p>最近关注flash游戏设计，发现了这个系列的文章，觉得还可以，适合新手学习和参考。</p>
+
+<p>所以把它翻译过来（不是原原本本，根据意思做了很大变化），希望入门有帮助，我也在入门，呵呵</p>
+
+<p>欢迎转载，请注明出处（包括译者和作者）</p>
+
+<p>原文：<a rel="bookmark" href="http://www.emanueleferonato.com/2008/12/17/designing-the-structure-of-a-flash-game-as3-version/">Designing the structure of a Flash game - AS3 version</a></p>
+
+<p>作者层级写过： <a href="http://www.emanueleferonato.com/2007/12/22/designing-the-structure-of-a-flash-game/">Designing the structure of a Flash game</a> ，这篇文章是针对在flash里的动作里直接写到，现在这个as3版本，者采用了class（类）的形式。更有面向对象的感觉，原来就感觉是面向过程的。</p>
+
+<p>刚开始使用类来代替，如果你不熟悉面向对象，就感觉很不直观；但是如果你熟悉后，你完全将这个用作你以后开发游戏的模板。</p>
+
+<p>在这个游戏中，我们使用了4个屏幕切换（后面简称：切屏）：splash(开始屏),info（如何玩），game itself（游戏本身）和game over（游戏结束）……并且你还可以根据需求非常简单的添加其他屏。</p>
+
+<p>首先给游戏做一个规划：</p>
+
+<p><img class="alignnone size-full wp-image-464" title="as3dia" src="{{urls.media}}/2009/04/as3dia.png" alt="as3dia" width="500" height="452" /></p>
+
+<p>在图片中你能看到游戏的4屏，并且指出了每个按钮的屏幕切换方向。如，在splash（开始）屏你可以跳转到info（介绍）屏,但是你不能直接跳转到game over（游戏结束）屏。</p>
+
+<p>主函数the_game(因此文件命名为the_game.as)，把其他对象和类被列在库中，根据红色的顺序进行引用。</p>
+
+<p>查看链接列（元件的链接属性，常识，不多作解释），非常清楚的显示出其他需要的四个as文件：game_over.as,how_to_play.as,splash.as和the_game_itself.as。</p>
+
+<p>让我们看看详细的实现（blog主题原因，代码呈现有点问题）:</p>
+
+<p><strong></strong>
+<div class="wp_syntax">
+<table style="height: 906px;" border="0" width="707">
+<tbody>
+<tr>
+<td class="line_numbers">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre>
+</td>
+<td class="code">
+<pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span>
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;
+	<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> the_game extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> splash_screen<span style="color: #000000; font-weight: bold;">:</span>splash;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> play_screen<span style="color: #000000; font-weight: bold;">:</span>the_game_itself;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> game_over_screen<span style="color: #000000; font-weight: bold;">:</span>game_over;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> how_to_play_screen<span style="color: #000000; font-weight: bold;">:</span>how_to_play;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			show_splash<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> show_splash<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			splash_screen = <span style="color: #0033ff; font-weight: bold;">new</span> splash<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;
+			<span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+				<span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span>;
+				how_to_play_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;
+			<span style="color: #000000;">}</span>
+			<span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> show_how_to_play<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			how_to_play_screen = <span style="color: #0033ff; font-weight: bold;">new</span> how_to_play<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;
+			<span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span>;
+			splash_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;
+			<span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> show_game_over<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			game_over_screen = <span style="color: #0033ff; font-weight: bold;">new</span> game_over<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;
+			<span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>play_screen<span style="color: #000000;">)</span>;
+			play_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;
+			<span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>game_over_screen<span style="color: #000000;">)</span>;</pre></td></tr></tbody></table></div></p>
+
+<p>		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> play_the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			play_screen = <span style="color: #0033ff; font-weight: bold;">new</span> the_game_itself<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;<br />
+			<span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+				<span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span>;<br />
+				splash_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br />
+			<span style="color: #000000;">}</span>
+			<span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+				<span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span>;<br />
+				how_to_play_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br />
+			<span style="color: #000000;">}</span>
+			<span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>game_over_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+				<span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>game_over_screen<span style="color: #000000;">)</span>;<br />
+				game_over_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br />
+			<span style="color: #000000;">}</span>
+			<span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>play_screen<span style="color: #000000;">)</span>;<br />
+		<span style="color: #000000;">}</span>
+	<span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span>
+
+
+
+
+详细步骤说明：</p>
+
+<p><strong>行4-7</strong>: 使用相应的类声明游戏切屏的对象。</p>
+
+<p><strong>行8-10</strong>:这是主要函数，simply调用一个显示splash屏的函数。</p>
+
+<p><strong>行11</strong>: 这样一个函数: <code>show_splash。</code></p>
+
+<p><strong>行12</strong>: 函数的核心:我将为<strong>第4行</strong>声明的splash_screen变量new一个对象。注意这里的参数：我要求它记住是哪个类调用了它，在这里this其实就是the_game类。</p>
+
+<p><strong>行13</strong>: 检查场景上是否已经有how_to_play_screen屏。这里有可能是从info屏切换到splash屏的。</p>
+
+<p><strong>行14</strong>: 如果是，我需要在场景上移除这一屏……</p>
+
+<p><strong>行15</strong>: 设置变量为null，这个非常重要因为removeChild只是在场景上移除sprite，而内存中依然存在的。</p>
+
+<p><strong>行17</strong>: 最后,我将splash屏放置到场景上。</p>
+
+<p>其他剩下的也都是相同的操作，分配变量、添加并移除相应的sprite，直到结束为止。</p>
+
+<p>现在让我们看看splash.as中splash类的代码：
+<div class="wp_syntax">
+<table style="height: 360px;" border="0" width="643">
+<tbody>
+<tr>
+<td class="line_numbers">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre>
+</td>
+<td class="code">
+<pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span>
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;
+	<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> splash extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> splash<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class = passed_class;
+			play_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_play_button_clicked<span style="color: #000000;">)</span>;
+			how_to_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_how_to_button_clicked<span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_play_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class.play_the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_how_to_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class.show_how_to_play<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+	<span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+<strong>行6</strong>:声明the_game类型的变量main_class（主类）</p>
+
+<p><strong>行7</strong>:主要函数，查看the_game类型的参数passed_class:这函数的传递可以在the_game.as的<strong>第12</strong>行可以找到</p>
+
+<p><strong>行8</strong>: 记住调用的此类的原始类</p>
+
+<p><strong>行8-9：</strong>附加两个按钮的监听，当玩家按"play"或"how to play"按钮时触发。</p>
+
+<p><strong>行12</strong>:当玩家点击play按钮时，函数被执行</p>
+
+<p><strong>行13</strong>: 这个文件的核心:我在主类中调用play_the_game()函数。我们能知道主类哪里来，就需要感谢main_class变量了。</p>
+
+<p>这里的函数执行就和前面show_splash的解释一样，添加和移除相应的sprite并调用其他的类。</p>
+
+<p>其他类也和这个是类似的，所以不做过多注释。</p>
+
+<p><strong>how_to_play.as</strong>
+<div class="wp_syntax">
+<table style="height: 360px;" border="0" width="623">
+<tbody>
+<tr>
+<td class="line_numbers">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre>
+</td>
+<td class="code">
+<pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span>
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;
+	<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> how_to_play extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> how_to_play<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class = passed_class;
+			play_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_play_button_clicked<span style="color: #000000;">)</span>;
+			back_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_back_button_clicked<span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_play_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class.play_the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_back_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class.show_splash<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+	<span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+<strong>the_game_itself.as</strong>
+<div class="wp_syntax">
+<table style="height: 288px;" border="0" width="624">
+<tbody>
+<tr>
+<td class="line_numbers">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre>
+</td>
+<td class="code">
+<pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span>
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;
+	<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> the_game_itself extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> the_game_itself<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class = passed_class;
+			die_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_die_button_clicked<span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_die_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class.show_game_over<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+	<span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+<strong>game_over.as</strong>
+<div class="wp_syntax">
+<table style="height: 288px;" border="0" width="633">
+<tbody>
+<tr>
+<td class="line_numbers">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre>
+</td>
+<td class="code">
+<pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span>
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;
+	<span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;
+	<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> the_game_itself extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> the_game_itself<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class = passed_class;
+			die_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_die_button_clicked<span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+		<span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_die_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span>
+			main_class.show_game_over<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;
+		<span style="color: #000000;">}</span>
+	<span style="color: #000000;">}</span>
+<span style="color: #000000;">}</span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+最后你将看到:
+<object width="500" height="400" data="/downloads/anatomy.swf" type="application/x-shockwave-flash"><param name="src" value="/downloads/anatomy.swf" /><param name="quality" value="high" /></object></p>
+
+<p><a title="下载源代码" href="http://www.emanueleferonato.com/downloads/anatomy.zip">下载源代码</a> .</p>
+
+<p>这是第一篇，有空继续第2篇。</p>

@@ -1,0 +1,11 @@
+---
+layout: post
+title: vs 2005 配置自带的sqlexpress
+date: '2007-08-02'
+categories:
+- 未分类
+tags: []
+published: true
+comments: true
+---
+<p><p>开始使用用vs 2005添加数据库的时候服务器名一直使用localhost或127.0.0.1，老是弹出错误提示，error 40的错误，后来才知道</p> <p>在sql server&nbsp;2005添加的服务器名是这样添加的servernameSQLExpress或.SQLExpress。再测试链接，提示成功！欢呼下！！！</p></p>

@@ -1,0 +1,24 @@
+---
+# Usage: http://ruhoh.com/usage/configure/ 
+
+RuhohSpec: '1.0'
+theme : twitter
+production_url : http://sample.com
+
+posts:
+  permalink: /:categories/:title/
+  summary_lines: 20
+  latest: 10
+
+pages:
+  permalink: 'pretty'
+
+# <img> tag auto insert config
+# %s will be replace by "urlperfix / post name / img filename"
+imgs:
+  imgtag: '<img src="%s" alt="" width="600">'
+  urlperfix: '{{urls.media}}/'
+  localdir: 'media/'
+
+
+

@@ -1,0 +1,83 @@
+---
+layout: post
+title: RAPI
+date: '2007-09-02'
+categories:
+- 未分类
+tags: []
+published: true
+comments: true
+---
+<p><table border="1" cellspacing="0" cellpadding="0" width="442" class="MsoNormalTable" style="margin: auto auto auto 42.25pt; width: 331.75pt; border-collapse: collapse">
+	<tbody>
+		<tr style="height: 14.1pt">
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; background: #3399ff none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 82.6pt; height: 14.1pt">
+			<p style="margin: 0cm 0cm 0pt; text-align: center" class="MsoNormal" align="center">
+			<strong><span style="font-size: 10pt"><font face="Times New Roman">Function</font></span></strong><span style="font-size: 11pt; font-family: Verdana"><br />
+			<br />
+			</span>
+			</p>
+			</td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; background: #3399ff none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 249.15pt; height: 14.1pt"><strong><span style="font-size: 10pt"><font face="Times New Roman">Description</font></span></strong><span style="font-size: 11pt; font-family: Verdana"><br />
+			<br />
+			</span></td>
+		</tr>
+		<tr style="height: 3.9pt">
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; height: 3.9pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeCopyFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; height: 3.9pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">复制文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr style="height: 9.8pt">
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; height: 9.8pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeCreateDirectory</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; height: 9.8pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">创建目录</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeCreateFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">创建，打开文件、管道、通讯资源、磁盘设备或者控制台。返回一个句柄用来访问对象。</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeDeleteFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">删除文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindAllFiles</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从指定的</span><span style="font-size: 10pt"><font face="Times New Roman">Windows CE</font></span><span style="font-size: 10pt; font-family: 宋体">目录中获取所有文件和目录的信息，并且复制到一个包含</span><strong><span style="font-size: 10pt"><font face="Times New Roman">CE_FIND_DATA</font></span></strong><span style="font-size: 10pt; font-family: 宋体">结构的数组中</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindFirstFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">在目录中查找匹配给定文件名的一个文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindClose</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">关闭指定的查找句柄，</span><strong><span style="font-size: 10pt"><font face="Times New Roman">CeFindFirstFile</font></span></strong><span style="font-size: 10pt; font-family: 宋体">和</span><font face="Times New Roman"><strong><span style="font-size: 10pt">CeFindNextFile</span></strong><span style="font-size: 10pt"> </span></font><span style="font-size: 10pt; font-family: 宋体">函数用这个句柄查找文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindNextFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从上一次访问的</span><strong><span style="font-size: 10pt"><font face="Times New Roman">CeFindFirstFile</font></span></strong><span style="font-size: 10pt; font-family: 宋体">继续查找文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeGetFileAttributes</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">返回指定文件或目录的属性</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeGetFileSize</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">获取指定文件的字节大小</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeGetFileTime</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">获取文件创建日期时间，最后访问日期时间和最后修改日期时间</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeMoveFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">移动（重命名）一个文件或者目录</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr>
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeReadFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从文件指针处读取文件数据</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+		<tr style="height: 2.5pt">
+			<td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; height: 2.5pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeWriteFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td>
+			<td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; height: 2.5pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从文件指针处写入文件数据</span><span style="font-size: 11pt; font-family: Verdana"></span></td>
+		</tr>
+	</tbody>
+</table>
+</p>

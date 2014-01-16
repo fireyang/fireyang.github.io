@@ -1,0 +1,19 @@
+---
+layout: post
+title: RIAWiki
+date: '2008-07-23'
+categories:
+- Air
+- flex
+tags:
+- wiki
+published: true
+comments: true
+---
+<p>发现用wiki来组织你的知识真的很方便，而且查询也很便利。</p>
+
+<p><a href="http://www.fireyang.com/wiki/" target="_blank">www.fireyang.com/wiki/</a></p>
+
+<p>启用<a href="http://www.riawiki.cn" target="_blank">www.riawiki.cn</a>域名</p>
+
+<p>期待你的贡献。</p>

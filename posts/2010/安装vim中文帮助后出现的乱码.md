@@ -1,0 +1,24 @@
+---
+layout: post
+title: '[原]安装vim中文帮助后出现的乱码'
+date: '2010-04-08'
+categories:
+- 其他
+tags:
+- vim
+published: true
+comments: true
+---
+<p>在windows下安装了vim后，再安装中文帮助，再次打开开始界面出现乱码了，在状态栏也经常输出乱码：</p>
+
+<p><a href="{{urls.media}}/2010/04/vim-help.jpg"><img class="alignnone size-full wp-image-572" title="vim help" src="{{urls.media}}/2010/04/vim-help.jpg" alt="" width="665" height="503" /></a></p>
+
+<p>解决办法：</p>
+
+<p>windows：找到vim的安装目录，再进入插件目录（Vim\vimfiles\plugin），</p>
+
+<p>linux:进入~/.vim/plugin</p>
+
+<p>找到vimcdoc.vim文档，找到“set encoding=utf-8”，将词句注释掉，（再行首插入一个"）</p>
+
+<p>这样就不再乱码了。</p>

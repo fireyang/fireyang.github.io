@@ -1,0 +1,32 @@
+---
+layout: post
+title: 微软的开源web平台
+date: '2009-03-25'
+categories:
+- .Net
+tags:
+- .Net
+- flatform
+- microsoft
+- web
+published: true
+comments: true
+---
+<p><img class="alignnone size-full wp-image-405" title="aaa" src="{{urls.media}}/2009/03/aaa.jpg" alt="aaa" width="237" height="62" /></p>
+
+<p><img class="alignnone size-full wp-image-406" title="bbb" src="{{urls.media}}/2009/03/bbb.jpg" alt="bbb" width="512" height="340" /></p>
+
+<p>稍微看了下，以下几点不错</p>
+
+<p>一、有个微软的web平台蛮好的，<a href="http://www.microsoft.com/web/downloads/platform.aspx" target="_blank">http://www.microsoft.com/web/downloads/platform.aspx</a>
+<ol></ol>
+<p style="padding-left: 30px;">其中集成了IIS, SQL Server Express, .NET Framework 和                      Visual Web Developer。</p>
+<p style="padding-left: 30px;">对asp.net和php的支持良好，你也不妨下过来试试。</p></p>
+
+<p>二、比较多的开源项目集成：<a href="http://www.microsoft.com/web/gallery/Default.aspx" target="_blank">http://www.microsoft.com/web/gallery/Default.aspx</a>
+<p style="padding-left: 30px;">看到了几个熟悉的项目：wordpress,drupal,BlogEngine.NET,这些都是不错的项目，不论是使用，还是学习</p></p>
+
+<p>三、还看到了一些开发工具、等等</p>
+
+<p>看到上面几点，可能还有其他东西，看来微软对开源还是有点动作的，期待更大点……
+<ol></ol></p>

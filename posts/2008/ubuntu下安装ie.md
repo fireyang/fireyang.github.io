@@ -1,0 +1,30 @@
+---
+layout: post
+title: Ubuntu下安装ie
+date: '2008-06-21'
+categories:
+- ubuntu
+tags:
+- ie
+- ubuntu
+- wine
+published: true
+comments: true
+---
+<p><ol>
+	<li>打开终端</li>
+	<li>打开/etc/apt/sources.list</li>
+<blockquote>sudo gedit /etc/apt/sources.list</blockquote>
+	<li>添加以下行</li>
+<blockquote>deb http://us.archive.ubuntu.com/ubuntu edgy universe</blockquote>
+<blockquote>deb http://wine.budgetdedicated.com/apt edgy main</blockquote>
+	<li>关闭gedit,更新和安装wine和cabextract：</li>
+<blockquote>wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -<br />
+sudo apt-get update<br />
+sudo apt-get install wine cabextract</blockquote>
+	<li>下载和安装IEs4linux</li>
+<blockquote>wget http://www.tatanka.com.br/ies4linux/downloads/ies4linux-latest.tar.gz<br />
+tar zxvf ies4linux-latest.tar.gz<br />
+cd ies4linux-*<br />
+./ies4linux</blockquote>
+</ol></p>

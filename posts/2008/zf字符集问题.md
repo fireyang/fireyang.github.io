@@ -1,0 +1,21 @@
+---
+layout: post
+title: ZF（Zend Framework）字符集问题
+date: '2008-04-16'
+categories:
+- php
+tags:
+- zendframework
+- 字符编码
+published: true
+comments: true
+---
+<p>问题：</p>
+
+<p>在程序段编辑使用中文显示都是正常，但是在数据库中用phpmyadmin查看确实乱码，反之在phpmyadmin中编辑中文，看到的都是正常，到了程序中在看成了乱码。</p>
+
+<p>解决：</p>
+
+<p>在入口文件中设置数据库时，加上一句：
+<p style="margin: 1em 1em 0pt; font-weight: bold;">CODE:</p>
+<code style="border: 1px solid #cccccc; margin: 0pt 1em 1em; padding: 0.5em; display: block; font-family: Courier,monospace; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; font-size-adjust: none; font-stretch: normal; line-height: 1.8em;">$db-&gt;query("set names {$config-&gt;charset};");</code>$config-&gt;charset为你的数据库编码格式。gbk,utf8 或者其他。</p>
