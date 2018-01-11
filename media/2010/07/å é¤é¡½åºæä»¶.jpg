@@ -1,3 +1,0 @@
-@echo y|Cacls %1 /c /t /p Everyone:f
-del /f /s /q \\?\%1
-rd /s /q \\?\%1

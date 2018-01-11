@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Function                                                            Description                                                    CeCopyFile">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RAPI">
+<meta property="og:url" content="http://blog.fireyang.com/2007/09/02/old_blog/2007-09-02-RAPI/index.html">
+<meta property="og:site_name" content="胡说八道">
+<meta property="og:description" content="Function                                                            Description                                                    CeCopyFile">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-11T10:43:18.632Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RAPI">
+<meta name="twitter:description" content="Function                                                            Description                                                    CeCopyFile">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.fireyang.com/2007/09/02/old_blog/2007-09-02-RAPI/"/>
+
+
+
+
+
+  <title>RAPI | 胡说八道</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">胡说八道</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/09/02/old_blog/2007-09-02-RAPI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">RAPI</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-09-02T00:00:00+00:00">
+                2007-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/未分类/" itemprop="url" rel="index">
+                    <span itemprop="name">未分类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><table border="1" cellspacing="0" cellpadding="0" width="442" class="MsoNormalTable" style="margin: auto auto auto 42.25pt; width: 331.75pt; border-collapse: collapse"><br>    <tbody><br>        <tr style="height: 14.1pt"><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; background: #3399ff none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 82.6pt; height: 14.1pt"><br>            <p style="margin: 0cm 0cm 0pt; text-align: center" class="MsoNormal" align="center"><br>            <strong><span style="font-size: 10pt"><font face="Times New Roman">Function</font></span></strong><span style="font-size: 11pt; font-family: Verdana"><br><br>            <br><br>            </span><br>            </p><br>            </td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; background: #3399ff none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; width: 249.15pt; height: 14.1pt"><strong><span style="font-size: 10pt"><font face="Times New Roman">Description</font></span></strong><span style="font-size: 11pt; font-family: Verdana"><br><br>            <br><br>            </span></td><br>        </tr><br>        <tr style="height: 3.9pt"><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; height: 3.9pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeCopyFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; height: 3.9pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">复制文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr style="height: 9.8pt"><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; height: 9.8pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeCreateDirectory</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; height: 9.8pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">创建目录</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeCreateFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">创建，打开文件、管道、通讯资源、磁盘设备或者控制台。返回一个句柄用来访问对象。</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeDeleteFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">删除文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindAllFiles</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从指定的</span><span style="font-size: 10pt"><font face="Times New Roman">Windows CE</font></span><span style="font-size: 10pt; font-family: 宋体">目录中获取所有文件和目录的信息，并且复制到一个包含</span><strong><span style="font-size: 10pt"><font face="Times New Roman">CE_FIND_DATA</font></span></strong><span style="font-size: 10pt; font-family: 宋体">结构的数组中</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindFirstFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">在目录中查找匹配给定文件名的一个文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindClose</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">关闭指定的查找句柄，</span><strong><span style="font-size: 10pt"><font face="Times New Roman">CeFindFirstFile</font></span></strong><span style="font-size: 10pt; font-family: 宋体">和</span><font face="Times New Roman"><strong><span style="font-size: 10pt">CeFindNextFile</span></strong><span style="font-size: 10pt"> </span></font><span style="font-size: 10pt; font-family: 宋体">函数用这个句柄查找文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeFindNextFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从上一次访问的</span><strong><span style="font-size: 10pt"><font face="Times New Roman">CeFindFirstFile</font></span></strong><span style="font-size: 10pt; font-family: 宋体">继续查找文件</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeGetFileAttributes</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">返回指定文件或目录的属性</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeGetFileSize</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">获取指定文件的字节大小</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeGetFileTime</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">获取文件创建日期时间，最后访问日期时间和最后修改日期时间</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeMoveFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">移动（重命名）一个文件或者目录</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeReadFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从文件指针处读取文件数据</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>        <tr style="height: 2.5pt"><br>            <td width="110" style="border: medium none #ece9d8; padding: 0.75pt; width: 82.6pt; height: 2.5pt; background-color: transparent"><font face="Times New Roman"><span style="font-size: 10pt">CeWriteFile</span><span style="font-size: 11pt; font-family: Verdana"></span></font></td><br>            <td width="332" style="border: medium none #ece9d8; padding: 0.75pt; width: 249.15pt; height: 2.5pt; background-color: transparent"><span style="font-size: 10pt; font-family: 宋体">从文件指针处写入文件数据</span><span style="font-size: 11pt; font-family: Verdana"></span></td><br>        </tr><br>    </tbody><br></table><br></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2007/09/02/old_blog/2007-09-02-QQ远程协助的一个bug/" rel="next" title="QQ远程协助的一个bug">
+                <i class="fa fa-chevron-left"></i> QQ远程协助的一个bug
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2007/09/02/old_blog/2007-09-02-apollo学习笔记一/" rel="prev" title="Apollo学习笔记一">
+                Apollo学习笔记一 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">FireYang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">278</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">188</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang | 沪ICP备17009590号-1</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
