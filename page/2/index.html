@@ -257,6 +257,159 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/01/27/old_blog/2013-01-27-understanding-flash-player-with-adobe-scout/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2013/01/27/old_blog/2013-01-27-understanding-flash-player-with-adobe-scout/" itemprop="url">通过Adobe Scout 了解Flash Player</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-01-27T00:00:00+00:00">
+                2013-01-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/actionscript/" itemprop="url" rel="index">
+                    <span itemprop="name">actionscript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>原文：<br><a href="http://www.adobe.com/devnet/scout/articles/understanding-flashplayer-with-scout.html" target="_blank" rel="noopener">Understanding Flash Player with Adobe Scout</a></p>
+<h2 id="FP-Flash-Player-综述"><a href="#FP-Flash-Player-综述" class="headerlink" title="FP(Flash Player)综述"></a>FP(Flash Player)综述</h2><ul>
+<li>Timelines 时间轴 逐帧执行动画，类似一系列的标签，每帧执行这些标签，比如，在场景中移动对象，添加对象到舞台并缓动等。</li>
+<li>Scripts 脚本,也就是ActionScript，被FP在某些指定的时间点执行，比如SWF的加载，计时器的触发，或鼠标的点击等，也可以直接绑定在个别帧上。</li>
+</ul>
+<p>FP在执行脚本的过程是变动的，大致可以分为以下四类：</p>
+<ul>
+<li>Immediate activities: 立刻执行，就是在代码执行到的时候就立刻执行，比如new Bitmap、初始一个HTTP请求。</li>
+<li>Ongoing activities:持续执行 ，就是初始化后，就持续执行，而不是片段性，如：播放声音，下载文件等</li>
+<li>Deferred activities:延迟执行，就是一些操作会比较耗时，而延后执行，如:重新渲染，比如在更改一个显示对象的坐标，不会马上重新渲染，而是在之后的某个点再去渲染</li>
+<li>Implicit activities:隐形执行，是一些内部操作，是你无法控制的，比如垃圾回收的执行，对操作系统的鼠标和键盘事件的监听等。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2012/11/05/old_blog/2012-11-05-在github-pages上写文章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1504,152 +1657,6 @@ source mysandbox/bin/deactivate
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2012/07/29/old_blog/2012-07-29-use-jekyll/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2012/07/29/old_blog/2012-07-29-use-jekyll/" itemprop="url">jekyll的使用技巧</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2012-07-29T00:00:00+00:00">
-                2012-07-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/jekyll/" itemprop="url" rel="index">
-                    <span itemprop="name">jekyll</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          jekyll的使用
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2012/07/29/old_blog/2012-07-29-use-jekyll/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1700,7 +1707,7 @@ source mysandbox/bin/deactivate
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">278</span>
+                  <span class="site-state-item-count">279</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1722,7 +1729,7 @@ source mysandbox/bin/deactivate
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">188</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

@@ -257,6 +257,128 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/" itemprop="url">VScode 在mac下vim的长按问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T13:19:14+00:00">
+                2018-01-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>mac下的VScode vim 插件, 常按hjkl键无法持续移动光标</p>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>终端下执行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></table></figure></p>
+<p>复原:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2018/01/10/2018/2018-01-10-docker-hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -706,7 +828,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-支持as的跨平台开发引擎：loom-sdk/">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-推荐个物理引擎编辑工具：cadet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
@@ -725,7 +847,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/03/27/old_blog/2013-03-27-支持as的跨平台开发引擎：loom-sdk/" itemprop="url">支持AS的跨平台开发引擎：Loom SDK</a></h1>
+                <a class="post-title-link" href="/2013/03/27/old_blog/2013-03-27-推荐个物理引擎编辑工具：cadet/" itemprop="url">物理引擎编辑工具：Cadet</a></h1>
         
 
         <div class="post-meta">
@@ -799,19 +921,17 @@
       
         
           
-            <p><img class="alignnone size-full wp-image-1012" title="84C60742-A9A6-4233-8E1E-597D8ADA873A" src="/media/2013/03/84C60742-A9A6-4233-8E1E-597D8ADA873A.jpg" alt="" width="938" height="405">站点：<a href="http://theengine.co/" target="_blank" rel="noopener">http://theengine.co/</a></p>
+            <p><img class="alignnone size-full wp-image-1017" title="8CCE016E-6EF4-41D6-BAD3-363A935ECF37" src="/media/2013/03/8CCE016E-6EF4-41D6-BAD3-363A935ECF37.jpg" alt="" width="504" height="534"></p>
 
-<p>大致看了下这个引擎，底层用c++来实现（其实是cocos2d），上层脚本支持AS3、lua、js、c#等(陆续出来)，对于flasher来说是除AIR和haxe以为的另一个选择，期待后续更好的支持！</p>
+<p>地址：<a href="http://unwrong.com/cadet" target="_blank" rel="noopener">http://unwrong.com/cadet</a></p>
 
-<p>目前提供：sdk，samples和Native C++ SDK 的下载。</p>
+<p>提供了两个免费的编辑器，分布支持2d和3d，2d主要就是针对box2d引擎，其他不多说了，自己体会吧。</p>
 
-<p>可能是为了推广，目前提供一个免费许可（写的时候，只有1天的倒计时了），许可应该是有一年的有效期。</p>
+<p>可直观的看到，还可以直接预览编辑结果(使用教程暂时不介绍了)：</p>
 
-<p><img class="alignnone size-full wp-image-1013" title="8DDFAE41-F5E1-48CA-BBE2-79F60CCA2589" src="/media/2013/03/8DDFAE41-F5E1-48CA-BBE2-79F60CCA2589.jpg" alt="" width="885" height="382"></p>
+<p><img class="alignnone size-full wp-image-1018" title="4EFFD25F-AE45-4CC3-9389-46DC697AB376" src="/media/2013/03/4EFFD25F-AE45-4CC3-9389-46DC697AB376.jpg" alt="" width="839" height="522"></p>
 
-<p>入门视频:</p>
-
-<p><object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" align="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNTMzNjkwMjE2/v.swf"><param name="allowfullscreen" value="true"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNTMzNjkwMjE2/v.swf" allowfullscreen="true" quality="high" allowscriptaccess="always" align="middle"></object></p>
+<p>&nbsp;</p>
 
           
         
@@ -1008,7 +1128,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-推荐个物理引擎编辑工具：cadet/">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-支持as的跨平台开发引擎：loom-sdk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
@@ -1027,7 +1147,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/03/27/old_blog/2013-03-27-推荐个物理引擎编辑工具：cadet/" itemprop="url">物理引擎编辑工具：Cadet</a></h1>
+                <a class="post-title-link" href="/2013/03/27/old_blog/2013-03-27-支持as的跨平台开发引擎：loom-sdk/" itemprop="url">支持AS的跨平台开发引擎：Loom SDK</a></h1>
         
 
         <div class="post-meta">
@@ -1101,17 +1221,19 @@
       
         
           
-            <p><img class="alignnone size-full wp-image-1017" title="8CCE016E-6EF4-41D6-BAD3-363A935ECF37" src="/media/2013/03/8CCE016E-6EF4-41D6-BAD3-363A935ECF37.jpg" alt="" width="504" height="534"></p>
+            <p><img class="alignnone size-full wp-image-1012" title="84C60742-A9A6-4233-8E1E-597D8ADA873A" src="/media/2013/03/84C60742-A9A6-4233-8E1E-597D8ADA873A.jpg" alt="" width="938" height="405">站点：<a href="http://theengine.co/" target="_blank" rel="noopener">http://theengine.co/</a></p>
 
-<p>地址：<a href="http://unwrong.com/cadet" target="_blank" rel="noopener">http://unwrong.com/cadet</a></p>
+<p>大致看了下这个引擎，底层用c++来实现（其实是cocos2d），上层脚本支持AS3、lua、js、c#等(陆续出来)，对于flasher来说是除AIR和haxe以为的另一个选择，期待后续更好的支持！</p>
 
-<p>提供了两个免费的编辑器，分布支持2d和3d，2d主要就是针对box2d引擎，其他不多说了，自己体会吧。</p>
+<p>目前提供：sdk，samples和Native C++ SDK 的下载。</p>
 
-<p>可直观的看到，还可以直接预览编辑结果(使用教程暂时不介绍了)：</p>
+<p>可能是为了推广，目前提供一个免费许可（写的时候，只有1天的倒计时了），许可应该是有一年的有效期。</p>
 
-<p><img class="alignnone size-full wp-image-1018" title="4EFFD25F-AE45-4CC3-9389-46DC697AB376" src="/media/2013/03/4EFFD25F-AE45-4CC3-9389-46DC697AB376.jpg" alt="" width="839" height="522"></p>
+<p><img class="alignnone size-full wp-image-1013" title="8DDFAE41-F5E1-48CA-BBE2-79F60CCA2589" src="/media/2013/03/8DDFAE41-F5E1-48CA-BBE2-79F60CCA2589.jpg" alt="" width="885" height="382"></p>
 
-<p>&nbsp;</p>
+<p>入门视频:</p>
+
+<p><object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" align="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNTMzNjkwMjE2/v.swf"><param name="allowfullscreen" value="true"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNTMzNjkwMjE2/v.swf" allowfullscreen="true" quality="high" allowscriptaccess="always" align="middle"></object></p>
 
           
         
@@ -1593,159 +1715,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/01/27/old_blog/2013-01-27-understanding-flash-player-with-adobe-scout/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/01/27/old_blog/2013-01-27-understanding-flash-player-with-adobe-scout/" itemprop="url">通过Adobe Scout 了解Flash Player</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-01-27T00:00:00+00:00">
-                2013-01-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>原文：<br><a href="http://www.adobe.com/devnet/scout/articles/understanding-flashplayer-with-scout.html" target="_blank" rel="noopener">Understanding Flash Player with Adobe Scout</a></p>
-<h2 id="FP-Flash-Player-综述"><a href="#FP-Flash-Player-综述" class="headerlink" title="FP(Flash Player)综述"></a>FP(Flash Player)综述</h2><ul>
-<li>Timelines 时间轴 逐帧执行动画，类似一系列的标签，每帧执行这些标签，比如，在场景中移动对象，添加对象到舞台并缓动等。</li>
-<li>Scripts 脚本,也就是ActionScript，被FP在某些指定的时间点执行，比如SWF的加载，计时器的触发，或鼠标的点击等，也可以直接绑定在个别帧上。</li>
-</ul>
-<p>FP在执行脚本的过程是变动的，大致可以分为以下四类：</p>
-<ul>
-<li>Immediate activities: 立刻执行，就是在代码执行到的时候就立刻执行，比如new Bitmap、初始一个HTTP请求。</li>
-<li>Ongoing activities:持续执行 ，就是初始化后，就持续执行，而不是片段性，如：播放声音，下载文件等</li>
-<li>Deferred activities:延迟执行，就是一些操作会比较耗时，而延后执行，如:重新渲染，比如在更改一个显示对象的坐标，不会马上重新渲染，而是在之后的某个点再去渲染</li>
-<li>Implicit activities:隐形执行，是一些内部操作，是你无法控制的，比如垃圾回收的执行，对操作系统的鼠标和键盘事件的监听等。</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1796,7 +1765,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">278</span>
+                  <span class="site-state-item-count">279</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1818,7 +1787,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">188</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

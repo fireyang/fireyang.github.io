@@ -257,6 +257,164 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/03/old_blog/2008-01-03-vim中文帮助的安装/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/01/03/old_blog/2008-01-03-vim中文帮助的安装/" itemprop="url">vim中文帮助的安装</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-01-03T00:00:00+00:00">
+                2008-01-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
+                    <span itemprop="name">ubuntu</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> 首先去<a href="http://sourceforge.net/projects/vimcdoc/下一个安装包" target="_blank" rel="noopener">http://sourceforge.net/projects/vimcdoc/下一个安装包</a></p>
+
+<p><span class="postbody"><br>下载的 tar.gz 包括所有翻译过的 vim 文档 (.cnx 文件)。</span></p>
+
+<p>先将其解压缩：</p>
+
+<p>tar zxvf vimcdoc-&lt;versoin&gt;.tar.gz</p>
+
+<p>然后进入 vimcdoc-&lt;version&gt; 目录并执行</p>
+
+<p>./vimcdoc.sh -i</p>
+
+<p>就可以了。该安装程序会自动识别 Vim 的安装路径，将中文的文档拷贝</p>
+
+<p>到相应的地方。原有的英文文档不受影响。</p>
+
+<p>现在就可以启动vim看一下了</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/02/old_blog/2008-01-02-在ubuntu下用vbox可以使用windows/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -507,6 +665,150 @@
 <p>重定向：</p>
 
 <p>这时才发现它原来也可以将本地磁盘带到远端，而且连中文文件名也支持。只要加上 -r 参数就可以了。它除了可以将本地磁盘带到远端以外，还支持串口和打印机，这下 Windows 上远程桌面客户端的功能在 Linux 上都齐了。-r 参数的格式如下：<br><br>-r comport:COM1=/dev/ttyS0 // 将串口 /dev/ttyS0 重定向为 COM1<br><br>-r comport:COM1=/dev/ttyS0,COM2=/dev/ttyS1 // 多个串口重定向<br><br>-r disk:floppy=/mnt/floppy // 将 /mnt/floppy 重定向为远程共享磁盘 ‘floppy’<br><br>-r disk:floppy=/mnt/floppy,cdrom=/mnt/cdrom,root=/,c=/mnt/c // 多个磁盘重定向<br><br>-r clientname=&lt;client name&gt; // 为重定向的磁盘设置显示的客户端名称<br><br>-r lptport:LPT1=/dev/lp0 // 将并口 /dev/lp0 重定向为 LPT1<br><br>-r lptport:LPT1=/dev/lp0,LPT2=/dev/lp1 // 多个并口重定向<br><br>-r printer:mydeskjet // 打印机重定向<br><br>-r printer:mydeskjet=”HP LaserJet IIIP” // 打印机重定向<br><br>-r sound:[local|off|remote] // 声音重定向</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/02/old_blog/2008-01-02-ubuntu手动安装apache/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/01/02/old_blog/2008-01-02-ubuntu手动安装apache/" itemprop="url">ubuntu 手动安装Apache</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-01-02T00:00:00+00:00">
+                2008-01-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
+                    <span itemprop="name">ubuntu</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><br><ol><br>    <li>去www.apache.org下载apache(httpd的一个bz2的包)，一般放到～目录下的</li><br>    <li>解压压缩包：tar -zxvf 你下载的包名称（如： httpd<em>.tar.gz）</em></li><br>    <li>一次执行下面的语句<br><br>cd httpd<br><br>./configure –prefix=/usr/local/apache2<br><br>make<br><br>sudo make install</li><br>    <li>sudo /usr/local/apache2/bin/apachectl stop (如果安装成功的话,默认已经启动了该服务,不管有没有启动,先关掉它.)<br><br>初步修改一下httpd.conf文件<br><br>sudo gedit /usr/local/apache2/conf/httpd.conf<br><br>找到 行: #ServerName www.example.com:80<br><br>在它下面一行加入: ServerName localhost</li><br>    <li>现在启动httpd服务<br><br>sudo /usr/local/apache2/bin/apachectl start<br><br>一定要用sudo,管理员权力执行.不然80端口不能被Apache服务使用.要不然修改conf文件的端口.</li><br>    <li>     Apache启动后,在浏览器里输入 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost/</a> 应该可以看到 It Words 安装成功信息.那么 Apache服务器就安装好了.我们关掉它.<br><br>sudo /usr/local/apache2/bin/apachectl stop</li></ol></p>
+
+<p>现在把apache添加到系统启动服务里让它自动启动.<br><br>sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache.server<br><br>cd /etc/init.d<br><br>sudo update-rc.d apache.server defaults<br></p>
 
           
         
@@ -845,7 +1147,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/02/old_blog/2008-01-02-ubuntu手动安装apache/">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/01/old_blog/2008-01-01-简单易懂的事件传递结构/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
@@ -864,7 +1166,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2008/01/02/old_blog/2008-01-02-ubuntu手动安装apache/" itemprop="url">ubuntu 手动安装Apache</a></h1>
+                <a class="post-title-link" href="/2008/01/01/old_blog/2008-01-01-简单易懂的事件传递结构/" itemprop="url">简单易懂的事件传递结构</a></h1>
         
 
         <div class="post-meta">
@@ -876,8 +1178,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-01-02T00:00:00+00:00">
-                2008-01-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-01-01T00:00:00+00:00">
+                2008-01-01
               </time>
             
 
@@ -899,8 +1201,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
+                  <a href="/categories/actionscript/" itemprop="url" rel="index">
+                    <span itemprop="name">actionscript</span>
                   </a>
                 </span>
 
@@ -938,9 +1240,9 @@
       
         
           
-            <p><br><ol><br>    <li>去www.apache.org下载apache(httpd的一个bz2的包)，一般放到～目录下的</li><br>    <li>解压压缩包：tar -zxvf 你下载的包名称（如： httpd<em>.tar.gz）</em></li><br>    <li>一次执行下面的语句<br><br>cd httpd<br><br>./configure –prefix=/usr/local/apache2<br><br>make<br><br>sudo make install</li><br>    <li>sudo /usr/local/apache2/bin/apachectl stop (如果安装成功的话,默认已经启动了该服务,不管有没有启动,先关掉它.)<br><br>初步修改一下httpd.conf文件<br><br>sudo gedit /usr/local/apache2/conf/httpd.conf<br><br>找到 行: #ServerName www.example.com:80<br><br>在它下面一行加入: ServerName localhost</li><br>    <li>现在启动httpd服务<br><br>sudo /usr/local/apache2/bin/apachectl start<br><br>一定要用sudo,管理员权力执行.不然80端口不能被Apache服务使用.要不然修改conf文件的端口.</li><br>    <li>     Apache启动后,在浏览器里输入 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost/</a> 应该可以看到 It Words 安装成功信息.那么 Apache服务器就安装好了.我们关掉它.<br><br>sudo /usr/local/apache2/bin/apachectl stop</li></ol></p>
+            <p>右击ViewSource，查看源代码</p>
 
-<p>现在把apache添加到系统启动服务里让它自动启动.<br><br>sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache.server<br><br>cd /etc/init.d<br><br>sudo update-rc.d apache.server defaults<br></p>
+<p><object width="557" height="489" type="application/x-shockwave-flash"></object> <object width="557" height="489" data="http://www.rubenswieringa.com/blog/wp-content/uploads/2007/flexeventbubbling/main.swf" type="application/x-shockwave-flash"><param name="src" value="http://www.rubenswieringa.com/blog/wp-content/uploads/2007/flexeventbubbling/main.swf"></object></p>
 
           
         
@@ -1093,150 +1395,6 @@
 <p><param name="width" value="612"><br><param name="height" value="453"><br><param name="src" value="http://www.adobe.com/devnet/flex/samples/fig_callout/FIG_InstantiatedCallout.swf">     <embed src="http://www.adobe.com/devnet/flex/samples/fig_callout/FIG_InstantiatedCallout.swf" type="application/x-shockwave-flash" height="453" width="612"></p>
 
 <p><a href="http://www.adobe.com/devnet/flex/samples/fig_callout/srcview/FIG_InstantiatedCallout.zip" target="_blank" title="下载">下载代码</a> 右击ViewSource不能出现源代码页面,请单击<a href="http://www.adobe.com/devnet/flex/samples/fig_callout/srcview/index.html" target="_blank">这里</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/01/old_blog/2008-01-01-简单易懂的事件传递结构/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/01/01/old_blog/2008-01-01-简单易懂的事件传递结构/" itemprop="url">简单易懂的事件传递结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-01-01T00:00:00+00:00">
-                2008-01-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>右击ViewSource，查看源代码</p>
-
-<p><object width="557" height="489" type="application/x-shockwave-flash"></object> <object width="557" height="489" data="http://www.rubenswieringa.com/blog/wp-content/uploads/2007/flexeventbubbling/main.swf" type="application/x-shockwave-flash"><param name="src" value="http://www.rubenswieringa.com/blog/wp-content/uploads/2007/flexeventbubbling/main.swf"></object></p>
 
           
         
@@ -1578,154 +1736,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/12/01/old_blog/2007-12-01-python实现的rtmp协议/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/12/01/old_blog/2007-12-01-python实现的rtmp协议/" itemprop="url">python实现的RTMP协议</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-12-01T00:00:00+00:00">
-                2007-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> <a href="http://rtmpy.org/" target="_blank" rel="noopener">http://rtmpy.org/</a></p>
-
-<p>一个开源的python实现的trmp协议，可以开发开源的视频录制</p>
-
-<p>相关链接：</p>
-
-<p><a href="http://www.openred5.com/bbs/forumdisplay.php?fid=20&amp;page=1" target="_blank" rel="noopener">http://www.openred5.com/bbs/forumdisplay.php?fid=20&amp;page=1</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1776,7 +1786,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">278</span>
+                  <span class="site-state-item-count">279</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1798,7 +1808,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">188</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

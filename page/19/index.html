@@ -257,7 +257,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-flex中一个可以交互的tooltip组件/">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/03/17/old_blog/2008-03-17-在ubuntu中捕获trace/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
@@ -276,7 +276,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2008/02/02/old_blog/2008-02-02-flex中一个可以交互的tooltip组件/" itemprop="url">Flex中一个可以交互的ToolTip组件</a></h1>
+                <a class="post-title-link" href="/2008/03/17/old_blog/2008-03-17-在ubuntu中捕获trace/" itemprop="url">在ubuntu中捕获trace</a></h1>
         
 
         <div class="post-meta">
@@ -288,8 +288,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-02-02T00:00:00+00:00">
-                2008-02-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-03-17T00:00:00+00:00">
+                2008-03-17
               </time>
             
 
@@ -311,8 +311,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/flex/" itemprop="url" rel="index">
-                    <span itemprop="name">flex</span>
+                  <a href="/categories/actionscript/" itemprop="url" rel="index">
+                    <span itemprop="name">actionscript</span>
                   </a>
                 </span>
 
@@ -350,13 +350,163 @@
       
         
           
-            <p><img src="file:///C:/DOCUME%7E1/yang/LOCALS%7E1/Temp/moz-screenshot-1.jpg" alt=""></p>
+            <p>在ubuntu下的firefox中有一个这样的插件flashtracer插件，配置好他就能捕获你的trace，当然你的flashplayer一定要是debug版本的</p>
 
-<p>源链接：<a href="http://www.meutzner.com/blog/index.cfm/2008/2/20/A-PersistentInteractive-Tooltip-in-Flex" target="_blank" rel="noopener">http://www.meutzner.com/blog/index.cfm/2008/2/20/A-PersistentInteractive-Tooltip-in-Flex</a></p>
+<p>参考此网站：<a href="http://www.sephiroth.it/weblog/archives/2007/01/install_flashtracer_on_linux.php" target="_blank">http://www.sephiroth.it/weblog/archives/2007/01/install_flashtracer_on_linux.php </a></p>
 
-<p><img src="http://meutzner.com/blog/attachments/menu_tooltip/menu_tooltip.png" alt=""><br><a href="http://www.meutzner.com/blog/attachments/menu_tooltip/" target="_blank">Example Here</a></p>
+<p>其实你也可以手动把trace捕获到一个文件里，具体的配置是</p>
 
-<p><a href="http://www.meutzner.com/blog/attachments/menu_tooltip/srcview/index.html" target="_blank">Source Here</a></p>
+<p>在你的～目录下新建一个mm.cfg（在windows中一般是c盘），在ubuntu下一般就是/home/{username}；其中的{username}就是你系统的登录名<br><table style="width: 552px; height: 99px;" border="1" cellspacing="0" cellpadding="0" width="552"><br><tbody><br><tr><br><td>操作系统</td><br><td>位置</td><br></tr><br><tr><br><td>Windows XP</td><br><td>C:Documents and Settings[user name]mm.cfg</td><br></tr><br><tr><br><td>Windows 2000</td><br><td>C:mm.cfg</td><br></tr><br><tr><br><td>Mac OS X</td><br><td>MacHD:Library:Application Support:macromedia:mm.cfg</td><br></tr><br><tr><br><td>ubuntu</td><br><td>/home/[user name]/mm.cfg</td><br></tr><br></tbody><br></table><br>在这个文件中写入以下内容</p>
+
+<p>TraceOutPutFileName=/home/fireyang/.macromedia/Flash_Player/Logs/flashlog.txt<br><br>ErrorReportingEnable=1<br><br>TraceOutputFileEnable=1<br><br>MaxWarnings=100</p>
+
+<p>其中：<br><br>TraceOutputFileEnable<br><br>设置值为 0 (不写入文件) 或 1 (写入文件).<br><br>TraceOutputFileName<br><br>文件路径，如果没有指定，会在mm.cfg的同目录下生成一个叫flashlog.txt文件<br><br>ErrorReportingEnable<br><br>设置值为 0 (不输出错误信息到文件) 或 1 (输出错误信息). 默认为0<br><br>MaxWarnings<br><br>写入文件的错误信息数量。如果为0则没有限制。</p>
+
+<p>Ps:从Flash Player 9 Update开始，我们不能修改日志文件的位置了，默认的位置为：<br><br>Windows C:\Documents  and Settings\user_name\Application Data\Macromedia\Flash Player\Logs<br><br>Macintosh  Users/user_name/Library/Preferences/Macromedia/Flash Player/Logs/<br><br>Linux  home/user_name/macromedia/Flash_Player/Logs/flashlog.txt</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-喜欢开源，关注aswing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/02/02/old_blog/2008-02-02-喜欢开源，关注aswing/" itemprop="url">喜欢开源，关注ASWing</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-02-02T00:00:00+00:00">
+                2008-02-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/actionscript/" itemprop="url" rel="index">
+                    <span itemprop="name">actionscript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> 转到ubuntu有一段时间了，喜欢AS的我，开始关注AS的开源的东西，虽然已经安装了linux版的flex，但是怎么能把ASWing给遗漏呢，</p>
+
+<p><a href="http://www.aswing.org/" target="_blank">http://www.aswing.org/</a>，时刻关注</p>
 
           
         
@@ -551,6 +701,154 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-flex中一个可以交互的tooltip组件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/02/02/old_blog/2008-02-02-flex中一个可以交互的tooltip组件/" itemprop="url">Flex中一个可以交互的ToolTip组件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-02-02T00:00:00+00:00">
+                2008-02-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/flex/" itemprop="url" rel="index">
+                    <span itemprop="name">flex</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="file:///C:/DOCUME%7E1/yang/LOCALS%7E1/Temp/moz-screenshot-1.jpg" alt=""></p>
+
+<p>源链接：<a href="http://www.meutzner.com/blog/index.cfm/2008/2/20/A-PersistentInteractive-Tooltip-in-Flex" target="_blank" rel="noopener">http://www.meutzner.com/blog/index.cfm/2008/2/20/A-PersistentInteractive-Tooltip-in-Flex</a></p>
+
+<p><img src="http://meutzner.com/blog/attachments/menu_tooltip/menu_tooltip.png" alt=""><br><a href="http://www.meutzner.com/blog/attachments/menu_tooltip/" target="_blank">Example Here</a></p>
+
+<p><a href="http://www.meutzner.com/blog/attachments/menu_tooltip/srcview/index.html" target="_blank">Source Here</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-as倒影组件（更新）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -645,150 +943,6 @@
         
           
             <p><br><ul><br>    <li><a href="http://www.rictus.com/flex/LiveReflection/LiveReflection.html" target="_blank">View the demo</a></li><br>    <li><a href="http://www.rictus.com/flex/LiveReflection/srcview/index.html" target="_blank">View the source</a></li><br>    <li><a href="http://www.rictus.com/flex/LiveReflection/srcview/LiveReflection.zip" target="_blank" rel="noopener">Download the source (ZIP, 12K)</a></li><br></ul></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-喜欢开源，关注aswing/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/02/02/old_blog/2008-02-02-喜欢开源，关注aswing/" itemprop="url">喜欢开源，关注ASWing</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-02-02T00:00:00+00:00">
-                2008-02-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> 转到ubuntu有一段时间了，喜欢AS的我，开始关注AS的开源的东西，虽然已经安装了linux版的flex，但是怎么能把ASWing给遗漏呢，</p>
-
-<p><a href="http://www.aswing.org/" target="_blank">http://www.aswing.org/</a>，时刻关注</p>
 
           
         
@@ -941,6 +1095,148 @@
 <p><a title="fleximage.jpeg" href="http://www.fireyang.com/blog//wp-content/uploads/2008/03/fleximage.jpeg" target="_blank" rel="noopener"><img src="http://www.fireyang.com/blog//wp-content/uploads/2008/03/fleximage.jpeg" alt="fleximage.jpeg" align="bottom"></a><a title="blazs图标" href="http://www.fireyang.com/blog//wp-content/uploads/2008/03/imageaxd2.jpeg" target="_blank" rel="noopener"><img src="http://www.fireyang.com/blog//wp-content/uploads/2008/03/imageaxd2.jpeg" alt="blazs图标" align="bottom"></a></p>
 
 <p><a href="http://opensource.adobe.com/svn/opensource/" target="_blank"></a><a href="http://opensource.adobe.com/svn/opensource/" target="_blank"> </a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/01/old_blog/2008-02-01-ubuntu下切换jdk版本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/02/01/old_blog/2008-02-01-ubuntu下切换jdk版本/" itemprop="url">Ubuntu下切换JDK版本</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-02-01T00:00:00+00:00">
+                2008-02-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
+                    <span itemprop="name">ubuntu</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><br><ol><br>    <li>sudo update-alternatives –config java<br><br>这个语句将你系统下的所有jdk版本显示出来，你再输入索引号就可以了；</li><br></ol></p>
 
           
         
@@ -1281,148 +1577,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/01/old_blog/2008-02-01-ubuntu下切换jdk版本/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/02/01/old_blog/2008-02-01-ubuntu下切换jdk版本/" itemprop="url">Ubuntu下切换JDK版本</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-02-01T00:00:00+00:00">
-                2008-02-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><br><ol><br>    <li>sudo update-alternatives –config java<br><br>这个语句将你系统下的所有jdk版本显示出来，你再输入索引号就可以了；</li><br></ol></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/03/old_blog/2008-01-03-关于如果保存gvim的配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1552,164 +1706,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/03/old_blog/2008-01-03-vim中文帮助的安装/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/01/03/old_blog/2008-01-03-vim中文帮助的安装/" itemprop="url">vim中文帮助的安装</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-01-03T00:00:00+00:00">
-                2008-01-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> 首先去<a href="http://sourceforge.net/projects/vimcdoc/下一个安装包" target="_blank" rel="noopener">http://sourceforge.net/projects/vimcdoc/下一个安装包</a></p>
-
-<p><span class="postbody"><br>下载的 tar.gz 包括所有翻译过的 vim 文档 (.cnx 文件)。</span></p>
-
-<p>先将其解压缩：</p>
-
-<p>tar zxvf vimcdoc-&lt;versoin&gt;.tar.gz</p>
-
-<p>然后进入 vimcdoc-&lt;version&gt; 目录并执行</p>
-
-<p>./vimcdoc.sh -i</p>
-
-<p>就可以了。该安装程序会自动识别 Vim 的安装路径，将中文的文档拷贝</p>
-
-<p>到相应的地方。原有的英文文档不受影响。</p>
-
-<p>现在就可以启动vim看一下了</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1760,7 +1756,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">278</span>
+                  <span class="site-state-item-count">279</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1782,7 +1778,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">188</span>
+                  <span class="site-state-item-count">189</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
