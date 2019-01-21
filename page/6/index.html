@@ -266,6 +266,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/07/15/old_blog/2010-07-15-打破flash中bitmapdata-2800x2800的限制！/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2010/07/15/old_blog/2010-07-15-打破flash中bitmapdata-2800x2800的限制！/" itemprop="url">打破flash中bitmapData 2800X2800的限制！</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2010-07-15T00:00:00+00:00">
+                2010-07-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/其他/" itemprop="url" rel="index">
+                    <span itemprop="name">其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>关于图像数据一般都用bitmapData这个类来处理，但是它的局限就是大于2800X2800的大图片就没办法保存了。</p>
+
+<p>根据bit-101的方法就是用自定义一个类用，多个bitmapData组合来使用。</p>
+
+<p>设计如下：<br><ol><br>    <li>如果像素在2800之内，当然就用一个bitmapData就可以了</li><br>    <li>如果宽度大于2800，就用多个横向的bitmapData来保存。长度超过2800也是一样。（类似将大图片按切片）</li><br></ol><br>作者的说明：<a href="http://www.bit-101.com/blog/?p=1199" target="_blank">http://www.bit-101.com/blog/?p=1199</a></p>
+
+<p>处理类：<a href="http://www.bit-101.com/blog/wp-content/uploads/2008/03/BigAssCanvas.as" target="_blank">BigAssCanvas.as</a></p>
+
+<p>使用：</p>
+
+<p>var myBigAssCanvas:BigAssCanvas = new BigAssCanvas(10000, 10000, true, 0xff000000);<br><br>addChild(myBigAssCanvas);</p>
+
+<p><span style="color: #ff0000;">注意：</span><span style="color: #ff0000;">这个类不是bitmapData，它可以直接添加到显示列表中。</span></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/07/05/old_blog/2010-07-05-【官方】flash性能优化/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1581,153 +1735,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/04/17/old_blog/2010-04-17-解决prism无法启动/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2010/04/17/old_blog/2010-04-17-解决prism无法启动/" itemprop="url">解决prism无法启动</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2010-04-17T00:00:00+00:00">
-                2010-04-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这几天在折腾ubuntu 10.04的内核升级，没想到把prism给破坏了……<br><br>错误提示：<br><br>Could not find compatible GRE between version 1.9.2 and 1.9.2.*.<br><br>执行修复：<br><br>sudo xulrunner-1.9.2 –register-global<br><br>不要问我原理，因为我也不知道，哈哈哈哈</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1773,7 +1785,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">280</span>
+                  <span class="site-state-item-count">281</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1784,7 +1796,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1795,7 +1807,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">190</span>
+                  <span class="site-state-item-count">191</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1848,7 +1860,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
