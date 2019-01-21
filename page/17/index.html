@@ -266,6 +266,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/07/12/old_blog/2008-07-12-air调用其他应用程序/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/07/12/old_blog/2008-07-12-air调用其他应用程序/" itemprop="url">Air调用其他应用程序</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-07-12T00:00:00+00:00">
+                2008-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Air/" itemprop="url" rel="index">
+                    <span itemprop="name">Air</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>如果用air去跳转到一个特定的文件，系统会根据这个文件的类型，启用他默认的应用程序，如下：<br><blockquote>&lt;?xml version=<span style="color: #0000ff;">“1.0”</span> encoding=<span style="color: #0000ff;">“utf-8”</span>?&gt;<br><span style="color: #000080;">&lt;mx:WindowedApplication xmlns:mx=<span style="color: #0000ff;">“<a href="http://www.adobe.com/2006/mxml" target="_blank">http://www.adobe.com/2006/mxml</a>“</span> layout=<span style="color: #0000ff;">“absolute”</span>&gt;</span><br><span style="color: #000080;">&lt;mx:Script&gt;</span>&lt;![CDATA[<br><br>import flash.net.URLRequest;</blockquote></p>
+
+<p>public function clickButton():void{<br><br>var request : URLRequest = new URLRequest(‘C:\projects\test.doc’);<br><br>navigateToURL(request )<br><br>}<br>]]&gt;<span style="color: #000080;">&lt;/mx:Script&gt;</span></p>
+
+<p><span style="color: #000080;">&lt;mx:Button click=<span style="color: #0000ff;">“clickButton()”</span> /&gt;</span><br><span style="color: #000080;">&lt;/mx:WindowedApplication&gt;</span><br>这样就会用word打开这个文件了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/07/12/old_blog/2008-07-12-一个air的托盘按钮实现/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1549,148 +1695,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/05/06/old_blog/2008-05-06-vim插件snippetsemu/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/05/06/old_blog/2008-05-06-vim插件snippetsemu/" itemprop="url">vim插件snippetsEmu</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-05-06T00:00:00+00:00">
-                2008-05-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在vim中配置了这个插件，就可以用tab键，代码提示了，提高写代码速度<br><ol><br><ul><br>    <li>在<a href="http://www.vim.org/scripts/script.php?script_id=1318" target="_blank">这里</a>下载snippy_plugin.vba文件</li><br>    <li>用gvim打开，输入“：os%” ，这个脚本就自动安装了.vim插件了，在gvim中出现snippets的按钮了。</li><br>    <li>然后在你的vim目录下配置脚本目录，我的是ubuntu系统，目录是~/.vim/after/ftplugin</li><br>    <li> 如果没有，你可以创建这样的路径</li><br>    <li>在<a href="http://snippetsemu.googlecode.com/svn/trunk/after/ftplugin/" target="_blank">这里</a>下载已有的文件到上面的目录下，这样你就可以在gvim中使用，gvim的snippets菜单下就有你配置的代码段了，选择使用。</li><br>    <li> 你也可以去<a href="http://code.google.com/p/snippetsemu/" target="_blank">http://code.google.com/p/snippetsemu/</a>；寻找代码段，应该更新一点</li><br>    <li>附一段视频（django_model)</li><br>    <li><a href="http://ttyshare.com/rec/mopemope/3716682/" target="_blank">http://ttyshare.com/rec/mopemope/3716682/</a></li><br></ul><br></ol></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1741,7 +1745,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">281</span>
+                  <span class="site-state-item-count">282</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1752,7 +1756,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1763,7 +1767,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">191</span>
+                  <span class="site-state-item-count">192</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

@@ -266,6 +266,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2007/10/01/old_blog/2007-10-01-/" itemprop="url">.NET中SQL的Parameter占位符的使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-10-01T00:00:00+00:00">
+                2007-10-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/未分类/" itemprop="url" rel="index">
+                    <span itemprop="name">未分类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p></p><p><br>在一般的情况想在<br></p><br><ol><br>    <li>OLE DB .NET Framework 数据提供程序和 ODBC .NET Framework 数据提供程序不支持用于将参数传递到 SQL 语句或存储过程的命名参数。在此情况下，<strong>必须使用问号 (?) 占位符</strong>，<strong>顺序必须与存储过程中所定义的参数顺序相匹配，</strong>如以下示例所示。SELECT * FROM Customers WHERE CustomerID = ?；在Access中你可以使用@CustomerId也可以使用&ldquo;？&rdquo;但是在DB2中你只能使用&ldquo;？&rdquo;，使用前者会出现错误提示。</li><br></ol><br><p><br>一般的规则如下：<br></p><br><ol><br>    <li>SqlCommand should be &#39;@&#39; character </li><br>    <li>OleDbCommand or OdbcCommand should be &#39;?&#39; character </li><br>    <li>OracleCommand should be &#39;:&#39; character </li><br></ol><br><p></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-Picasa+的Flash浏览插件/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1509,148 +1651,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/09/02/old_blog/2007-09-02-QQ远程协助的一个bug/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/09/02/old_blog/2007-09-02-QQ远程协助的一个bug/" itemprop="url">QQ远程协助的一个bug</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-09-02T00:00:00+00:00">
-                2007-09-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br>QQ的远程协助，开始用感觉还不错，如果有朋友有什么问题，可以直接发给我控制处理，但是最近更新了版本，却出现了这样的Bug：<br></p><br><p><br>图形传输很卡，出现局部黑屏现象，可能是为了应付网络速度的原因，采用这样的方法，但是这样也造成了不便，附截图：&nbsp;<br></p><br><p><br>&nbsp;<br></p><br><img src="/image.axd?picture=QQbug3.jpg" alt="" width="585" height="443"> <img src="/image.axd?picture=QQbug4.jpg" alt="" width="591" height="376"><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1701,7 +1701,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">281</span>
+                  <span class="site-state-item-count">282</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1712,7 +1712,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1723,7 +1723,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">191</span>
+                  <span class="site-state-item-count">192</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

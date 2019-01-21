@@ -266,6 +266,154 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/04/24/old_blog/2009-04-24-as3最佳技巧和实践/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2009/04/24/old_blog/2009-04-24-as3最佳技巧和实践/" itemprop="url">AS3最佳技巧和实践</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-04-24T00:00:00+00:00">
+                2009-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/actionscript/" itemprop="url" rel="index">
+                    <span itemprop="name">actionscript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在网络上找到很多关于AS3实践优化的资料，自己整理下（自己还没有验证过，有时间再写测试代码）：<br><ol><br>    <li>new Array() 和 new Object() 比直接用 [] 和 {}慢3倍的效率：<br><blockquote>var a = [];<br><br>var b = {};</blockquote><br>代替<br><blockquote>var a =new Array();<br><br>var b = new Object;</blockquote><br></li><br>    <li> 数组的索引用整数：<br><code>list[int(0)]比直接用list[0]快。<br></code></li><br>    <li>Array的创建是消耗是非常大的，所以不要这样做，尽可能重复利用，更新数组相对性能小很多：<br><pre><span class="category1">var</span> vanityCollection01 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();<br><span class="category1">var</span> vanityCollection02 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();<br><span class="category1">var</span> vanityCollection03 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();<br><span class="category1">var</span> vanityCollection04 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();</pre><br></li><br>    <li>更快的数组拷贝：<br><pre><span class="category1">var</span> <span class="category2">copy</span> : <span class="category2">Array</span> = sourceArray.<span class="category2">concat</span>();</pre><br></li><br>    <li>用{}的匿名对象创建比new 快：<br><pre><span class="category1">var</span> <span class="category2">o</span> : * = {firstName:”<span class="quote">John</span>“,lastName:”<span class="quote">Smith</span>“,age:45 };<br>NOT:<br><span class="category1">var</span> p : Person = <span class="category1">new</span> Person();<br>p.firstName = “<span class="quote">John</span>“;<br>p.lastName = “<span class="quote">Smith</span>“;<br>p.age = 45;</pre><br></li><br>    <li>静态函数应用，不需要创建对象实例：<br><pre>StringUtils.trim( “<span class="quote">text with space at end </span>“ );<br>类定义:<br>package<br>{<br>     <span class="category1">public</span> final <span class="category1">class</span> StringUtils<br>         {<br>          <span class="category1">public</span> <span class="category1">static</span> <span class="category1">function</span> trim( s : <span class="category2">String</span> ) : <span class="category2">String</span><br>          {<br>               <span class="category1">var</span> trimmed : <span class="category2">String</span>;<br>               <span class="linecomment">// implementation… </span><br>               <span class="category1">return</span> trimmed;<br>           }<br>      }<br>}</pre><br></li><br>    <li>在应用程序中，常量定义是无法修改的：<br><pre><span class="category1">public</span> const APPLICATION_PUBLISHER : <span class="category2">String</span> = “<span class="quote">Kannopy, Inc.</span>“;</pre><br></li><br>    <li>不想被继承的类，可以用final来修饰：<br><pre><span class="category1">public</span> final <span class="category1">class</span> StringUtils</pre><br></li><br>    <li>package级别的函数和变量，不需要类和对象实例，直接调用（这些好像还没怎么用到）：<br><pre>createSnapShot( arg );</pre><br>不需要：<br><pre>someObjectInstance.createSnapShot( arg );</pre><br><pre>SomeClass.createSnapShot( arg );</pre><br>类定义：<br><pre>package<br>{<br>     <span class="linecomment">// imports&amp;#133;; </span><br>     <span class="category1">public</span> <span class="category1">function</span> createSnapShot(<span class="category2">target</span>:IBitmapDrawable) : Bitmap<br>     {<br>          <span class="linecomment">// implementation&amp;#133; </span><br>      }<br>}</pre><br></li><br>    <li>if和switch的效率是一样的，：<br><pre><span class="category1">if</span> ( condition )<br>{<br>     <span class="linecomment">// handle condition </span><br>} </pre></li></ol></p>
+
+<p><span class="category1">switch</span> ( condition )<br><br>{<br>     <span class="category1">case</span> “<span class="quote">A</span>“:<br><br>         <span class="linecomment">// logic to handle case A </span><br>     <span class="category1">break</span>; </p>
+
+<p>     <span class="category1">case</span> “<span class="quote">B</span>“:<br><br>         <span class="linecomment">// logic to handle case B  </span><br>     <span class="category1">break</span>;<br><br>}<br><br>    <li>AVM中用int比Number在执行循环速度要快：<br><pre>(<span class="category1">var</span> i: <span class="category1">int</span> = 0; i &lt; n; i++) NOT <span class="category1">for</span> (<span class="category1">var</span> i: <span class="category2">Number</span> = 0; i &lt; n; i++)</pre><br></li><br>    <li>uint要少用，比较慢：<code><br></code><br><pre><span class="category1">var</span> footerHex : uint = 0x00ccff;</pre><br><pre><span class="category1">for</span> (;i&lt;n2;i++) Vector3D(array[<span class="category1">int</span>(i<em>2)]).<span class="category2">x</span> = 2;</em></pre><br>不要用（因为会自动转为Number的）：<br><pre><span class="category1">for</span> (;i&lt;n2;i++) Vector3D(array[i2]).<span class="category2">x</span> = 2;</pre><br></li><br>    <li>不要用int来赋值小数：<br><pre><span class="category1">var</span> decimal : <span class="category2">Number</span>  = 14.654;</pre><br>不要用（因为会自动转为Number的）：<br><pre><span class="category1">var</span> decimal : <span class="category1">int</span>  = 14.654;</pre><br></li><br>    <li>用乘法来代替除法：5000/1000=&gt;5000<em>0.001：</em></li><br>    <li>不要在循环内执行相同的运算：<br><pre><span class="category1">for</span> (..){a180/<span class="category2">Math</span>.<span class="category2">PI</span>;}<br>声明: toRadians = a*180/<span class="category2">Math</span>.<span class="category2">PI</span>; 放置到循环外面</pre><br><pre><span class="category1">for</span> (<span class="category1">var</span> i=0;i&lt; myArray.lengh;i++){ }</pre><br>应该采用：<br><pre><span class="category1">var</span> len : <span class="category1">int</span> = myArray.lengh;<br><span class="category1">for</span> (<span class="category1">var</span> i=0;i&lt;len;i++){}</pre><br></li><br>    <li>使用完事件监听需要remove掉<br><pre>removeEventListener( Event.COMPLETE, onComplete );</pre><br></li><br>    <li>使用delete释放内存<br><pre><span class="category1">delete</span> someObject;</pre><br></li><br>    <li>使用正则表达式验证，使用字符串搜索<br><pre><span class="linecomment">// postal code validation example using regular expressions </span><br><span class="category1">private</span> <span class="category1">var</span> regEx:RegExp = /^[A-Z][0-9][A-Z] [0-9][A-Z][0-9]$/i;<br><span class="category1">private</span> <span class="category1">function</span> validatePostal( event : Event ) : <span class="category1">void</span><br>{<br>     <span class="category1">if</span>( regEx.test( zipTextInput.<span class="category2">text</span> ) )<br>     {<br>          <span class="linecomment">// handle invalid input case </span><br>      }<br>} </pre></li></p>
+
+<p><span class="linecomment">// search a string using String methods </span><br><span class="category1">var</span> string : <span class="category2">String</span> = “<span class="quote">Search me</span>“;<br><span class="category1">var</span> searchIndex : <span class="category1">int</span> = string.<span class="category2">indexOf</span>( “<span class="quote">me</span>“ );<br><span class="category1">var</span> search : <span class="category2">String</span> = string.<span class="category2">substring</span>( searchIndex, searchIndex + 2 );<br><br>    <li>重用对象特别是（DisplayObjects, URLLoader），保持内存使用平稳，因为创建这些对象会使得cpu和内存占用加大，可能导致画面不流畅。</li><br>    <li>使用delete释放内存<br><pre><span class="category1">delete</span> someObject;</pre><br></li><br><br>继续补充中……</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/04/22/old_blog/2009-04-22-［原创翻译］flex性能,内存管理和对象缓存/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1569,160 +1717,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/03/25/old_blog/2009-03-25-微软的开源web平台/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/03/25/old_blog/2009-03-25-微软的开源web平台/" itemprop="url">微软的开源web平台</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-03-25T00:00:00+00:00">
-                2009-03-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Net/" itemprop="url" rel="index">
-                    <span itemprop="name">.Net</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img class="alignnone size-full wp-image-405" title="aaa" src="/media/2009/03/aaa.jpg" alt="aaa" width="237" height="62"></p>
-
-<p><img class="alignnone size-full wp-image-406" title="bbb" src="/media/2009/03/bbb.jpg" alt="bbb" width="512" height="340"></p>
-
-<p>稍微看了下，以下几点不错</p>
-
-<p>一、有个微软的web平台蛮好的，<a href="http://www.microsoft.com/web/downloads/platform.aspx" target="_blank">http://www.microsoft.com/web/downloads/platform.aspx</a><br><ol></ol><br></p><p style="padding-left: 30px;">其中集成了IIS, SQL Server Express, .NET Framework 和                      Visual Web Developer。</p><br><p style="padding-left: 30px;">对asp.net和php的支持良好，你也不妨下过来试试。</p><p></p>
-
-<p>二、比较多的开源项目集成：<a href="http://www.microsoft.com/web/gallery/Default.aspx" target="_blank">http://www.microsoft.com/web/gallery/Default.aspx</a><br></p><p style="padding-left: 30px;">看到了几个熟悉的项目：wordpress,drupal,BlogEngine.NET,这些都是不错的项目，不论是使用，还是学习</p><p></p>
-
-<p>三、还看到了一些开发工具、等等</p>
-
-<p>看到上面几点，可能还有其他东西，看来微软对开源还是有点动作的，期待更大点……<br><ol></ol></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1773,7 +1767,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">281</span>
+                  <span class="site-state-item-count">282</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1784,7 +1778,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1795,7 +1789,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">191</span>
+                  <span class="site-state-item-count">192</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
