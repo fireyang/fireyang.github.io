@@ -140,7 +140,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -151,7 +151,7 @@
   page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -261,20 +261,162 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/02/old_blog/2007-10-02-DB2小技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2007/10/02/old_blog/2007-10-02-DB2小技巧/" itemprop="url">DB2小技巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-10-02T00:00:00+00:00">
+                2007-10-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/未分类/" itemprop="url" rel="index">
+                    <span itemprop="name">未分类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><ol><br>    <li>取時間點的年份的寫法:<br><br>    SELECT YEAR(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的月份的寫法:<br><br>    SELECT MONTH(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的日的寫法:<br><br>    SELECT DAY(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的時的寫法:<br><br>    SELECT HOUR(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的分的寫法:<br><br>    SELECT MINUTE(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的秒的寫法:<br><br>    SELECT SECOND(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的毫秒的寫法:<br><br>    SELECT MICROSECOND(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的日期的寫法:<br><br>    SELECT DATE(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>取時間點的時間的寫法:<br><br>    SELECT TIME(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>日期,時間形態變為字符形態:<br><br>    SELECT char(current date) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT char(current time) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT char(current date+12 hours) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>將字符串轉換成日期或時間形態:<br><br>    SELECT TIMESTAMP(&#39;2002-10-20-12.00.00.000000&#39;) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT TIMESTAMP(&#39;2002-10-20 12:00:00&#39;) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT DATE(&#39;2002-10-20&#39;) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT DATE(&#39;10/20/2002&#39;) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT TIME(&#39;12:00:00&#39;) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT TIME (&#39;12.00.00&#39;) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>返回參數的星期几的寫法:<br><br>    SELECT DAYNAME(current timestamp) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT DAYOFWEEK(current timestamp) FROM SYSIBM.SYSDUMMY1;<br><br>    SELECT DAYOFWEEK_ISO(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>返回參數一年中的第几天的寫法:<br><br>    SELECT DAYOFYEAR(current timestamp) FROM SYSIBM.SYSDUMMY1;</li><br>    <li>返回午夜和參數中指定的時間值之間的秒數的寫法:<br><br>    SELECT MIDNIGHT_SECONDS(current timestamp) FORM SYSIBM.SYSDUMMY1;</li><br>    <li>返回參數中一年的第几周的寫法:<br><br>    SELECT WEEK(current timestamp) FORM SYSIBM.SYSDUMMY1<br><br>    </li><br></ol><br></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -319,7 +461,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -403,20 +545,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-Picasa+的Flash浏览插件/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -461,7 +603,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -545,20 +687,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-SqlCommandBuilder+的强大作用/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -603,7 +745,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -687,20 +829,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-String类静态方法需要注意的地方/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -745,7 +887,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -829,20 +971,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-发人深省的一段话/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -887,7 +1029,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -971,20 +1113,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-彩云之南/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1029,7 +1171,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -1069,7 +1211,7 @@
       
         
           
-            <p></p><h1>&nbsp;&nbsp;</h1><br><h1>彩云之南,我心的方向&nbsp;<br><br>孔雀飞去,回忆悠长&nbsp;<br><br>玉龙雪山,闪耀着银光&nbsp;<br><br>秀色丽江,人在路上&nbsp;</h1><img src="/image.axd?picture=200710101.jpg" alt="" width="416" height="488"><br><p></p>
+            <p></p><h1>&nbsp;&nbsp;</h1><br><h1>彩云之南,我心的方向&nbsp;<br><br>孔雀飞去,回忆悠长&nbsp;<br><br>玉龙雪山,闪耀着银光&nbsp;<br><br>秀色丽江,人在路上&nbsp;</h1><img src="/image.axd?picture=200710101.jpg" alt width="416" height="488"><br><p></p>
 
           
         
@@ -1113,20 +1255,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-获取类的所有属性和方法/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1171,7 +1313,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -1255,20 +1397,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-读取存储过程中的参数方法/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1313,7 +1455,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -1397,20 +1539,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-翻译：构建AdobeRIA离线应用程序（未完成）/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1509,148 +1651,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/09/03/old_blog/2007-09-03-初到云南/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/09/03/old_blog/2007-09-03-初到云南/" itemprop="url">初到云南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-09-03T00:00:00+00:00">
-                2007-09-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br>29号的晚上9点多出发，到了这里将近凌晨！<br></p><br><p><br>夜晚，与温州并无多大区别，没有拍的冲动。&nbsp;<br></p><br><p><br>到宾馆，迅速连上网，发现没有网络日子不能过了，看看自己的blog，发现速度还行，上海的机房网络确实不错。<br></p><br><p><br>宾馆，不高级，但挺干净的，满身疲惫，洗去满身&ldquo;风尘&rdquo;，期待明天的行程！<br></p><br><img style="width: 350px; height: 231px" src="/image.axd?picture=SNV10005_%e7%bc%96%e8%be%91%e5%89%af%e6%9c%ac2.jpg" alt="" width="350" height="231"> <img style="width: 340px; height: 230px" src="/image.axd?picture=SNV10002%e5%89%af%e6%9c%ac.jpg" alt="" width="340" height="230"><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1688,7 +1688,7 @@
 
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">FireYang</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -1701,7 +1701,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">282</span>
+                  <span class="site-state-item-count">283</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1723,7 +1723,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">192</span>
+                  <span class="site-state-item-count">193</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

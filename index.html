@@ -140,7 +140,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -151,7 +151,7 @@
   page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -261,20 +261,155 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2019/03/20/mac-rust-cross-compile-armv7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/20/mac-rust-cross-compile-armv7/" itemprop="url">Mac OS下rust交叉编译armv7</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-20T16:08:25+00:00">
+                2019-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Mac-OS下rust交叉编译armv7"><a href="#Mac-OS下rust交叉编译armv7" class="headerlink" title="Mac OS下rust交叉编译armv7"></a>Mac OS下rust交叉编译armv7</h1><p>参考来源：<a href="https://sigmaris.info/blog/2019/02/cross-compiling-rust-on-mac-os-for-an-arm-linux-router/" target="_blank" rel="noopener">Cross compiling Rust on Mac OS for an ARM Linux router</a></p>
+<p>ps:尝试armv7-unknown-linux-gnueabihf失败</p>
+<ol>
+<li><p>添加target</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//查看armv7的target列表</span><br><span class="line">rustup target list | grep armv7</span><br><span class="line">//添加target</span><br><span class="line">rustup target add armv7-unknown-linux-musleabihf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装arm的编译工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install arm-linux-gnueabihf-binutils</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>指定linker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//在~/.cargo/config (不存在就新增)添加如下配置</span><br><span class="line">[target.armv7-unknown-linux-gnueabihf]</span><br><span class="line">linker = &quot;arm-linux-gnueabihf-ld&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cargo build --target=armv7-unknown-linux-musleabihf</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2019/01/21/2018/2019-01-21-asdf-install-erlang/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -319,7 +454,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/erlang/" itemprop="url" rel="index">
                     <span itemprop="name">erlang</span>
                   </a>
@@ -406,20 +541,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2019/01/21/2018/2019-01-21-brew-change-source/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -464,7 +599,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/brew/" itemprop="url" rel="index">
                     <span itemprop="name">brew</span>
                   </a>
@@ -548,20 +683,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2018/12/01/advent-of-code-2018/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -669,20 +804,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -791,20 +926,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2018/01/10/2018/2018-01-10-docker-hexo/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -849,7 +984,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/hexo/" itemprop="url" rel="index">
                     <span itemprop="name">hexo</span>
                   </a>
@@ -941,20 +1076,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2014/10/11/old_blog/2014-10-11-windows下的软件包管理/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -999,7 +1134,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/windows/" itemprop="url" rel="index">
                     <span itemprop="name">windows</span>
                   </a>
@@ -1090,20 +1225,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/09/11/old_blog/2013-09-11-新版loom发布，开源引擎！/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1148,7 +1283,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/其他/" itemprop="url" rel="index">
                     <span itemprop="name">其他</span>
                   </a>
@@ -1240,20 +1375,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-mac下用html5来播放视频/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1298,7 +1433,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/其他/" itemprop="url" rel="index">
                     <span itemprop="name">其他</span>
                   </a>
@@ -1338,7 +1473,7 @@
       
         
           
-            <p><img class="alignnone size-full wp-image-1009" title="a74ecc4cjw1e10fdarlf1j" src="/media/2013/03/a74ecc4cjw1e10fdarlf1j.jpg" alt="" width="1032" height="781"></p>
+            <p><img class="alignnone size-full wp-image-1009" title="a74ecc4cjw1e10fdarlf1j" src="/media/2013/03/a74ecc4cjw1e10fdarlf1j.jpg" alt width="1032" height="781"></p>
 
 <p>作者取了一个很搞的名称：<a href="http://zythum.sinaapp.com/youkuhtml5playerbookmark/" target="_blank">妈妈再也不用担心我的macbook发烫了计划2.0Beta</a></p>
 
@@ -1388,20 +1523,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-推荐一个强大的游戏开发工具：shoebox/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1446,7 +1581,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Air/" itemprop="url" rel="index">
                     <span itemprop="name">Air</span>
                   </a>
@@ -1486,165 +1621,13 @@
       
         
           
-            <p><img class="alignnone size-full wp-image-1003" title="9B74E658-6B07-4208-BC99-0D459E646242" src="/media/2013/03/9B74E658-6B07-4208-BC99-0D459E646242.png" alt="" width="650" height="224"></p>
+            <p><img class="alignnone size-full wp-image-1003" title="9B74E658-6B07-4208-BC99-0D459E646242" src="/media/2013/03/9B74E658-6B07-4208-BC99-0D459E646242.png" alt width="650" height="224"></p>
 
 <p>地址：<a title="http://renderhjs.net/shoebox/" href="http://renderhjs.net/shoebox/" target="_blank">http://renderhjs.net/shoebox/</a></p>
 
 <p>免费的游戏开发的素材整理工具，免费的，界面不错，基于AIR，跨平台。</p>
 
 <p>功能：<br><ol><br>    <li>打包图片，支持各种导出格式：cocos2d，starling，unity3d……</li><br>    <li>图片的9宫格处理</li><br>    <li>支持命令行调用，可以自定义脚本，批量处理</li><br>    <li>等等……（我太懒了！）</li><br></ol><br>英文详细介绍：<a title="http://renderhjs.net/shoebox/manual.htm" href="http://renderhjs.net/shoebox/manual.htm" target="_blank">http://renderhjs.net/shoebox/manual.htm</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2013/03/27/old_blog/2013-03-27-推荐个物理引擎编辑工具：cadet/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/03/27/old_blog/2013-03-27-推荐个物理引擎编辑工具：cadet/" itemprop="url">物理引擎编辑工具：Cadet</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-03-27T00:00:00+00:00">
-                2013-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img class="alignnone size-full wp-image-1017" title="8CCE016E-6EF4-41D6-BAD3-363A935ECF37" src="/media/2013/03/8CCE016E-6EF4-41D6-BAD3-363A935ECF37.jpg" alt="" width="504" height="534"></p>
-
-<p>地址：<a href="http://unwrong.com/cadet" target="_blank" rel="noopener">http://unwrong.com/cadet</a></p>
-
-<p>提供了两个免费的编辑器，分布支持2d和3d，2d主要就是针对box2d引擎，其他不多说了，自己体会吧。</p>
-
-<p>可直观的看到，还可以直接预览编辑结果(使用教程暂时不介绍了)：</p>
-
-<p><img class="alignnone size-full wp-image-1018" title="4EFFD25F-AE45-4CC3-9389-46DC697AB376" src="/media/2013/03/4EFFD25F-AE45-4CC3-9389-46DC697AB376.jpg" alt="" width="839" height="522"></p>
-
-<p>&nbsp;</p>
 
           
         
@@ -1717,7 +1700,7 @@
 
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">FireYang</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -1730,7 +1713,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">282</span>
+                  <span class="site-state-item-count">283</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1752,7 +1735,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">192</span>
+                  <span class="site-state-item-count">193</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

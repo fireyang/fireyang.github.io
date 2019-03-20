@@ -140,7 +140,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -151,7 +151,7 @@
   page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -261,20 +261,170 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/03/old_blog/2009-07-03-getdefinitionbynameembed使用，未定义错误/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2009/07/03/old_blog/2009-07-03-getdefinitionbynameembed使用，未定义错误/" itemprop="url">getDefinitionByName+Embed使用，未定义错误</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-07-03T00:00:00+00:00">
+                2009-07-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/actionscript/" itemprop="url" rel="index">
+                    <span itemprop="name">actionscript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>getDefinitionByName的用处是可以通过字符串映射的取到相应的类。<br><br>但是如果你在一个类中，embed一个图片，将这个图片声明为一个class 。这样用getDefinitionByName来调用，就会出现“未定义错误”。<br><pre>package<br>{<br>    import flash.display.Bitmap;<br>    import flash.display.MovieClip;<br>    import flash.utils.getDefinitionByName;</pre></p>
+
+<p>    /*<em><br>
+     </em> …<br><br>     <em> @author FireYang<br>
+     </em>/<br><br>    public class embedTest extends MovieClip<br><br>    {<br><br>        [Embed(source=”tile1.png”)]<br><br>        private var tile1:Class;</p>
+
+<p>        public function embedTest()<br><br>        {<br><br>            <span style="color: #ff0000;">var string:String = “embedTest_tile1”;//所在类名+”_”+embed的类名</span><br>            var c:Class = getDefinitionByName(string) as  Class;<br><br>            var b:Bitmap = new c();<br><br>            b.x = 100;<br><br>            b.y = 100;<br><br>            trace(b);<br><br>            addChild(b);<br><br>        }<br><br>    }<br><br>}<br>采用上面的形式，红色部分是重点，就没问题了！原因还没找到，呵呵，但是测试了没错！</p>
+
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="300" height="300" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="/media/2009/07/Main.swf"><embed type="application/x-shockwave-flash" width="300" height="300" src="/media/2009/07/Main.swf"></object></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/06/28/old_blog/2009-06-28-ubuntuflex-ant-task的问题/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -319,7 +469,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/flex/" itemprop="url" rel="index">
                     <span itemprop="name">flex</span>
                   </a>
@@ -413,20 +563,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/06/10/old_blog/2009-06-10-绿坝、花季，浪费国民血汗钱/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -471,7 +621,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/杂七杂八/" itemprop="url" rel="index">
                     <span itemprop="name">杂七杂八</span>
                   </a>
@@ -573,20 +723,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/06/09/old_blog/2009-06-09-flash开发者应该掌握的东西/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -631,7 +781,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/actionscript/" itemprop="url" rel="index">
                     <span itemprop="name">actionscript</span>
                   </a>
@@ -719,20 +869,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/06/03/old_blog/2009-06-03-twitter”终于“被墙了/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -777,7 +927,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/胡说八道/" itemprop="url" rel="index">
                     <span itemprop="name">胡说八道</span>
                   </a>
@@ -867,20 +1017,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/05/21/old_blog/2009-05-21-js中的小问题，未解/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -925,7 +1075,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/ajax/" itemprop="url" rel="index">
                     <span itemprop="name">ajax</span>
                   </a>
@@ -1015,20 +1165,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/05/20/old_blog/2009-05-20-gmail太过人性不喜欢！/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1073,7 +1223,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/杂七杂八/" itemprop="url" rel="index">
                     <span itemprop="name">杂七杂八</span>
                   </a>
@@ -1163,20 +1313,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/05/10/old_blog/2009-05-10-转和谐的杭州/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1221,7 +1371,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -1321,20 +1471,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/05/07/old_blog/2009-05-07-天佑市政？/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1379,7 +1529,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/未分类/" itemprop="url" rel="index">
                     <span itemprop="name">未分类</span>
                   </a>
@@ -1469,20 +1619,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/04/28/old_blog/2009-04-28-不错的flex视频教学（初学者）/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -1527,7 +1677,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/flex/" itemprop="url" rel="index">
                     <span itemprop="name">flex</span>
                   </a>
@@ -1603,216 +1753,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/04/27/old_blog/2009-04-27-as3版flash-游戏的结构设计（一）/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/04/27/old_blog/2009-04-27-as3版flash-游戏的结构设计（一）/" itemprop="url">as3版flash 游戏的结构设计（一）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-04-27T00:00:00+00:00">
-                2009-04-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近关注flash游戏设计，发现了这个系列的文章，觉得还可以，适合新手学习和参考。</p>
-
-<p>所以把它翻译过来（不是原原本本，根据意思做了很大变化），希望入门有帮助，我也在入门，呵呵</p>
-
-<p>欢迎转载，请注明出处（包括译者和作者）</p>
-
-<p>原文：<a rel="noopener" href="http://www.emanueleferonato.com/2008/12/17/designing-the-structure-of-a-flash-game-as3-version/" target="_blank">Designing the structure of a Flash game - AS3 version</a></p>
-
-<p>作者层级写过： <a href="http://www.emanueleferonato.com/2007/12/22/designing-the-structure-of-a-flash-game/" target="_blank" rel="noopener">Designing the structure of a Flash game</a> ，这篇文章是针对在flash里的动作里直接写到，现在这个as3版本，者采用了class（类）的形式。更有面向对象的感觉，原来就感觉是面向过程的。</p>
-
-<p>刚开始使用类来代替，如果你不熟悉面向对象，就感觉很不直观；但是如果你熟悉后，你完全将这个用作你以后开发游戏的模板。</p>
-
-<p>在这个游戏中，我们使用了4个屏幕切换（后面简称：切屏）：splash(开始屏),info（如何玩），game itself（游戏本身）和game over（游戏结束）……并且你还可以根据需求非常简单的添加其他屏。</p>
-
-<p>首先给游戏做一个规划：</p>
-
-<p><img class="alignnone size-full wp-image-464" title="as3dia" src="/media/2009/04/as3dia.png" alt="as3dia" width="500" height="452"></p>
-
-<p>在图片中你能看到游戏的4屏，并且指出了每个按钮的屏幕切换方向。如，在splash（开始）屏你可以跳转到info（介绍）屏,但是你不能直接跳转到game over（游戏结束）屏。</p>
-
-<p>主函数the_game(因此文件命名为the_game.as)，把其他对象和类被列在库中，根据红色的顺序进行引用。</p>
-
-<p>查看链接列（元件的链接属性，常识，不多作解释），非常清楚的显示出其他需要的四个as文件：game_over.as,how_to_play.as,splash.as和the_game_itself.as。</p>
-
-<p>让我们看看详细的实现（blog主题原因，代码呈现有点问题）:</p>
-
-<p><strong></strong><br><div class="wp_syntax"><br><table style="height: 906px;" border="0" width="707"><br><tbody><br><tr><br><td class="line_numbers"><br><pre>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49</pre><br></td><br><td class="code"><br><pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span><br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;<br>    <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> the_game extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> splash_screen<span style="color: #000000; font-weight: bold;">:</span>splash;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> play_screen<span style="color: #000000; font-weight: bold;">:</span>the_game_itself;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> game_over_screen<span style="color: #000000; font-weight: bold;">:</span>game_over;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> how_to_play_screen<span style="color: #000000; font-weight: bold;">:</span>how_to_play;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            show_splash<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> show_splash<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            splash_screen = <span style="color: #0033ff; font-weight: bold;">new</span> splash<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;<br>            <span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>                <span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span>;<br>                how_to_play_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br>            <span style="color: #000000;">}</span><br>            <span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> show_how_to_play<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            how_to_play_screen = <span style="color: #0033ff; font-weight: bold;">new</span> how_to_play<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;<br>            <span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span>;<br>            splash_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br>            <span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> show_game_over<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            game_over_screen = <span style="color: #0033ff; font-weight: bold;">new</span> game_over<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;<br>            <span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>play_screen<span style="color: #000000;">)</span>;<br>            play_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br>            <span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>game_over_screen<span style="color: #000000;">)</span>;</pre></td></tr></tbody></table></div></p>
-
-<p>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> play_the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            play_screen = <span style="color: #0033ff; font-weight: bold;">new</span> the_game_itself<span style="color: #000000;">(</span><span style="color: #0033ff; font-weight: bold;">this</span><span style="color: #000000;">)</span>;<br><br>            <span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>                <span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>splash_screen<span style="color: #000000;">)</span>;<br><br>                splash_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br><br>            <span style="color: #000000;">}</span><br>            <span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>                <span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>how_to_play_screen<span style="color: #000000;">)</span>;<br><br>                how_to_play_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br><br>            <span style="color: #000000;">}</span><br>            <span style="color: #0033ff; font-weight: bold;">if</span> <span style="color: #000000;">(</span>game_over_screen<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>                <span style="color: #004993;">removeChild</span><span style="color: #000000;">(</span>game_over_screen<span style="color: #000000;">)</span>;<br><br>                game_over_screen = <span style="color: #0033ff; font-weight: bold;">null</span>;<br><br>            <span style="color: #000000;">}</span><br>            <span style="color: #004993;">addChild</span><span style="color: #000000;">(</span>play_screen<span style="color: #000000;">)</span>;<br><br>        <span style="color: #000000;">}</span><br>    <span style="color: #000000;">}</span><br><span style="color: #000000;">}</span><br><br><br><br><br>详细步骤说明：</p>
-
-<p><strong>行4-7</strong>: 使用相应的类声明游戏切屏的对象。</p>
-
-<p><strong>行8-10</strong>:这是主要函数，simply调用一个显示splash屏的函数。</p>
-
-<p><strong>行11</strong>: 这样一个函数: <code>show_splash。</code></p>
-
-<p><strong>行12</strong>: 函数的核心:我将为<strong>第4行</strong>声明的splash_screen变量new一个对象。注意这里的参数：我要求它记住是哪个类调用了它，在这里this其实就是the_game类。</p>
-
-<p><strong>行13</strong>: 检查场景上是否已经有how_to_play_screen屏。这里有可能是从info屏切换到splash屏的。</p>
-
-<p><strong>行14</strong>: 如果是，我需要在场景上移除这一屏……</p>
-
-<p><strong>行15</strong>: 设置变量为null，这个非常重要因为removeChild只是在场景上移除sprite，而内存中依然存在的。</p>
-
-<p><strong>行17</strong>: 最后,我将splash屏放置到场景上。</p>
-
-<p>其他剩下的也都是相同的操作，分配变量、添加并移除相应的sprite，直到结束为止。</p>
-
-<p>现在让我们看看splash.as中splash类的代码：<br><div class="wp_syntax"><br><table style="height: 360px;" border="0" width="643"><br><tbody><br><tr><br><td class="line_numbers"><br><pre>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19</pre><br></td><br><td class="code"><br><pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span><br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;<br>    <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> splash extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> splash<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class = passed_class;<br>            play_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_play_button_clicked<span style="color: #000000;">)</span>;<br>            how_to_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_how_to_button_clicked<span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_play_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class.play_the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_how_to_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class.show_how_to_play<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>    <span style="color: #000000;">}</span><br><span style="color: #000000;">}</span></pre><br></td><br></tr><br></tbody></table><br></div><br><strong>行6</strong>:声明the_game类型的变量main_class（主类）</p>
-
-<p><strong>行7</strong>:主要函数，查看the_game类型的参数passed_class:这函数的传递可以在the_game.as的<strong>第12</strong>行可以找到</p>
-
-<p><strong>行8</strong>: 记住调用的此类的原始类</p>
-
-<p><strong>行8-9：</strong>附加两个按钮的监听，当玩家按”play”或”how to play”按钮时触发。</p>
-
-<p><strong>行12</strong>:当玩家点击play按钮时，函数被执行</p>
-
-<p><strong>行13</strong>: 这个文件的核心:我在主类中调用play_the_game()函数。我们能知道主类哪里来，就需要感谢main_class变量了。</p>
-
-<p>这里的函数执行就和前面show_splash的解释一样，添加和移除相应的sprite并调用其他的类。</p>
-
-<p>其他类也和这个是类似的，所以不做过多注释。</p>
-
-<p><strong>how_to_play.as</strong><br><div class="wp_syntax"><br><table style="height: 360px;" border="0" width="623"><br><tbody><br><tr><br><td class="line_numbers"><br><pre>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19</pre><br></td><br><td class="code"><br><pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span><br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;<br>    <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> how_to_play extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> how_to_play<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class = passed_class;<br>            play_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_play_button_clicked<span style="color: #000000;">)</span>;<br>            back_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_back_button_clicked<span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_play_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class.play_the_game<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_back_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class.show_splash<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>    <span style="color: #000000;">}</span><br><span style="color: #000000;">}</span></pre><br></td><br></tr><br></tbody></table><br></div><br><strong>the_game_itself.as</strong><br><div class="wp_syntax"><br><table style="height: 288px;" border="0" width="624"><br><tbody><br><tr><br><td class="line_numbers"><br><pre>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</pre><br></td><br><td class="code"><br><pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span><br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;<br>    <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> the_game_itself extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> the_game_itself<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class = passed_class;<br>            die_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_die_button_clicked<span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_die_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class.show_game_over<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>    <span style="color: #000000;">}</span><br><span style="color: #000000;">}</span></pre><br></td><br></tr><br></tbody></table><br></div><br><strong>game_over.as</strong><br><div class="wp_syntax"><br><table style="height: 288px;" border="0" width="633"><br><tbody><br><tr><br><td class="line_numbers"><br><pre>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</pre><br></td><br><td class="code"><br><pre class="actionscript3 actionscript3" style="font-family: monospace;"><span style="color: #9900cc; font-weight: bold;">package</span> <span style="color: #000000;">{</span><br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">Sprite</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.display</span>.<span style="color: #004993;">SimpleButton</span>;<br>    <span style="color: #0033ff; font-weight: bold;">import</span> <span style="color: #004993;">flash.events</span>.<span style="color: #004993;">MouseEvent</span>;<br>    <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #9900cc; font-weight: bold;">class</span> the_game_itself extends <span style="color: #004993;">Sprite</span> <span style="color: #000000;">{</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #6699cc; font-weight: bold;">var</span> main_class<span style="color: #000000; font-weight: bold;">:</span>the_game;<br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> the_game_itself<span style="color: #000000;">(</span>passed_class<span style="color: #000000; font-weight: bold;">:</span>the_game<span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class = passed_class;<br>            die_button.<span style="color: #004993;">addEventListener</span><span style="color: #000000;">(</span><span style="color: #004993;">MouseEvent</span>.<span style="color: #004993;">CLICK</span>, on_die_button_clicked<span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>        <span style="color: #0033ff; font-weight: bold;">public</span> <span style="color: #339966; font-weight: bold;">function</span> on_die_button_clicked<span style="color: #000000;">(</span>event<span style="color: #000000; font-weight: bold;">:</span><span style="color: #004993;">MouseEvent</span><span style="color: #000000;">)</span> <span style="color: #000000;">{</span><br>            main_class.show_game_over<span style="color: #000000;">(</span><span style="color: #000000;">)</span>;<br>        <span style="color: #000000;">}</span><br>    <span style="color: #000000;">}</span><br><span style="color: #000000;">}</span></pre><br></td><br></tr><br></tbody></table><br></div><br>最后你将看到:<br><object width="500" height="400" data="/downloads/anatomy.swf" type="application/x-shockwave-flash"><param name="src" value="/downloads/anatomy.swf"><param name="quality" value="high"></object></p>
-
-<p><a title="下载源代码" href="http://www.emanueleferonato.com/downloads/anatomy.zip" target="_blank" rel="noopener">下载源代码</a> .</p>
-
-<p>这是第一篇，有空继续第2篇。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1850,7 +1790,7 @@
 
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">FireYang</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -1863,7 +1803,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">282</span>
+                  <span class="site-state-item-count">283</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1885,7 +1825,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">192</span>
+                  <span class="site-state-item-count">193</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

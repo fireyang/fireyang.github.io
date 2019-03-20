@@ -97,7 +97,7 @@
 <meta property="og:image" content="http://blog.generalrelativity.org/images/continuousCircleCircle/constants.gif">
 <meta property="og:image" content="http://blog.generalrelativity.org/images/continuousCircleCircle/constantC.gif">
 <meta property="og:image" content="http://blog.generalrelativity.org/images/continuousCircleCircle/roots.gif">
-<meta property="og:updated_time" content="2019-01-21T07:33:16.654Z">
+<meta property="og:updated_time" content="2019-03-20T08:52:18.844Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态球体碰撞检测">
 <meta name="twitter:description" content="出处：Dynamic Circle/Circle Collision Detection in ActionScript 3demo：collision detection demo 【点击并拖动球，观察速度矢量变化】source：source介绍：两球的碰撞是碰撞检测中最普遍的一种。你可以简单比较两球的半径之和与它们圆心距离进行比较，如果它们的之和大于距离，那么球将发生碰撞。在模拟的每一个时间点">
@@ -158,7 +158,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -168,7 +168,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -278,20 +278,20 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/02/22/old_blog/2010-02-22-动态球体碰撞检测/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
 
@@ -334,7 +334,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/actionscript/" itemprop="url" rel="index">
                     <span itemprop="name">actionscript</span>
                   </a>
@@ -372,41 +372,41 @@
       
 
       
-        <p></p><h3>出处：<a id="oz0o" title="Dynamic Circle/Circle Collision Detection in ActionScript 3" href="http://blog.generalrelativity.org/actionscript-30/dynamic-circlecircle-collision-detection-in-actionscript-3/" target="_blank"><span style="color: #000000;">Dynamic Circle/Circle Collision Detection in ActionScript 3</span></a></h3><br>demo：<a href="http://lab.generalrelativity.org/circle_collision/" target="_blank">collision detection demo</a> 【点击并拖动球，观察速度矢量变化】<br><div>source：<a href="http://lab.generalrelativity.org/circle_collision/source/src.zip" target="_blank">source</a></div><br><div id="x9dr"><img src="https://docs.google.com/File?id=dgdfg5dp_24gtnr57fv_b" alt=""></div><br><h4>介绍：</h4><br><span>两球的碰撞是碰撞检测中最普遍的一种。你可以简单比较两球的半径之和与它们圆心距离进行比较，如果它们的之和大于距离，那么球将发生碰撞。在模拟的每一个时间点里做这样的运算就可以了。</span><p></p>
+        <p></p><h3>出处：<a id="oz0o" title="Dynamic Circle/Circle Collision Detection in ActionScript 3" href="http://blog.generalrelativity.org/actionscript-30/dynamic-circlecircle-collision-detection-in-actionscript-3/" target="_blank"><span style="color: #000000;">Dynamic Circle/Circle Collision Detection in ActionScript 3</span></a></h3><br>demo：<a href="http://lab.generalrelativity.org/circle_collision/" target="_blank">collision detection demo</a> 【点击并拖动球，观察速度矢量变化】<br><div>source：<a href="http://lab.generalrelativity.org/circle_collision/source/src.zip" target="_blank">source</a></div><br><div id="x9dr"><img src="https://docs.google.com/File?id=dgdfg5dp_24gtnr57fv_b" alt></div><br><h4>介绍：</h4><br><span>两球的碰撞是碰撞检测中最普遍的一种。你可以简单比较两球的半径之和与它们圆心距离进行比较，如果它们的之和大于距离，那么球将发生碰撞。在模拟的每一个时间点里做这样的运算就可以了。</span><p></p>
 
-<p><span>在大多的情况下会做一定的优化，比如先判断两个球所在的矩形是否有发生碰撞（矩形碰撞略），这样能避免不断的进行开方运算，因为开方运算的开销是非常昂贵的。</span><br></p><h4>问题：</h4><br>但是如果我们的球运行的速度非常快呢？在速度的开始和结束时间都没发生碰撞；但是在两个时间点之间却发生了碰撞的。<br><div>（这就是通常所说的穿透现象，就是速度过快，碰撞检测失效了……）</div><br><div id="bbt3"><img src="https://docs.google.com/File?id=dgdfg5dp_25c3jmwcd4_b" alt=""></div><br><h4>解决办法：</h4><br>我们计算两次可能的碰撞（给定固定的速度）-它们的开始碰撞时它们是非常临近的（如果它们彼此穿过并且不影响彼此的移动）。这里有两种非必然的情况；且第二种情况无论如何对我们是没有半点好处的，因此我们需要避免：<br><div>（A）如果球在间隔点上发生碰撞</div><br><div>（B）发生的碰撞是在间隔点之间</div><br><div>这个解决办法的提出在Christer Ericson 的Real-Time Collision Detection。他在这方面做了大量的工作，我只是在这里进行解释而已，让我们开始吧。</div><br><h4>起源：</h4><br>首先我们假设一个变量0≤t≤1来表示规定速度内的间隔，这样球的位置遍是：<p></p>
+<p><span>在大多的情况下会做一定的优化，比如先判断两个球所在的矩形是否有发生碰撞（矩形碰撞略），这样能避免不断的进行开方运算，因为开方运算的开销是非常昂贵的。</span><br></p><h4>问题：</h4><br>但是如果我们的球运行的速度非常快呢？在速度的开始和结束时间都没发生碰撞；但是在两个时间点之间却发生了碰撞的。<br><div>（这就是通常所说的穿透现象，就是速度过快，碰撞检测失效了……）</div><br><div id="bbt3"><img src="https://docs.google.com/File?id=dgdfg5dp_25c3jmwcd4_b" alt></div><br><h4>解决办法：</h4><br>我们计算两次可能的碰撞（给定固定的速度）-它们的开始碰撞时它们是非常临近的（如果它们彼此穿过并且不影响彼此的移动）。这里有两种非必然的情况；且第二种情况无论如何对我们是没有半点好处的，因此我们需要避免：<br><div>（A）如果球在间隔点上发生碰撞</div><br><div>（B）发生的碰撞是在间隔点之间</div><br><div>这个解决办法的提出在Christer Ericson 的Real-Time Collision Detection。他在这方面做了大量的工作，我只是在这里进行解释而已，让我们开始吧。</div><br><h4>起源：</h4><br>首先我们假设一个变量0≤t≤1来表示规定速度内的间隔，这样球的位置遍是：<p></p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/parametrizedPosition.gif" alt=""><br><div>这里X表示初始位置，v表示速度。因此在开始的时候，球的位置应该是X+v*0=X,如果t大于0的时候，就是X+v的一部分。我们需要一个关于t的一个方程，根据这个参数用来计算两个球之间的距离变化。</div><br><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceFunction.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/parametrizedPosition.gif" alt><br><div>这里X表示初始位置，v表示速度。因此在开始的时候，球的位置应该是X+v*0=X,如果t大于0的时候，就是X+v的一部分。我们需要一个关于t的一个方程，根据这个参数用来计算两个球之间的距离变化。</div><br><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceFunction.gif" alt></p>
 
 <p>其中</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/relativePosition.gif" alt=""> and <img src="http://blog.generalrelativity.org/images/continuousCircleCircle/relativeVelocity.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/relativePosition.gif" alt> and <img src="http://blog.generalrelativity.org/images/continuousCircleCircle/relativeVelocity.gif" alt></p>
 
 <p>当f等于两球的半径之和时，这两球发生碰撞：</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceEqualsSumRadii.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceEqualsSumRadii.gif" alt></p>
 
 <p>这里的r表示半径。计算距离意味着我们需要做开发运算，之前也提到，这是非常不值得的。所以我们在等式的两边同时进行平方。</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceSquared.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceSquared.gif" alt></p>
 
 <p>矢量之和再平方，进行分解后，类似标量的乘法的多项式运算</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/expanded.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/expanded.gif" alt></p>
 
 <p>将所有项移至等式的左边，转换成以t为未知数的一元二次方程，等式格式如下：</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/quadraticEquation.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/quadraticEquation.gif" alt></p>
 
 <p>其中</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/constants.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/constants.gif" alt></p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/constantC.gif" alt=""></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/constantC.gif" alt></p>
 
 <p>根据一元二次方程的求根公式的它两个根：</p>
 
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/roots.gif" alt=""><br></p><h5>性能考虑：</h5><br>所有的运算都需要处理器当然ActionScript也不能避免！我们能组织我们的检测方法<br><h4>实现：</h4><br><div>PS：这里略了，因为已经有源码了，自己看，哈哈……</div><br><h5>反弹作用：</h5><br><div>PS：这里也略了，这里主要是涉及到一些动量守恒的原理，看代码一般能理解的，还有作者还加了弹性和刚体属性。</div><p></p>
+<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/roots.gif" alt><br></p><h5>性能考虑：</h5><br>所有的运算都需要处理器当然ActionScript也不能避免！我们能组织我们的检测方法<br><h4>实现：</h4><br><div>PS：这里略了，因为已经有源码了，自己看，哈哈……</div><br><h5>反弹作用：</h5><br><div>PS：这里也略了，这里主要是涉及到一些动量守恒的原理，看代码一般能理解的，还有作者还加了弹性和刚体属性。</div><p></p>
 
       
     </div>
@@ -507,7 +507,7 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">FireYang</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -520,7 +520,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">282</span>
+                  <span class="site-state-item-count">283</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -542,7 +542,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">192</span>
+                  <span class="site-state-item-count">193</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
