@@ -266,6 +266,162 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/12/01/old_blog/2008-12-01-c调用rapi的连接判断/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2008/12/01/old_blog/2008-12-01-c调用rapi的连接判断/" itemprop="url">c#调用RAPI的连接判断</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-12-01T00:00:00+00:00">
+                2008-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Net/" itemprop="url" rel="index">
+                    <span itemprop="name">.Net</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在c#中调用rapi来完成windows ce的文件操作。</p>
+
+<p>详细参见：<a href="http://blog.csdn.net/jarvisj/archive/2005/06/05/387902.aspx" target="_blank">http://blog.csdn.net/jarvisj/archive/2005/06/05/387902.aspx</a></p>
+
+<p>详细api文档（msdn英文）：<a href="http://msdn.microsoft.com/en-us/library/aa458022.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/aa458022.aspx</a></p>
+
+<p>但是如果用 CeRapiInit来判断链接有一个问题：这个函数的运行过程是开始判断是否连接了设备，如果没有设备，这个进程将一直挂着，直到插上了设备才继续执行，这样就不能马上给出判断，所以可以采用CeRapiInitEx函数。</p>
+
+<p>CeRapiInit和CeRapiInitEx的区别：前者是将进程一直挂着，等待设备的插入，而后者是即刻判断。</p>
+
+<p>主要讲解CeRapiInitEx的使用：<br><blockquote>//接口声明<br><br>[DllImport(“rapi.dll”)]<br><br>public static extern void CeRapiInitEx(ref RAPIINIT pRapiInit);</blockquote></p>
+
+<p>//自定义返回类型结构<br><br>[StructLayout(LayoutKind.Sequential)]<br><br>public struct RAPIINIT<br><br>{<br>public int cbsize;<br><br>public IntPtr heRapiInit;<br><br>public UInt32 hrRapiInit;<br><br>};</p>
+
+<p>//函数使用<br><br>RAPIINIT r = new RAPIINIT();<br><br>r.cbsize = Marshal.SizeOf(r);<br><br>CeRapiInitEx(ref r);<br><br>//r.hrRapiInit==0 判断连接成功</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/26/old_blog/2008-11-26-谁敢监督你的领导/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1593,150 +1749,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/11/old_blog/2008-11-11-高中校庆（沙城高级中学）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/11/old_blog/2008-11-11-高中校庆（沙城高级中学）/" itemprop="url">高中校庆（沙城高级中学）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-11T00:00:00+00:00">
-                2008-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂七杂八/" itemprop="url" rel="index">
-                    <span itemprop="name">杂七杂八</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>母校的十年校庆，发觉母校的硬件设施变化好大，怀念当时的“艰苦岁月”。</p>
-
-<p><a href="/media/2008/11/http_imgload.jpg"><img class="alignnone size-medium wp-image-263" title="http_imgload" src="/media/2008/11/http_imgload-300x225.jpg" alt width="300" height="225"></a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1787,7 +1799,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">283</span>
+                  <span class="site-state-item-count">284</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1809,7 +1821,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">193</span>
+                  <span class="site-state-item-count">194</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
