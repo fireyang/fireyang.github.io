@@ -1,733 +1,640 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.fireyang.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡说八道">
 <meta property="og:url" content="http://blog.fireyang.com/page/8/index.html">
 <meta property="og:site_name" content="胡说八道">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FireYang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡说八道">
 
 
+<link rel="canonical" href="http://blog.fireyang.com/page/8/">
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://blog.fireyang.com/page/8/">
-
-
-
-
-
-  <title>胡说八道</title>
+<title>胡说八道</title>
   
 
 
 
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-130224407-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
 
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
 
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">胡说八道</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">胡说八道</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FireYang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">192</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fireyang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fireyang" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
     
-      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
   
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/12/30/old_blog/2009-12-30-豆瓣-test/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/12/30/old_blog/2009-12-30-%E8%B1%86%E7%93%A3-test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/12/30/old_blog/2009-12-30-%E8%B1%86%E7%93%A3-test/" class="post-title-link" itemprop="url">豆瓣同步</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/12/30/old_blog/2009-12-30-豆瓣-test/" itemprop="url">豆瓣同步</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-12-30T00:00:00+00:00">
-                2009-12-30
-              </time>
-            
+      <time title="创建时间：2009-12-30 00:00:00" itemprop="dateCreated datePublished" datetime="2009-12-30T00:00:00+00:00">2009-12-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂七杂八/" itemprop="url" rel="index">
-                    <span itemprop="name">杂七杂八</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近发现很多朋友都在豆瓣，而我注册时很老的一批了，那时候只是看看django的成功案例。</p>
+          <p>最近发现很多朋友都在豆瓣，而我注册时很老的一批了，那时候只是看看 django 的成功案例。</p>
 
 <p>没想到现在在上面混的朋友真的挺多的。</p>
 
-<p>今天将我的blog同步到豆瓣上。</p>
+<p>今天将我的 blog 同步到豆瓣上。</p>
 
-<p>我已经很久没有写blog了，不是自己忙，而是真的懒了，经常在qq空间上倒腾一些话语，感觉没多少价值。</p>
+<p>我已经很久没有写 blog 了，不是自己忙，而是真的懒了，经常在 qq 空间上倒腾一些话语，感觉没多少价值。</p>
 
-<p>渐渐回到过去，好好写blog，不后悔，不折腾……</p>
+<p>渐渐回到过去，好好写 blog，不后悔，不折腾……</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/12/20/old_blog/2009-12-20-34个有用的actionscript-3-0的api/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/12/20/old_blog/2009-12-20-34%E4%B8%AA%E6%9C%89%E7%94%A8%E7%9A%84actionscript-3-0%E7%9A%84api/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/12/20/old_blog/2009-12-20-34%E4%B8%AA%E6%9C%89%E7%94%A8%E7%9A%84actionscript-3-0%E7%9A%84api/" class="post-title-link" itemprop="url">34 个有用的 ActionScript 3.0 的 API</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/12/20/old_blog/2009-12-20-34个有用的actionscript-3-0的api/" itemprop="url">34个有用的ActionScript 3.0的API</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-12-20T00:00:00+00:00">
-                2009-12-20
-              </time>
-            
+      <time title="创建时间：2009-12-20 00:00:00" itemprop="dateCreated datePublished" datetime="2009-12-20T00:00:00+00:00">2009-12-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>对于 api 的说明自己翻译了下，本人英语水平一般，可能有所错误，如果可以，建议阅读原文。
+</p><h2>来源：</h2>
+<h2><a title="Permanent Link: List of 34 More ActionScript 3.0 APIs" rel="bookmark noopener" target="_blank" href="http://seantheflexguy.com/blog/2009/12/19/list-of-34-more-actionscript-30-apis/">List of 34 More ActionScript 3.0 APIs</a></h2>
+Using an API can save time during the development process. The wonderful thing about the Flash Platform Community has always been the willingness to share. Here’s <strong>34 more ActionScript 3.0 APIs</strong> that can be used for Flex, Flash and AIR development. Hopefully one of the APIs listed here or in one of my <a target="_blank" rel="noopener" href="http://seantheflexguy.com/blog/2007/08/13/list-of-22-actionscript-30-apis/">previous</a> API listing <a target="_blank" rel="noopener" href="http://seantheflexguy.com/blog/2008/05/24/36-new-cool-flex-and-as3-tools-libraries-and-components/">posts</a> can help you and your team save time. Happy Holidays!! <img src="http://seantheflexguy.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)"><p></p>
 
-      
-      
+<p>在开发的过程中如果使用 API 可以节省很多时间。而且幸运的是 Flash Platform Community 一直乐意来共享这些资源。这 34 个 AS3 API 将被使用在 Flex，Flash 和 AIR 开发中。希望这些 API 包括我之前发布的 API 版本能帮助你和你的团队来节省时间。另外，祝节日快乐！！<img src="http://seantheflexguy.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)"></p>
 
-      
-        
-          
-            <p>对于api的说明自己翻译了下，本人英语水平一般，可能有所错误，如果可以，建议阅读原文。<br></p><h2>来源：</h2><br><h2><a title="Permanent Link: List of 34 More ActionScript 3.0 APIs" rel="noopener" href="http://seantheflexguy.com/blog/2009/12/19/list-of-34-more-actionscript-30-apis/" target="_blank">List of 34 More ActionScript 3.0 APIs</a></h2><br>Using an API can save time during the development process. The wonderful thing about the Flash Platform Community has always been the willingness to share. Here’s <strong>34 more ActionScript 3.0 APIs</strong> that can be used for Flex, Flash and AIR development. Hopefully one of the APIs listed here or in one of my <a href="http://seantheflexguy.com/blog/2007/08/13/list-of-22-actionscript-30-apis/" target="_blank" rel="noopener">previous</a> API listing <a href="http://seantheflexguy.com/blog/2008/05/24/36-new-cool-flex-and-as3-tools-libraries-and-components/" target="_blank" rel="noopener">posts</a> can help you and your team save time. Happy Holidays!! <img src="http://seantheflexguy.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)"><p></p>
+<p><strong>ArcGIS API for Flex</strong>
+ArcGIS&nbsp; API for Flex 是允许用基于 ArcGIS Server 开发 RIA 项目。它是基于 Adobe Flex 框架。这个框架是在 Flash Player 9 或以上版本的客户端技术，或者 Adobe AIR。所有的 Flex 3.x SDK 版本现在都支持。
+<a target="_blank" rel="noopener" href="http://resources.esri.com/arcgisserver/apis/flex/">http://resources.esri.com/arcgisserver/apis/flex/</a></p>
 
-<p>在开发的过程中如果使用API可以节省很多时间。而且幸运的是Flash Platform Community一直乐意来共享这些资源。这34个AS3 API将被使用在Flex，Flash和AIR开发中。希望这些API包括我之前发布的API版本能帮助你和你的团队来节省时间。另外，祝节日快乐！！<img src="http://seantheflexguy.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)"></p>
+<p><strong>asaudio</strong>
+ASaudio 是一个小型专用于简单并高效的声音处理 AS3 库。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/asaudio/">http://code.google.com/p/asaudio/</a></p>
 
-<p><strong>ArcGIS API for Flex</strong><br>ArcGIS  API for Flex是允许用基于ArcGIS Server开发RIA项目。它是基于Adobe Flex 框架。这个框架是在Flash Player 9或以上版本的客户端技术，或者Adobe AIR。所有的Flex 3.x SDK版本现在都支持。<br><a href="http://resources.esri.com/arcgisserver/apis/flex/" target="_blank" rel="noopener">http://resources.esri.com/arcgisserver/apis/flex/</a></p>
+<p><strong>as3ansi</strong>
+是在 Flash 和 Flex 应用中的 AS3 中扩展自 ASCII（IBM code page 437）和解析和查看类库。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3ansi/">http://code.google.com/p/as3ansi/</a></p>
 
-<p><strong>asaudio</strong><br>ASaudio是一个小型专用于简单并高效的声音处理AS3库。<br><a href="http://code.google.com/p/asaudio/" target="_blank" rel="noopener">http://code.google.com/p/asaudio/</a></p>
+<p><strong>ActionScript 3.0 Client Library for Facebook Platform API</strong>
+Facebook 平台客户端的 AS3 API，完全支持 Facebook 和 Adobe，能更简单的在 Facebook 平台和 Flash 平台直接构建应用。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/facebook-actionscript-api/">http://code.google.com/p/facebook-actionscript-api/</a></p>
 
-<p><strong>as3ansi</strong><br>是在Flash和Flex应用中的AS3中扩展自ASCII（IBM code page 437）和解析和查看类库。<br><a href="http://code.google.com/p/as3ansi/" target="_blank" rel="noopener">http://code.google.com/p/as3ansi/</a></p>
+<p><strong>ascolourlovers</strong>
+AS3 的 ColourLoversAPI。在 As3 的项目中使用这个类库，提供所有需要调色板，颜色的工具。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/ascolourlovers/">http://code.google.com/p/ascolourlovers/</a></p>
 
-<p><strong>ActionScript 3.0 Client Library for Facebook Platform API</strong><br>Facebook平台客户端的AS3 API，完全支持Facebook和Adobe，能更简单的在Facebook平台和Flash平台直接构建应用。<br><a href="http://code.google.com/p/facebook-actionscript-api/" target="_blank" rel="noopener">http://code.google.com/p/facebook-actionscript-api/</a></p>
+<p><strong>AS3DAC </strong>
+AS3DAC 解析 AS3.0 类或实例文件，并添加一段 asdoc 的文档。沿用 Flex SDK 的代码编写规则。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3dac/">http://code.google.com/p/as3dac/</a></p>
 
-<p><strong>ascolourlovers</strong><br>AS3的ColourLoversAPI。在As3的项目中使用这个类库，提供所有需要调色板，颜色的工具。<br><a href="http://code.google.com/p/ascolourlovers/" target="_blank" rel="noopener">http://code.google.com/p/ascolourlovers/</a></p>
+<p><strong>as3flexdb</strong>
+AS3FlexDB 项目是一个开源的类库，允许 Adobe Flex 应用能直接连接到 MySQL 服务器。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3flexdb/">http://code.google.com/p/as3flexdb/</a></p>
 
-<p><strong>AS3DAC </strong><br>AS3DAC解析AS3.0类或实例文件，并添加一段asdoc的文档。沿用Flex SDK的代码编写规则。<br><a href="http://code.google.com/p/as3dac/" target="_blank" rel="noopener">http://code.google.com/p/as3dac/</a></p>
+<p><strong>as3growl</strong>
+这个 ActionScript 3 API 是伴随 Grwol 通知服务器工作的。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3growl/">http://code.google.com/p/as3growl/</a></p>
 
-<p><strong>as3flexdb</strong><br>AS3FlexDB项目是一个开源的类库，允许Adobe Flex应用能直接连接到MySQL服务器。<br><a href="http://code.google.com/p/as3flexdb/" target="_blank" rel="noopener">http://code.google.com/p/as3flexdb/</a></p>
+<p><strong>AS3 Http Client Library</strong>
+这个 http 类库基于 flash.net.Socket (并 as3crypto) 编写的，使用在 AIR 或 flash 运行时。
+<a target="_blank" rel="noopener" href="http://github.com/gabriel/as3httpclient">http://github.com/gabriel/as3httpclient</a></p>
 
-<p><strong>as3growl</strong><br>这个ActionScript 3 API是伴随Grwol 通知服务器工作的。<br><a href="http://code.google.com/p/as3growl/" target="_blank" rel="noopener">http://code.google.com/p/as3growl/</a></p>
+<p><strong>as3midilib</strong>
+ActionScript 3.0 提供支持 MIDI
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3midilib/">http://code.google.com/p/as3midilib/</a></p>
 
-<p><strong>AS3 Http Client Library</strong><br>这个http 类库基于flash.net.Socket(并as3crypto)编写的，使用在AIR或flash运行时。<br><a href="http://github.com/gabriel/as3httpclient" target="_blank" rel="noopener">http://github.com/gabriel/as3httpclient</a></p>
+<p><strong>as3openxmlformats</strong>
+ActionScript 3 类库支持 MS Office 开放 XML 格式。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3openxmlformats/">http://code.google.com/p/as3openxmlformats/</a></p>
 
-<p><strong>as3midilib</strong><br>ActionScript 3.0提供支持MIDI<br><a href="http://code.google.com/p/as3midilib/" target="_blank" rel="noopener">http://code.google.com/p/as3midilib/</a></p>
+<p><strong>as3-scaffold</strong>
+as3-scaffold 是一个轻量 as3 框架，其中包括一些简便的脚手架脚本用来自动完成一些单调的新建 as3 项目时的设置，并支持 PureMVC.
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3-scaffold/">http://code.google.com/p/as3-scaffold/</a></p>
 
-<p><strong>as3openxmlformats</strong><br>ActionScript 3类库支持MS Office开放XML格式。<br><a href="http://code.google.com/p/as3openxmlformats/" target="_blank" rel="noopener">http://code.google.com/p/as3openxmlformats/</a></p>
+<p><strong>as3scriptinglib</strong>
+这个类库的目标是提供一个 API 在 Flash 客户端来编译并执行 ActionScript/JavaScript（不需要服务器），遵循 Adobe 的 ECMAScrpit 4 编译器（来自 Tamarin 项目）
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3scriptinglib/">http://code.google.com/p/as3scriptinglib/</a></p>
 
-<p><strong>as3-scaffold</strong><br>as3-scaffold是一个轻量as3框架，其中包括一些简便的脚手架脚本用来自动完成一些单调的新建as3项目时的设置，并支持PureMVC.<br><a href="http://code.google.com/p/as3-scaffold/" target="_blank" rel="noopener">http://code.google.com/p/as3-scaffold/</a></p>
+<p><strong>as3zlib</strong>
+zlib 的 as3 端口。<br>
+这个 JZlib 到 as3 的端口。之初创建这个，是由于 Flash 9 中的 as3 不支持 ByteArray。AIR 已经支持内置的所以不需要这个代码。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/as3zlib/">http://code.google.com/p/as3zlib/</a></p>
 
-<p><strong>as3scriptinglib</strong><br>这个类库的目标是提供一个API在Flash客户端来编译并执行 ActionScript/JavaScript（不需要服务器），遵循Adobe的ECMAScrpit 4编译器（来自Tamarin项目）<br><a href="http://code.google.com/p/as3scriptinglib/" target="_blank" rel="noopener">http://code.google.com/p/as3scriptinglib/</a></p>
+<p><strong>bitly as3 api</strong>
+bit.lyAPI 的简单 as3 实现。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/bitly-as3-api/">http://code.google.com/p/bitly-as3-api/</a></p>
 
-<p><strong>as3zlib</strong><br>zlib的as3端口。<br><br>这个JZlib到as3的端口。之初创建这个，是由于Flash 9中的as3不支持ByteArray。AIR已经支持内置的所以不需要这个代码。<br><a href="http://code.google.com/p/as3zlib/" target="_blank" rel="noopener">http://code.google.com/p/as3zlib/</a></p>
+<p><strong>Diggbe </strong>
+Diggbe 是一个普遍的目标 DI 引擎。当初的构想是为了单元测试目标（忽略 xxxSet/GetForTest）。但是它允许服务依赖注入使用在运行时代码中。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/diggbe/">http://code.google.com/p/diggbe/</a></p>
 
-<p><strong>bitly as3 api</strong><br>bit.lyAPI的简单as3实现。<br><a href="http://code.google.com/p/bitly-as3-api/" target="_blank" rel="noopener">http://code.google.com/p/bitly-as3-api/</a></p>
+<p><strong>echo-nest-flash-api</strong>
+Echo Nest API 在 ActionScript 3 上的接口。
+<a target="_blank" rel="noopener" href="http://github.com/also/echo-nest-flash-api">http://github.com/also/echo-nest-flash-api</a></p>
 
-<p><strong>Diggbe </strong><br>Diggbe是一个普遍的目标DI引擎。当初的构想是为了单元测试目标（忽略 xxxSet/GetForTest）。但是它允许服务依赖注入使用在运行时代码中。<br><a href="http://code.google.com/p/diggbe/" target="_blank" rel="noopener">http://code.google.com/p/diggbe/</a></p>
+<p><strong>Etsy API Wrapper for Actionscript 3</strong>
+Etsy.com API 封装的 ActionScript 3 类。
+<a target="_blank" rel="noopener" href="http://thunderfarm.com/etsy/">http://thunderfarm.com/etsy/</a></p>
 
-<p><strong>echo-nest-flash-api</strong><br>Echo Nest API在ActionScript 3上的接口。<br><a href="http://github.com/also/echo-nest-flash-api" target="_blank" rel="noopener">http://github.com/also/echo-nest-flash-api</a></p>
+<p><strong>feedmeas3</strong>
+FeedMe 是使用低级别的类的对象之间共享数据。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/feedmeas3/">http://code.google.com/p/feedmeas3/</a></p>
 
-<p><strong>Etsy API Wrapper for Actionscript 3</strong><br>Etsy.com API封装的ActionScript 3类。<br><a href="http://thunderfarm.com/etsy/" target="_blank" rel="noopener">http://thunderfarm.com/etsy/</a></p>
+<p><strong>fuelas3svn </strong>
+SVN 协议的 As3 实现。这个类库让你可以在 Flash 上完全拥有 SVN 客户端的写入能力。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/fuelas3svn/">http://code.google.com/p/fuelas3svn/</a></p>
 
-<p><strong>feedmeas3</strong><br>FeedMe是使用低级别的类的对象之间共享数据。<br><a href="http://code.google.com/p/feedmeas3/" target="_blank" rel="noopener">http://code.google.com/p/feedmeas3/</a></p>
+<p><strong>Gigya AS3 API</strong>
+<a target="_blank" rel="noopener" href="http://wiki.gigya.com/030_Gigya_Socialize_API_2.0/030_API_reference/010_Client_API_%28JavaScript%29">http://wiki.gigya.com/030_Gigya_Socialize_API_2.0/030_API_reference/010_Client_API_%28JavaScript%29</a></p>
 
-<p><strong>fuelas3svn </strong><br>SVN协议的As3实现。这个类库让你可以在Flash上完全拥有SVN客户端的写入能力。<br><a href="http://code.google.com/p/fuelas3svn/" target="_blank" rel="noopener">http://code.google.com/p/fuelas3svn/</a></p>
+<p><strong>googleas3api</strong>
+Google&nbsp; API 的 AS3 类库。将 Google 的强大融入到你的 Flash/Flex/AIR 应用中（搜索，翻译，建议，天气，订阅等）
+<a target="_blank" rel="noopener" href="http://code.google.com/p/googleas3api/">http://code.google.com/p/googleas3api/</a></p>
 
-<p><strong>Gigya AS3 API</strong><br><a href="http://wiki.gigya.com/030_Gigya_Socialize_API_2.0/030_API_reference/010_Client_API_%28JavaScript%29" target="_blank" rel="noopener">http://wiki.gigya.com/030_Gigya_Socialize_API_2.0/030_API_reference/010_Client_API_%28JavaScript%29</a></p>
+<p><strong>Kongregate’s AS3 API</strong>
+这 Kongregate AS3 API 允许你拓展你的游戏与 Kongregate 平台进行交互。
+<a target="_blank" rel="noopener" href="http://www.kongregate.com/developer_center/docs/as3-api">http://www.kongregate.com/developer_center/docs/as3-api</a></p>
 
-<p><strong>googleas3api</strong><br>Google  API的AS3类库。将Google的强大融入到你的Flash/Flex/AIR应用中（搜索，翻译，建议，天气，订阅等）<br><a href="http://code.google.com/p/googleas3api/" target="_blank" rel="noopener">http://code.google.com/p/googleas3api/</a></p>
+<p><strong>KoolMoves AS3 API</strong>
+<a target="_blank" rel="noopener" href="http://koolexchange.com/docs/km/">http://koolexchange.com/docs/km/</a></p>
 
-<p><strong>Kongregate’s AS3 API</strong><br>这Kongregate AS3 API允许你拓展你的游戏与Kongregate平台进行交互。<br><a href="http://www.kongregate.com/developer_center/docs/as3-api" target="_blank" rel="noopener">http://www.kongregate.com/developer_center/docs/as3-api</a></p>
+<p><strong>lastfm as3</strong>
+允许访问 Last.fm web 服务（Last.fm 是一个音乐共享平台）
+<a target="_blank" rel="noopener" href="http://code.google.com/p/lastfm-as3/">http://code.google.com/p/lastfm-as3/</a></p>
 
-<p><strong>KoolMoves AS3 API</strong><br><a href="http://koolexchange.com/docs/km/" target="_blank" rel="noopener">http://koolexchange.com/docs/km/</a></p>
+<p><strong>Mappy AS3 API</strong>
+感谢 Mappy AS3 API, 秀出你用户的高级显示效果（缩放的过渡效果，视频积分，动画等）。浏览器的 Flash 插件让地图的呈现速度更快（拥有大量的网络用户）。
+<a target="_blank" rel="noopener" href="http://api.mappy.com/en/as3">http://api.mappy.com/en/as3</a></p>
 
-<p><strong>lastfm as3</strong><br>允许访问Last.fm web服务（Last.fm是一个音乐共享平台）<br><a href="http://code.google.com/p/lastfm-as3/" target="_blank" rel="noopener">http://code.google.com/p/lastfm-as3/</a></p>
+<p><strong>MP3tunes Music AS3/Flex/AIR API</strong>
+MP3tunes Music API 的 AS3 实现。这个 api 由 REST 接口组成，允许你访问 MP3tunes Locker service 上的某个用户的所有数据。你可以以此服务为基础构建 AS3/Flex/AIR 项目。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/mp3tunes-as3-api/">http://code.google.com/p/mp3tunes-as3-api/</a></p>
 
-<p><strong>Mappy AS3 API</strong><br>感谢Mappy AS3 API,秀出你用户的高级显示效果（缩放的过渡效果，视频积分，动画等）。浏览器的Flash插件让地图的呈现速度更快（拥有大量的网络用户）。<br><a href="http://api.mappy.com/en/as3" target="_blank" rel="noopener">http://api.mappy.com/en/as3</a></p>
+<p><strong>nd3d</strong>
+ND3D 是一个简单的 AS3 3D 引擎。针对速度和简单性。目标是使用简单的 3D 效果和迅速的 3D 测试 / 原型。这个引擎编译后的大小约为 10k。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/nd3d/">http://code.google.com/p/nd3d/</a></p>
 
-<p><strong>MP3tunes Music AS3/Flex/AIR API</strong><br>MP3tunes Music API的AS3实现。这个api由REST接口组成，允许你访问MP3tunes Locker service上的某个用户的所有数据。你可以以此服务为基础构建AS3/Flex/AIR项目。<br><a href="http://code.google.com/p/mp3tunes-as3-api/" target="_blank" rel="noopener">http://code.google.com/p/mp3tunes-as3-api/</a></p>
+<p><strong>netflex-as3-api</strong>
+基于 Netflix API 应用的 Actionscript 3 公共类库
+<a target="_blank" rel="noopener" href="http://code.google.com/p/netflex-as3-api/">http://code.google.com/p/netflex-as3-api/</a></p>
 
-<p><strong>nd3d</strong><br>ND3D是一个简单的AS3 3D引擎。针对速度和简单性。目标是使用简单的3D效果和迅速的3D测试/原型。这个引擎编译后的大小约为10k。<br><a href="http://code.google.com/p/nd3d/" target="_blank" rel="noopener">http://code.google.com/p/nd3d/</a></p>
+<p><strong>Sekati API</strong>
+Sekati API 是个纯 Actionscript 3.0 的框架，设计用来辅助开发 flash/flex 项目或应用的时候能更关注更高级的功能函数封装。该框架提供一个灵活的，丰富的 xml 可配置的应用架构，通过实现其核心显示对象、控制器模块，管理模块和公共模块的集成。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/sekati/">http://code.google.com/p/sekati/</a></p>
 
-<p><strong>netflex-as3-api</strong><br>基于Netflix API 应用的Actionscript 3公共类库<br><a href="http://code.google.com/p/netflex-as3-api/" target="_blank" rel="noopener">http://code.google.com/p/netflex-as3-api/</a></p>
+<p><strong>Soundcloud AS3 API</strong>
+用 AS3 写的通用 Soundcloud AS3 API，应用到 Flash,Flex 和 AIR 项目中去。
+<a target="_blank" rel="noopener" href="http://github.com/dasflash/Soundcloud-AS3-API/blame/1aa2d25c072309a1e931b08e88f6c7218a135be0/README">http://github.com/dasflash/Soundcloud-AS3-API/blame/1aa2d25c072309a1e931b08e88f6c7218a135be0/README</a></p>
 
-<p><strong>Sekati API</strong><br>Sekati API是个纯Actionscript 3.0的框架，设计用来辅助开发flash/flex项目或应用的时候能更关注更高级的功能函数封装。该框架提供一个灵活的，丰富的xml可配置的应用架构，通过实现其核心显示对象、控制器模块，管理模块和公共模块的集成。<br><a href="http://code.google.com/p/sekati/" target="_blank" rel="noopener">http://code.google.com/p/sekati/</a></p>
+<p><strong>tweensy</strong>
+tweensy 是一个不可思议的性能的 Actionscript 3 原型运动员。在 Teensy 有一个扩展的包名为 Tweensy FX，它能在 DisplayObjects 上应用运动效果。（应该属于缓动库）
+<a target="_blank" rel="noopener" href="http://code.google.com/p/tweensy/">http://code.google.com/p/tweensy/</a></p>
 
-<p><strong>Soundcloud AS3 API</strong><br>用AS3写的通用Soundcloud AS3 API，应用到Flash,Flex和AIR项目中去。<br><a href="http://github.com/dasflash/Soundcloud-AS3-API/blame/1aa2d25c072309a1e931b08e88f6c7218a135be0/README" target="_blank" rel="noopener">http://github.com/dasflash/Soundcloud-AS3-API/blame/1aa2d25c072309a1e931b08e88f6c7218a135be0/README</a></p>
+<p><strong>vyana </strong>
+轻量的类似于 Cairngorm-PureMVC 框架，关于模块化应用。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/vyana/">http://code.google.com/p/vyana/</a></p>
 
-<p><strong>tweensy</strong><br>tweensy是一个不可思议的性能的Actionscript 3原型运动员。在Teensy有一个扩展的包名为Tweensy FX，它能在DisplayObjects上应用运动效果。（应该属于缓动库）<br><a href="http://code.google.com/p/tweensy/" target="_blank" rel="noopener">http://code.google.com/p/tweensy/</a></p>
+<p><strong>wiiflash</strong>
+Wiimote 和 Flash 之间的通信。
+<a target="_blank" rel="noopener" href="http://code.google.com/p/wiiflash/">http://code.google.com/p/wiiflash/</a></p>
 
-<p><strong>vyana </strong><br>轻量的类似于Cairngorm-PureMVC框架，关于模块化应用。<br><a href="http://code.google.com/p/vyana/" target="_blank" rel="noopener">http://code.google.com/p/vyana/</a></p>
-
-<p><strong>wiiflash</strong><br>Wiimote和Flash之间的通信。<br><a href="http://code.google.com/p/wiiflash/" target="_blank" rel="noopener">http://code.google.com/p/wiiflash/</a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/11/01/old_blog/2009-11-01-flashplayertrust-on-gnulinux（ubuntu）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/11/01/old_blog/2009-11-01-flashplayertrust-on-gnulinux%EF%BC%88ubuntu%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/11/01/old_blog/2009-11-01-flashplayertrust-on-gnulinux%EF%BC%88ubuntu%EF%BC%89/" class="post-title-link" itemprop="url">FlashPlayerTrust on Gnu/Linux（ubuntu）</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/11/01/old_blog/2009-11-01-flashplayertrust-on-gnulinux（ubuntu）/" itemprop="url">FlashPlayerTrust on Gnu/Linux（ubuntu）</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-11-01T00:00:00+00:00">
-                2009-11-01
-              </time>
-            
+      <time title="创建时间：2009-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2009-11-01T00:00:00+00:00">2009-11-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>在 ubuntu 如果直接在本地进行播放 flash，如果这个 flash 有调用外部文件，经常出现 "不能访问本地资源";</p>
 
-      
-      
-
-      
-        
-          
-            <p>在ubuntu如果直接在本地进行播放flash，如果这个flash有调用外部文件，经常出现”不能访问本地资源”;</p>
-
-<p>所有需要手动设置flashplayer的安全设置：</p>
+<p>所有需要手动设置 flashplayer 的安全设置：</p>
 
 <p>找到配置目录：/home/{user}/.macromedia/Flash_Player/#Security/FlashPlayerTrust</p>
 
-<p>在该目录下可能已经有一些cfg文件了，如果你有安装air应用的话。</p>
+<p>在该目录下可能已经有一些 cfg 文件了，如果你有安装 air 应用的话。</p>
 
 <p>你可以在该目录下建：myTrustFiles.cfg</p>
 
@@ -737,1274 +644,726 @@
 
 <p><code> /tmp</code></p>
 
-<p>这样，就可以允许你的/home/{user}和/tmp所包含的swf都可以穿越安全沙箱了</p>
+<p>这样，就可以允许你的 /home/{user} 和 /tmp 所包含的 swf 都可以穿越安全沙箱了</p>
 
-<p>如果是windows和mac系统，只是路径不同而已：</p>
+<p>如果是 windows 和 mac 系统，只是路径不同而已：</p>
 
-<p>Windows     boot disk\Documents and Settings\Application Data\Macromedia\Flash Player#Security<br><br>Macintosh /Users//Library/Preferences/Macromedia/Flash Player/#Security/</p>
+<p>Windows&nbsp;&nbsp;&nbsp;&nbsp; boot disk\Documents and Settings\\Application Data\Macromedia\Flash Player\#Security<br>
+Macintosh /Users//Library/Preferences/Macromedia/Flash Player/#Security/</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/09/13/old_blog/2009-09-13-linux小工具/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/09/13/old_blog/2009-09-13-linux%E5%B0%8F%E5%B7%A5%E5%85%B7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/09/13/old_blog/2009-09-13-linux%E5%B0%8F%E5%B7%A5%E5%85%B7/" class="post-title-link" itemprop="url">linux 小工具</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/09/13/old_blog/2009-09-13-linux小工具/" itemprop="url">linux小工具</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-09-13T00:00:00+00:00">
-                2009-09-13
-              </time>
-            
+      <time title="创建时间：2009-09-13 00:00:00" itemprop="dateCreated datePublished" datetime="2009-09-13T00:00:00+00:00">2009-09-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>最近一只在忙项目，都没打理这个 blog 了</p>
 
-      
-      
-
-      
-        
-          
-            <p>最近一只在忙项目，都没打理这个blog了</p>
-
-<p>今天刚好看到几个工具，就在这里收录下，主要来源于此站的介绍：<a href="http://blog.youxu.info/category/linux/" target="_blank" rel="noopener">http://blog.youxu.info/category/linux/</a><br></p><h2>一个窗体管理器:awesome</h2><br><a href="http://awesome.naquadah.org/" target="_blank" rel="noopener">http://awesome.naquadah.org/</a><p></p>
+<p>今天刚好看到几个工具，就在这里收录下，主要来源于此站的介绍：http://blog.youxu.info/category/linux/
+</p><h2>一个窗体管理器:awesome</h2>
+http://awesome.naquadah.org/<p></p>
 
 <p>能进行自定义的配置，只要用键盘就可以方便游走在不同的窗体之间，得心应手。</p>
 
-<p>看介绍很心动，用用看先<br></p><h2>一个PDF查看器:apvlv</h2><br><a href="http://code.google.com/p/apvlv/" target="_blank" rel="noopener">http://code.google.com/p/apvlv/</a><p></p>
+<p>看介绍很心动，用用看先
+</p><h2>一个 PDF 查看器:apvlv</h2>
+http://code.google.com/p/apvlv/<p></p>
 
-<p>用vim的移动方式，在pdf中游走，据说是国人开发，更要支持下了。<br></p><h2>一个桌面切分工具:screenwm</h2><br><a href="http://sourceforge.net/projects/screenwm/" target="_blank" rel="noopener">http://sourceforge.net/projects/screenwm/</a><p></p>
+<p>用 vim 的移动方式，在 pdf 中游走，据说是国人开发，更要支持下了。
+</p><h2>一个桌面切分工具:screenwm</h2>
+http://sourceforge.net/projects/screenwm/<p></p>
 
 <p>可以让你横着或者竖着切分屏幕成任意的组合， 在每一个小单元里面，相当于运行着一个 GNU Screen 窗口</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/08/05/old_blog/2009-08-05-as通用类库-casalib/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/08/05/old_blog/2009-08-05-as%E9%80%9A%E7%94%A8%E7%B1%BB%E5%BA%93-casalib/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/08/05/old_blog/2009-08-05-as%E9%80%9A%E7%94%A8%E7%B1%BB%E5%BA%93-casalib/" class="post-title-link" itemprop="url">AS 通用类库 --CASALib</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/08/05/old_blog/2009-08-05-as通用类库-casalib/" itemprop="url">AS通用类库--CASALib</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-08-05T00:00:00+00:00">
-                2009-08-05
-              </time>
-            
+      <time title="创建时间：2009-08-05 00:00:00" itemprop="dateCreated datePublished" datetime="2009-08-05T00:00:00+00:00">2009-08-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>在做 as 开发的时候，经常会用到一些通用的类库，比如数学公式，加密解密算法，运动轨迹算法等。</p>
 
-      
-      
+<p>所以一般都是整理一些 as 类库，打造自己的类库。</p>
 
-      
-        
-          
-            <p>在做as开发的时候，经常会用到一些通用的类库，比如数学公式，加密解密算法，运动轨迹算法等。</p>
-
-<p>所以一般都是整理一些as类库，打造自己的类库。</p>
-
-<p>今天将推荐这个类库CASALib：<a href="http://casalib.org/" target="_blank">http://casalib.org/<br></a></p>
+<p>今天将推荐这个类库 CASALib：<a href="http://casalib.org/" target="_blank">http://casalib.org/
+</a></p>
 
 <p>其中包含的类比较全，打算借鉴这个类库，整合一个自己的类库，为以后的开发准备一个好的工具。</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/08/05/old_blog/2009-08-05-不错的as类库站点/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/08/05/old_blog/2009-08-05-%E4%B8%8D%E9%94%99%E7%9A%84as%E7%B1%BB%E5%BA%93%E7%AB%99%E7%82%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/08/05/old_blog/2009-08-05-%E4%B8%8D%E9%94%99%E7%9A%84as%E7%B1%BB%E5%BA%93%E7%AB%99%E7%82%B9/" class="post-title-link" itemprop="url">不错的 as 类库站点</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/08/05/old_blog/2009-08-05-不错的as类库站点/" itemprop="url">不错的as类库站点</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-08-05T00:00:00+00:00">
-                2009-08-05
-              </time>
-            
+      <time title="创建时间：2009-08-05 00:00:00" itemprop="dateCreated datePublished" datetime="2009-08-05T00:00:00+00:00">2009-08-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在整理个人类库发现国内居然有这么个站点，内容不错。</p>
+          <p>在整理个人类库发现国内居然有这么个站点，内容不错。</p>
 
 <p>介绍的类和包，都挺有用的，强烈推荐下：</p>
 
 <p><a href="http://asclass.yo2.cn/" target="_blank">http://asclass.yo2.cn/</a></p>
 
-<p>Flasher们，赶紧去淘淘看，或许就有收获了！</p>
+<p>Flasher 们，赶紧去淘淘看，或许就有收获了！</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/27/old_blog/2009-07-27-qq空间也启用gears了！/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/27/old_blog/2009-07-27-qq%E7%A9%BA%E9%97%B4%E4%B9%9F%E5%90%AF%E7%94%A8gears%E4%BA%86%EF%BC%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/07/27/old_blog/2009-07-27-qq%E7%A9%BA%E9%97%B4%E4%B9%9F%E5%90%AF%E7%94%A8gears%E4%BA%86%EF%BC%81/" class="post-title-link" itemprop="url">qq 空间也启用 Gears 了！</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/07/27/old_blog/2009-07-27-qq空间也启用gears了！/" itemprop="url">qq空间也启用Gears了！</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-07-27T00:00:00+00:00">
-                2009-07-27
-              </time>
-            
+      <time title="创建时间：2009-07-27 00:00:00" itemprop="dateCreated datePublished" datetime="2009-07-27T00:00:00+00:00">2009-07-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂七杂八/" itemprop="url" rel="index">
-                    <span itemprop="name">杂七杂八</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>qq空间也使用了Gears做本地缓存了，这样确实能提高不少速度！</p>
+          <p>qq 空间也使用了 Gears 做本地缓存了，这样确实能提高不少速度！</p>
 
 <p><a href="/media/2009/07/screenshot_0011.png"><img class="alignnone size-full wp-image-530" title="screenshot_001" src="/media/2009/07/screenshot_0011.png" alt="screenshot_001" width="535" height="357"></a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/18/old_blog/2009-07-18-强大的flash调试器de-monsterdebugger/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/18/old_blog/2009-07-18-%E5%BC%BA%E5%A4%A7%E7%9A%84flash%E8%B0%83%E8%AF%95%E5%99%A8de-monsterdebugger/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/07/18/old_blog/2009-07-18-%E5%BC%BA%E5%A4%A7%E7%9A%84flash%E8%B0%83%E8%AF%95%E5%99%A8de-monsterdebugger/" class="post-title-link" itemprop="url">强大的 Flash 调试器 De MonsterDebugger</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/07/18/old_blog/2009-07-18-强大的flash调试器de-monsterdebugger/" itemprop="url">强大的Flash调试器De MonsterDebugger</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-07-18T00:00:00+00:00">
-                2009-07-18
-              </time>
-            
+      <time title="创建时间：2009-07-18 00:00:00" itemprop="dateCreated datePublished" datetime="2009-07-18T00:00:00+00:00">2009-07-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>无意间看到这个调试器，没有试用过，但是看了视频演示，确实很强大。</p>
 
-      
-      
-
-      
-        
-          
-            <p>无意间看到这个调试器，没有试用过，但是看了视频演示，确实很强大。</p>
-
-<p>我把认为的优点介绍下：<br><ol><br>    <li>开源免费。（这是我最看重的一点）</li><br>    <li>可以传递Trace，这其他调试器也可以，但是这个可以做到按trace的时间，用list的形式列出来，很好<br><br>而且如果你trace的是xml，还自动以树形组件呈现。</li><br>    <li>实时变量参看，你可以间当前的所有变量的值，可以直观的参看，而且可以对变量直接进行赋值，赋值结果直接传递到swf里。</li><br>    <li>实时调用可见的函数，你可以在调试的时候，直接在调试器中调用函数，并且传递参数。</li><br></ol><br>不足：<br><ol><br>    <li>查看的变量好像只能是displayobject一些自带的变量，而且不能看child的，这功能需要完善。</li><br>    <li>没有断点功能！（用air做估计难度比较大，呵呵）</li><br>    <li>debug后，正式发布需要删除所有的debug代码，比较麻烦。但是外置的调试器，都是通过通讯来实现的，估计比较难做到官方的调试器那样；<br><br>所以在正式发布，需要对调试代码注释掉，一则为了安全，一则为了执行效率。</li><br>    <li>因为是经过通讯实现调试，所以应该加个加密机制，就是在swf设置密码，在调试器查看时需要输入密码才能查看。（类似的调试器有这功能了）</li><br></ol><br>但是总体来说这个外置调试器是我见过最牛的了，值得推荐！</p>
+<p>我把认为的优点介绍下：
+</p><ol>
+    <li>开源免费。（这是我最看重的一点）</li>
+    <li>可以传递 Trace，这其他调试器也可以，但是这个可以做到按 trace 的时间，用 list 的形式列出来，很好<br>
+而且如果你 trace 的是 xml，还自动以树形组件呈现。</li>
+    <li>实时变量参看，你可以间当前的所有变量的值，可以直观的参看，而且可以对变量直接进行赋值，赋值结果直接传递到 swf 里。</li>
+    <li>实时调用可见的函数，你可以在调试的时候，直接在调试器中调用函数，并且传递参数。</li>
+</ol>
+不足：
+<ol>
+    <li>查看的变量好像只能是 displayobject 一些自带的变量，而且不能看 child 的，这功能需要完善。</li>
+    <li>没有断点功能！（用 air 做估计难度比较大，呵呵）</li>
+    <li>debug 后，正式发布需要删除所有的 debug 代码，比较麻烦。但是外置的调试器，都是通过通讯来实现的，估计比较难做到官方的调试器那样；<br>
+所以在正式发布，需要对调试代码注释掉，一则为了安全，一则为了执行效率。</li>
+    <li>因为是经过通讯实现调试，所以应该加个加密机制，就是在 swf 设置密码，在调试器查看时需要输入密码才能查看。（类似的调试器有这功能了）</li>
+</ol>
+但是总体来说这个外置调试器是我见过最牛的了，值得推荐！<p></p>
 
 <p>地址：<a href="http://demonsterdebugger.com/" target="_blank">http://demonsterdebugger.com</a>/</p>
 
-<p>air下载：<a id="download" href="http://monsterdebugger.googlecode.com/files/MonsterDebuggerV2_04.air" target="_blank">Download latest version</a></p>
+<p>air 下载：<a id="download" href="http://monsterdebugger.googlecode.com/files/MonsterDebuggerV2_04.air" target="_blank">Download latest version</a></p>
 
 <p>项目地址：<a href="http://monsterdebugger.googlecode.com" target="_blank">monsterdebugger.googlecode.com</a></p>
 
 <p><a href="/media/2009/07/homepage.png"><img class="alignnone size-full wp-image-525" title="homepage" src="/media/2009/07/homepage.png" alt="homepage" width="658" height="247"></a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/18/old_blog/2009-07-18-强大的winetricks/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/18/old_blog/2009-07-18-%E5%BC%BA%E5%A4%A7%E7%9A%84winetricks/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/07/18/old_blog/2009-07-18-%E5%BC%BA%E5%A4%A7%E7%9A%84winetricks/" class="post-title-link" itemprop="url">强大的 winetricks</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/07/18/old_blog/2009-07-18-强大的winetricks/" itemprop="url">强大的winetricks</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-07-18T00:00:00+00:00">
-                2009-07-18
-              </time>
-            
+      <time title="创建时间：2009-07-18 00:00:00" itemprop="dateCreated datePublished" datetime="2009-07-18T00:00:00+00:00">2009-07-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>使用过 ubuntu 的人应该知道 wine 的工具。</p>
 
-      
-      
+<p>wine 可以将一些 windows 的软件移植到 linux 下，所以很方便。</p>
 
-      
-        
-          
-            <p>使用过ubuntu的人应该知道wine的工具。</p>
+<p>安装 wine：sudo apt-get install wine</p>
 
-<p>wine可以将一些windows的软件移植到linux下，所以很方便。</p>
+<p>但是在安装完 wine 后，需要配置写字体，中文支持等，这里就不详细说明了。</p>
 
-<p>安装wine：sudo apt-get install wine</p>
+<p>现在开始推荐 winetricks。</p>
 
-<p>但是在安装完wine后，需要配置写字体，中文支持等，这里就不详细说明了。</p>
+<p>这个应该是 wine 的一个简单的软件库工具，个人感觉很强大。</p>
 
-<p>现在开始推荐winetricks。</p>
+<p>里面包括：核心字体、.net framework 2.0 等，还有其他一些类库！</p>
 
-<p>这个应该是wine的一个简单的软件库工具，个人感觉很强大。</p>
+<p>安装：
+</p><blockquote>wget <!-- m --><a target="_blank" rel="noopener" href="http://kegel.com/wine/winetricks">http://kegel.com/wine/winetricks</a>
+chmod +x winetrick<br>
+sh ./winetricks</blockquote>
+大家试试吧！<p></p>
 
-<p>里面包括：核心字体、.net framework 2.0等，还有其他一些类库！</p>
-
-<p>安装：<br><blockquote>wget <!-- m --><a href="http://kegel.com/wine/winetricks" target="_blank" rel="noopener">http://kegel.com/wine/winetricks</a><br>chmod +x winetrick<br><br>sh ./winetricks</blockquote><br>大家试试吧！</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/18/old_blog/2009-07-18-酷站推荐（flash界面）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2009/07/18/old_blog/2009-07-18-%E9%85%B7%E7%AB%99%E6%8E%A8%E8%8D%90%EF%BC%88flash%E7%95%8C%E9%9D%A2%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2009/07/18/old_blog/2009-07-18-%E9%85%B7%E7%AB%99%E6%8E%A8%E8%8D%90%EF%BC%88flash%E7%95%8C%E9%9D%A2%EF%BC%89/" class="post-title-link" itemprop="url">酷站推荐（flash 界面）</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2009/07/18/old_blog/2009-07-18-酷站推荐（flash界面）/" itemprop="url">酷站推荐（flash界面）</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2009-07-18T00:00:00+00:00">
-                2009-07-18
-              </time>
-            
+      <time title="创建时间：2009-07-18 00:00:00" itemprop="dateCreated datePublished" datetime="2009-07-18T00:00:00+00:00">2009-07-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://www.thefwa.com/" target="_blank">http://www.thefwa.com/</a></p>
+          <p><a href="http://www.thefwa.com/" target="_blank">http://www.thefwa.com/</a></p>
 
 <p>其中推荐的网站都不错。</p>
 
 <p><a href="/media/2009/07/screenshot_001.png"><img class="alignnone size-medium wp-image-521" title="screenshot_001" src="/media/2009/07/screenshot_001-300x167.png" alt="screenshot_001" width="300" height="167"></a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">FireYang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">284</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">194</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FireYang 
-  | <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17009590号-1</a></span>
-
-  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
+</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">沪ICP备17009590号-1 </a>
+  </div>
 
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+<script src="/js/local-search.js"></script>
 
 
 
@@ -2017,147 +1376,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>

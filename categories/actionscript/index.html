@@ -1,716 +1,552 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.fireyang.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡说八道">
 <meta property="og:url" content="http://blog.fireyang.com/categories/actionscript/index.html">
 <meta property="og:site_name" content="胡说八道">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FireYang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡说八道">
 
 
+<link rel="canonical" href="http://blog.fireyang.com/categories/actionscript/">
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://blog.fireyang.com/categories/actionscript/">
-
-
-
-
-
-  <title>分类: actionscript | 胡说八道</title>
+<title>分类: actionscript | 胡说八道</title>
   
 
 
 
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-130224407-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
 
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
 
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">胡说八道</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">胡说八道</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FireYang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">192</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fireyang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fireyang" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner category posts-collapse">
+
 
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
+  <div class="post-block">
+    <div class="post-content">
       <div class="collection-title">
-        <h1>actionscript<small>分类</small>
-        </h1>
+        <h2 class="collection-header">actionscript
+          <small>分类</small>
+        </h2>
       </div>
 
       
-        
+    <div class="collection-year">
+      <span class="collection-header">2013</span>
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2013/01/27/old_blog/2013-01-27-understanding-flash-player-with-adobe-scout/" itemprop="url">
-              
-                <span itemprop="name">通过Adobe Scout 了解Flash Player</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2013-01-27T00:00:00+00:00" content="2013-01-27">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2013-01-27T00:00:00+00:00"
+              content="2013-01-27">
           01-27
         </time>
       </div>
 
-    </header>
-  </article>
-
+      <div class="post-title">
+          <a class="post-title-link" href="/2013/01/27/old_blog/2013-01-27-understanding-flash-player-with-adobe-scout/" itemprop="url">
+            <span itemprop="name">通过 Adobe Scout 了解 Flash Player</span>
+          </a>
+      </div>
 
       
-        
+    </header>
+  </article>
+    <div class="collection-year">
+      <span class="collection-header">2012</span>
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2012/10/16/old_blog/2012-10-16-actionscript-skills/" itemprop="url">
-              
-                <span itemprop="name">[转]AS文本位图描边</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2012-10-16T00:00:00+00:00" content="2012-10-16">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2012-10-16T00:00:00+00:00"
+              content="2012-10-16">
           10-16
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2012/10/16/old_blog/2012-10-16-actionscript-skills/" itemprop="url">
+            <span itemprop="name">[转] AS 文本位图描边</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2012/08/09/old_blog/2012-08-09-as-test/" itemprop="url">
-              
-                <span itemprop="name">actionscript 测试工具</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2012-08-09T00:00:00+00:00" content="2012-08-09">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2012-08-09T00:00:00+00:00"
+              content="2012-08-09">
           08-09
         </time>
       </div>
 
-    </header>
-  </article>
-
+      <div class="post-title">
+          <a class="post-title-link" href="/2012/08/09/old_blog/2012-08-09-as-test/" itemprop="url">
+            <span itemprop="name">actionscript 测试工具</span>
+          </a>
+      </div>
 
       
-        
+    </header>
+  </article>
+    <div class="collection-year">
+      <span class="collection-header">2011</span>
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2011/03/29/old_blog/2011-03-29-强大的jsfl/" itemprop="url">
-              
-                <span itemprop="name">强大的JSFL，开发Flash拓展插件</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2011-03-29T00:00:00+00:00" content="2011-03-29">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2011-03-29T00:00:00+00:00"
+              content="2011-03-29">
           03-29
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2011/03/29/old_blog/2011-03-29-%E5%BC%BA%E5%A4%A7%E7%9A%84jsfl/" itemprop="url">
+            <span itemprop="name">强大的 JSFL，开发 Flash 拓展插件</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2011/02/28/old_blog/2011-02-28-flashplayer-支持gpu的3d-出来了/" itemprop="url">
-              
-                <span itemprop="name">FlashPlayer 支持GPU的3D 出来了</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2011-02-28T00:00:00+00:00" content="2011-02-28">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2011-02-28T00:00:00+00:00"
+              content="2011-02-28">
           02-28
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2011/02/28/old_blog/2011-02-28-flashplayer-%E6%94%AF%E6%8C%81gpu%E7%9A%843d-%E5%87%BA%E6%9D%A5%E4%BA%86/" itemprop="url">
+            <span itemprop="name">FlashPlayer 支持 GPU 的 3D 出来了</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2011/02/28/old_blog/2011-02-28-gtalk也有flash版的客户端/" itemprop="url">
-              
-                <span itemprop="name">gtalk也有flash版的客户端</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2011-02-28T00:00:00+00:00" content="2011-02-28">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2011-02-28T00:00:00+00:00"
+              content="2011-02-28">
           02-28
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2011/02/28/old_blog/2011-02-28-gtalk%E4%B9%9F%E6%9C%89flash%E7%89%88%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF/" itemprop="url">
+            <span itemprop="name">gtalk 也有 flash 版的客户端</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2011/02/18/old_blog/2011-02-18-flashfirebug的发布/" itemprop="url">
-              
-                <span itemprop="name">FlashFireBug的发布</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2011-02-18T00:00:00+00:00" content="2011-02-18">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2011-02-18T00:00:00+00:00"
+              content="2011-02-18">
           02-18
         </time>
       </div>
 
-    </header>
-  </article>
-
+      <div class="post-title">
+          <a class="post-title-link" href="/2011/02/18/old_blog/2011-02-18-flashfirebug%E7%9A%84%E5%8F%91%E5%B8%83/" itemprop="url">
+            <span itemprop="name">FlashFireBug 的发布</span>
+          </a>
+      </div>
 
       
-        
+    </header>
+  </article>
+    <div class="collection-year">
+      <span class="collection-header">2010</span>
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2010/12/23/old_blog/2010-12-23-as3-非alchemy的快速内存访问/" itemprop="url">
-              
-                <span itemprop="name">AS3-非Alchemy的快速内存访问</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2010-12-23T00:00:00+00:00" content="2010-12-23">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2010-12-23T00:00:00+00:00"
+              content="2010-12-23">
           12-23
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2010/12/23/old_blog/2010-12-23-as3-%E9%9D%9Ealchemy%E7%9A%84%E5%BF%AB%E9%80%9F%E5%86%85%E5%AD%98%E8%AE%BF%E9%97%AE/" itemprop="url">
+            <span itemprop="name">AS3 - 非 Alchemy 的快速内存访问</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2010/12/09/old_blog/2010-12-09-flash游戏开发系统学习/" itemprop="url">
-              
-                <span itemprop="name">flash游戏开发系统学习</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2010-12-09T00:00:00+00:00" content="2010-12-09">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2010-12-09T00:00:00+00:00"
+              content="2010-12-09">
           12-09
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2010/12/09/old_blog/2010-12-09-flash%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/" itemprop="url">
+            <span itemprop="name">flash 游戏开发系统学习</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2010/11/15/old_blog/2010-11-15-寻路手机/" itemprop="url">
-              
-                <span itemprop="name">寻路算法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2010-11-15T00:00:00+00:00" content="2010-11-15">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2010-11-15T00:00:00+00:00"
+              content="2010-11-15">
           11-15
         </time>
       </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2010/11/15/old_blog/2010-11-15-%E5%AF%BB%E8%B7%AF%E6%89%8B%E6%9C%BA/" itemprop="url">
+            <span itemprop="name">寻路算法</span>
+          </a>
+      </div>
+
+      
     </header>
   </article>
 
-
-      
     </div>
-
   </div>
   
   
   
-
-  
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/categories/actionscript/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/categories/actionscript/page/5/">5</a><a class="extend next" rel="next" href="/categories/actionscript/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/categories/actionscript/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/categories/actionscript/page/5/">5</a><a class="extend next" rel="next" href="/categories/actionscript/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">FireYang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">284</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">194</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FireYang 
-  | <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17009590号-1</a></span>
-
-  
-</div>
-
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
+</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">沪ICP备17009590号-1 </a>
+  </div>
 
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+<script src="/js/local-search.js"></script>
 
 
 
@@ -723,147 +559,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>

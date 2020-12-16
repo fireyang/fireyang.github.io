@@ -1,1842 +1,1245 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.fireyang.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡说八道">
 <meta property="og:url" content="http://blog.fireyang.com/page/28/index.html">
 <meta property="og:site_name" content="胡说八道">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FireYang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡说八道">
 
 
+<link rel="canonical" href="http://blog.fireyang.com/page/28/">
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://blog.fireyang.com/page/28/">
-
-
-
-
-
-  <title>胡说八道</title>
+<title>胡说八道</title>
   
 
 
 
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-130224407-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
 
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
 
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">胡说八道</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">胡说八道</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-读+“戒嗔的白粥馆”/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-读+“戒嗔的白粥馆”/" itemprop="url">读 “戒嗔的白粥馆”</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br><span>戒嗔的白粥馆 <a href="http://user.qzone.qq.com/787129669" target="_blank">http://user.qzone.qq.com/787129669</a></span><br></p><br><p><br><span>毕业的这段日子里，很多事情让我很郁闷，但是看了这个空间，每篇都很有禅理，让我的内心平静许多。为人处事，理应如此！</span><br></p><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-集结号：用特种兵来拍“土”八路/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-集结号：用特种兵来拍“土”八路/" itemprop="url">集结号：用特种兵来拍“土”八路</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/胡说八道/" itemprop="url" rel="index">
-                    <span itemprop="name">胡说八道</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> 集结号中的战斗效果确实很像外国大片，如兄弟连，拯救大兵等；唯一让我好奇的是在片头的一次进攻。</p>
-
-<p>双方对峙，派一个排上去查看情况，这段情节实在？其中的队伍行进方式和队员间的手势，感觉是当代的特种兵，训练有素，很不符合当时农民出身的八路军形象<br><br>有点脱离现实了，感觉在玩CS，这是个人觉得在情节上不足的地方</p>
-
-<p><img src="/image.axd?picture=11921221122819580293377297496.jpg" height="676" width="400"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
-  
-  
-  
-  </article>
+</div>
 
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/02/01/old_blog/2007-02-01-Flex的全局变量(原创翻译)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/02/01/old_blog/2007-02-01-Flex的全局变量(原创翻译)/" itemprop="url">Flex的全局变量(原创翻译)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-02-01T00:00:00+00:00">
-                2007-02-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>原文:<br><br></p><h2 id="post-38"><a href="http://weblogs.macromedia.com/mesh/archives/2007/02/global_variable.html" rel="noopener" target="_blank">Global Variables within Flex Applications</a> </h2><br><p class="entry"><br></p><h3 class="entry">在Flex应用程序中的全局变量</h3><br><p class="entry">最近在<a href="http://tech.groups.yahoo.com/group/flexcomponents/" target="_blank" rel="noopener"><font color="#002c99">Flex Components</font></a>的邮件列表里经常有这样的一些提问：如果在Flex应用程序中设置全局变量？由于它的经常出现，所以在我的blog上（当然是指原文的作者）贴出答案。<br>其实非常简单，只用在你的主应用程序类里（mx:Application ）定义一个公有（public）的变量就可以了，如下：</p><br><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version=”1.0”&nbsp;encoding=”utf-8”</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">=”<a href="http://www.adobe.com/2006/mxml&quot;" target="_blank" rel="noopener">http://www.adobe.com/2006/mxml&quot;</a></span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">=”absolute”</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;var&nbsp;foo:String&nbsp;=&nbsp;”bar”;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div><br>你能在应用程序的任何地方访问到这个变量，像这样：<br><br><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">Application.application.foo</span></div><br>如果有需要，你也可以设置一个绑定变量。（添加一个bindable标签）<br>欢迎在回复里提出问题或意见。（无论是原文还是我的blog）<br><img src="http://www.cnblogs.com/FireYang/aggbug/646722.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-02-10 10:30 <a href="http://www.cnblogs.com/FireYang/archive/2007/02/10/646722.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
-
-          
-        
-      
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/01/02/old_blog/2007-01-02-欢迎加入RIA+SEED+!/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
+</div>
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/01/02/old_blog/2007-01-02-欢迎加入RIA+SEED+!/" itemprop="url">欢迎加入RIA SEED !</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-01-02T00:00:00+00:00">
-                2007-01-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><div class="ghgrn">RIA SEED是一个google的groups,以前是在mmug上的一群人组件的,讨论mm技术的一个园地.<br>现在在google上按了个家,继续mm精神,继续RIA<br>希望更多的RIA开发者,在这里共享自己的经验.<br></div><br><table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0"><br>    <tbody><br>        <tr><br>            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td><br>        </tr><br>        <tr><br>            <td style="PADDING-LEFT: 5px; FONT-SIZE: 125%"><strong>RIA SEED (OLD MMUGCN)</strong> </td><br>        </tr><br>        <tr><br>            <td style="PADDING-LEFT: 5px"><a href="http://groups.google.com/group/riaseed?hl=zh-CN" target="_blank" rel="noopener">访问此论坛</a> </td><br>        </tr><br>    </tbody><br></table><br><table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0" border="0"><br>    <tbody><br>        <tr><br>            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td><br>        </tr><br>        <tr><br>            <td style="PADDING-LEFT: 5px"><strong>订阅 RIA SEED (OLD MMUGCN)</strong> </td><br>        </tr><br>        <form action="http://groups.google.com/group/riaseed/boxsubscribe"><br>            <input type="hidden" value="zh-CN" name="hl"><br>            </form><tr><br>                <td style="PADDING-LEFT: 5px">电子邮件： <input name="email"> <input type="submit" value="订阅" name="sub"> </td><br>            </tr><br><br>        <tr><br>            <td align="right"><a href="http://groups.google.com/group/riaseed?hl=zh-CN" target="_blank" rel="noopener">访问此论坛</a> </td><br>        </tr><br>    </tbody><br></table><br></p><p><span style="COLOR: red">如果要gmial的邀请，请留言，我这里还有很多．<br><span style="COLOR: #000000">功能(简单介绍):</span></span></p><br><ol><br>    <li><span style="COLOR: red"><span style="COLOR: #000000">上传文件</span></span></li><br>    <li><span style="COLOR: red"><span style="COLOR: #000000">直接把资料发送到邮件,可以设置,主题或所有内容</span></span></li><br>    <li><span style="COLOR: red"><span style="COLOR: #000000">有自带的wiki功能 </span></span></li><br></ol><br><br><img src="http://www.cnblogs.com/FireYang/aggbug/631749.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-27 09:01 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/27/631749.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
   </div>
-  
-  
-  
-  </article>
 
+  <aside class="sidebar">
 
-    
-      
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
 
-  
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/01/01/old_blog/2007-01-01-as+3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FireYang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/01/01/old_blog/2007-01-01-as+3/" itemprop="url">as 3.0一百个小技巧</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-01-01T00:00:00+00:00">
-                2007-01-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><strong><a href="http://www.kirupa.com/forum/showthread.php?t=223798" target="_blank"><strong>ActionScript 3 Tip of the Day</strong> </a></strong><br>从上面的连接进去,那里的小技巧用处大的很.收藏了先。<br>想想还是把它翻译过来吧</p><br><ol><br>    <li>改变帧的播放速度<br>在AS3里的flash.display.Stage类可以改变播放速度。<br><span style="COLOR: #0000ff">stage</span>.<span style="COLOR: #000080">frameRate</span> = <span style="COLOR: #000080">12;</span><br>速度的值在范围0.01~1000之间。<br><br>    </li><li>类的作用域绑定到类的方法上<br>以下几种方式，this都指向类。 </li><br>    <ul><br>        <li>类直接调用方法<br><br>        </li><li>方法重新引用<br><br>        </li><li>用call或apply调用<br><br>        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 316px; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">package</span><span style="COLOR: #000000">&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">import</span><span style="COLOR: #000000">&nbsp;flash.display.Sprite;<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">class</span><span style="COLOR: #000000">&nbsp;ClassScope&nbsp;</span><span style="COLOR: #0000ff">extends</span><span style="COLOR: #000000">&nbsp;Sprite&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;ClassScope()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;traceThis();&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;”Class&nbsp;Instance”</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;obj:Object&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;Object();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj.traceThis&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;traceThis;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj.traceThis();&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;”Class&nbsp;Instance”</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;traceThis.call(</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;Sprite());&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;”Class&nbsp;Instance”</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;override&nbsp;function&nbsp;toString():String&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Class&nbsp;Instance</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;traceThis():</span><span style="COLOR: #0000ff">void</span><span style="COLOR: #000000">&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trace(</span><span style="COLOR: #0000ff">this</span><span style="COLOR: #000000">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</span></div><br>        </li><br>    </ul><br>    <li>图形对象和绘画接口<br>包括以下几种</li><br>    <ul><br>        <li>drawCircle(x:Number, y:Number, radius:Number):void<br><br>        </li><li>drawEllipse(x:Number, y:Number, width:Number, height:Number):void<br><br>        </li><li>drawRect(x:Number, y:Number, width:Number, height:Number):void<br><br>        </li><li>drawRoundRect(x:Number, y:Number, width:Number, height:Number, ellipseWidth:Number, ellipseHeight:Number):void <br>如下使用：<br><br>        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><br>        <div align="left"><span style="COLOR: #008000">//</span><span style="COLOR: #008000">画一个蓝色的圆角矩形</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">var&nbsp;square:Sprite&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;Sprite();<br>square.graphics.beginFill(</span><span style="COLOR: #000000">0xFF</span><span style="COLOR: #000000">);<br>square.graphics.drawRoundRect(</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">50</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">10</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">10</span><span style="COLOR: #000000">);<br>square.graphics.endFill();<br>addChild(square);</span></div><br>        </div><br>        </li><br>    </ul><br>    <li>新的变量类型<br><br>    <table style="WIDTH: 320px; BORDER-COLLAPSE: collapse" cellspacing="0" cellpadding="3" border="1"><br>        <tbody><br>            <tr><br>                <td valign="top"><br>                <p>简单：</p><br>                <ul><br>                    <li>Boolean </li><br>                    <li>int </li><br>                    <li>null </li><br>                    <li>Number </li><br>                    <li>String </li><br>                    <li>uint </li><br>                    <li>undefined</li><br>                </ul><br>                </td><br>                <td valign="top"><br>                <p>复杂：</p><br>                <ul><br>                    <li>Object </li><br>                    <li>Array </li><br>                    <li>Date </li><br>                    <li>Error </li><br>                    <li>Function </li><br>                    <li>RegExp </li><br>                    <li>XML </li><br>                    <li>XMLList</li><br>                </ul><br>                </td><br>            </tr><br>        </tbody><br>    </table><br>    注意事项：</li><br>    <ul><br>        <li>Void不再是大写，而是小写的void；</li><br>        <li>多了一个新的类型<em>,表示任意类型，在as3里一定要指定变量类型，如果不确定可以用</em>代替；</li><br>        <li>XML 对象也不同于以前as1和as2中的XML 对象，原来的XML 对象在as3里用XMLObject代替；新的XML是基于E4X标准的xml；</li><br>        <li>integer 类型在as3里不再存在，只有int和uint类型，他们是不能表示小数的，只能用来表示整数，这样在类似for这样的循环运算中比较方便，而且int可以和较小的Number类型数值进行转换（Number过大容易发生溢出），而像uint一般用在特殊的地方，比如color；</li><br>    </ul><br>    <li></li><br></ol><br><img src="http://www.cnblogs.com/FireYang/aggbug/621510.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 11:35 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/621510.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/01/01/old_blog/2007-01-01-能移动的RichTextEdit/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/01/01/old_blog/2007-01-01-能移动的RichTextEdit/" itemprop="url">能移动的RichTextEdit</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-01-01T00:00:00+00:00">
-                2007-01-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version=”1.0”&nbsp;encoding=”utf-8”</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">=”<a href="http://www.adobe.com/2006/mxml&quot;" target="_blank" rel="noopener">http://www.adobe.com/2006/mxml&quot;</a></span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">=”<em>“</em></span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">=”100%”</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;”none”;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">=”rte”</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=””</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">=”5”</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">=”floatControlBar()”</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">=”rteControl”</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">=”325”</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">=”ToolBar”</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div><br><object style="WIDTH: 691px; HEIGHT: 441px" height="441" width="691" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"><br><param name="Movie" value="/images/cnblogs_com/fireyang/poptitle.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/poptitle.swf" width="500" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"><br></object><br><br><img src="http://www.cnblogs.com/FireYang/aggbug/622034.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 22:16 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/622034.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/12/03/old_blog/2006-12-03-Advanced+ActionScript+3+with+Design+Patterns+/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2006/12/03/old_blog/2006-12-03-Advanced+ActionScript+3+with+Design+Patterns+/" itemprop="url">Advanced ActionScript 3 with Design Patterns</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2006-12-03T00:00:00+00:00">
-                2006-12-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>又得到一本新的ActionScript 3.0的电子书，贴上来共享一下<br><a href="http://www.cnblogs.com/Files/FireYang/Adobe.Press.Advanced.ActionScript.3.with.Design.Patterns.Nov.2006.rar" target="_blank">Advanced ActionScript 3 with Design Patterns </a><br><img height="500" alt src="http://www.cnblogs.com/images/cnblogs_com/fireyang/as3p.jpg" width="405" border="0"><br><img src="http://www.cnblogs.com/FireYang/aggbug/608063.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-30 17:25 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/30/608063.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/12/02/old_blog/2006-12-02-北京记事：老刘的珍贵礼物/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2006/12/02/old_blog/2006-12-02-北京记事：老刘的珍贵礼物/" itemprop="url">北京记事：老刘的珍贵礼物</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2006-12-02T00:00:00+00:00">
-                2006-12-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>到了北京几天后，比完了ITAT就去见老刘，老刘是我在计算机群里认识的朋友，由于是初次见面，彼此都不认识，只是通过手机中简单的约定找到了彼此，第一眼看到老刘，有一种亲切感，他长的很&#8220;可爱&#8221;（希望他别K我）。而最让我感动的是他的礼物，现在贴上来铭记一下：<br><img height="661" alt src="http://www.cnblogs.com/images/cnblogs_com/fireyang/flashcommserver.jpg" width="504" border="0"><br><img src="http://www.cnblogs.com/FireYang/aggbug/603466.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-25 22:07 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/25/603466.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/12/01/old_blog/2006-12-01-flex中datagrid中的过滤功能/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2006/12/01/old_blog/2006-12-01-flex中datagrid中的过滤功能/" itemprop="url">flex中datagrid中的过滤功能</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2006-12-01T00:00:00+00:00">
-                2006-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>代码来自<a href="http://try.flex.org/index.cfm" target="_blank" rel="noopener">http://try.flex.org/index.cfm</a><br><br><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">&lt;?</span><span style="COLOR: #000000">xml&nbsp;version</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">1.0</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;encoding</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">utf-8</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Application&nbsp;xmlns:mx</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><a href="http://www.adobe.com/2006/mxml" target="_blank" rel="noopener">http://www.adobe.com/2006/mxml</a></span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;layout</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">vertical</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">initApp()</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Script</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;!</span><span style="COLOR: #000000">[CDATA[<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;On&nbsp;startup</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;initApp():</span><span style="COLOR: #0000ff">void</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Set&nbsp;filter&nbsp;function<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Be&nbsp;careful&nbsp;to&nbsp;set&nbsp;filterFunction<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;only&nbsp;after&nbsp;ArrayCollection&nbsp;has&nbsp;been<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;populated.</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myData.filterFunction</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">processFilter;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Filter&nbsp;function</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;processFilter(item:Object):Boolean<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;result:Boolean</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">false</span><span style="COLOR: #000000">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;If&nbsp;no&nbsp;filter&nbsp;text,&nbsp;or&nbsp;a&nbsp;match,&nbsp;then&nbsp;true</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(</span><span style="COLOR: #000000">!</span><span style="COLOR: #000000">item.name.length<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">||</span><span style="COLOR: #000000">&nbsp;item.name.toUpperCase().indexOf(txtFilter.text.toUpperCase())&nbsp;</span><span style="COLOR: #000000">&gt;=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">true</span><span style="COLOR: #000000">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>]]</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:Script</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;!–</span><span style="COLOR: #000000">&nbsp;Data&nbsp;(use&nbsp;ArrayCollection)&nbsp;</span><span style="COLOR: #000000">–&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:ArrayCollection&nbsp;id</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">myData</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:source</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Ben&nbsp;Forta</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Oak&nbsp;Park,&nbsp;MI</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">(248)555-5555</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Jane&nbsp;Doe</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">New&nbsp;York,&nbsp;NY</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">(212)555-1234</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Jim&nbsp;Jones</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Atlanta,&nbsp;GA</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">(414)555-1212</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Roberta&nbsp;Roberts</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Chicago,&nbsp;IL</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">(312)555-4321</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Steve&nbsp;Stevens</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Boston,&nbsp;MA</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">(617)555-5656</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:source</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:ArrayCollection</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;!–</span><span style="COLOR: #000000">&nbsp;UI&nbsp;</span><span style="COLOR: #000000">–&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:HBox&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Label&nbsp;text</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Filter:</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:TextInput&nbsp;id</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">txtFilter</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;change</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">myData.refresh()</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:HBox</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGrid&nbsp;dataProvider</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">{myData}</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;height</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:columns</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Name</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">name</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Location</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">location</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">Phone</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">phone</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:columns</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:DataGrid</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:Application</span><span style="COLOR: #000000">&gt;</span></div><br></p><p><br>其中主要的是ArrayCollection的filterFunction属性,他的使用方法如下:<br>ArrayCollection的filterFunction属性是继承自ListCollectionView的，还有其他类具有这个功能,以下是一个继承关系图,详细的可以看flex 的帮助文件：<br><img height="132" alt src="http://www.cnblogs.com/images/cnblogs_com/fireyang/arraycolection.JPG" width="499" border="0"><br>filterFunction属性的值是一个函数(Function)：<br>参数：Object类型的一个值,也可以不带参数；<br>返回值：Boolean类型的值，如果返回值为True就把这个Object放到里面,反之亦然。<br>其函数格式事例如下：<br>f(item:Object):Boolean<br>在函数里面进行处理,以上的例子就是如此：<br>&nbsp;public function processFilter(item:Object):Boolean<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var result:Boolean=false;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp;查看文本框里的字符串长度或字符串的匹配（大小写都可以），然后返回结果。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!item.name.length || item.name.toUpperCase().indexOf(txtFilter.text.toUpperCase()) &gt;= 0)<br>&nbsp;&nbsp;&nbsp; &nbsp;result=true;<br>&nbsp;&nbsp;&nbsp; &nbsp;return result;<br>&nbsp;}<br><span style="COLOR: red">注意：filterFunction函数只有在对象建立的时候和调用reflash()的时候执行的，所以一定要在显示之前调用下reflash()，否则显示就不正常了，切记！切记！</span><br></p><br><img src="http://www.cnblogs.com/FireYang/aggbug/594048.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-16 10:43 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/16/594048.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/11/02/old_blog/2006-11-02-actionscript+3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2006/11/02/old_blog/2006-11-02-actionscript+3/" itemprop="url">actionscript 3.0 cookbook</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2006-11-02T00:00:00+00:00">
-                2006-11-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p>个人很喜欢OReilly的书,也放出来共享下!<br><br><img height="240" alt src="http://www.cnblogs.com/images/cnblogs_com/fireyang/17_113615_actionscript_3_cookbook.jpg" width="240" border="0"><br><span style="COLOR: maroon"><a href="http://www.cnblogs.com/Files/FireYang/ActionScript_3.rar" target="_blank" rel="noopener"><span style="COLOR: maroon">OReilly.ActionScript.3.0.Cookbook.Oct.2006.chm<br></span></a><a href="http://www.cnblogs.com/Files/FireYang/AS3CBLibrary.zip" target="_blank" rel="noopener">源代码下载</a></span></p><br><img src="http://www.cnblogs.com/FireYang/aggbug/569606.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-23 11:15 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/23/569606.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/27/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><span class="page-number current">28</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/29/"><i class="fa fa-angle-right"></i></a>
+          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">192</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fireyang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fireyang" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="twitter fa-fw"></i>Twitter</a>
+      </span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
 
-      
 
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">FireYang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">284</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">194</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
+        </section>
+      </div>
     </div>
   </aside>
+  <div class="sidebar-dimmer"></div>
 
 
-        
-      </div>
-    </main>
+    </header>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FireYang 
-  | <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17009590号-1</a></span>
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-%E8%AF%BB+%E2%80%9C%E6%88%92%E5%97%94%E7%9A%84%E7%99%BD%E7%B2%A5%E9%A6%86%E2%80%9D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-%E8%AF%BB+%E2%80%9C%E6%88%92%E5%97%94%E7%9A%84%E7%99%BD%E7%B2%A5%E9%A6%86%E2%80%9D/" class="post-title-link" itemprop="url">读 “戒嗔的白粥馆”</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
 
   
 </div>
 
+        </div>
+      </header>
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>
+<span>戒嗔的白粥馆 <a href="http://user.qzone.qq.com/787129669" target="_blank">http://user.qzone.qq.com/787129669</a></span> 
+</p>
+<p>
+<span> 毕业的这段日子里，很多事情让我很郁闷，但是看了这个空间，每篇都很有禅理，让我的内心平静许多。为人处事，理应如此！</span> 
+</p>
+<p></p>
 
+      
+    </div>
 
+    
+    
+    
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
     </footer>
+  </article>
+</div>
+
+
+
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
 
-  </div>
-
+<div class="post-block">
+  
   
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%9A%E7%94%A8%E7%89%B9%E7%A7%8D%E5%85%B5%E6%9D%A5%E6%8B%8D%E2%80%9C%E5%9C%9F%E2%80%9D%E5%85%AB%E8%B7%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-%E9%9B%86%E7%BB%93%E5%8F%B7%EF%BC%9A%E7%94%A8%E7%89%B9%E7%A7%8D%E5%85%B5%E6%9D%A5%E6%8B%8D%E2%80%9C%E5%9C%9F%E2%80%9D%E5%85%AB%E8%B7%AF/" class="post-title-link" itemprop="url">集结号：用特种兵来拍 “土” 八路</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%83%A1%E8%AF%B4%E5%85%AB%E9%81%93/" itemprop="url" rel="index"><span itemprop="name">胡说八道</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p> 集结号中的战斗效果确实很像外国大片，如兄弟连，拯救大兵等；唯一让我好奇的是在片头的一次进攻。</p>
+
+<p>双方对峙，派一个排上去查看情况，这段情节实在？其中的队伍行进方式和队员间的手势，感觉是当代的特种兵，训练有素，很不符合当时农民出身的八路军形象<br>
+有点脱离现实了，感觉在玩 CS，这是个人觉得在情节上不足的地方</p>
+
+<p><img src="/image.axd?picture=11921221122819580293377297496.jpg" height="676" width="400"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/02/01/old_blog/2007-02-01-Flex%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F(%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/02/01/old_blog/2007-02-01-Flex%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F(%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91)/" class="post-title-link" itemprop="url">Flex 的全局变量 (原创翻译)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-02-01 00:00:00" itemprop="dateCreated datePublished" datetime="2007-02-01T00:00:00+00:00">2007-02-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>原文:<br>
+</p><h2 id="post-38"><a target="_blank" href="http://weblogs.macromedia.com/mesh/archives/2007/02/global_variable.html" rel="bookmark noopener">Global Variables within Flex Applications</a> </h2>
+<p class="entry">
+</p><h3 class="entry">在 Flex 应用程序中的全局变量</h3>
+<p class="entry">最近在 <a target="_blank" rel="noopener" href="http://tech.groups.yahoo.com/group/flexcomponents/"><font color="#002c99">Flex Components</font></a> 的邮件列表里经常有这样的一些提问：如果在 Flex 应用程序中设置全局变量？由于它的经常出现，所以在我的 blog 上（当然是指原文的作者）贴出答案。<br>其实非常简单，只用在你的主应用程序类里（mx:Application ）定义一个公有（public）的变量就可以了，如下：</p>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;var&nbsp;foo:String&nbsp;=&nbsp;"bar";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+你能在应用程序的任何地方访问到这个变量，像这样：<br>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">Application.application.foo</span></div>
+如果有需要，你也可以设置一个绑定变量。（添加一个bindable标签）<br>欢迎在回复里提出问题或意见。（无论是原文还是我的blog）
+<img src="http://www.cnblogs.com/FireYang/aggbug/646722.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-02-10 10:30 <a href="http://www.cnblogs.com/FireYang/archive/2007/02/10/646722.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/01/02/old_blog/2007-01-02-%E6%AC%A2%E8%BF%8E%E5%8A%A0%E5%85%A5RIA+SEED+!/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/01/02/old_blog/2007-01-02-%E6%AC%A2%E8%BF%8E%E5%8A%A0%E5%85%A5RIA+SEED+!/" class="post-title-link" itemprop="url">欢迎加入 RIA SEED !</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-01-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-01-02T00:00:00+00:00">2007-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><div class="ghgrn">RIA SEED 是一个 google 的 groups, 以前是在 mmug 上的一群人组件的，讨论 mm 技术的一个园地.<br>现在在 google 上按了个家，继续 mm 精神，继续 RIA<br>希望更多的 RIA 开发者，在这里共享自己的经验.<br></div>
+<table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
+        </tr>
+        <tr>
+            <td style="PADDING-LEFT: 5px; FONT-SIZE: 125%"><strong>RIA SEED (OLD MMUGCN) </strong> </td>
+        </tr>
+        <tr>
+            <td style="PADDING-LEFT: 5px"><a target="_blank" rel="noopener" href="http://groups.google.com/group/riaseed?hl=zh-CN">访问此论坛</a> </td>
+        </tr>
+    </tbody>
+</table>
+<pre><code>    &lt;tr&gt;
+        &lt;td align="right"&gt;&lt;a href="http://groups.google.com/group/riaseed?hl=zh-CN"&gt;访问此论坛&lt;/a&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre><table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0" border="0">
+    <tbody>
+        <tr>
+            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
+        </tr>
+        <tr>
+            <td style="PADDING-LEFT: 5px"><strong>订阅 RIA SEED (OLD MMUGCN)</strong> </td>
+        </tr>
+        <form action="http://groups.google.com/group/riaseed/boxsubscribe"></form>
+            <input type="hidden" value="zh-CN" name="hl">
+            <tr>
+                <td style="PADDING-LEFT: 5px"> 电子邮件： <input name="email"> <input type="submit" value="订阅" name="sub"> </td>
+            </tr>
+
+
+</tbody></table>
+<p><span style="COLOR: red">如果要 gmial 的邀请，请留言，我这里还有很多．<br><span style="COLOR: #000000">功能 (简单介绍):</span></span></p>
+<ol>
+    <li><span style="COLOR: red"><span style="COLOR: #000000">上传文件</span></span></li>
+    <li><span style="COLOR: red"><span style="COLOR: #000000">直接把资料发送到邮件，可以设置，主题或所有内容</span></span></li>
+    <li><span style="COLOR: red"><span style="COLOR: #000000">有自带的 wiki 功能 </span></span></li>
+</ol>
+
+<p><img src="http://www.cnblogs.com/FireYang/aggbug/631749.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-27 09:01 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/27/631749.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/01/01/old_blog/2007-01-01-as+3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/01/01/old_blog/2007-01-01-as+3/" class="post-title-link" itemprop="url">as 3.0 一百个小技巧</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2007-01-01T00:00:00+00:00">2007-01-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p><strong><a href="http://www.kirupa.com/forum/showthread.php?t=223798" target="_blank"><strong>ActionScript 3 Tip of the Day</strong> </a></strong><br>从上面的连接进去，那里的小技巧用处大的很。收藏了先。<br>想想还是把它翻译过来吧</p>
+<ol>
+    <li>改变帧的播放速度<br>在 AS3 里的 flash.display.Stage 类可以改变播放速度。<br><span style="COLOR: #0000ff">stage</span>.<span style="COLOR: #000080">frameRate</span> = <span style="COLOR: #000080">12;</span><br>速度的值在范围 0.01~1000 之间。<br>
+    </li><li>类的作用域绑定到类的方法上<br>以下几种方式，this 都指向类。 </li>
+    <ul>
+        <li>类直接调用方法<br>
+        </li><li>方法重新引用<br>
+        </li><li>用 call 或 apply 调用<br>
+        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 316px; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">package</span><span style="COLOR: #000000">&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">import</span><span style="COLOR: #000000">&nbsp;flash.display.Sprite;<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">class</span><span style="COLOR: #000000">&nbsp;ClassScope&nbsp;</span><span style="COLOR: #0000ff">extends</span><span style="COLOR: #000000">&nbsp;Sprite&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;ClassScope()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;traceThis();&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;"Class&nbsp;Instance"</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;obj:Object&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;Object();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj.traceThis&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;traceThis;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obj.traceThis();&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;"Class&nbsp;Instance"</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;traceThis.call(</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;Sprite());&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;"Class&nbsp;Instance"</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;override&nbsp;function&nbsp;toString():String&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Class&nbsp;Instance</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;traceThis():</span><span style="COLOR: #0000ff">void</span><span style="COLOR: #000000">&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trace(</span><span style="COLOR: #0000ff">this</span><span style="COLOR: #000000">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</span></div>
+        </li>
+    </ul>
+    <li>图形对象和绘画接口<br>包括以下几种</li>
+    <ul>
+        <li> drawCircle(x:Number, y:Number, radius:Number):void<br>
+        </li><li>drawEllipse(x:Number, y:Number, width:Number, height:Number):void<br>
+        </li><li>drawRect(x:Number, y:Number, width:Number, height:Number):void<br>
+        </li><li>drawRoundRect(x:Number, y:Number, width:Number, height:Number, ellipseWidth:Number, ellipseHeight:Number):void <br>如下使用：<br>
+        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee">
+        <div align="left"><span style="COLOR: #008000">//</span><span style="COLOR: #008000"> 画一个蓝色的圆角矩形</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000"> var&nbsp;square:Sprite&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;Sprite();<br>square.graphics.beginFill(</span><span style="COLOR: #000000">0xFF</span><span style="COLOR: #000000">);<br>square.graphics.drawRoundRect(</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">50</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">10</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">10</span><span style="COLOR: #000000">);<br>square.graphics.endFill();<br>addChild(square);</span></div>
+        </div>
+        </li>
+    </ul>
+    <li>新的变量类型<br>
+    <table style="WIDTH: 320px; BORDER-COLLAPSE: collapse" cellspacing="0" cellpadding="3" border="1">
+        <tbody>
+            <tr>
+                <td valign="top">
+                <p>简单：</p>
+                <ul>
+                    <li>Boolean </li>
+                    <li>int </li>
+                    <li>null </li>
+                    <li>Number </li>
+                    <li>String </li>
+                    <li>uint </li>
+                    <li>undefined</li>
+                </ul>
+                </td>
+                <td valign="top">
+                <p>复杂：</p>
+                <ul>
+                    <li>Object </li>
+                    <li>Array </li>
+                    <li>Date </li>
+                    <li>Error </li>
+                    <li>Function </li>
+                    <li>RegExp </li>
+                    <li>XML </li>
+                    <li>XMLList</li>
+                </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    注意事项：</li>
+    <ul>
+        <li>Void 不再是大写，而是小写的 void；</li>
+        <li>多了一个新的类型 *, 表示任意类型，在 as3 里一定要指定变量类型，如果不确定可以用 * 代替；</li>
+        <li>XML 对象也不同于以前 as1 和 as2 中的 XML 对象，原来的 XML 对象在 as3 里用 XMLObject 代替；新的 XML 是基于 E4X 标准的 xml；</li>
+        <li>integer 类型在 as3 里不再存在，只有 int 和 uint 类型，他们是不能表示小数的，只能用来表示整数，这样在类似 for 这样的循环运算中比较方便，而且 int 可以和较小的 Number 类型数值进行转换（Number 过大容易发生溢出），而像 uint 一般用在特殊的地方，比如 color；</li>
+    </ul>
+    <li></li>
+</ol>
+<img src="http://www.cnblogs.com/FireYang/aggbug/621510.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 11:35 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/621510.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/" class="post-title-link" itemprop="url">能移动的 RichTextEdit</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2007-01-01T00:00:00+00:00">2007-01-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">="*"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="100%"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;"none";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.*;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rte"</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">="5"</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">="floatControlBar()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rteControl"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="325"</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">="ToolBar"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+<object style="WIDTH: 691px; HEIGHT: 441px" height="441" width="691" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+<param name="Movie" value="/images/cnblogs_com/fireyang/poptitle.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/poptitle.swf" width="500" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object><br>
+<img src="http://www.cnblogs.com/FireYang/aggbug/622034.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 22:16 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/622034.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/12/03/old_blog/2006-12-03-Advanced+ActionScript+3+with+Design+Patterns+/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2006/12/03/old_blog/2006-12-03-Advanced+ActionScript+3+with+Design+Patterns+/" class="post-title-link" itemprop="url">Advanced ActionScript 3 with Design Patterns</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2006-12-03 00:00:00" itemprop="dateCreated datePublished" datetime="2006-12-03T00:00:00+00:00">2006-12-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>又得到一本新的 ActionScript 3.0 的电子书，贴上来共享一下<br><a href="http://www.cnblogs.com/Files/FireYang/Adobe.Press.Advanced.ActionScript.3.with.Design.Patterns.Nov.2006.rar" target="_blank">Advanced ActionScript 3 with Design Patterns </a><br><img height="500" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/as3p.jpg" width="405" border="0">
+<img src="http://www.cnblogs.com/FireYang/aggbug/608063.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-30 17:25 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/30/608063.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/12/02/old_blog/2006-12-02-%E5%8C%97%E4%BA%AC%E8%AE%B0%E4%BA%8B%EF%BC%9A%E8%80%81%E5%88%98%E7%9A%84%E7%8F%8D%E8%B4%B5%E7%A4%BC%E7%89%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2006/12/02/old_blog/2006-12-02-%E5%8C%97%E4%BA%AC%E8%AE%B0%E4%BA%8B%EF%BC%9A%E8%80%81%E5%88%98%E7%9A%84%E7%8F%8D%E8%B4%B5%E7%A4%BC%E7%89%A9/" class="post-title-link" itemprop="url">北京记事：老刘的珍贵礼物</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2006-12-02 00:00:00" itemprop="dateCreated datePublished" datetime="2006-12-02T00:00:00+00:00">2006-12-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>到了北京几天后，比完了 ITAT 就去见老刘，老刘是我在计算机群里认识的朋友，由于是初次见面，彼此都不认识，只是通过手机中简单的约定找到了彼此，第一眼看到老刘，有一种亲切感，他长的很 “可爱”（希望他别 K 我）。而最让我感动的是他的礼物，现在贴上来铭记一下：<br><img height="661" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/flashcommserver.jpg" width="504" border="0">
+<img src="http://www.cnblogs.com/FireYang/aggbug/603466.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-25 22:07 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/25/603466.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/12/01/old_blog/2006-12-01-flex%E4%B8%ADdatagrid%E4%B8%AD%E7%9A%84%E8%BF%87%E6%BB%A4%E5%8A%9F%E8%83%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2006/12/01/old_blog/2006-12-01-flex%E4%B8%ADdatagrid%E4%B8%AD%E7%9A%84%E8%BF%87%E6%BB%A4%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">flex 中 datagrid 中的过滤功能</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2006-12-01 00:00:00" itemprop="dateCreated datePublished" datetime="2006-12-01T00:00:00+00:00">2006-12-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>代码来自 <a target="_blank" rel="noopener" href="http://try.flex.org/index.cfm">http://try.flex.org/index.cfm</a><br>
+</p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">&lt;?</span><span style="COLOR: #000000">xml&nbsp;version</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">1.0</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;encoding</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">utf-8</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Application&nbsp;xmlns:mx</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">http://www.adobe.com/2006/mxml</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;layout</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">vertical</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">initApp()</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Script</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;!</span><span style="COLOR: #000000">[CDATA[<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;On&nbsp;startup</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;initApp():</span><span style="COLOR: #0000ff">void</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Set&nbsp;filter&nbsp;function<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Be&nbsp;careful&nbsp;to&nbsp;set&nbsp;filterFunction<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;only&nbsp;after&nbsp;ArrayCollection&nbsp;has&nbsp;been<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;populated.</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myData.filterFunction</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">processFilter;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Filter&nbsp;function</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;processFilter(item:Object):Boolean<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;result:Boolean</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">false</span><span style="COLOR: #000000">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;If&nbsp;no&nbsp;filter&nbsp;text,&nbsp;or&nbsp;a&nbsp;match,&nbsp;then&nbsp;true</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(</span><span style="COLOR: #000000">!</span><span style="COLOR: #000000">item.name.length<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">||</span><span style="COLOR: #000000">&nbsp;item.name.toUpperCase().indexOf(txtFilter.text.toUpperCase())&nbsp;</span><span style="COLOR: #000000">&gt;=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">true</span><span style="COLOR: #000000">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>]]</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:Script</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;!--</span><span style="COLOR: #000000">&nbsp;Data&nbsp;(use&nbsp;ArrayCollection)&nbsp;</span><span style="COLOR: #000000">--&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:ArrayCollection&nbsp;id</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">myData</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:source</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Ben&nbsp;Forta</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Oak&nbsp;Park,&nbsp;MI</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(248)555-5555</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Jane&nbsp;Doe</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">New&nbsp;York,&nbsp;NY</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(212)555-1234</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Jim&nbsp;Jones</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Atlanta,&nbsp;GA</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(414)555-1212</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Roberta&nbsp;Roberts</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Chicago,&nbsp;IL</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(312)555-4321</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Steve&nbsp;Stevens</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Boston,&nbsp;MA</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(617)555-5656</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:source</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:ArrayCollection</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;!--</span><span style="COLOR: #000000">&nbsp;UI&nbsp;</span><span style="COLOR: #000000">--&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:HBox&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Label&nbsp;text</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Filter:</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:TextInput&nbsp;id</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">txtFilter</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;change</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">myData.refresh()</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:HBox</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGrid&nbsp;dataProvider</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">{myData}</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;height</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:columns</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Name</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">name</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Location</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">location</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Phone</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">phone</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:columns</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:DataGrid</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:Application</span><span style="COLOR: #000000">&gt;</span></div>
+<p><br>其中主要的是 ArrayCollection 的 filterFunction 属性，他的使用方法如下:<br>ArrayCollection 的 filterFunction 属性是继承自 ListCollectionView 的，还有其他类具有这个功能，以下是一个继承关系图，详细的可以看 flex 的帮助文件：<br><img height="132" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/arraycolection.JPG" width="499" border="0"><br>filterFunction 属性的值是一个函数 (Function)：<br>参数：Object 类型的一个值，也可以不带参数；<br>返回值：Boolean 类型的值，如果返回值为 True 就把这个 Object 放到里面，反之亦然。<br>其函数格式事例如下：<br>f(item:Object):Boolean<br>在函数里面进行处理，以上的例子就是如此：<br>&nbsp;public function processFilter(item:Object):Boolean<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var result:Boolean=false;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp;查看文本框里的字符串长度或字符串的匹配（大小写都可以），然后返回结果。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!item.name.length || item.name.toUpperCase().indexOf(txtFilter.text.toUpperCase()) &gt;= 0)<br>&nbsp;&nbsp;&nbsp; &nbsp;result=true;<br>&nbsp;&nbsp;&nbsp; &nbsp;return result;<br>&nbsp;}<br><span style="COLOR: red">注意：filterFunction 函数只有在对象建立的时候和调用 reflash () 的时候执行的，所以一定要在显示之前调用下 reflash ()，否则显示就不正常了，切记！切记！</span><br></p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/594048.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-16 10:43 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/16/594048.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2006/11/02/old_blog/2006-11-02-actionscript+3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2006/11/02/old_blog/2006-11-02-actionscript+3/" class="post-title-link" itemprop="url">actionscript 3.0 cookbook</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2006-11-02 00:00:00" itemprop="dateCreated datePublished" datetime="2006-11-02T00:00:00+00:00">2006-11-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>个人很喜欢 OReilly 的书，也放出来共享下！<br><br><img height="240" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/17_113615_actionscript_3_cookbook.jpg" width="240" border="0"><br><span style="COLOR: maroon"><a target="_blank" rel="noopener" href="http://www.cnblogs.com/Files/FireYang/ActionScript_3.rar"><span style="COLOR: maroon">OReilly.ActionScript.3.0.Cookbook.Oct.2006.chm<br></span></a><a target="_blank" rel="noopener" href="http://www.cnblogs.com/Files/FireYang/AS3CBLibrary.zip">源代码下载</a></span></p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/569606.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-23 11:15 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/23/569606.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/27/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><span class="page-number current">28</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/29/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
+</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">沪ICP备17009590号-1 </a>
+  </div>
 
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+<script src="/js/local-search.js"></script>
 
 
 
@@ -1849,147 +1252,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>

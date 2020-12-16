@@ -1,1872 +1,1250 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.fireyang.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡说八道">
 <meta property="og:url" content="http://blog.fireyang.com/page/24/index.html">
 <meta property="og:site_name" content="胡说八道">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FireYang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡说八道">
 
 
+<link rel="canonical" href="http://blog.fireyang.com/page/24/">
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://blog.fireyang.com/page/24/">
-
-
-
-
-
-  <title>胡说八道</title>
+<title>胡说八道</title>
   
 
 
 
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-130224407-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
 
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
 
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">胡说八道</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">胡说八道</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Access的update注意/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-Access的update注意/" itemprop="url">Access的update注意</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br>发现在access下的时候，如果你可以这样查询一张表：<br></p><br><p><br>select * from&nbsp; be_Posts&nbsp; where postID = &quot;a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077&quot;;<br></p><br><p><br>其中postID 字段类型为&ldquo;数字&rdquo;的&ldquo;同步复制 ID&rdquo;，在数据库中的表现形式为{A9C2DC1F-87D2-4BF2-B2CD-FF5542A51077}<br></p><br><p><br>但是我在更新语句中，用这样的语句却无法更新，不提示错误，只提示更新0条记录：<br><br>update be_Posts set title = &#39;玉龙雪山3&#39; where postID = &quot;a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077&quot;;<br></p><br><p><br>如果改用以下的2种形式都可以更新成功：<br><br>update be_Posts set title = &#39;玉龙雪山3&#39; where postID = &quot;{a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077}&quot;<br><br>或<br><br>update be_Posts set title = &#39;玉龙雪山3&#39; where postID = {a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077}<br></p><br><p><br>以上两种形式能可以，这是在access中发现的，不知道在其他数据库是否也存在这样的问题，留意下。<br></p><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Adobe的Soundbooth测试版体验/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-Adobe的Soundbooth测试版体验/" itemprop="url">Adobe的Soundbooth测试版体验</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p>在Adobe的labs下可以下到Soundbooth的测试版．<br><a href="http://labs.adobe.com/downloads/soundbooth.html" target="_blank" rel="noopener">http://labs.adobe.com/downloads/soundbooth.html</a><br><img height="301" alt src="http://www.cnblogs.com/images/cnblogs_com/fireyang/asd.jpg" width="448" border="0"><br>跟cooledit很相似，但是功能上还是很薄弱，不过这可能是Adobe在音频领域迈出的一大步了．<br>据说在将来的版本里功能会很强大．<br>Adobe在多媒体领域发展的越来越大了，从以前的图像处理到现在的视频领域，都有所涉及了，特别是flv格式的视频，在net上的运用越来越普遍了．<br>希望Adobe越做越好，在多媒体的道路上走的更远．</p><br><img src="http://www.cnblogs.com/FireYang/aggbug/555445.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-09 15:53 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/09/555445.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
-  
-  
-  
-  </article>
+</div>
 
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Apollo测试通知登记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-Apollo测试通知登记/" itemprop="url">Apollo测试通知登记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Apollo离我们越来越近了，如果你还不知道那是什么，那就落伍了，如果你想第一时间知道它的测试版何时候发布，那就在adobe登记下，他将会在第一时间通过 e-mail来通知你，还等什么呢，快去登记吧，到时候你将会体验到RIA真正的魅力！<br>登记地址：<a href="http://www.adobe.com/cfusion/mmform/index.cfm?name=apollo_beta" target="_blank" rel="noopener">http://www.adobe.com/cfusion/mmform/index.cfm?name=apollo_beta</a><br><img src="http://www.cnblogs.com/FireYang/aggbug/587416.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-09 18:12 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/09/587416.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div></p>
-
-          
-        
-      
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-DataGridView的修改保存问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
+</div>
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-DataGridView的修改保存问题/" itemprop="url">DataGridView的修改保存问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br>在.Net的DataGridView(DG)中，如果你用一个bindingSource(BS)来绑定，当你在DG修改后，虽然已经保存到BS里了，<br><br>但是还没有更改里面的一个更改标志，因此你如果update到数据库里的时候，是不会作为已经更改的记录更新的。<br><br>但是如果你修改下一条记录时，前面的修改标记会自动更新的，因此如果你修改多条记录最后一条往往会丢失。<br></p><br><p><br>解决办法：<br></p><br><p><br>在结束修改的时候，及时吧edit状态结束调，如下代码：<br></p><br><p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private void LocalPDDDataGrid_CellEndEdit(object sender, DataGridViewCellEventArgs e)<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataGridView dgv = (DataGridView)sender;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dgv.EndEdit();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br></p><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
   </div>
-  
-  
-  
-  </article>
 
+  <aside class="sidebar">
 
-    
-      
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
 
-  
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Flash调试器REDbug/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FireYang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-Flash调试器REDbug/" itemprop="url">Flash调试器REDbug</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br><img src="/image.axd?picture=200710082.jpg" alt width="238" height="77"><br></p><br><p><br>开始，这个工具是apollo制作的，所以需要apollo环境。<br></p><br><ul><br>    <li>Download <a href="http://labs.adobe.com/downloads/air.html" target="_blank" rel="noopener">AIR (Adobe Integrated Runtime)</a> </li><br>    <li>Download <a href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbugConsole_Beta_022.air" target="_blank" rel="noopener">REDbug</a> </li><br>    <li>Client-side Libraries <br><br>    <ul><br>        <li><a href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbugClientLibraries_Beta1_SDK_MoxieM2.zip" target="_blank" rel="noopener">REDbug Client Libraries - Flex SDK Moxie M2</a> </li><br>        <li><a href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbugClientLibraries_Beta1_SDK_201hf2.zip" target="_blank" rel="noopener">REDbug Client Libraries - Flex SDK 2.0.1 hotfix 2</a> </li><br>    </ul><br>    </li><br>    <li>Examples <br><br>    <ul><br>        <li><a href="http://www.realeyesmedia.com/redbug/inc/downloads/UsingREDbugExampleProjects_Beta1.zip" target="_blank" rel="noopener">Three Flex Builder Projects using REDbug (AIR, Flex SDK Moxie M2, and Flex SDK 2.0.1 hotfix 2)</a> </li><br>        <li><a href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbug_Flash_8_RED_Log_Example_Beta_0.1.zip" target="_blank" rel="noopener">Example RED Log debug app (Using Flash 8)</a> </li><br>    </ul><br>    </li><br></ul><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Flex中CSS的应用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-Flex中CSS的应用/" itemprop="url">Flex中CSS的应用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p><br>这里的css应用的教程，很详细<br></p><br><p><br><a href="http://www.andymcintosh.com/360Flex/" target="_blank">Creating a Visual Experience</a><br></p><br><p><br>&nbsp;<br></p><br><img src="/image.axd?picture=css200710081.jpg" alt width="589" height="192"> <img src="/image.axd?picture=css200710082.jpg" alt width="633" height="350"> <img src="/image.axd?picture=css200710083.jpg" alt width="486" height="328"><br><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Provider/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-Provider/" itemprop="url">Provider</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://msdn2.microsoft.com/en-us/asp.net/aa336558.aspx" target="_blank">http://msdn2.microsoft.com/en-us/asp.net/aa336558.aspx</a><br></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-actionscript代码练习作品/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-actionscript代码练习作品/" itemprop="url">actionscript代码练习作品</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/未分类/" itemprop="url" rel="index">
-                    <span itemprop="name">未分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p dir="ltr" style="MARGIN-RIGHT: 0px">开始联系actiongscript，发现自己写代码的熟练度太低了，是该好好练练，贴起来以提醒自己是一名程序员，是一名flash的fans.</p><br><ol><br>    <li>跟随： </li><br>    <ul><br>        <li>代码：<br><br>        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #008080">&nbsp;1</span>&nbsp;<span style="COLOR: #000000">stop();<br></span><span style="COLOR: #008080">&nbsp;2</span>&nbsp;<span style="COLOR: #000000">i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;3</span>&nbsp;<span style="COLOR: #000000">xStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;4</span>&nbsp;<span style="COLOR: #000000">yStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;5</span>&nbsp;<span style="COLOR: #000000">xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;6</span>&nbsp;<span style="COLOR: #000000">yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;7</span>&nbsp;<span style="COLOR: #000000">mc.lineStyle(</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">,&nbsp;ox000000,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">&nbsp;8</span>&nbsp;<span style="COLOR: #000000">_root.onEnterFrame&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;function()&nbsp;{<br></span><span style="COLOR: #008080">&nbsp;9</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;c&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">mc</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i);<br></span><span style="COLOR: #008080">10</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineStyle(1</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0xff0000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">11</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">12</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_xmouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">xStart)</span><span style="COLOR: #000000"><em></em></span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">13</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_ymouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">yStart)</span><span style="COLOR: #000000"></span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">14</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineTo(xStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;xd,&nbsp;yStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;yd);<br></span><span style="COLOR: #008080">15</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">16</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">17</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">18</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;line&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">linew</span><span style="COLOR: #000000">“</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;i</span><span style="COLOR: #000000">++</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">19</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineStyle(0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0x000000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">20</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">20</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">21</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineTo(_xmouse,&nbsp;_ymouse);<br></span><span style="COLOR: #008080">22</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">23</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">24</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">25</span>&nbsp;<span style="COLOR: #000000">};<br></span><span style="COLOR: #008080">26</span>&nbsp;<span style="COLOR: #000000"></span></div><br>        </li><li>demo<br><br>        <object style="WIDTH: 534px; HEIGHT: 389px" height="389" width="534" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"><br>                                                                                                                                                                                                                <param name="Movie" value="/images/cnblogs_com/fireyang/lineflow.swf"> <param name="Quality" value="high"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/lineflow.swf" width="200" height="200" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"><br>        </object></li><br>    </ul><br></ol><br><p><br></p><br><img src="http://www.cnblogs.com/FireYang/aggbug/579395.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-01 21:17 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/01/579395.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-aspnet中的标签映射（tagmapping）（译）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-aspnet中的标签映射（tagmapping）（译）/" itemprop="url">ASP.NET中的标签映射（Tag mapping ）（译）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Net/" itemprop="url" rel="index">
-                    <span itemprop="name">.Net</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> 译自：<a href="http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx" target="_blank" rel="noopener">http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx</a></p>
-
-<p>最近我开始在 <a href="http://zyb.com/" target="_blank" rel="noopener">ZYB</a> 工作但并没有看所有的代码。有一天我看到了一个web.config的一个特殊的节点<a href="http://msdn2.microsoft.com/en-us/library/ms164641.aspx" target="_blank" rel="noopener">tagMapping</a>。我之前从来没有见到过，直到问了我周围的同事。基本上，它是在编译的时候将所有的一种类型转换成另一种类型。在自然语言的意思是它能将你整个网站中的所有例如<em>System.Web.UI.WebControls.Textbox</em> 实例转换成另一个组件。</p>
-
-<p>如此酷的作用，我来做一个简单的示例。我已经建了一个简单的组件，这个组件继承自TextBox并重写了Text属性，因此它能HTML编码text。我把它放置到App_Code文件夹下并命名为SafeTextBox。</p>
-
-<p></p><p class="code"> <span class="kwrd">public</span> <span class="kwrd">class</span> SafeTextBox : System.Web.UI.WebControls.TextBox<br><br>{<br><span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">string</span> Text<br><br>{<br>get<br><br>{<br><span class="kwrd">return</span> <span class="kwrd">base</span>.Text;<br><br>}<br>set<br><br>{<br><span class="kwrd">base</span>.Text = System.Web.HttpUtility.HtmlEncode(<span class="kwrd">value</span>);<br><br>}<br>}<br><br>}</p>
-
-<p>然后我需要在web.config中通过标签映射将所有的文本框和SafeTextBox实例关联起来。它能在整个网站中轻松的覆盖所有的TextBox实例。这个就是需要的Web.config配置：</p>
-
-<p></p><p class="code"> <span class="kwrd">&lt;</span><span class="html">pages</span><span class="kwrd">&gt;</span><br><span class="kwrd">&lt;</span><span class="html">tagMapping</span><span class="kwrd">&gt;</span><br><span class="kwrd">&lt;</span><span class="html">add</span> <span class="attr">tagType</span><span class="kwrd">=”System.Web.UI.WebControls.TextBox”</span> <span class="attr">mappedTagType</span><span class="kwrd">=”SafeTextBox”</span><span class="kwrd">/&gt;</span><br><span class="kwrd">&lt;/</span><span class="html">tagMapping</span><span class="kwrd">&gt;</span><br><span class="kwrd">&lt;/</span><span class="html">pages</span><span class="kwrd">&gt;</span></p>
-
-<p>这是一个聪明的方法将你自己的服务器组件应用到一个网站上去。 可惜的是直到最近我才知道有这种方法。</p><p></p><p></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-blogenginenet的优势/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/08/02/old_blog/2007-08-02-blogenginenet的优势/" itemprop="url">BlogEngine.NET 的优势</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">
-                2007-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Net/" itemprop="url" rel="index">
-                    <span itemprop="name">.Net</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> 我的Blog选用BlogEngine.NET 作为我的Blog，有以下几点优势:<br><ol><br>    <li>      第一个当然是开源；<br><br>它有很详细的源代码可以<a href="http://www.codeplex.com/blogengine/Release/ProjectReleases.aspx?ReleaseId=7016" target="_blank">下载</a>，现在的版本是1.3；而且支持XML作为数据保存，所以不需要配置，就直接可以运行了，佩服；</li><br>    <li>     支持DataProvider;<br><br>它自带有XML和MySql数据库，但是我的空间只支持Access，它提供了很好的数据访问可扩展，只需要根据MySqlProvider改写个Access的Provider就可以了。</li><br>    <li>     更新快；<br><br>从我开始使用BlogEngine.NET 开始，从1.0开始，现在已经更新到了1.3，而且每个版本都有很多新的技术应用，对我来讲，可以逐渐的学习。</li><br>    <li>     支持插件；<br><br>可以有自己编写插件，特别是这个技术，可以深入学习；</li><br>    <li>     技术支持；<br><br>作者的Blog经常的更新自己使用的技术，和掌握的技术，虽然是英文的，但是看起来也不吃力，因为我只看代码也能看懂，就知道多简单了；</li><br></ol></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/23/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span><a class="page-number" href="/page/25/">25</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/25/"><i class="fa fa-angle-right"></i></a>
+          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">192</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fireyang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fireyang" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="twitter fa-fw"></i>Twitter</a>
+      </span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
 
-      
 
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">FireYang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">284</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">194</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
+        </section>
+      </div>
     </div>
   </aside>
+  <div class="sidebar-dimmer"></div>
 
 
-        
-      </div>
-    </main>
+    </header>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FireYang 
-  | <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17009590号-1</a></span>
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Access%E7%9A%84update%E6%B3%A8%E6%84%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-Access%E7%9A%84update%E6%B3%A8%E6%84%8F/" class="post-title-link" itemprop="url">Access 的 update 注意</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
 
   
 </div>
 
+        </div>
+      </header>
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>
+发现在 access 下的时候，如果你可以这样查询一张表： 
+</p>
+<p>
+select * from&nbsp; be_Posts&nbsp; where postID = "a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077"; 
+</p>
+<p>
+其中 postID 字段类型为 “数字” 的 “同步复制 ID”，在数据库中的表现形式为 {A9C2DC1F-87D2-4BF2-B2CD-FF5542A51077} 
+</p>
+<p>
+但是我在更新语句中，用这样的语句却无法更新，不提示错误，只提示更新 0 条记录：<br>
+update be_Posts set title = ' 玉龙雪山 3' where postID = "a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077"; 
+</p>
+<p>
+如果改用以下的 2 种形式都可以更新成功：<br>
+update be_Posts set title = ' 玉龙雪山 3' where postID = "{a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077}"<br>
+或<br>
+update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2-b2cd-ff5542a51077} 
+</p>
+<p>
+以上两种形式能可以，这是在 access 中发现的，不知道在其他数据库是否也存在这样的问题，留意下。 
+</p>
+<p></p>
 
+      
+    </div>
 
+    
+    
+    
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
     </footer>
+  </article>
+</div>
+
+
+
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
 
-  </div>
-
+<div class="post-block">
+  
   
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Adobe%E7%9A%84Soundbooth%E6%B5%8B%E8%AF%95%E7%89%88%E4%BD%93%E9%AA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-Adobe%E7%9A%84Soundbooth%E6%B5%8B%E8%AF%95%E7%89%88%E4%BD%93%E9%AA%8C/" class="post-title-link" itemprop="url">Adobe 的 Soundbooth 测试版体验</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>在 Adobe 的 labs 下可以下到 Soundbooth 的测试版．<br><a target="_blank" rel="noopener" href="http://labs.adobe.com/downloads/soundbooth.html">http://labs.adobe.com/downloads/soundbooth.html</a><br><img height="301" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/asd.jpg" width="448" border="0"><br>跟 cooledit 很相似，但是功能上还是很薄弱，不过这可能是 Adobe 在音频领域迈出的一大步了．<br>据说在将来的版本里功能会很强大．<br>Adobe 在多媒体领域发展的越来越大了，从以前的图像处理到现在的视频领域，都有所涉及了，特别是 flv 格式的视频，在 net 上的运用越来越普遍了．<br>希望 Adobe 越做越好，在多媒体的道路上走的更远．</p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/555445.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-09 15:53 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/09/555445.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Apollo%E6%B5%8B%E8%AF%95%E9%80%9A%E7%9F%A5%E7%99%BB%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-Apollo%E6%B5%8B%E8%AF%95%E9%80%9A%E7%9F%A5%E7%99%BB%E8%AE%B0/" class="post-title-link" itemprop="url">Apollo 测试通知登记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Apollo 离我们越来越近了，如果你还不知道那是什么，那就落伍了，如果你想第一时间知道它的测试版何时候发布，那就在 adobe 登记下，他将会在第一时间通过 e-mail 来通知你，还等什么呢，快去登记吧，到时候你将会体验到 RIA 真正的魅力！<br>登记地址：<a target="_blank" rel="noopener" href="http://www.adobe.com/cfusion/mmform/index.cfm?name=apollo_beta">http://www.adobe.com/cfusion/mmform/index.cfm?name=apollo_beta</a>
+<img src="http://www.cnblogs.com/FireYang/aggbug/587416.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-09 18:12 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/09/587416.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-DataGridView%E7%9A%84%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-DataGridView%E7%9A%84%E4%BF%AE%E6%94%B9%E4%BF%9D%E5%AD%98%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">DataGridView 的修改保存问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>
+在.Net 的 DataGridView (DG) 中，如果你用一个 bindingSource (BS) 来绑定，当你在 DG 修改后，虽然已经保存到 BS 里了，<br>
+但是还没有更改里面的一个更改标志，因此你如果 update 到数据库里的时候，是不会作为已经更改的记录更新的。<br>
+但是如果你修改下一条记录时，前面的修改标记会自动更新的，因此如果你修改多条记录最后一条往往会丢失。 
+</p>
+<p>
+解决办法： 
+</p>
+<p>
+在结束修改的时候，及时吧 edit 状态结束调，如下代码： 
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private void LocalPDDDataGrid_CellEndEdit(object sender, DataGridViewCellEventArgs e)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataGridView dgv = (DataGridView)sender;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dgv.EndEdit();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } 
+</p>
+<p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Flash%E8%B0%83%E8%AF%95%E5%99%A8REDbug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-Flash%E8%B0%83%E8%AF%95%E5%99%A8REDbug/" class="post-title-link" itemprop="url">Flash 调试器 REDbug</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>
+<img src="/image.axd?picture=200710082.jpg" alt="" width="238" height="77"> 
+</p>
+<p>
+开始，这个工具是 apollo 制作的，所以需要 apollo 环境。 
+</p>
+<ul>
+    <li>Download <a target="_blank" rel="noopener" href="http://labs.adobe.com/downloads/air.html">AIR (Adobe Integrated Runtime)</a> </li>
+    <li>Download <a target="_blank" rel="noopener" href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbugConsole_Beta_022.air">REDbug</a> </li>
+    <li>Client-side Libraries <br>
+    <ul>
+        <li><a target="_blank" rel="noopener" href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbugClientLibraries_Beta1_SDK_MoxieM2.zip">REDbug Client Libraries - Flex SDK Moxie M2</a> </li>
+        <li><a target="_blank" rel="noopener" href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbugClientLibraries_Beta1_SDK_201hf2.zip">REDbug Client Libraries - Flex SDK 2.0.1 hotfix 2</a> </li>
+    </ul>
+    </li>
+    <li>Examples <br>
+    <ul>
+        <li><a target="_blank" rel="noopener" href="http://www.realeyesmedia.com/redbug/inc/downloads/UsingREDbugExampleProjects_Beta1.zip">Three Flex Builder Projects using REDbug (AIR, Flex SDK Moxie M2, and Flex SDK 2.0.1 hotfix 2)</a> </li>
+        <li><a target="_blank" rel="noopener" href="http://www.realeyesmedia.com/redbug/inc/downloads/REDbug_Flash_8_RED_Log_Example_Beta_0.1.zip">Example RED Log debug app (Using Flash 8)</a> </li>
+    </ul>
+    </li>
+</ul>
+<p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Flex%E4%B8%ADCSS%E7%9A%84%E5%BA%94%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-Flex%E4%B8%ADCSS%E7%9A%84%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">Flex 中 CSS 的应用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p>
+这里的 css 应用的教程，很详细 
+</p>
+<p>
+<a href="http://www.andymcintosh.com/360Flex/" target="_blank">Creating a Visual Experience</a> 
+</p>
+<p>
+&nbsp;
+</p>
+<img src="/image.axd?picture=css200710081.jpg" alt="" width="589" height="192"> <img src="/image.axd?picture=css200710082.jpg" alt="" width="633" height="350"> <img src="/image.axd?picture=css200710083.jpg" alt="" width="486" height="328">
+<p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-Provider/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-Provider/" class="post-title-link" itemprop="url">Provider</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a href="http://msdn2.microsoft.com/en-us/asp.net/aa336558.aspx" target="_blank">http://msdn2.microsoft.com/en-us/asp.net/aa336558.aspx</a>
+</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-actionscript%E4%BB%A3%E7%A0%81%E7%BB%83%E4%B9%A0%E4%BD%9C%E5%93%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-actionscript%E4%BB%A3%E7%A0%81%E7%BB%83%E4%B9%A0%E4%BD%9C%E5%93%81/" class="post-title-link" itemprop="url">actionscript 代码练习作品</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p dir="ltr" style="MARGIN-RIGHT: 0px">开始联系 actiongscript，发现自己写代码的熟练度太低了，是该好好练练，贴起来以提醒自己是一名程序员，是一名 flash 的 fans.</p>
+<ol>
+    <li>跟随： </li>
+    <ul>
+        <li>代码：<br>
+        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #008080">&nbsp;1</span>&nbsp;<span style="COLOR: #000000">stop();<br></span><span style="COLOR: #008080">&nbsp;2</span>&nbsp;<span style="COLOR: #000000">i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;3</span>&nbsp;<span style="COLOR: #000000">xStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;4</span>&nbsp;<span style="COLOR: #000000">yStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;5</span>&nbsp;<span style="COLOR: #000000">xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;6</span>&nbsp;<span style="COLOR: #000000">yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;7</span>&nbsp;<span style="COLOR: #000000">mc.lineStyle(</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">,&nbsp;ox000000,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">&nbsp;8</span>&nbsp;<span style="COLOR: #000000">_root.onEnterFrame&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;function()&nbsp;{<br></span><span style="COLOR: #008080">&nbsp;9</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;c&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">mc</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i);<br></span><span style="COLOR: #008080">10</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineStyle(1</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0xff0000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">11</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">12</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_xmouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">xStart)</span><span style="COLOR: #000000">*</span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">13</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_ymouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">yStart)</span><span style="COLOR: #000000">*</span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">14</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineTo(xStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;xd,&nbsp;yStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;yd);<br></span><span style="COLOR: #008080">15</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">16</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">17</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">18</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;line&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">linew</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;i</span><span style="COLOR: #000000">++</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">19</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineStyle(0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0x000000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">20</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">20</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">21</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineTo(_xmouse,&nbsp;_ymouse);<br></span><span style="COLOR: #008080">22</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">23</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">24</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">25</span>&nbsp;<span style="COLOR: #000000">};<br></span><span style="COLOR: #008080">26</span>&nbsp;<span style="COLOR: #000000"></span></div>
+        </li><li>demo<br>
+        <object style="WIDTH: 534px; HEIGHT: 389px" height="389" width="534" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+                                                                                                                                                                                                                <param name="Movie" value="/images/cnblogs_com/fireyang/lineflow.swf"> <param name="Quality" value="high"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/lineflow.swf" width="200" height="200" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+        </object></li>
+    </ul>
+</ol>
+<p><br></p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/579395.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-01 21:17 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/01/579395.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-aspnet%E4%B8%AD%E7%9A%84%E6%A0%87%E7%AD%BE%E6%98%A0%E5%B0%84%EF%BC%88tagmapping%EF%BC%89%EF%BC%88%E8%AF%91%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-aspnet%E4%B8%AD%E7%9A%84%E6%A0%87%E7%AD%BE%E6%98%A0%E5%B0%84%EF%BC%88tagmapping%EF%BC%89%EF%BC%88%E8%AF%91%EF%BC%89/" class="post-title-link" itemprop="url">ASP.NET 中的标签映射（Tag mapping ）（译）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Net/" itemprop="url" rel="index"><span itemprop="name">.Net</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p> 译自：<a target="_blank" rel="noopener" href="http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx">http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx</a></p>
+
+<p>最近我开始在 <a target="_blank" rel="noopener" href="http://zyb.com/">ZYB</a> 工作但并没有看所有的代码。有一天我看到了一个 web.config 的一个特殊的节点 <a target="_blank" rel="noopener" href="http://msdn2.microsoft.com/en-us/library/ms164641.aspx">tagMapping</a>。我之前从来没有见到过，直到问了我周围的同事。基本上，它是在编译的时候将所有的一种类型转换成另一种类型。在自然语言的意思是它能将你整个网站中的所有例如 <em>System.Web.UI.WebControls.Textbox</em> 实例转换成另一个组件。</p>
+
+<p>如此酷的作用，我来做一个简单的示例。我已经建了一个简单的组件，这个组件继承自 TextBox 并重写了 Text 属性，因此它能 HTML 编码 text。我把它放置到 App_Code 文件夹下并命名为 SafeTextBox。</p>
+
+<p></p><p class="code"> <span class="kwrd">public</span> <span class="kwrd">class</span> SafeTextBox : System.Web.UI.WebControls.TextBox<br>
+{
+<span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">string</span> Text<br>
+{
+get<br>
+{
+<span class="kwrd">return</span> <span class="kwrd">base</span>.Text;<br>
+}
+set<br>
+{
+<span class="kwrd">base</span>.Text = System.Web.HttpUtility.HtmlEncode(<span class="kwrd">value</span>);<br>
+}
+}<br>
+}</p>
+
+<p>然后我需要在 web.config 中通过标签映射将所有的文本框和 SafeTextBox 实例关联起来。它能在整个网站中轻松的覆盖所有的 TextBox 实例。这个就是需要的 Web.config 配置：</p>
+
+<p></p><p class="code"> <span class="kwrd">&lt;</span><span class="html">pages</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">tagMapping</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">add</span> <span class="attr">tagType</span><span class="kwrd">="System.Web.UI.WebControls.TextBox"</span> <span class="attr">mappedTagType</span><span class="kwrd">="SafeTextBox"</span><span class="kwrd">/&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">tagMapping</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">pages</span><span class="kwrd">&gt;</span></p>
+
+<p>这是一个聪明的方法将你自己的服务器组件应用到一个网站上去。 可惜的是直到最近我才知道有这种方法。</p><p></p><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-blogenginenet%E7%9A%84%E4%BC%98%E5%8A%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-blogenginenet%E7%9A%84%E4%BC%98%E5%8A%BF/" class="post-title-link" itemprop="url">BlogEngine.NET 的优势</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Net/" itemprop="url" rel="index"><span itemprop="name">.Net</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p> 我的 Blog 选用 BlogEngine.NET 作为我的 Blog，有以下几点优势:
+</p><ol>
+    <li>      第一个当然是开源；<br>
+它有很详细的源代码可以<a href="http://www.codeplex.com/blogengine/Release/ProjectReleases.aspx?ReleaseId=7016" target="_blank">下载</a>，现在的版本是 1.3；而且支持 XML 作为数据保存，所以不需要配置，就直接可以运行了，佩服；</li>
+    <li>     支持 DataProvider;<br>
+它自带有 XML 和 MySql 数据库，但是我的空间只支持 Access，它提供了很好的数据访问可扩展，只需要根据 MySqlProvider 改写个 Access 的 Provider 就可以了。</li>
+    <li>     更新快；<br>
+从我开始使用 BlogEngine.NET 开始，从 1.0 开始，现在已经更新到了 1.3，而且每个版本都有很多新的技术应用，对我来讲，可以逐渐的学习。</li>
+    <li>     支持插件；<br>
+可以有自己编写插件，特别是这个技术，可以深入学习；</li>
+    <li>     技术支持；<br>
+作者的 Blog 经常的更新自己使用的技术，和掌握的技术，虽然是英文的，但是看起来也不吃力，因为我只看代码也能看懂，就知道多简单了；</li>
+</ol><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/23/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span><a class="page-number" href="/page/25/">25</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/25/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
+</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">沪ICP备17009590号-1 </a>
+  </div>
 
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+<script src="/js/local-search.js"></script>
 
 
 
@@ -1879,147 +1257,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>

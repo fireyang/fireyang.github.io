@@ -1,955 +1,698 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.fireyang.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡说八道">
 <meta property="og:url" content="http://blog.fireyang.com/page/15/index.html">
 <meta property="og:site_name" content="胡说八道">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FireYang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡说八道">
 
 
+<link rel="canonical" href="http://blog.fireyang.com/page/15/">
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://blog.fireyang.com/page/15/">
-
-
-
-
-
-  <title>胡说八道</title>
+<title>胡说八道</title>
   
 
 
 
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-130224407-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
 
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
 
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">胡说八道</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">胡说八道</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FireYang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">192</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fireyang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fireyang" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
     
-      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
   
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/11/old_blog/2008-11-11-高中校庆（沙城高级中学）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/11/old_blog/2008-11-11-%E9%AB%98%E4%B8%AD%E6%A0%A1%E5%BA%86%EF%BC%88%E6%B2%99%E5%9F%8E%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/11/11/old_blog/2008-11-11-%E9%AB%98%E4%B8%AD%E6%A0%A1%E5%BA%86%EF%BC%88%E6%B2%99%E5%9F%8E%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6%EF%BC%89/" class="post-title-link" itemprop="url">高中校庆（沙城高级中学）</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/11/old_blog/2008-11-11-高中校庆（沙城高级中学）/" itemprop="url">高中校庆（沙城高级中学）</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-11T00:00:00+00:00">
-                2008-11-11
-              </time>
-            
+      <time title="创建时间：2008-11-11 00:00:00" itemprop="dateCreated datePublished" datetime="2008-11-11T00:00:00+00:00">2008-11-11</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂七杂八/" itemprop="url" rel="index">
-                    <span itemprop="name">杂七杂八</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>母校的十年校庆，发觉母校的硬件设施变化好大，怀念当时的 “艰苦岁月”。</p>
 
-      
-      
+<p><a href="/media/2008/11/http_imgload.jpg"><img class="alignnone size-medium wp-image-263" title="http_imgload" src="/media/2008/11/http_imgload-300x225.jpg" alt="" width="300" height="225"></a></p>
 
-      
-        
-          
-            <p>母校的十年校庆，发觉母校的硬件设施变化好大，怀念当时的“艰苦岁月”。</p>
-
-<p><a href="/media/2008/11/http_imgload.jpg"><img class="alignnone size-medium wp-image-263" title="http_imgload" src="/media/2008/11/http_imgload-300x225.jpg" alt width="300" height="225"></a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-ubuntu下安装和卸载air/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%B8%E8%BD%BDair/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/11/03/old_blog/2008-11-03-ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%B8%E8%BD%BDair/" class="post-title-link" itemprop="url">Ubuntu 下安装和卸载 AIR</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/03/old_blog/2008-11-03-ubuntu下安装和卸载air/" itemprop="url">Ubuntu下安装和卸载AIR</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">
-                2008-11-03
-              </time>
-            
+      <time title="创建时间：2008-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">2008-11-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Air/" itemprop="url" rel="index"><span itemprop="name">Air</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Air/" itemprop="url" rel="index">
-                    <span itemprop="name">Air</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><div class="entry-body"><br><div><br><div class="item-body"><br><div></div></div></div></div></p>
+          <p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div></div></div></div><p></p>
 
 <p>安装：</p>
 
 <p>下载：<a href="http://download.macromedia.com/pub/labs/air/linux/adobeair_linux_b1_091508.bin" target="_blank">AIR for linux</a></p>
 
-<p>跳转到下载目录下：<br><blockquote>chmod +x adobeair_linux_b1_091508.bin</blockquote></p>
+<p>跳转到下载目录下：
+</p><blockquote>chmod +x adobeair_linux_b1_091508.bin</blockquote><p></p>
 
-<p>sudo ./adobeair_linux_b1_091508.bin<br>卸载：<br><blockquote>dpkg -r adobeair-enu</blockquote><br><br><br><br></p>
+<p>sudo ./adobeair_linux_b1_091508.bin
+卸载：
+</p><blockquote>dpkg -r adobeair-enu</blockquote>
 
-          
-        
+
+
+<p></p>
+</div>
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-virtualbox的系统硬盘直接下载（linux）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-virtualbox%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%A1%AC%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%EF%BC%88linux%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/11/03/old_blog/2008-11-03-virtualbox%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%A1%AC%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%EF%BC%88linux%EF%BC%89/" class="post-title-link" itemprop="url">Virtualbox 的系统硬盘直接下载（linux）</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/03/old_blog/2008-11-03-virtualbox的系统硬盘直接下载（linux）/" itemprop="url">Virtualbox的系统硬盘直接下载（linux）</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">
-                2008-11-03
-              </time>
-            
+      <time title="创建时间：2008-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">2008-11-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div></div></div></div><p></p>
 
-      
-      
-
-      
-        
-          
-            <p><div class="entry-body"><br><div><br><div class="item-body"><br><div></div></div></div></div></p>
-
-<p>你可以用virtualbox很方便的虚拟一台机子，软件也很小。</p>
+<p>你可以用 virtualbox 很方便的虚拟一台机子，软件也很小。</p>
 
 <p>赶紧去看看吧：<a href="http://www.virtualbox.org/" target="_blank">http://www.virtualbox.org/</a>;</p>
 
-<p>目前最新的2.02的下载地址：<br><ul><br>    <li><strong>VirtualBox 2.0.2 for Windows hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_x86.msi" target="_blank"><span>x86</span></a> | <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_amd64.msi" target="_blank"><span>AMD64</span></a> <em>(only on Windows x64!)</em></li><br></ul><br><ul><br>    <li><strong>VirtualBox 2.0.2 for OS X hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-OSX_x86.dmg" target="_blank"><span>Intel Macs</span></a></li><br></ul><br><ul><br>    <li><strong><a href="http://www.virtualbox.org/wiki/Linux_Downloads" target="_blank">VirtualBox 2.0.2 for Linux hosts</a></strong></li><br></ul><br>下载完上面的虚拟机，安装好后，可以在下面的网站下一个虚拟的硬盘，尝试linux了，</p>
+<p>目前最新的 2.02 的下载地址：
+</p><ul>
+    <li><strong>VirtualBox 2.0.2 for Windows hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_x86.msi" target="_blank"><span>x86</span></a> | <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_amd64.msi" target="_blank"><span>AMD64</span></a> <em>(only on Windows x64!)</em></li>
+</ul>
+<ul>
+    <li><strong>VirtualBox 2.0.2 for OS X hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-OSX_x86.dmg" target="_blank"><span>Intel Macs</span></a></li>
+</ul>
+<ul>
+    <li><strong><a href="http://www.virtualbox.org/wiki/Linux_Downloads" target="_blank">VirtualBox 2.0.2 for Linux hosts</a></strong></li>
+</ul>
+下载完上面的虚拟机，安装好后，可以在下面的网站下一个虚拟的硬盘，尝试 linux 了，<p></p>
 
 <p>还在等什么？赶紧行动！！！</p>
 
-<p><a href="http://veedee-eyes.com/veedeeeyes/" target="_blank">http://veedee-eyes.com/veedeeeyes/</a><br><br><br></p>
+<p><a href="http://veedee-eyes.com/veedeeeyes/" target="_blank">http://veedee-eyes.com/veedeeeyes/</a>
 
-          
-        
+
+</p>
+</div>
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-“黑屏”只为友善提醒？/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-%E2%80%9C%E9%BB%91%E5%B1%8F%E2%80%9D%E5%8F%AA%E4%B8%BA%E5%8F%8B%E5%96%84%E6%8F%90%E9%86%92%EF%BC%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/11/03/old_blog/2008-11-03-%E2%80%9C%E9%BB%91%E5%B1%8F%E2%80%9D%E5%8F%AA%E4%B8%BA%E5%8F%8B%E5%96%84%E6%8F%90%E9%86%92%EF%BC%9F/" class="post-title-link" itemprop="url">“黑屏” 只为友善提醒？</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/03/old_blog/2008-11-03-“黑屏”只为友善提醒？/" itemprop="url">“黑屏”只为友善提醒？</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">
-                2008-11-03
-              </time>
-            
+      <time title="创建时间：2008-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">2008-11-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf"><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf" align="middle"></object>
+还是老话：提高自己，不要让别人垄断你。</p>
 
-      
-      
-
-      
-        
-          
-            <p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf"><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf" align="middle"></object><br>还是老话：提高自己，不要让别人垄断你。</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-我黑屏，但绝对正版/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-%E6%88%91%E9%BB%91%E5%B1%8F%EF%BC%8C%E4%BD%86%E7%BB%9D%E5%AF%B9%E6%AD%A3%E7%89%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/11/03/old_blog/2008-11-03-%E6%88%91%E9%BB%91%E5%B1%8F%EF%BC%8C%E4%BD%86%E7%BB%9D%E5%AF%B9%E6%AD%A3%E7%89%88/" class="post-title-link" itemprop="url">我黑屏，但绝对正版</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/03/old_blog/2008-11-03-我黑屏，但绝对正版/" itemprop="url">我黑屏，但绝对正版</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">
-                2008-11-03
-              </time>
-            
+      <time title="创建时间：2008-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">2008-11-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div></div></div></div><p></p>
 
-      
-      
-
-      
-        
-          
-            <p><div class="entry-body"><br><div><br><div class="item-body"><br><div></div></div></div></div></p>
-
-<p>2008.10.20，这个日子不是什么大日子，但是关注的人异常的多，不仅仅是美国的独立日，还是微软开始“黑屏”的日子。</p>
+<p>2008.10.20，这个日子不是什么大日子，但是关注的人异常的多，不仅仅是美国的独立日，还是微软开始 “黑屏” 的日子。</p>
 
 <p>我支持正版，反对盗版。</p>
 
@@ -957,749 +700,469 @@
 
 <p>以此桌面表达我的意愿。</p>
 
-<p><a href="../wp-content/uploads/2008/10/screenshot2008102112.png" target="_blank"><img title="screenshot2008102112" src="../wp-content/uploads/2008/10/screenshot2008102112-300x187.png" alt width="300" height="187"></a></p>
+<p><a href="../wp-content/uploads/2008/10/screenshot2008102112.png" target="_blank"><img title="screenshot2008102112" src="../wp-content/uploads/2008/10/screenshot2008102112-300x187.png" alt="" width="300" height="187"></a></p>
 
 <p>局部放大：</p>
 
-<p><a href="../wp-content/uploads/2008/10/qgwl_w9q0a59yv0y.jpg" target="_blank"><img title="qgwl_w9q0a59yv0y" src="../wp-content/uploads/2008/10/qgwl_w9q0a59yv0y-300x130.jpg" alt width="300" height="130"></a></p>
+<p><a href="../wp-content/uploads/2008/10/qgwl_w9q0a59yv0y.jpg" target="_blank"><img title="qgwl_w9q0a59yv0y" src="../wp-content/uploads/2008/10/qgwl_w9q0a59yv0y-300x130.jpg" alt="" width="300" height="130"></a></p>
 
-<p>如果有兴趣的朋友可以这里下载（14.1寸宽频1280X800）：</p>
+<p>如果有兴趣的朋友可以这里下载（14.1 寸宽频 1280X800）：</p>
 
-<p><a href="../wp-content/uploads/2008/10/black2008102112.jpg" target="_blank"><img title="black2008102112" src="../wp-content/uploads/2008/10/black2008102112-300x187.jpg" alt width="300" height="187"></a></p>
+<p><a href="../wp-content/uploads/2008/10/black2008102112.jpg" target="_blank"><img title="black2008102112" src="../wp-content/uploads/2008/10/black2008102112-300x187.jpg" alt="" width="300" height="187"></a></p>
 
-<p>但是如果你依然是xp盗版，请支持黑屏（1024X768）：</p>
+<p>但是如果你依然是 xp 盗版，请支持黑屏（1024X768）：</p>
 
-<p><a href="../wp-content/uploads/2008/10/blackxp2008102112.jpg" target="_blank"><img title="blackxp2008102112" src="../wp-content/uploads/2008/10/blackxp2008102112-300x225.jpg" alt width="300" height="225"></a><br><br><br></p>
+<p><a href="../wp-content/uploads/2008/10/blackxp2008102112.jpg" target="_blank"><img title="blackxp2008102112" src="../wp-content/uploads/2008/10/blackxp2008102112-300x225.jpg" alt="" width="300" height="225"></a>
 
-          
-        
+
+</p>
+</div>
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-穿越大罗山/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/11/03/old_blog/2008-11-03-%E7%A9%BF%E8%B6%8A%E5%A4%A7%E7%BD%97%E5%B1%B1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/11/03/old_blog/2008-11-03-%E7%A9%BF%E8%B6%8A%E5%A4%A7%E7%BD%97%E5%B1%B1/" class="post-title-link" itemprop="url">穿越大罗山</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/11/03/old_blog/2008-11-03-穿越大罗山/" itemprop="url">穿越大罗山</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">
-                2008-11-03
-              </time>
-            
+      <time title="创建时间：2008-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2008-11-03T00:00:00+00:00">2008-11-03</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂七杂八/" itemprop="url" rel="index">
-                    <span itemprop="name">杂七杂八</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div>
+<h1>远离烦恼，亲近自然</h1>
+在周末和一群好友，游荡在温州大罗山脉
+<p style="text-align: center;"><img title="大罗山200810271351" src="http://lh6.ggpht.com/shenhuan007/SQUXxkwmmpI/AAAAAAAADyQ/he1ayPcrmZY/s400/dscn0494.jpg" alt="" width="300" height="400"></p>
+<p style="text-align: center;">（前面就是悬崖峭壁了，伴随大雾，感觉好好 ）</p>
+<p style="text-align: center;"><img title="大罗山合影" src="http://lh4.ggpht.com/shenhuan007/SQUlut5UFRI/AAAAAAAAD0Y/B2MJQrlu8Jw/s512/dscn9924.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">（天河水库旁合影）</p>
+<p style="text-align: center;"><img title="大罗山4勇士" src="http://lh3.ggpht.com/shenhuan007/SQUllt2zvmI/AAAAAAAADzI/RcRJj7XiJVI/s512/imgp2182.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">（上顶四勇士，看上去平静，其实大风大雾，头发早已湿透）</p>
+<p style="text-align: center;"><img title="大罗山脚步依然" src="http://lh6.ggpht.com/shenhuan007/SQUYSJDArgI/AAAAAAAADoM/z-rvRXbd-84/s512/dscn0534.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">（天气和地势都很危险，但是我们的脚步坚决 ）</p>
+<p style="text-align: center;"><img title="大罗山下山之路" src="http://lh6.ggpht.com/shenhuan007/SQUYjYxDSgI/AAAAAAAAD2M/Y0UVTud9MtA/s400/dscn0552.jpg" alt="" width="300" height="400"><img title="大罗山千步梯" src="http://lh4.ggpht.com/shenhuan007/SQUYkuwkqVI/AAAAAAAAD2Q/rDwbkcZS2kE/s400/dscn0553.jpg" alt="" width="300" height="400"></p>
+<p style="text-align: center;">（其实这是在下山，千步梯，很高很陡）</p>
+<p style="text-align: center;"><img title="大罗山归途" src="http://lh4.ggpht.com/shenhuan007/SQUYmAAWVXI/AAAAAAAADq4/iWhkQNaArmw/s512/dscn0555.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">归途</p></div></div></div></div><p></p>
 
-      
-      
+<p></p><h2 style="text-align: left;">更多照片：<a href="http://picasaweb.google.com/shenhuan007/DvDpEJ#" target="_blank">穿越大罗山相册</a></h2>
 
-      
-        
-          
-            <p><div class="entry-body"><br><div><br><div class="item-body"><br><div><br><h1>远离烦恼，亲近自然</h1><br>在周末和一群好友，游荡在温州大罗山脉<br><p style="text-align: center;"><img title="大罗山200810271351" src="http://lh6.ggpht.com/shenhuan007/SQUXxkwmmpI/AAAAAAAADyQ/he1ayPcrmZY/s400/dscn0494.jpg" alt width="300" height="400"></p><br><p style="text-align: center;">（前面就是悬崖峭壁了，伴随大雾，感觉好好 ）</p><br><p style="text-align: center;"><img title="大罗山合影" src="http://lh4.ggpht.com/shenhuan007/SQUlut5UFRI/AAAAAAAAD0Y/B2MJQrlu8Jw/s512/dscn9924.jpg" alt width="512" height="384"></p><br><p style="text-align: center;">（天河水库旁合影）</p><br><p style="text-align: center;"><img title="大罗山4勇士" src="http://lh3.ggpht.com/shenhuan007/SQUllt2zvmI/AAAAAAAADzI/RcRJj7XiJVI/s512/imgp2182.jpg" alt width="512" height="384"></p><br><p style="text-align: center;">（上顶四勇士，看上去平静，其实大风大雾，头发早已湿透）</p><br><p style="text-align: center;"><img title="大罗山脚步依然" src="http://lh6.ggpht.com/shenhuan007/SQUYSJDArgI/AAAAAAAADoM/z-rvRXbd-84/s512/dscn0534.jpg" alt width="512" height="384"></p><br><p style="text-align: center;">（天气和地势都很危险，但是我们的脚步坚决 ）</p><br><p style="text-align: center;"><img title="大罗山下山之路" src="http://lh6.ggpht.com/shenhuan007/SQUYjYxDSgI/AAAAAAAAD2M/Y0UVTud9MtA/s400/dscn0552.jpg" alt width="300" height="400"><img title="大罗山千步梯" src="http://lh4.ggpht.com/shenhuan007/SQUYkuwkqVI/AAAAAAAAD2Q/rDwbkcZS2kE/s400/dscn0553.jpg" alt width="300" height="400"></p><br><p style="text-align: center;">（其实这是在下山，千步梯，很高很陡）</p><br><p style="text-align: center;"><img title="大罗山归途" src="http://lh4.ggpht.com/shenhuan007/SQUYmAAWVXI/AAAAAAAADq4/iWhkQNaArmw/s512/dscn0555.jpg" alt width="512" height="384"></p><br><p style="text-align: center;">归途</p></div></div></div></div></p>
 
-<p></p><h2 style="text-align: left;">更多照片：<a href="http://picasaweb.google.com/shenhuan007/DvDpEJ#" target="_blank">穿越大罗山相册</a></h2><br><br><br><br><p></p>
 
-          
-        
+<p></p>
+
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/09/18/old_blog/2008-09-18-简单易用的屏幕录制工具/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/09/18/old_blog/2008-09-18-%E7%AE%80%E5%8D%95%E6%98%93%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%B7%A5%E5%85%B7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/09/18/old_blog/2008-09-18-%E7%AE%80%E5%8D%95%E6%98%93%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%B7%A5%E5%85%B7/" class="post-title-link" itemprop="url">简单易用的屏幕录制工具</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/09/18/old_blog/2008-09-18-简单易用的屏幕录制工具/" itemprop="url">简单易用的屏幕录制工具</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-09-18T00:00:00+00:00">
-                2008-09-18
-              </time>
-            
+      <time title="创建时间：2008-09-18 00:00:00" itemprop="dateCreated datePublished" datetime="2008-09-18T00:00:00+00:00">2008-09-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>vnc2swf是一款简单易用的屏幕录制工具，有python和c两种版本，这样就支持跨平台了。</p>
+          <p>vnc2swf 是一款简单易用的屏幕录制工具，有 python 和 c 两种版本，这样就支持跨平台了。</p>
 
 <p>官方完站：<a href="http://www.unixuser.org/~euske/vnc2swf/index.html" target="_blank">vnc2swf</a></p>
 
-<p>如果你是用ubuntu，安装就更简单了，执行下面的命令：<br><ul><br>    <li>sudo apt-get install pyvnc2swf</li><br></ul><br>然后在终端下运行 vnc2swf就会出现这样的界面了：</p>
+<p>如果你是用 ubuntu，安装就更简单了，执行下面的命令：
+</p><ul>
+    <li>sudo apt-get install pyvnc2swf</li>
+</ul>
+然后在终端下运行 vnc2swf就会出现这样的界面了：<p></p>
 
-<p><a href="/media/2008/09/my7zkyhjzq4yjssyxe.jpg"><img class="alignnone size-medium wp-image-241" title="my7zkyhjzq4yjssyxe" src="/media/2008/09/my7zkyhjzq4yjssyxe.jpg" alt width="235" height="65"></a></p>
+<p><a href="/media/2008/09/my7zkyhjzq4yjssyxe.jpg"><img class="alignnone size-medium wp-image-241" title="my7zkyhjzq4yjssyxe" src="/media/2008/09/my7zkyhjzq4yjssyxe.jpg" alt="" width="235" height="65"></a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/09/10/old_blog/2008-09-10-ubuntu中flash乱码/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/09/10/old_blog/2008-09-10-ubuntu%E4%B8%ADflash%E4%B9%B1%E7%A0%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/09/10/old_blog/2008-09-10-ubuntu%E4%B8%ADflash%E4%B9%B1%E7%A0%81/" class="post-title-link" itemprop="url">ubuntu 中 flash 乱码</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/09/10/old_blog/2008-09-10-ubuntu中flash乱码/" itemprop="url">ubuntu中flash乱码</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-09-10T00:00:00+00:00">
-                2008-09-10
-              </time>
-            
+      <time title="创建时间：2008-09-10 00:00:00" itemprop="dateCreated datePublished" datetime="2008-09-10T00:00:00+00:00">2008-09-10</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>在 flash 中可能由于字体的原因导致你的 flash 不能正确显示中文，由此而只显示一个个方框，其实方法很简单。</p>
 
-      
-      
+<p>只需要删除 /etc/fonts/conf.d/49-sansserif.conf 即可，你可以这样操作:</p>
 
-      
-        
-          
-            <p>在flash中可能由于字体的原因导致你的flash不能正确显示中文，由此而只显示一个个方框，其实方法很简单。</p>
+<p>cd /etc/fonts/conf.d/<br>
+sudo cp 49-sansserif.conf&nbsp; 49-sansserif.conf~<br>
+sudo rm 49-sansserif.conf</p>
 
-<p>只需要删除/etc/fonts/conf.d/49-sansserif.conf即可，你可以这样操作:</p>
-
-<p>cd /etc/fonts/conf.d/<br><br>sudo cp 49-sansserif.conf  49-sansserif.conf~<br><br>sudo rm 49-sansserif.conf</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/08/20/old_blog/2008-08-20-rewrite模块启用的forbidden问题/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/08/20/old_blog/2008-08-20-rewrite%E6%A8%A1%E5%9D%97%E5%90%AF%E7%94%A8%E7%9A%84forbidden%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/08/20/old_blog/2008-08-20-rewrite%E6%A8%A1%E5%9D%97%E5%90%AF%E7%94%A8%E7%9A%84forbidden%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">rewrite 模块启用的 Forbidden 问题</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/08/20/old_blog/2008-08-20-rewrite模块启用的forbidden问题/" itemprop="url">rewrite模块启用的Forbidden问题</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-08-20T00:00:00+00:00">
-                2008-08-20
-              </time>
-            
+      <time title="创建时间：2008-08-20 00:00:00" itemprop="dateCreated datePublished" datetime="2008-08-20T00:00:00+00:00">2008-08-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>问题：如果要支持 rewrite，必须在设置目录权限的时候使用 AllowOverride All，但是我一访问就提示 403 错误（Forbidden），提示你没有权限访问该目录</p>
 
-      
-      
-
-      
-        
-          
-            <p>问题：如果要支持rewrite，必须在设置目录权限的时候使用AllowOverride All，但是我一访问就提示403错误（Forbidden），提示你没有权限访问该目录</p>
-
-<p>原来要使用rewrite模块，不仅仅要AllowOverride All，还必须要设置 Options <span class="hilite1">FollowSymLinks。</span></p>
+<p>原来要使用 rewrite 模块，不仅仅要 AllowOverride All，还必须要设置 Options <span class="hilite1">FollowSymLinks。</span></p>
 
 <p>这样才能成功使用。</p>
 
-<p>在ubuntu启动rewrite的命令：<span>sudo a2enmod rewrite </span></p>
+<p>在 ubuntu 启动 rewrite 的命令：<span>sudo a2enmod rewrite </span></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/08/13/old_blog/2008-08-13-ubuntu下命令行发送飞信（成功）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/08/13/old_blog/2008-08-13-ubuntu%E4%B8%8B%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%91%E9%80%81%E9%A3%9E%E4%BF%A1%EF%BC%88%E6%88%90%E5%8A%9F%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/08/13/old_blog/2008-08-13-ubuntu%E4%B8%8B%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%91%E9%80%81%E9%A3%9E%E4%BF%A1%EF%BC%88%E6%88%90%E5%8A%9F%EF%BC%89/" class="post-title-link" itemprop="url">ubuntu 下命令行发送飞信（成功）</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2008/08/13/old_blog/2008-08-13-ubuntu下命令行发送飞信（成功）/" itemprop="url">ubuntu下命令行发送飞信（成功）</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2008-08-13T00:00:00+00:00">
-                2008-08-13
-              </time>
-            
+      <time title="创建时间：2008-08-13 00:00:00" itemprop="dateCreated datePublished" datetime="2008-08-13T00:00:00+00:00">2008-08-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>在 ubuntu 下可以用命令行发飞行短信了，以后可以配置个，发送些日志消息或报警短信到自己手机上了。</p>
 
-      
-      
-
-      
-        
-          
-            <p>在ubuntu下可以用命令行发飞行短信了，以后可以配置个，发送些日志消息或报警短信到自己手机上了。</p>
-
-<p>测试环境：ubuntu 8。10  （X86/32）</p>
+<p>测试环境：ubuntu 8。10&nbsp; （X86/32）</p>
 
 <p>官网地址：<a href="http://www.it-adv.net/" target="_blank">http://www.it-adv.net/</a></p>
 
@@ -1707,250 +1170,127 @@
 
 <p>首先配置支持库，解压你下载的支持库。包含四个文件：</p>
 
-<p>libACE.so.5.4.7  libACE_SSL.so.5.4.7  libcrypto.so.0.9.8  libssl.so.0.9.8</p>
+<p>libACE.so.5.4.7&nbsp; libACE_SSL.so.5.4.7&nbsp; libcrypto.so.0.9.8&nbsp; libssl.so.0.9.8</p>
 
-<p>使用命令：cp *  /usr/lib/<br><br>复制到用户的库目录下。</p>
+<p>使用命令：cp *&nbsp; /usr/lib/<br>
+复制到用户的库目录下。</p>
 
-<p>然后解压你下载的程序文件，fetion就是主程序。</p>
+<p>然后解压你下载的程序文件，fetion 就是主程序。</p>
 
 <p>./fetion -u 帐号 -p 密码</p>
 
 <p>这样就成功运行了。</p>
 
-<p><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><em>**</em></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong><br><br>指令                    指令说明<br><br>list                     好友列表: list<br><br>sms                    发送短信: sms 飞信号/手机号/编号 短信内容(换行请用\n代替)<br><br>chat                   在线消息: chat 飞信号/手机号/编号 短信内容(换行请用\n代替)<br><br>status                 在线状态: status online/busy/away/hidden [个性化信息]<br><br>add                    添加好友: add 飞信号/手机号 申请信息 本地呢称<br><br>del                     删除好友: del 飞信号/手机号/编号<br><br>invite                 邀请好友: invite 手机号 您的姓名(邀请好友开通飞信)<br><br>autoaccept         自动接受: autoaccept on/off/status 自动接受加为好友申请<br><br>myinfo                修改资料: myinfo nickname/impresa 内容(呢称/心情)<br><br>help                   帮助菜单: help/?<br><br>exit                   退出系统: quit/exit<br><br><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>*</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<p>****************************************************************<br>
+指令&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 指令说明<br>
+list&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;好友列表: list<br>
+sms&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 发送短信: sms 飞信号 / 手机号 / 编号 短信内容 (换行请用 \n 代替)<br>
+chat&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;在线消息: chat 飞信号 / 手机号 / 编号 短信内容 (换行请用 \n 代替)<br>
+status&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;在线状态: status online/busy/away/hidden [个性化信息]<br>
+add&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 添加好友: add 飞信号 / 手机号 申请信息 本地呢称<br>
+del&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;删除好友: del 飞信号 / 手机号 / 编号<br>
+invite&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;邀请好友: invite 手机号 您的姓名 (邀请好友开通飞信)<br>
+autoaccept&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;自动接受: autoaccept on/off/status 自动接受加为好友申请<br>
+myinfo&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 修改资料: myinfo nickname/impresa 内容 (呢称 / 心情)<br>
+help&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;帮助菜单: help/?<br>
+exit&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;退出系统: quit/exit<br>
+*********************************************************</p>
 
 <p>1 插件开发原理</p>
 
-<p>系统运行时，当遇到特写的事件，就会自动调用plugins目录的相应程序。我们可以根据实际应用来重写这些程序来达到自己的要求。</p>
+<p>系统运行时，当遇到特写的事件，就会自动调用 plugins 目录的相应程序。我们可以根据实际应用来重写这些程序来达到自己的要求。</p>
 
 <p>目录，系统支持四类插件：</p>
 
-<p>1、定时插件：系统每10秒调用一次 plugins/plugin_timer<br><br>自带演示插件的功能：每隔10秒钟更换一次心情。</p>
+<p>1、定时插件：系统每 10 秒调用一次 plugins/plugin_timer<br>
+自带演示插件的功能：每隔 10 秒钟更换一次心情。</p>
 
-<p>2、消息插件：系统收到消息时，调用 plugins/plugin_message<br><br>自带演示插件的功能：发送反话给对方。比如说，对方和你讲ABCD。插件自动发回DCBA。</p>
+<p>2、消息插件：系统收到消息时，调用 plugins/plugin_message<br>
+自带演示插件的功能：发送反话给对方。比如说，对方和你讲 ABCD。插件自动发回 DCBA。</p>
 
-<p>3、激活对话窗口插件：当对方双击，打开对话窗口时，激活该插件plugin_invite。<br><br>该功能适合做机器人。当对方激活后，立即提示帮助信息。帮助插件中带的是演示。</p>
+<p>3、激活对话窗口插件：当对方双击，打开对话窗口时，激活该插件 plugin_invite。<br>
+该功能适合做机器人。当对方激活后，立即提示帮助信息。帮助插件中带的是演示。</p>
 
-<p>4、好友申请插件：当对方增加您为好友时，激活该插件plugin_buddy_application。<br><br>程序中存在2处好友申请开关，插件的优先级高于全局的开关（通过 autoaccept on/off设置的值）</p>
+<p>4、好友申请插件：当对方增加您为好友时，激活该插件 plugin_buddy_application。<br>
+程序中存在 2 处好友申请开关，插件的优先级高于全局的开关（通过 autoaccept on/off 设置的值）</p>
 
-<p>插件的详细说明可以参见：<a href="http://it-adv.apt-get.cn/bbs/viewthread.php?tid=28" target="_blank">http://it-adv.apt-get.cn/bbs/viewthread.php?tid=28</a><br>windows下的使用方法参见：<a href="http://it-adv.apt-get.cn/bbs/viewthread.php?tid=7&amp;extra=page%3D1" target="_blank">http://it-adv.apt-get.cn/bbs/viewthread.php?tid=7&amp;extra=page%3D1</a></p>
+<p>插件的详细说明可以参见：<a href="http://it-adv.apt-get.cn/bbs/viewthread.php?tid=28" target="_blank">http://it-adv.apt-get.cn/bbs/viewthread.php?tid=28</a>
+windows 下的使用方法参见：<a href="http://it-adv.apt-get.cn/bbs/viewthread.php?tid=7&amp;extra=page%3D1" target="_blank">http://it-adv.apt-get.cn/bbs/viewthread.php?tid=7&amp;extra=page%3D1</a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/14/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/16/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">FireYang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">284</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">194</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FireYang 
-  | <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17009590号-1</a></span>
-
-  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/14/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/16/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
+</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">沪ICP备17009590号-1 </a>
+  </div>
 
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+<script src="/js/local-search.js"></script>
 
 
 
@@ -1963,147 +1303,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>

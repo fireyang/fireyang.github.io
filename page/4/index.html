@@ -1,1921 +1,1234 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next gemini" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.fireyang.com","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡说八道">
 <meta property="og:url" content="http://blog.fireyang.com/page/4/index.html">
 <meta property="og:site_name" content="胡说八道">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FireYang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡说八道">
 
 
+<link rel="canonical" href="http://blog.fireyang.com/page/4/">
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://blog.fireyang.com/page/4/">
-
-
-
-
-
-  <title>胡说八道</title>
+<title>胡说八道</title>
   
 
 
 
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-130224407-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
 
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
 
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">胡说八道</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">胡说八道</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FireYang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">192</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fireyang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/fireyang" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;fireyang" rel="noopener" target="_blank"><i class="twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
     
-      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
   
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/03/07/old_blog/2011-03-07-好工具：让设计更友爱/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/03/07/old_blog/2011-03-07-%E5%A5%BD%E5%B7%A5%E5%85%B7%EF%BC%9A%E8%AE%A9%E8%AE%BE%E8%AE%A1%E6%9B%B4%E5%8F%8B%E7%88%B1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/03/07/old_blog/2011-03-07-%E5%A5%BD%E5%B7%A5%E5%85%B7%EF%BC%9A%E8%AE%A9%E8%AE%BE%E8%AE%A1%E6%9B%B4%E5%8F%8B%E7%88%B1/" class="post-title-link" itemprop="url">好工具：让设计更友爱</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/03/07/old_blog/2011-03-07-好工具：让设计更友爱/" itemprop="url">好工具：让设计更友爱</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-03-07T00:00:00+00:00">
-                2011-03-07
-              </time>
-            
+      <time title="创建时间：2011-03-07 00:00:00" itemprop="dateCreated datePublished" datetime="2011-03-07T00:00:00+00:00">2011-03-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><p style="text-align: center;"><a href="/media/2011/03/RTX201103071.jpg"><img class="alignnone size-full wp-image-849" title="RTX201103071" src="/media/2011/03/RTX201103071.jpg" alt="" width="600" height="400"></a></p>
+<p style="text-align: left;">地址：<a target="_blank" rel="noopener" href="http://www.getmarkman.com/">http://www.getmarkman.com/</a></p>
+<p style="text-align: left;">有了这个工具，ui 和程序沟通真的应该方便多了，作为一名 as，很激动的说……</p>
+<p style="text-align: left;">使用 air 开发，跨平台不成问题，界面设计也很 nice……</p>
+<p style="text-align: left;">演示视频，感觉用户体验非常不错：</p>
+<object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" align="middle"><param name="src" value="http://player.youku.com/player.php/Type/Folder/Fid/5324933/Ob/1/Pt/4/sid/XMjQ4NzI5NDg0/v.swf"><param name="quality" value="high"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/Type/Folder/Fid/5324933/Ob/1/Pt/4/sid/XMjQ4NzI5NDg0/v.swf" quality="high" align="middle"></object><p></p>
 
-      
-      
-
-      
-        
-          
-            <p></p><p style="text-align: center;"><a href="/media/2011/03/RTX201103071.jpg"><img class="alignnone size-full wp-image-849" title="RTX201103071" src="/media/2011/03/RTX201103071.jpg" alt width="600" height="400"></a></p><br><p style="text-align: left;">地址：<a href="http://www.getmarkman.com/" target="_blank" rel="noopener">http://www.getmarkman.com/</a></p><br><p style="text-align: left;">有了这个工具，ui和程序沟通真的应该方便多了，作为一名as，很激动的说……</p><br><p style="text-align: left;">使用air开发，跨平台不成问题，界面设计也很nice……</p><br><p style="text-align: left;">演示视频，感觉用户体验非常不错：</p><br><object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" align="middle"><param name="src" value="http://player.youku.com/player.php/Type/Folder/Fid/5324933/Ob/1/Pt/4/sid/XMjQ4NzI5NDg0/v.swf"><param name="quality" value="high"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/Type/Folder/Fid/5324933/Ob/1/Pt/4/sid/XMjQ4NzI5NDg0/v.swf" quality="high" align="middle"></object><p></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/28/old_blog/2011-02-28-flashplayer-支持gpu的3d-出来了/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/28/old_blog/2011-02-28-flashplayer-%E6%94%AF%E6%8C%81gpu%E7%9A%843d-%E5%87%BA%E6%9D%A5%E4%BA%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/28/old_blog/2011-02-28-flashplayer-%E6%94%AF%E6%8C%81gpu%E7%9A%843d-%E5%87%BA%E6%9D%A5%E4%BA%86/" class="post-title-link" itemprop="url">FlashPlayer 支持 GPU 的 3D 出来了</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/28/old_blog/2011-02-28-flashplayer-支持gpu的3d-出来了/" itemprop="url">FlashPlayer 支持GPU的3D 出来了</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-28T00:00:00+00:00">
-                2011-02-28
-              </time>
-            
+      <time title="创建时间：2011-02-28 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-28T00:00:00+00:00">2011-02-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="/media/2011/02/20110228.png"><img class="alignnone size-full wp-image-842" title="20110228" src="/media/2011/02/20110228.png" alt width="585" height="208"></a></p>
+          <p><a href="/media/2011/02/20110228.png"><img class="alignnone size-full wp-image-842" title="20110228" src="/media/2011/02/20110228.png" alt="" width="585" height="208"></a></p>
 
 <p>一大早就看到微博上，很多人在转这个消息真的很激动啊，赶紧下过来体验一下。</p>
 
-<p>flashplayer下载地址（来自labs）：<a href="http://labs.adobe.com/technologies/flashplatformruntimes/incubator/" target="_blank" rel="noopener">http://labs.adobe.com/technologies/flashplatformruntimes/incubator/</a></p>
+<p>flashplayer 下载地址（来自 labs）：<a target="_blank" rel="noopener" href="http://labs.adobe.com/technologies/flashplatformruntimes/incubator/">http://labs.adobe.com/technologies/flashplatformruntimes/incubator/</a></p>
 
 <p>ps：非稳定版本，如果你在做产品，还是看了就卸载掉吧，呵呵</p>
 
-<p>僵尸游戏：<a href="http://molehill.zombietycoon.com/" target="_blank" rel="noopener">http://molehill.zombietycoon.com/</a></p>
+<p>僵尸游戏：<a target="_blank" rel="noopener" href="http://molehill.zombietycoon.com/">http://molehill.zombietycoon.com/</a></p>
 
-<p><a href="/media/2011/02/zombietycoon.jpg"><img class="alignnone size-full wp-image-841" title="zombietycoon" src="/media/2011/02/zombietycoon.jpg" alt width="520" height="318"></a></p>
+<p><a href="/media/2011/02/zombietycoon.jpg"><img class="alignnone size-full wp-image-841" title="zombietycoon" src="/media/2011/02/zombietycoon.jpg" alt="" width="520" height="318"></a></p>
 
-<p>away3d的一些demo演示：<a href="http://away3d.com/away3d-4-0-alpha-release-broomstick" target="_blank" rel="noopener">http://away3d.com/away3d-4-0-alpha-release-broomstick</a></p>
+<p>away3d 的一些 demo 演示：<a target="_blank" rel="noopener" href="http://away3d.com/away3d-4-0-alpha-release-broomstick">http://away3d.com/away3d-4-0-alpha-release-broomstick</a></p>
 
 <p>这里就不出图了。</p>
 
-<p>flare3d之前出了演示的录像，一个赛车游戏，现在它们的官网也有提供这个版本的sdk了</p>
+<p>flare3d 之前出了演示的录像，一个赛车游戏，现在它们的官网也有提供这个版本的 sdk 了</p>
 
-<p><a href="http://www.flare3d.com/blog/" target="_blank" rel="noopener">http://www.flare3d.com/blog/</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.flare3d.com/blog/">http://www.flare3d.com/blog/</a></p>
 
 <p>因为非开源，关注的比较少。</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/28/old_blog/2011-02-28-gtalk也有flash版的客户端/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/28/old_blog/2011-02-28-gtalk%E4%B9%9F%E6%9C%89flash%E7%89%88%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/28/old_blog/2011-02-28-gtalk%E4%B9%9F%E6%9C%89flash%E7%89%88%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF/" class="post-title-link" itemprop="url">gtalk 也有 flash 版的客户端</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/28/old_blog/2011-02-28-gtalk也有flash版的客户端/" itemprop="url">gtalk也有flash版的客户端</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-28T00:00:00+00:00">
-                2011-02-28
-              </time>
-            
+      <time title="创建时间：2011-02-28 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-28T00:00:00+00:00">2011-02-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><p style="text-align: center;"><a href="/media/2011/02/201102281.png"><img class="size-full wp-image-846 aligncenter" title="201102281" src="/media/2011/02/201102281.png" alt="" width="543" height="306"></a></p>
+在我的印象里google是很少使用flash技术的，难得找到一个很泪奔。<p></p>
 
-      
-      
+<p>地址：<a target="_blank" rel="noopener" href="http://talkgadget.google.com/talkgadget/client">http://talkgadget.google.com/talkgadget/client</a></p>
 
-      
-        
-          
-            <p></p><p style="text-align: center;"><a href="/media/2011/02/201102281.png"><img class="size-full wp-image-846 aligncenter" title="201102281" src="/media/2011/02/201102281.png" alt width="543" height="306"></a></p><br>在我的印象里google是很少使用flash技术的，难得找到一个很泪奔。<p></p>
-
-<p>地址：<a href="http://talkgadget.google.com/talkgadget/client" target="_blank" rel="noopener">http://talkgadget.google.com/talkgadget/client</a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/20/old_blog/2011-02-20-如何修复“音乐数据库已满”（i9000）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/20/old_blog/2011-02-20-%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E2%80%9C%E9%9F%B3%E4%B9%90%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%B2%E6%BB%A1%E2%80%9D%EF%BC%88i9000%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/20/old_blog/2011-02-20-%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E2%80%9C%E9%9F%B3%E4%B9%90%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%B2%E6%BB%A1%E2%80%9D%EF%BC%88i9000%EF%BC%89/" class="post-title-link" itemprop="url">如何修复 “音乐数据库已满”（i9000）</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/20/old_blog/2011-02-20-如何修复“音乐数据库已满”（i9000）/" itemprop="url">如何修复“音乐数据库已满”（i9000）</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-20T00:00:00+00:00">
-                2011-02-20
-              </time>
-            
+      <time title="创建时间：2011-02-20 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-20T00:00:00+00:00">2011-02-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/android/" itemprop="url" rel="index"><span itemprop="name">android</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><p style="text-align: center;"><a href="/media/2011/02/Fix-Not-Enough-Space.png"><img class="size-full wp-image-830 aligncenter" title="Fix-Not-Enough-Space" src="/media/2011/02/Fix-Not-Enough-Space.png" alt="" width="320" height="480"></a></p>
+<span style="color: #000000;">昨天把手机升级到了 android2.2</span><p></p>
 
-      
-      
-
-      
-        
-          
-            <p></p><p style="text-align: center;"><a href="/media/2011/02/Fix-Not-Enough-Space.png"><img class="size-full wp-image-830 aligncenter" title="Fix-Not-Enough-Space" src="/media/2011/02/Fix-Not-Enough-Space.png" alt width="320" height="480"></a></p><br><span style="color: #000000;">昨天把手机升级到了android2.2</span><p></p>
-
-<p><span style="color: #000000;">问题现象：</span><br><ol><br>    <li><span style="color: #000000;">打开音乐播放器，无法打开，只提示“音乐数据库已满”（Not Enough Space For Music Db）</span></li><br>    <li><span style="color: #000000;">在设置来电音乐设置的时候也直接报异常</span></li><br></ol><br><span style="color: #000000;">解决方案：</span></p>
+<p><span style="color: #000000;">问题现象：</span>
+</p><ol>
+    <li><span style="color: #000000;">打开音乐播放器，无法打开，只提示 “音乐数据库已满”（Not Enough Space For Music Db）</span></li>
+    <li><span style="color: #000000;">在设置来电音乐设置的时候也直接报异常</span></li>
+</ol>
+<span style="color: #000000;">解决方案：</span><p></p>
 
 <p><span style="color: #000000;">参考地址：<strong><a href="http://nxphones.com/nxphones/android/android-tips-fix-not-enough-space-for-music-db-error" target="_blank">How to Fix Not Enough Space for Music DB Error</a></strong></span></p>
 
-<p><span style="color: #000000;">步骤：</span><br><ol><br>    <li>安装Root Explorer ，用这个来访问系统文件</li><br>    <li>找到目录：/dbdata/databases/com.android. providers.media.</li><br>    <li>备份上面目录的所有文件，然后全部删除</li><br>    <li>重启</li><br></ol><br>说明：其实就是重建音乐数据库，因为在你系统启动的时候如果发现没有数据库文件，会自动创建一个……</p>
+<p><span style="color: #000000;">步骤：</span>
+</p><ol>
+    <li>安装 Root Explorer ，用这个来访问系统文件</li>
+    <li>找到目录：/dbdata/databases/com.android. providers.media.</li>
+    <li> 备份上面目录的所有文件，然后全部删除</li>
+    <li>重启</li>
+</ol>
+说明：其实就是重建音乐数据库，因为在你系统启动的时候如果发现没有数据库文件，会自动创建一个……<p></p>
 
 <p>如果你也遇到这个问题，就去试试吧</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/18/old_blog/2011-02-18-960的网页标准/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/18/old_blog/2011-02-18-960%E7%9A%84%E7%BD%91%E9%A1%B5%E6%A0%87%E5%87%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/18/old_blog/2011-02-18-960%E7%9A%84%E7%BD%91%E9%A1%B5%E6%A0%87%E5%87%86/" class="post-title-link" itemprop="url">960 的网页标准</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/18/old_blog/2011-02-18-960的网页标准/" itemprop="url">960的网页标准</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-18T00:00:00+00:00">
-                2011-02-18
-              </time>
-            
+      <time title="创建时间：2011-02-18 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-18T00:00:00+00:00">2011-02-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p></p><p style="text-align: center;"><a href="http://960.gs/" target="_blank"><img class="size-full wp-image-806 aligncenter" title="20110218" src="/media/2011/02/20110218.jpg" alt="" width="334" height="203"></a></p>
+地址：<a target="_blank" rel="noopener" href="http://960.gs/">http://960.gs/</a><p></p>
 
-      
-      
+<p>960 的网页标准是被推荐的，这个可以找到你需要的工具和教程。<br>
+还有大量的示例网站，值得推荐和收藏……</p>
 
-      
-        
-          
-            <p></p><p style="text-align: center;"><a href="http://960.gs/" target="_blank"><img class="size-full wp-image-806 aligncenter" title="20110218" src="/media/2011/02/20110218.jpg" alt width="334" height="203"></a></p><br>地址：<a href="http://960.gs/" target="_blank" rel="noopener">http://960.gs/</a><p></p>
-
-<p>960的网页标准是被推荐的，这个可以找到你需要的工具和教程。<br><br>还有大量的示例网站，值得推荐和收藏……</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/18/old_blog/2011-02-18-flashfirebug的发布/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/18/old_blog/2011-02-18-flashfirebug%E7%9A%84%E5%8F%91%E5%B8%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/18/old_blog/2011-02-18-flashfirebug%E7%9A%84%E5%8F%91%E5%B8%83/" class="post-title-link" itemprop="url">FlashFireBug 的发布</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/18/old_blog/2011-02-18-flashfirebug的发布/" itemprop="url">FlashFireBug的发布</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-18T00:00:00+00:00">
-                2011-02-18
-              </time>
-            
+      <time title="创建时间：2011-02-18 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-18T00:00:00+00:00">2011-02-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/actionscript/" itemprop="url" rel="index">
-                    <span itemprop="name">actionscript</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p style="text-align: center;"><a href="http://www.o-minds.com/products/flashfirebug" target="_blank"><img class="size-full wp-image-816 aligncenter" title="201102181" src="/media/2011/02/201102181.jpg" alt width="527" height="140"></a></p><br>链接：<a href="http://www.o-minds.com/products/flashfirebug" target="_blank" rel="noopener">http://www.o-minds.com/products/flashfirebug</a><p></p>
+          <p></p><p style="text-align: center;"><a href="http://www.o-minds.com/products/flashfirebug" target="_blank"><img class="size-full wp-image-816 aligncenter" title="201102181" src="/media/2011/02/201102181.jpg" alt="" width="527" height="140"></a></p>
+链接：<a target="_blank" rel="noopener" href="http://www.o-minds.com/products/flashfirebug">http://www.o-minds.com/products/flashfirebug</a><p></p>
 
 <p>有了这个工具，服务器端在线调试什么的，神马都是浮云……</p>
 
 <p>你不需要安装其他的调试了，可以直接在你的浏览器中输出结果了，赶紧试试吧……</p>
 
-<p>如果你懂得用firebug进行调试，上手更容易了。</p>
+<p>如果你懂得用 firebug 进行调试，上手更容易了。</p>
 
-<p>其中一些特性：<br><ol><br>    <li>直接修改对象属性：<br><a href="/media/2011/02/view_change_object_properties.jpg"><img class="alignnone size-full wp-image-818" title="view_change_object_properties" src="/media/2011/02/view_change_object_properties.jpg" alt width="619" height="265"></a></li><br>    <li>直接在插件中输出trace：<br><a href="/media/2011/02/trace_output.jpg"><img class="alignnone size-full wp-image-817" title="trace_output" src="/media/2011/02/trace_output.jpg" alt width="555" height="206"></a></li><br></ol></p>
+<p>其中一些特性：
+</p><ol>
+    <li>直接修改对象属性：
+<a href="/media/2011/02/view_change_object_properties.jpg"><img class="alignnone size-full wp-image-818" title="view_change_object_properties" src="/media/2011/02/view_change_object_properties.jpg" alt="" width="619" height="265"></a></li>
+    <li>直接在插件中输出 trace：
+<a href="/media/2011/02/trace_output.jpg"><img class="alignnone size-full wp-image-817" title="trace_output" src="/media/2011/02/trace_output.jpg" alt="" width="555" height="206"></a></li>
+</ol><p></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/18/old_blog/2011-02-18-js跨平台开发应用/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/18/old_blog/2011-02-18-js%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="胡说八道">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/18/old_blog/2011-02-18-js%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/" class="post-title-link" itemprop="url">JS 开发手机应用</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/18/old_blog/2011-02-18-js跨平台开发应用/" itemprop="url">JS开发手机应用</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-18T00:00:00+00:00">
-                2011-02-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p></p><p style="text-align: center;"><a href="/media/2011/02/201102182.jpg"><img class="size-full wp-image-823 aligncenter" title="201102182" src="/media/2011/02/201102182.jpg" alt width="463" height="187"></a></p><br><p style="text-align: left;"><a href="/media/2011/02/201102182.jpg"></a><span style="font-size: small;">Appcelerator公司推出了Titanium sdk，让开发者可以用js语言开发的语言在任何平台上开发了……</span></p><br>通过它的架构图可以看出，只需要开发一次，就可以在若干平台上运行，真的有这么神奇么……你不妨自己试试……<p></p>
-
-<p><a href="/media/2011/02/gs_overview.png"><img class="alignnone size-full wp-image-824" title="gs_overview" src="/media/2011/02/gs_overview.png" alt width="600" height="313"></a></p>
-
-<p>模拟器什么的？android还是iphone的开发语言什么的？统统都是浮云了……</p>
-
-<p><a href="/media/2011/02/gs_android_testandpackage.png"><img class="alignnone size-full wp-image-825" title="gs_android_testandpackage" src="/media/2011/02/gs_android_testandpackage.png" alt width="600" height="389"></a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/17/old_blog/2011-02-17-团队大合影/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <time title="创建时间：2011-02-18 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-18T00:00:00+00:00">2011-02-18</time>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
     </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/17/old_blog/2011-02-17-团队大合影/" itemprop="url">团队大合影</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-17T00:00:00+00:00">
-                2011-02-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂七杂八/" itemprop="url" rel="index">
-                    <span itemprop="name">杂七杂八</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="/media/2011/02/3d725e59h9aceb7d073ef690.jpg"><img class="alignnone size-full wp-image-794" title="3d725e59h9aceb7d073ef&amp;690" src="/media/2011/02/3d725e59h9aceb7d073ef690.jpg" alt width="679" height="510"></a></p>
-
-<p>2010年，大家一起拼搏，一起努力，成长的一年！</p>
-
-<p>2011年应该就是丰收的一年了……</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/16/old_blog/2011-02-16-ubuntu-连接三星-i897i9000/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/16/old_blog/2011-02-16-ubuntu-连接三星-i897i9000/" itemprop="url">ubuntu 连接三星 i897|i9000</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-16T00:00:00+00:00">
-                2011-02-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><ol><br>    <li>下载android sdk （linux）</li><br>    <li>使用命令lsusb查找你的硬件编号(几下红色的字)：<br><br>Bus 004 Device 003: ID <span style="color: #ff0000;">04e8</span>:<span style="color: #ff0000;">681c</span> Samsung Electronics Co., Ltd Galaxy Portal/Spica Android Phone</li><br>    <li>写一个udev rule<br><span style="font-family: monospace;">把这些东西写入/etc/udev/rules.d/51-android.rules<br><br>其中04e8和681c是你前面查询到的编码，而USER和GROUP是你当前登录系统对应的用户名和组名</span><br><pre class="brush:perl">SUBSYSTEM==”usb”, ATTR{idVendor}==”04e8”, ATTR{idProduct}==”681c”, ENV{ACL_MANAGE}=”1”<br>SUBSYSTEM==”usb”, ATTRS{idVendor}==”04e8”, OWNER=”USER”, GROUP=”GROUP”, MODE=”0666”</pre><br></li><br>    <li>重启应用，进入sdk目录<br><pre class="brush:perl">sudo /etc/init.d/udev restart<br>./adb kill-server<br>./adb start-server<br>./adb devices</pre><br>我得到如下的结果:<br><pre class="brush:perl">List of devices attached<br>I897    device</pre><br>如果失败，将得到：<br><pre class="brush:perl">List of devices attached<br>????????????    no permissions</pre><br></li><br></ol></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/12/old_blog/2011-02-12-i9000手机被锁/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2011/02/12/old_blog/2011-02-12-i9000手机被锁/" itemprop="url">i9000手机被锁</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2011-02-12T00:00:00+00:00">
-                2011-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这两天刚好去临安同学家参加婚礼，可是路上手机却出现了“SIM卡网络解锁<em>PIN</em>码” ,回来查了下原来很多人遇到这样的问题。</p>
-
-<p>解决：</p>
-
-<p>首先，查看是否只是锁了这个，在手机上输入：*#7465625#确保只有网络锁那一项是锁定的。</p>
-
-<p>再下载这个应用到手机中运行：<a href="http://clarkehackworth.com/files/android/apks/SGS_Unlockv1.0.apk" target="_blank">Android 2.1</a> <a href="http://clarkehackworth.com/files/android/apks/SGS_Unlock.apk" target="_blank">Android 2.2</a></p>
-
-<p>将看到的号码记录下来，重启手机，插入sim卡。</p>
-
-<p>提示需要输入pin码的时候，输入你记录的号码就可以了。</p>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">FireYang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">284</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">28</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">194</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/fireyang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/fireyang" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FireYang 
-  | <a href="http://beian.miit.gov.cn" target="_blank">沪ICP备17009590号-1</a></span>
 
   
 </div>
 
+        </div>
+      </header>
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><p style="text-align: center;"><a href="/media/2011/02/201102182.jpg"><img class="size-full wp-image-823 aligncenter" title="201102182" src="/media/2011/02/201102182.jpg" alt="" width="463" height="187"></a></p>
+<p style="text-align: left;"><a href="/media/2011/02/201102182.jpg"></a><span style="font-size: small;">Appcelerator 公司推出了 Titanium sdk，让开发者可以用 js 语言开发的语言在任何平台上开发了……</span></p>
+通过它的架构图可以看出，只需要开发一次，就可以在若干平台上运行，真的有这么神奇么……你不妨自己试试……<p></p>
 
+<p><a href="/media/2011/02/gs_overview.png"><img class="alignnone size-full wp-image-824" title="gs_overview" src="/media/2011/02/gs_overview.png" alt="" width="600" height="313"></a></p>
 
+<p>模拟器什么的？android 还是 iphone 的开发语言什么的？统统都是浮云了……</p>
 
-  <span class="post-meta-divider">|</span>
+<p><a href="/media/2011/02/gs_android_testandpackage.png"><img class="alignnone size-full wp-image-825" title="gs_android_testandpackage" src="/media/2011/02/gs_android_testandpackage.png" alt="" width="600" height="389"></a></p>
 
+      
+    </div>
 
+    
+    
+    
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
     </footer>
+  </article>
+</div>
+
+
+
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
 
-  </div>
-
+<div class="post-block">
+  
   
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/17/old_blog/2011-02-17-%E5%9B%A2%E9%98%9F%E5%A4%A7%E5%90%88%E5%BD%B1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/17/old_blog/2011-02-17-%E5%9B%A2%E9%98%9F%E5%A4%A7%E5%90%88%E5%BD%B1/" class="post-title-link" itemprop="url">团队大合影</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2011-02-17 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-17T00:00:00+00:00">2011-02-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a href="/media/2011/02/3d725e59h9aceb7d073ef690.jpg"><img class="alignnone size-full wp-image-794" title="3d725e59h9aceb7d073ef&amp;690" src="/media/2011/02/3d725e59h9aceb7d073ef690.jpg" alt="" width="679" height="510"></a></p>
+
+<p>2010 年，大家一起拼搏，一起努力，成长的一年！</p>
+
+<p>2011 年应该就是丰收的一年了……</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/16/old_blog/2011-02-16-ubuntu-%E8%BF%9E%E6%8E%A5%E4%B8%89%E6%98%9F-i897i9000/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/16/old_blog/2011-02-16-ubuntu-%E8%BF%9E%E6%8E%A5%E4%B8%89%E6%98%9F-i897i9000/" class="post-title-link" itemprop="url">ubuntu 连接三星 i897|i9000</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2011-02-16 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-16T00:00:00+00:00">2011-02-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/android/" itemprop="url" rel="index"><span itemprop="name">android</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><ol>
+    <li>下载 android sdk （linux）</li>
+    <li>使用命令 lsusb 查找你的硬件编号 (几下红色的字)：<br>
+Bus 004 Device 003: ID <span style="color: #ff0000;">04e8</span>:<span style="color: #ff0000;">681c</span> Samsung Electronics Co., Ltd Galaxy Portal/Spica Android Phone</li>
+    <li> 写一个 udev rule
+<span style="font-family: monospace;">把这些东西写入 /etc/udev/rules.d/51-android.rules<br>
+其中 04e8 和 681c 是你前面查询到的编码，而 USER 和 GROUP 是你当前登录系统对应的用户名和组名 </span>
+<pre class="brush:perl">SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="681c", ENV{ACL_MANAGE}="1"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04e8", OWNER="USER", GROUP="GROUP", MODE="0666"</pre>
+</li>
+    <li>重启应用，进入 sdk 目录
+<pre class="brush:perl">sudo /etc/init.d/udev restart
+./adb kill-server
+./adb start-server
+./adb devices</pre>
+我得到如下的结果:
+<pre class="brush:perl">List of devices attached
+I897    device</pre>
+如果失败，将得到：
+<pre class="brush:perl">List of devices attached
+????????????    no permissions</pre>
+</li>
+</ol><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/12/old_blog/2011-02-12-i9000%E6%89%8B%E6%9C%BA%E8%A2%AB%E9%94%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/12/old_blog/2011-02-12-i9000%E6%89%8B%E6%9C%BA%E8%A2%AB%E9%94%81/" class="post-title-link" itemprop="url">i9000 手机被锁</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2011-02-12 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-12T00:00:00+00:00">2011-02-12</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-16 10:40:51" itemprop="dateModified" datetime="2020-12-16T10:40:51+00:00">2020-12-16</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/android/" itemprop="url" rel="index"><span itemprop="name">android</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这两天刚好去临安同学家参加婚礼，可是路上手机却出现了 “SIM 卡网络解锁 <em>PIN</em> 码” , 回来查了下原来很多人遇到这样的问题。</p>
+
+<p>解决：</p>
+
+<p>首先，查看是否只是锁了这个，在手机上输入：*#7465625# 确保只有网络锁那一项是锁定的。</p>
+
+<p>再下载这个应用到手机中运行：<a href="http://clarkehackworth.com/files/android/apks/SGS_Unlockv1.0.apk" target="_blank">Android 2.1</a> <a href="http://clarkehackworth.com/files/android/apks/SGS_Unlock.apk" target="_blank">Android 2.2</a></p>
+
+<p>将看到的号码记录下来，重启手机，插入 sim 卡。</p>
+
+<p>提示需要输入 pin 码的时候，输入你记录的号码就可以了。</p>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
+</div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">沪ICP备17009590号-1 </a>
+  </div>
 
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FireYang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+<script src="/js/local-search.js"></script>
 
 
 
@@ -1928,147 +1241,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
 
 </body>
 </html>
