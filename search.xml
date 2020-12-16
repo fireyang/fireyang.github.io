@@ -12,6 +12,29 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo Blog 【2020】</title>
+    <url>/2020/12/16/blog-2020-update/</url>
+    <content><![CDATA[<h1 id="Hexo-Blog-【2020】"><a href="#Hexo-Blog-【2020】" class="headerlink" title="Hexo Blog 【2020】"></a>Hexo Blog 【2020】</h1><p>目标：又到了年尾了，折腾下 blog。升级下版本，切换部署方式到 Github 的 Actions！</p>
+<h2 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级 hexo</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">## 手动 ，a全选</span></span><br><span class="line">yarn upgrade-interactive --latest</span><br><span class="line"><span class="comment"># 查看版本，会提示hexo config的错误，简单修复</span></span><br><span class="line">npx hexo version</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="升级主题theme-next"><a href="#升级主题theme-next" class="headerlink" title="升级主题theme-next"></a>升级主题 theme-next</h2><p><a href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a><br>8.0 最新（hexo 5.0 以上）</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yarn add hexo-theme-next</span><br><span class="line"><span class="comment"># 复制配置模板</span></span><br><span class="line">cp node_modules/hexo-theme-next/_config.yml _config.next.yml</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置 _config.next.yml -&gt; pangu:true</span></span><br><span class="line">yarn add  hexo-pangu</span><br><span class="line"><span class="comment"># 配置 _config.next.yml</span></span><br><span class="line"><span class="comment"># localsearch:</span></span><br><span class="line"><span class="comment">#     enable:true</span></span><br><span class="line">yarn add hexo-generator-searchdb</span><br><span class="line"><span class="comment"># hexo 配置</span></span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">      content: <span class="literal">true</span></span><br><span class="line">        format: html</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="部署方式"><a href="#部署方式" class="headerlink" title="部署方式"></a>部署方式</h1><p>之前的部署是由 Travis CI 来做，现在迁移到 Github 的 Action。全由 github 的技术栈来生成。</p>
+<p>直接打开看：<a href="https://github.com/fireyang/hexoBlog/blob/deploy/.github/workflows/deploy.yml">deploy.yml</a></p>
+<p>ACTION_DEPLOY_KEY 的生成，直接看：参考（4）</p>
+<p>参考</p>
+<ol>
+<li><a href="https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/">利用 Github Actions 自动部署 Hexo 博客</a></li>
+<li><a href="https://hexo.io/docs/github-pages">https://hexo.io/docs/github-pages</a></li>
+<li><a href="https://github.com/peaceiris/actions-gh-pages">https://github.com/peaceiris/actions-gh-pages</a></li>
+<li><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">https://github.com/peaceiris/actions-gh-pages#️-create-ssh-deploy-key</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>Mac 下用 Latex 写简历</title>
     <url>/2019/04/11/latex-write-resume/</url>
     <content><![CDATA[<!-- # Mac下用Latex写简历 -->
@@ -7079,30 +7102,10 @@ source mysandbox/bin/deactivate</code></pre>
 
 <p>入门视频:</p>
 
-<p><object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" align="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNTMzNjkwMjE2/v.swf"><param name="allowfullscreen" value="true"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNTMzNjkwMjE2/v.swf" allowfullscreen="true" quality="high" allowscriptaccess="always" align="middle"></object></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>新版 Loom 发布，开源引擎！</title>
-    <url>/2013/09/11/old_blog/2013-09-11-%E6%96%B0%E7%89%88loom%E5%8F%91%E5%B8%83%EF%BC%8C%E5%BC%80%E6%BA%90%E5%BC%95%E6%93%8E%EF%BC%81/</url>
-    <content><![CDATA[<p><a title="官网地址" href="https://loomsdk.com" target="_blank">https://loomsdk.com</a></p>
-
-<p>开源地址：<a href="https://github.com/LoomSDK/LoomSDK" target="_blank">https://github.com/LoomSDK/LoomSDK</a></p>
-
-<p>增强版本每月 5 刀，支持的开发流程，绝对的牛逼……</p>
-
-<p>我所知道的新特性
-</p><ol>
-    <li>支持多种设备实时调试</li>
-    <li>支持 PS 实时调整素材资源</li>
-    <li>支持 css 样式</li>
-</ol>
-看视频最直观了……<p></p>
-
-<p><object width="480" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" align="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNjA3NjAxMDIw/v.swf"><param name="allowfullscreen" value="true"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><embed width="480" height="400" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNjA3NjAxMDIw/v.swf" allowfullscreen="true" quality="high" allowscriptaccess="always" align="middle"></object></p>
+<p>
+<iframe width="1002" height="626" src="https://www.youtube.com/embed/fMxvyB1fMNY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen=""></iframe>
+</p>
 ]]></content>
       <categories>
         <category>其他</category>
