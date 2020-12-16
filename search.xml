@@ -331,6 +331,24 @@ TextScript.removeBlurIn(m, delay);<br>
       </categories>
   </entry>
   <entry>
+    <title>Flex 的全局变量 (原创翻译)</title>
+    <url>/2007/02/01/old_blog/2007-02-01-Flex%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F(%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91)/</url>
+    <content><![CDATA[<p>原文:<br>
+</p><h2 id="post-38"><a href="http://weblogs.macromedia.com/mesh/archives/2007/02/global_variable.html" rel="bookmark">Global Variables within Flex Applications</a> </h2>
+<p class="entry">
+</p><h3 class="entry">在 Flex 应用程序中的全局变量</h3>
+<p class="entry">最近在 <a href="http://tech.groups.yahoo.com/group/flexcomponents/"><font color="#002c99">Flex Components</font></a> 的邮件列表里经常有这样的一些提问：如果在 Flex 应用程序中设置全局变量？由于它的经常出现，所以在我的 blog 上（当然是指原文的作者）贴出答案。<br>其实非常简单，只用在你的主应用程序类里（mx:Application ）定义一个公有（public）的变量就可以了，如下：</p>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;var&nbsp;foo:String&nbsp;=&nbsp;"bar";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+你能在应用程序的任何地方访问到这个变量，像这样：<br>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">Application.application.foo</span></div>
+如果有需要，你也可以设置一个绑定变量。（添加一个bindable标签）<br>欢迎在回复里提出问题或意见。（无论是原文还是我的blog）
+<img src="http://www.cnblogs.com/FireYang/aggbug/646722.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-02-10 10:30 <a href="http://www.cnblogs.com/FireYang/archive/2007/02/10/646722.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>欢迎加入 RIA SEED !</title>
     <url>/2007/01/02/old_blog/2007-01-02-%E6%AC%A2%E8%BF%8E%E5%8A%A0%E5%85%A5RIA+SEED+!/</url>
     <content><![CDATA[<p></p><div class="ghgrn">RIA SEED 是一个 google 的 groups, 以前是在 mmug 上的一群人组件的，讨论 mm 技术的一个园地.<br>现在在 google 上按了个家，继续 mm 精神，继续 RIA<br>希望更多的 RIA 开发者，在这里共享自己的经验.<br></div>
@@ -375,24 +393,6 @@ TextScript.removeBlurIn(m, delay);<br>
 
 <p><img src="http://www.cnblogs.com/FireYang/aggbug/631749.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-27 09:01 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/27/631749.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Flex 的全局变量 (原创翻译)</title>
-    <url>/2007/02/01/old_blog/2007-02-01-Flex%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F(%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91)/</url>
-    <content><![CDATA[<p>原文:<br>
-</p><h2 id="post-38"><a href="http://weblogs.macromedia.com/mesh/archives/2007/02/global_variable.html" rel="bookmark">Global Variables within Flex Applications</a> </h2>
-<p class="entry">
-</p><h3 class="entry">在 Flex 应用程序中的全局变量</h3>
-<p class="entry">最近在 <a href="http://tech.groups.yahoo.com/group/flexcomponents/"><font color="#002c99">Flex Components</font></a> 的邮件列表里经常有这样的一些提问：如果在 Flex 应用程序中设置全局变量？由于它的经常出现，所以在我的 blog 上（当然是指原文的作者）贴出答案。<br>其实非常简单，只用在你的主应用程序类里（mx:Application ）定义一个公有（public）的变量就可以了，如下：</p>
-<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;var&nbsp;foo:String&nbsp;=&nbsp;"bar";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
-你能在应用程序的任何地方访问到这个变量，像这样：<br>
-<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">Application.application.foo</span></div>
-如果有需要，你也可以设置一个绑定变量。（添加一个bindable标签）<br>欢迎在回复里提出问题或意见。（无论是原文还是我的blog）
-<img src="http://www.cnblogs.com/FireYang/aggbug/646722.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-02-10 10:30 <a href="http://www.cnblogs.com/FireYang/archive/2007/02/10/646722.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
   </entry>
   <entry>
     <title>51ditu 的地图译码方式</title>
