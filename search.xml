@@ -169,6 +169,12 @@
     <title>hackmd 第一篇文章</title>
     <url>/2021/06/26/2021/use_hackmd_write_blog/</url>
     <content><![CDATA[<h1 id="hackmd第一篇文章"><a href="#hackmd第一篇文章" class="headerlink" title="hackmd第一篇文章"></a>hackmd 第一篇文章</h1><p><a href="https://hackmd.io/">hackmd.io</a><br>很方便的同步 github 的仓库里的 md 文章，<br>写起来还是挺舒服的</p>
+<h3 id="简单修改"><a href="#简单修改" class="headerlink" title="简单修改"></a>简单修改</h3><p>支持数学公式  </p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yarn add hexo-filter-mathjax</span><br><span class="line"><span class="comment">#  _config.yml 添加配置，使用方式看文章下方的“数学公式”章节</span></span><br><span class="line"><span class="comment"># ps： 文章页meta信息添加：mathjax: true</span></span><br><span class="line">mathjax:</span><br><span class="line">  tags: none <span class="comment"># or 'ams' or 'all'</span></span><br><span class="line">  single_dollars: <span class="literal">true</span> <span class="comment"># enable single dollar signs as in-line math delimiters</span></span><br><span class="line">  cjk_width: 0.9 <span class="comment"># relative CJK char width</span></span><br><span class="line">  normal_width: 0.6 <span class="comment"># relative normal (monospace) width</span></span><br><span class="line">  append_css: <span class="literal">true</span> <span class="comment"># add CSS to pages rendered by MathJax</span></span><br><span class="line">  every_page: <span class="literal">false</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>支持 Graphviz  </p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">yarn add https://github.com/dwatow/hexo-filter-viz.git</span><br></pre></td></tr></tbody></table></figure>
+
 <h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span>:</span></span><br><span class="line">    foo=<span class="string">'bar'</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
 <thead>
