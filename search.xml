@@ -48,20 +48,20 @@
 <p>如果为了省心，推荐第一种；为了省空间推荐最后一种。</p>
 <ol>
 <li><p>安装 brew</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># 安装brew</span><br><span class="line"># https://brew.sh/index_zh-cn.html</span><br><span class="line">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span><br><span class="line"></span><br><span class="line"># 安装brew cask</span><br><span class="line">brew tap caskroom/cask</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># 安装brew</span><br><span class="line"># https://brew.sh/index_zh-cn.html</span><br><span class="line">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span><br><span class="line"></span><br><span class="line"># 安装brew cask</span><br><span class="line">brew tap caskroom/cask</span><br></pre></td></tr></tbody></table></figure>
 <p>切换 brew 国内镜像：参考 1</p>
 </li>
 <li><p>安装 mactex</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># 两种方式选择一种</span><br><span class="line"># 1,安装mactex</span><br><span class="line">brew cask install mactex</span><br><span class="line"># 2,最简单安装</span><br><span class="line">brew cask install basictex</span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># 两种方式选择一种</span><br><span class="line"># 1,安装mactex</span><br><span class="line">brew cask install mactex</span><br><span class="line"># 2,最简单安装</span><br><span class="line">brew cask install basictex</span><br></pre></td></tr></tbody></table></figure></li>
 <li><p>依赖包安装:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># sudo tlmgr install package-name</span><br><span class="line"># 如下示例</span><br><span class="line">sudo tlmgr install latexmk</span><br><span class="line">sudo tlmgr install multirow</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># sudo tlmgr install package-name</span><br><span class="line"># 如下示例</span><br><span class="line">sudo tlmgr install latexmk</span><br><span class="line">sudo tlmgr install multirow</span><br></pre></td></tr></tbody></table></figure>
 <p>切换 tlmgr 镜像源：参考 2</p>
 </li>
 <li><p>简历模版：<br><a href="https://github.com/JasonZhang2333/MyResume">https://github.com/JasonZhang2333/MyResume</a></p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git clone https://github.com/JasonZhang2333/MyResume.git</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">git clone https://github.com/JasonZhang2333/MyResume.git</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>生成简历：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># 生成pdf简历</span><br><span class="line">xelatex *.tex</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># 生成pdf简历</span><br><span class="line">xelatex *.tex</span><br></pre></td></tr></tbody></table></figure>
 
 </li>
 </ol>
@@ -83,14 +83,14 @@
 <p>ps: 尝试 armv7-unknown-linux-gnueabihf 失败</p>
 <ol>
 <li><p>添加 target</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">//查看armv7的target列表</span><br><span class="line">rustup target list | grep armv7</span><br><span class="line">//添加target</span><br><span class="line">rustup target add armv7-unknown-linux-musleabihf</span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">//查看armv7的target列表</span><br><span class="line">rustup target list | grep armv7</span><br><span class="line">//添加target</span><br><span class="line">rustup target add armv7-unknown-linux-musleabihf</span><br></pre></td></tr></tbody></table></figure></li>
 <li><p>安装 arm 的编译工具</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">brew install arm-linux-gnueabihf-binutils</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">brew install arm-linux-gnueabihf-binutils</span><br></pre></td></tr></tbody></table></figure>
 </li>
 <li><p>指定 linker</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">//在~/.cargo/config (不存在就新增)添加如下配置</span><br><span class="line">[target.armv7-unknown-linux-gnueabihf]</span><br><span class="line">linker = "arm-linux-gnueabihf-ld"</span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">//在~/.cargo/config (不存在就新增)添加如下配置</span><br><span class="line">[target.armv7-unknown-linux-gnueabihf]</span><br><span class="line">linker = "arm-linux-gnueabihf-ld"</span><br></pre></td></tr></tbody></table></figure></li>
 <li><p>编译</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">cargo build --target=armv7-unknown-linux-musleabihf</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cargo build --target=armv7-unknown-linux-musleabihf</span><br></pre></td></tr></tbody></table></figure>
 
 </li>
 </ol>
@@ -104,9 +104,9 @@
     <url>/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/</url>
     <content><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>mac 下的 VScode vim 插件，常按 hjkl 键无法持续移动光标</p>
 <h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>终端下执行命令：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></tbody></table></figure>
 <p>复原:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></tbody></table></figure>
 
 ]]></content>
       <tags>
@@ -139,10 +139,10 @@
     <title>max 下 asdf 安装 erlang</title>
     <url>/2019/01/21/2018/2019-01-21-asdf-install-erlang/</url>
     <content><![CDATA[<h1 id="asdf安装erlang"><a href="#asdf安装erlang" class="headerlink" title="asdf安装erlang"></a>asdf 安装 erlang</h1><h2 id="安装asdf"><a href="#安装asdf" class="headerlink" title="安装asdf"></a>安装 asdf</h2><p>参考地址: <a href="https://github.com/asdf-vm/asdf">https://github.com/asdf-vm/asdf</a></p>
-<h2 id="添加erlang支持"><a href="#添加erlang支持" class="headerlink" title="添加erlang支持"></a>添加 erlang 支持</h2><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="添加erlang支持"><a href="#添加erlang支持" class="headerlink" title="添加erlang支持"></a>添加 erlang 支持</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="支持ssl，crypto-wxmac"><a href="#支持ssl，crypto-wxmac" class="headerlink" title="支持ssl，crypto, wxmac"></a>支持 ssl，crypto, wxmac</h2><p>ps: elixir 1.8 的 hex，必须支持 ssl</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">brew install openssl</span><br><span class="line">brew install wxmac</span><br><span class="line">export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac</span><br><span class="line">--enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support</span><br><span class="line">--enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit</span><br><span class="line">--with-ssl=/usr/local/Cellar/openssl/1.0.2p"</span><br><span class="line">asdf install erlang 21.2.3</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">brew install openssl</span><br><span class="line">brew install wxmac</span><br><span class="line">export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac</span><br><span class="line">--enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support</span><br><span class="line">--enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit</span><br><span class="line">--with-ssl=/usr/local/Cellar/openssl/1.0.2p"</span><br><span class="line">asdf install erlang 21.2.3</span><br></pre></td></tr></tbody></table></figure>
 <p>注意:with-ssl 对应的版本路径</p>
 ]]></content>
       <categories>
@@ -155,7 +155,7 @@
   <entry>
     <title>更换 brew 源</title>
     <url>/2019/01/21/2018/2019-01-21-brew-change-source/</url>
-    <content><![CDATA[<h1 id="更换brew国内镜像"><a href="#更换brew国内镜像" class="headerlink" title="更换brew国内镜像"></a>更换 brew 国内镜像</h1><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">cd "$(brew --repo)"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line"></span><br><span class="line">cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line"></span><br><span class="line">brew update</span><br></pre></td></tr></tbody></table></figure>
+    <content><![CDATA[<h1 id="更换brew国内镜像"><a href="#更换brew国内镜像" class="headerlink" title="更换brew国内镜像"></a>更换 brew 国内镜像</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cd "$(brew --repo)"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line"></span><br><span class="line">cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line"></span><br><span class="line">brew update</span><br></pre></td></tr></tbody></table></figure>
 
 ]]></content>
       <categories>
@@ -169,7 +169,7 @@
     <title></title>
     <url>/2021/06/26/2021/test/</url>
     <content><![CDATA[<h1 id="hackmd第一篇文章"><a href="#hackmd第一篇文章" class="headerlink" title="hackmd第一篇文章"></a>hackmd 第一篇文章</h1><p><a href="https://hackmd.io/">hackmd.io</a><br>很方便的同步 github 的仓库里的 md 文章，<br>写起来还是挺舒服的</p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span>:</span></span><br><span class="line">    foo=<span class="string">'bar'</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span>:</span></span><br><span class="line">    foo=<span class="string">'bar'</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
 <thead>
 <tr>
@@ -405,10 +405,7 @@ TextScript.removeBlurIn(m, delay);<br>
         </tr>
     </tbody>
 </table>
-<pre><code>    &lt;tr&gt;
-        &lt;td align="right"&gt;&lt;a href="http://groups.google.com/group/riaseed?hl=zh-CN"&gt;访问此论坛&lt;/a&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/tbody&gt;</code></pre><table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0" border="0">
+<table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0" border="0">
     <tbody>
         <tr>
             <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
@@ -421,9 +418,12 @@ TextScript.removeBlurIn(m, delay);<br>
             <tr>
                 <td style="PADDING-LEFT: 5px"> 电子邮件： <input name="email"> <input type="submit" value="订阅" name="sub"> </td>
             </tr>
-
-
-</tbody></table>
+        
+        <tr>
+            <td align="right"><a href="http://groups.google.com/group/riaseed?hl=zh-CN">访问此论坛</a> </td>
+        </tr>
+    </tbody>
+</table>
 <p><span style="COLOR: red">如果要 gmial 的邀请，请留言，我这里还有很多．<br><span style="COLOR: #000000">功能 (简单介绍):</span></span></p>
 <ol>
     <li><span style="COLOR: red"><span style="COLOR: #000000">上传文件</span></span></li>
@@ -4973,7 +4973,8 @@ package
      <span class="category1">break</span>;<br>
 }
 
-</p><pre><code>&lt;li&gt;AVM中用int比Number在执行循环速度要快：</code></pre>
+</p><pre><code>&lt;li&gt;AVM中用int比Number在执行循环速度要快：
+</code></pre>
 <pre>(<span class="category1">var</span> i: <span class="category1">int</span> = 0; i &lt; n; i++) NOT <span class="category1">for</span> (<span class="category1">var</span> i: <span class="category2">Number</span> = 0; i &lt; n; i++)</pre>
 
     <li>uint 要少用，比较慢：<code>
@@ -5020,7 +5021,8 @@ package
 <span class="category1">var</span> search : <span class="category2">String</span> = string.<span class="category2">substring</span>( searchIndex, searchIndex + 2 );
 
 </p><pre><code>&lt;li&gt;重用对象特别是（DisplayObjects, URLLoader），保持内存使用平稳，因为创建这些对象会使得cpu和内存占用加大，可能导致画面不流畅。&lt;/li&gt;
-&lt;li&gt;使用delete释放内存</code></pre>
+&lt;li&gt;使用delete释放内存
+</code></pre>
 <pre><span class="category1">delete</span> someObject;</pre>
 
 
@@ -6785,10 +6787,12 @@ I897    device</pre>
 <p>以后可以这样简单的写文章了，还可以用 git 来管理，个人表示很喜欢！</p>
 <p>ps：原本打算迁移 wp 的文章，还是保持不动了</p>
 <ul>
-<li>旧地址:<a href="http://www.fireyang.com/blog">www.fireyang.com/blog</a></li>
-<li> 订阅地址:<a href="/atom.xml">rss</a></li>
-</ul>
+<li><p>旧地址:<a href="http://www.fireyang.com/blog">www.fireyang.com/blog</a></p>
+</li>
+<li><p> 订阅地址:<a href="/atom.xml">rss</a></p>
 <p>我的 wordpress 很久没有打理了，也渐渐忘了多久没有写东西了！</p>
+</li>
+</ul>
 <p>现在也一直在用 git 来管理项目代码，一边学习一边使用吧。</p>
 <p>希望能坚持写一些东西！</p>
 <p>首页是从 <a href="http://blog.skydark.info/programming/2012/03/23/play-with-jekyll/">Skydark’s blog</a> 那里弄来的，哈哈！</p>
@@ -6930,16 +6934,19 @@ I897    device</pre>
     <url>/2012/08/21/old_blog/2012-08-21-python-develop-env/</url>
     <content><![CDATA[<h2 id="Python-开发环境"><a href="#Python-开发环境" class="headerlink" title="Python 开发环境"></a>Python 开发环境</h2><p>安装 pip 安装工具</p>
 <pre><code>wget  https://github.com/pypa/pip/raw/master/contrib/get-pip.py
-sudo python get-pip.py</code></pre>
+sudo python get-pip.py
+</code></pre>
 <p>安装沙盒环境:</p>
-<pre><code> sudo pip install virtualenv</code></pre>
+<pre><code> sudo pip install virtualenv
+</code></pre>
 <p>使用沙盒环境</p>
 <pre><code>＃创建环境
 virtualenv 沙盒名（比如mysandbox）
 ＃启用沙盒
 source mysandbox/bin/activate
 ＃关闭沙盒
-source mysandbox/bin/deactivate</code></pre>
+source mysandbox/bin/deactivate
+</code></pre>
 ]]></content>
   </entry>
   <entry>

@@ -1,4 +1,4 @@
-/* global CONFIG */
+/* global CONFIG, pjax */
 
 document.addEventListener('DOMContentLoaded', () => {
   if (!CONFIG.path) {
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML = `<div class="search-stats">${stats}</div>
         <hr>
         <ul class="search-result-list">${resultItems.map(result => result.item).join('')}</ul>`;
-      window.pjax && window.pjax.refresh(container);
+      if (typeof pjax === 'object') pjax.refresh(container);
     }
   };
 
@@ -203,13 +203,11 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(res => {
         // Get the contents from search data
         isfetched = true;
-        datas = isXml ? [...new DOMParser().parseFromString(res, 'text/xml').querySelectorAll('entry')].map(element => {
-          return {
-            title  : element.querySelector('title').textContent,
-            content: element.querySelector('content').textContent,
-            url    : element.querySelector('url').textContent
-          };
-        }) : JSON.parse(res);
+        datas = isXml ? [...new DOMParser().parseFromString(res, 'text/xml').querySelectorAll('entry')].map(element => ({
+          title  : element.querySelector('title').textContent,
+          content: element.querySelector('content').textContent,
+          url    : element.querySelector('url').textContent
+        })) : JSON.parse(res);
         // Only match articles with non-empty titles
         datas = datas.filter(data => data.title).map(data => {
           data.title = data.title.trim();
@@ -220,26 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Remove loading animation
         inputEventFunction();
       });
-  };
-
-  /**
-   * This function returns the parsed url parameters of the
-   * current request. Multiple values per key are supported,
-   * it will always return arrays of strings for the value parts.
-   */
-  const getQueryParameters = () => {
-    const s = location.search;
-    const parts = s.substr(s.indexOf('?') + 1).split('&');
-    const result = {};
-    for (const part of parts) {
-      const [key, value] = part.split('=', 2);
-      if (key in result) {
-        result[key].push(value);
-      } else {
-        result[key] = [value];
-      }
-    }
-    return result;
   };
 
   // Highlight by wrapping node in mark elements with the given class name
@@ -263,11 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Highlight the search words provided in the url in the text
   const highlightSearchWords = () => {
-    const params = getQueryParameters();
-    const keywords = params.highlight ? params.highlight[0].split(/\+/).map(decodeURIComponent) : [];
+    const params = new URL(location.href).searchParams.get('highlight');
+    const keywords = params ? params.split(' ') : [];
     const body = document.querySelector('.post-body');
     if (!keywords.length || !body) return;
-    const walk = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null, false);
+    const walk = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null);
     const allNodes = [];
     while (walk.nextNode()) {
       if (!walk.currentNode.parentNode.matches('button, select, textarea')) allNodes.push(walk.currentNode);
