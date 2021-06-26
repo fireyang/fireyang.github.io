@@ -208,7 +208,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-count">285</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -267,6 +267,104 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-vim%E6%B7%BB%E5%8A%A0as%E5%92%8Cmxml%E7%9A%84%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/02/02/old_blog/2008-02-02-vim%E6%B7%BB%E5%8A%A0as%E5%92%8Cmxml%E7%9A%84%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/" class="post-title-link" itemprop="url">vim 添加 as 和 mxml 的语法高亮</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2008-02-02 00:00:00" itemprop="dateCreated datePublished" datetime="2008-02-02T00:00:00+00:00">2008-02-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/vim/" itemprop="url" rel="index"><span itemprop="name">vim</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p> vim 很强大，学习中；配置下 as 和 mxml 的语法高亮，直接写 flash</p>
+
+<p>下载一下三个文件：
+</p><ol>
+    <li><a href="http://abdulqabiz.com/files/vim/actionscript.vim" target="_blank">http://abdulqabiz.com/files/vim/actionscript.vim</a></li>
+    <li><a href="http://abdulqabiz.com/files/vim/mxml.vim" target="_blank">http://abdulqabiz.com/files/vim/mxml.vim</a></li>
+    <li><a href="http://vim.cybermirror.org/patches/dtd.vim" target="_blank">http://vim.cybermirror.org/patches/dtd.vim</a> （这个是 xml 的语法，如果不装这个，mxml 会报错）</li>
+</ol>
+下载好后，把3个文件拷贝到~/.vim/syntax/下，如果没有可以创建。<p></p>
+
+<p>为了偷懒，修改了下启动程序./.vimrc 如下：
+</p><blockquote>
+<blockquote>         autocmd BufRead *.as set filetype=actionscript<br>
+autocmd BufRead *.mxml set filetype=mxml</blockquote>
+</blockquote>
+这个是在ubuntu下的配置，如过是windows下的vim要参考下也可以配置好的。
+<blockquote>
+<blockquote></blockquote>
+</blockquote><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/02/02/old_blog/2008-02-02-%E5%96%9C%E6%AC%A2%E5%BC%80%E6%BA%90%EF%BC%8C%E5%85%B3%E6%B3%A8aswing/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -298,7 +396,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -380,7 +478,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -464,7 +562,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -548,7 +646,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -643,7 +741,7 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -740,7 +838,7 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -831,7 +929,7 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -917,7 +1015,7 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -997,7 +1095,7 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1062,123 +1160,6 @@ sudo update-rc.d apache.server defaults
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/01/02/old_blog/2008-01-02-ubuntu%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8Bwindowsxp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2008/01/02/old_blog/2008-01-02-ubuntu%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8Bwindowsxp/" class="post-title-link" itemprop="url">ubuntu 连接远程 windows xp</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2008-01-02 00:00:00" itemprop="dateCreated datePublished" datetime="2008-01-02T00:00:00+00:00">2008-01-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><span style="padding: 0pt 2px; background-color: #99cc00">sudo apt-get install rdesktop<br>
-rdesktop 192.168.100.x</span></p>
-
-<p>-f 全屏<br>
--a 16 位色<br>
-端口 3389（linux 22 sh）<br>
-注意：windows 的服务中的 Terminal Servies 需要开启。我的电脑 右键 属性 远程中，勾选 允许远程用户链接到此计算机。另外，退出的时候选择注销，而不是关机！</p>
-
-<p>问题有二：<br>
-1.windows xp 必须打开 允许远程用户登录<br>
-2. 很奇怪，我的 guoshuang 登录时，会提示踢掉已经登录的用户（据查，xp sp2 以后不能同时登录）<br>
-3. 我的 windows 2003 允许远程用户登录 灰色不可选！</p>
-
-<p>更多参数：</p>
-
-<p>-u xxxxxx 登录用户，可选<br>
--p xxxxxx 登录密码，可选<br>
--r clipboard:PRIMARYCLIPBOARD 重要，剪贴板可以与远程桌面交互<br>
--a 16 颜色，可选，不过最高就是 16 位<br>
--z 压缩，可选<br>
--g 1024x768 分辨率，可选，缺省是一种比当前本地桌面低的分辨率<br>
--P 缓冲，可选<br>
--r disk:wj=/home/magicgod 映射虚拟盘，可选，会在远程机器的网上邻居里虚拟出一个映射盘，功能很强，甚至可以是软盘或光盘<br>
--r sound:off 关闭声音，当然也可以把远程发的声音映射到本地来。</p>
-
-<p>重定向：</p>
-
-<p>这时才发现它原来也可以将本地磁盘带到远端，而且连中文文件名也支持。只要加上 -r 参数就可以了。它除了可以将本地磁盘带到远端以外，还支持串口和打印机，这下 Windows 上远程桌面客户端的功能在 Linux 上都齐了。-r 参数的格式如下：<br>
--r comport:COM1=/dev/ttyS0 // 将串口 /dev/ttyS0 重定向为 COM1<br>
--r comport:COM1=/dev/ttyS0,COM2=/dev/ttyS1 // 多个串口重定向<br>
--r disk:floppy=/mnt/floppy// 将 /mnt/floppy 重定向为远程共享磁盘 'floppy'<br>
--r disk:floppy=/mnt/floppy,cdrom=/mnt/cdrom,root=/,c=/mnt/c// 多个磁盘重定向<br>
--r clientname=&lt;client name&gt; // 为重定向的磁盘设置显示的客户端名称<br>
--r lptport:LPT1=/dev/lp0 // 将并口 /dev/lp0 重定向为 LPT1<br>
--r lptport:LPT1=/dev/lp0,LPT2=/dev/lp1 // 多个并口重定向<br>
--r printer:mydeskjet // 打印机重定向<br>
--r printer:mydeskjet="HP LaserJet IIIP" // 打印机重定向<br>
--r sound:[local|off|remote] // 声音重定向</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/page/19/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/page/21/">21</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/21/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1216,7 +1197,7 @@ rdesktop 192.168.100.x</span></p>
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

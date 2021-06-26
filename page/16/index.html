@@ -208,7 +208,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-count">285</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -267,6 +267,141 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/08/13/old_blog/2008-08-13-ubuntu%E4%B8%8B%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%91%E9%80%81%E9%A3%9E%E4%BF%A1%EF%BC%88%E6%88%90%E5%8A%9F%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2008/08/13/old_blog/2008-08-13-ubuntu%E4%B8%8B%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%91%E9%80%81%E9%A3%9E%E4%BF%A1%EF%BC%88%E6%88%90%E5%8A%9F%EF%BC%89/" class="post-title-link" itemprop="url">ubuntu 下命令行发送飞信（成功）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2008-08-13 00:00:00" itemprop="dateCreated datePublished" datetime="2008-08-13T00:00:00+00:00">2008-08-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ubuntu/" itemprop="url" rel="index"><span itemprop="name">ubuntu</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>在 ubuntu 下可以用命令行发飞行短信了，以后可以配置个，发送些日志消息或报警短信到自己手机上了。</p>
+
+<p>测试环境：ubuntu 8。10&nbsp; （X86/32）</p>
+
+<p>官网地址：<a href="http://www.it-adv.net/" target="_blank">http://www.it-adv.net/</a></p>
+
+<p>在网站上下载<a href="http://www.it-adv.net/fetion/lib_lin_32.tar.gz" target="_blank">支持库</a>和<a href="http://www.it-adv.net/fetion/download/fetion20080618002-linux.tar.gz" target="_blank">最新程序</a>（LINUX X86/32），其他版本请到官方网站下载。</p>
+
+<p>首先配置支持库，解压你下载的支持库。包含四个文件：</p>
+
+<p>libACE.so.5.4.7&nbsp; libACE_SSL.so.5.4.7&nbsp; libcrypto.so.0.9.8&nbsp; libssl.so.0.9.8</p>
+
+<p>使用命令：cp *&nbsp; /usr/lib/<br>
+复制到用户的库目录下。</p>
+
+<p>然后解压你下载的程序文件，fetion 就是主程序。</p>
+
+<p>./fetion -u 帐号 -p 密码</p>
+
+<p>这样就成功运行了。</p>
+
+<p>****************************************************************<br>
+指令&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 指令说明<br>
+list&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;好友列表: list<br>
+sms&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 发送短信: sms 飞信号 / 手机号 / 编号 短信内容 (换行请用 \n 代替)<br>
+chat&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;在线消息: chat 飞信号 / 手机号 / 编号 短信内容 (换行请用 \n 代替)<br>
+status&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;在线状态: status online/busy/away/hidden [个性化信息]<br>
+add&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 添加好友: add 飞信号 / 手机号 申请信息 本地呢称<br>
+del&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;删除好友: del 飞信号 / 手机号 / 编号<br>
+invite&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;邀请好友: invite 手机号 您的姓名 (邀请好友开通飞信)<br>
+autoaccept&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;自动接受: autoaccept on/off/status 自动接受加为好友申请<br>
+myinfo&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 修改资料: myinfo nickname/impresa 内容 (呢称 / 心情)<br>
+help&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;帮助菜单: help/?<br>
+exit&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;退出系统: quit/exit<br>
+*********************************************************</p>
+
+<p>1 插件开发原理</p>
+
+<p>系统运行时，当遇到特写的事件，就会自动调用 plugins 目录的相应程序。我们可以根据实际应用来重写这些程序来达到自己的要求。</p>
+
+<p>目录，系统支持四类插件：</p>
+
+<p>1、定时插件：系统每 10 秒调用一次 plugins/plugin_timer<br>
+自带演示插件的功能：每隔 10 秒钟更换一次心情。</p>
+
+<p>2、消息插件：系统收到消息时，调用 plugins/plugin_message<br>
+自带演示插件的功能：发送反话给对方。比如说，对方和你讲 ABCD。插件自动发回 DCBA。</p>
+
+<p>3、激活对话窗口插件：当对方双击，打开对话窗口时，激活该插件 plugin_invite。<br>
+该功能适合做机器人。当对方激活后，立即提示帮助信息。帮助插件中带的是演示。</p>
+
+<p>4、好友申请插件：当对方增加您为好友时，激活该插件 plugin_buddy_application。<br>
+程序中存在 2 处好友申请开关，插件的优先级高于全局的开关（通过 autoaccept on/off 设置的值）</p>
+
+<p>插件的详细说明可以参见：<a href="http://it-adv.apt-get.cn/bbs/viewthread.php?tid=28" target="_blank">http://it-adv.apt-get.cn/bbs/viewthread.php?tid=28</a>
+windows 下的使用方法参见：<a href="http://it-adv.apt-get.cn/bbs/viewthread.php?tid=7&amp;extra=page%3D1" target="_blank">http://it-adv.apt-get.cn/bbs/viewthread.php?tid=7&amp;extra=page%3D1</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/08/08/old_blog/2008-08-08-libfetion%E9%A3%9E%E4%BF%A1api/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -298,7 +433,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -388,7 +523,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -474,7 +609,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -558,7 +693,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -642,7 +777,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -730,7 +865,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -826,7 +961,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -937,7 +1072,7 @@ sudo apt-get install wine<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1023,7 +1158,7 @@ sudo apt-get install wine<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1053,101 +1188,6 @@ sudo apt-get install wine<br>
 上面有个pv3d的一个api帮助文件，也是很好的东东。<p></p>
 
 <p><a href="http://www.flashbookmarks.com/PV3D-GreatWhite-DOC/" target="_blank">http://www.flashbookmarks.com/PV3D-GreatWhite-DOC/</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2008/07/15/old_blog/2008-07-15-as%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E6%A1%86%E6%9E%B6prana-framework/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2008/07/15/old_blog/2008-07-15-as%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E6%A1%86%E6%9E%B6prana-framework/" class="post-title-link" itemprop="url">AS 一个新的框架 Prana Framework</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2008-07-15 00:00:00" itemprop="dateCreated datePublished" datetime="2008-07-15T00:00:00+00:00">2008-07-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Prana Framework 是一个 as 的框架，0.6 版本刚刚发布出来
-</p><p align="center"><img src="http://www.herrodius.com/blog/wp-content/uploads/2008/04/prana.jpg" alt="Prana"></p>
-<p style="text-align: center;"><a target="_blank" rel="noopener" href="http://sourceforge.net/project/showfiles.php?group_id=194107&amp;package_id=228809&amp;release_id=611243">Download</a> |&nbsp;<a target="_blank" rel="noopener" href="http://www.pranaframework.org/docs/0.6/api/">API Documentation</a> |&nbsp;<a target="_blank" rel="noopener" href="http://www.pranaframework.org/docs/0.6/changelog.txt">Changelog</a></p>
-<p style="text-align: left;">官方网站：<a href="http://www.pranaframework.org/" target="_blank">http://www.pranaframework.org/</a></p>
-<p style="text-align: left;">这个框架主要包括以下几个方面：</p><p></p>
-
-<p></p><ol>
-    <li>ioc 容器（还不知道是什么东西，有待研究）</li>
-    <li> Cairngorm 的前导组件（ FrontController）的一些命令工厂（command factories ）</li>
-    <li>更多的 PureMVC 实践</li>
-</ol>
-可以说这个框架是结合了现有一些优秀框架的优点而成，具体如何有待深入试用，但是已经面向企业级开发的一个好的开端了。<p></p>
-
-<p>详细信息查看：<a href="http://www.herrodius.com/blog/149" target="_blank">http://www.herrodius.com/blog/149</a></p>
-
-<p>发现代码是放到 http://sourceforge.net 上的，但是国内好像被封掉了，不能直接访问了，可以尝试用 svn 获取。</p>
 
       
     </div>
@@ -1203,7 +1243,7 @@ sudo apt-get install wine<br>
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

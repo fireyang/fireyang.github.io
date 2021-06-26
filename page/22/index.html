@@ -208,7 +208,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-count">285</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -267,6 +267,99 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/02/old_blog/2007-10-02-/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/10/02/old_blog/2007-10-02-/" class="post-title-link" itemprop="url">.NET 简单处理 Ajax 请求方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-10-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-10-02T00:00:00+00:00">2007-10-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><pre>protected void Page_Load(object sender, EventArgs e)
+{
+if (Request["name"] != null)
+{
+</pre>
+<pre>               //这里进行处理，并返回结果
+Response.Write("From Server: " + Request["name"]);
+Response.End();
+}
+}
+</pre>
+<pre>&nbsp;Request["name"] 中的name就是变量的名称，是url后？name=fireyang等这样的形式。
+</pre>
+<p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/02/old_blog/2007-10-02-Channel+V+%E5%9C%A8%E7%BA%BF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -298,7 +391,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -385,7 +478,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -507,7 +600,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -601,7 +694,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -711,7 +804,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -837,7 +930,7 @@ public static DataSet SelectSqlRows(string connectionString,<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -927,7 +1020,7 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1010,7 +1103,7 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1095,7 +1188,7 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1156,90 +1249,6 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-%E8%AF%BB%E5%8F%96%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2007/10/01/old_blog/2007-10-01-%E8%AF%BB%E5%8F%96%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">读取存储过程中的参数方法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2007-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2007-10-01T00:00:00+00:00">2007-10-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p></p><p>
-SqlCommandBuilder.DeriveParameters (command)，其中的 command 就是一个 SqlCommand 的对象，这个 command.CommandType = CommandType.StoredProcedure;<br>
-这样 command 的参数列表就被自动分配了
-</p>
-<p></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/page/21/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/23/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1277,7 +1286,7 @@ SqlCommandBuilder.DeriveParameters (command)，其中的 command 就是一个 Sq
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

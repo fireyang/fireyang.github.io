@@ -208,7 +208,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">284</span>
+          <span class="site-state-item-count">285</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -267,6 +267,105 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/08/17/old_blog/2010-08-17-719/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2010/08/17/old_blog/2010-08-17-719/" class="post-title-link" itemprop="url">mc 动画位图缓存</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2010-08-17 00:00:00" itemprop="dateCreated datePublished" datetime="2010-08-17T00:00:00+00:00">2010-08-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>源： <a href="http://blog.touchmypixel.com/2008/11/caching-animation-frames-vs-spritesheets/" target="_blank">http://blog.touchmypixel.com/2008/11/caching-animation-frames-vs-spritesheets/ </a></p>
+
+<p>想自己写个贴上来，没想打有现成的，贴上来，看看就能懂，改改就能用，多好啊.</p>
+
+<p>作者实现了两种位图缓存，一种是将动作渲染成图片后放置在一个数组呢，另一个方法是将动作全部渲染在一张大图里（flash 中 bitmapdata 大小的限制，我以往日志中已经提过了），在用的时候再 copy 出来，如下式性能测试，缓存后比直接渲染矢量图性能高很多，而两种缓存方式在性能上差不多，从这里看用大图缓存好像稍微逊色点。</p>
+
+<p>The results are as follows:</p>
+
+<p>uncached:&nbsp; ~16fps<br>
+cached as frames: ~120fps<br>
+cached on spritesheet: ~70fps</p>
+
+<p>memory usage:</p>
+
+<p>frames: 249 856<br>
+spritesheet: 270 336</p>
+
+<p>demo：<a target="_blank" rel="noopener" href="http://www.touchmypixel.com/blog_examples/081128%20Cached%20Animations%20SpriteSheets/">http://www.touchmypixel.com/blog_examples/081128%20Cached%20Animations%20SpriteSheets/</a></p>
+
+<p>source: <a href="http://www.touchmypixel.com/blog_examples/081128%20Cached%20Animations%20SpriteSheets/Cached%20Animations.zip" target="_blank">源代码</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/08/11/old_blog/2010-08-11-virtualbox%E4%B8%8Bdebian%E4%B8%AD%E5%AE%89%E8%A3%85%E5%A2%9E%E5%BC%BA%E5%8C%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -298,7 +397,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -410,7 +509,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -500,7 +599,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -590,7 +689,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -688,7 +787,7 @@ addChild(myBigAssCanvas);</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -770,7 +869,7 @@ addChild(myBigAssCanvas);</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -875,7 +974,7 @@ addChild(myBigAssCanvas);</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -965,7 +1064,7 @@ addChild(myBigAssCanvas);</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1051,7 +1150,7 @@ addChild(myBigAssCanvas);</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
+        <time title="修改时间：2021-06-26 15:44:29" itemprop="dateModified" datetime="2021-06-26T15:44:29+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1129,104 +1228,6 @@ addChild(myBigAssCanvas);</p>
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/06/03/old_blog/2010-06-03-md2%E5%8A%A8%E7%94%BB%E6%9F%A5%E7%9C%8B%E5%99%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2010/06/03/old_blog/2010-06-03-md2%E5%8A%A8%E7%94%BB%E6%9F%A5%E7%9C%8B%E5%99%A8/" class="post-title-link" itemprop="url">md2 动画查看器</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2010-06-03 00:00:00" itemprop="dateCreated datePublished" datetime="2010-06-03T00:00:00+00:00">2010-06-03</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-12-16 12:56:02" itemprop="dateModified" datetime="2020-12-16T12:56:02+00:00">2020-12-16</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>最近在接触 Pv3d 的东西，需要用到 md2 来做动画。</p>
-
-<p>发现一个好用的工具：<a href="http://www.misfitcode.com/misfitmodel3d/screenshots.html" target="_blank">Misfit Model 3D</a>。</p>
-
-<p>由 Qt 开发，所以可以在 windows，也可以在 linux 下使用，很方便。</p>
-
-<p>功能：
-</p><ol>
-    <li>可以预览动画</li>
-    <li>调整物体的点（微调）</li>
-    <li>编辑 md2 动画的幀名称（这是我找到唯一一款可以多幀编辑的工具）。</li>
-</ol>
-<a href="/media/2010/06/misfitcode.jpg"><img class="alignnone size-full wp-image-684" title="misfitcode" src="/media/2010/06/misfitcode.jpg" alt="" width="664" height="574"></a><p></p>
-
-<p>用处：
-</p><ol>
-    <li>我在直接导入到 pv3d 中使用的时候，可以先预览下，可以观察下他的原点坐标的位置。</li>
-    <li>在导入 md2 的时候，需要为 md2 的各个动作对应的幀命名，在 3dmax 导出的时候没办法做到，所以用这个工具可以为动作命名，而且还不用一幀幀的来。</li>
-</ol><p></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1264,7 +1265,7 @@ addChild(myBigAssCanvas);</p>
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
