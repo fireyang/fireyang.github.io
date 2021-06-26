@@ -168,7 +168,37 @@
   <entry>
     <title></title>
     <url>/2021/06/26/2021/test/</url>
-    <content><![CDATA[<h2 id="test-1"><a href="#test-1" class="headerlink" title="test 1"></a>test 1</h2>]]></content>
+    <content><![CDATA[<h1 id="hackmd第一篇文章"><a href="#hackmd第一篇文章" class="headerlink" title="hackmd第一篇文章"></a>hackmd 第一篇文章</h1><p><a href="https://hackmd.io/">hackmd.io</a><br>很方便的同步 github 的仓库里的 md 文章，<br>写起来还是挺舒服的</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span>:</span></span><br><span class="line">    foo=<span class="string">'bar'</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Text</td>
+<td>Text</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://i.imgur.com/ONsS7Kh.png"></p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><a href="https://www.google.com/">google</a></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol>
+<li>项目 1</li>
+<li> 项目 2</li>
+</ol>
+<ul>
+<li> 条目 1</li>
+<li> 条目 2</li>
+</ul>
+<ul>
+<li><input disabled="" type="checkbox"> todo1</li>
+<li><input disabled="" type="checkbox"> todo2</li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>TextScript 类</title>
