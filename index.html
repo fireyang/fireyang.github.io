@@ -237,7 +237,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-06-26 22:35:04 / 修改时间：16:26:17" itemprop="dateCreated datePublished" datetime="2021-06-26T22:35:04+00:00">2021-06-26</time>
+      <time title="创建时间：2021-06-26 22:35:04 / 修改时间：16:34:28" itemprop="dateCreated datePublished" datetime="2021-06-26T22:35:04+00:00">2021-06-26</time>
     </span>
 
   
@@ -251,8 +251,8 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="hackmd第一篇文章"><a href="#hackmd第一篇文章" class="headerlink" title="hackmd第一篇文章"></a>hackmd 第一篇文章</h1><p><a target="_blank" rel="noopener" href="https://hackmd.io/">hackmd.io</a><br>很方便的同步 github 的仓库里的 md 文章，<br>写起来还是挺舒服的</p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span>:</span></span><br><span class="line">    foo=<span class="string">'bar'</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span>:</span></span><br><span class="line">    foo=<span class="string">'bar'</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"hello world"</span>)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
 <thead>
 <tr>
 <th>Column 1</th>
@@ -266,9 +266,9 @@
 <td>Text</td>
 </tr>
 </tbody></table>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://i.imgur.com/ONsS7Kh.png"></p>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><a target="_blank" rel="noopener" href="https://www.google.com/">google</a></p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="https://i.imgur.com/ONsS7Kh.png"></p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a target="_blank" rel="noopener" href="https://www.google.com/">google</a></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ol>
 <li>项目 1</li>
 <li> 项目 2</li>
 </ol>
@@ -280,6 +280,31 @@
 <li><input disabled="" type="checkbox"> todo1</li>
 <li><input disabled="" type="checkbox"> todo2</li>
 </ul>
+<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>$$<br>x = {-b \pm \sqrt{b^2-4ac} \over 2a}.<br>$$</p>
+<p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.<br>$$</p>
+<h3 id="流程圖"><a href="#流程圖" class="headerlink" title="流程圖"></a>流程圖</h3><p>您可以像是以下使用流程圖：</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<h3 id="Graphviz"><a href="#Graphviz" class="headerlink" title="Graphviz"></a>Graphviz</h3><p>```graphviz<br>digraph hierarchy {</p>
+<pre><code>            nodesep=1.0 // increases the separation between nodes
+            
+            node [color=Red,fontname=Courier,shape=box] //All nodes will this shape and colour
+            edge [color=Blue, style=dashed] //All the lines look like this
+
+            Headteacher-&gt;{Deputy1 Deputy2 BusinessManager}
+            Deputy1-&gt;{Teacher1 Teacher2}
+            BusinessManager-&gt;ITManager
+            {rank=same;ITManager Teacher1 Teacher2}  // Put them on the same level
+</code></pre>
+<p>}<br>```<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=&gt;start: 開始
+e=&gt;end: 結束
+op=&gt;operation: 我的操作
+op2=&gt;operation: 啦啦啦
+cond=&gt;condition: 是或否？
+
+st-&gt;op-&gt;op2-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op2</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
       
     </div>
@@ -337,7 +362,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
 
   
@@ -425,7 +450,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
 
   
@@ -529,7 +554,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
 
   
@@ -614,7 +639,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -699,7 +724,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -780,7 +805,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
 
   
@@ -852,7 +877,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
 
   
@@ -928,7 +953,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1016,7 +1041,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 16:26:17" itemprop="dateModified" datetime="2021-06-26T16:26:17+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-26 16:34:28" itemprop="dateModified" datetime="2021-06-26T16:34:28+00:00">2021-06-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
