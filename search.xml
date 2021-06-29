@@ -170,13 +170,22 @@
     <url>/2021/06/30/2021/cf_workers_get_github_active/</url>
     <content><![CDATA[<h1 id="cf-worker-teletram-打造一个github-news"><a href="#cf-worker-teletram-打造一个github-news" class="headerlink" title="cf worker + teletram 打造一个github news"></a>cf worker + teletram 打造一个 github news</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>发现一个好玩具：<a href="https://workers.cloudflare.com/">https://workers.cloudflare.com/</a><br>cloudflare workers 可以理解为一个免费的 mini web server，详情请看官网。  </p>
 <p>免费撸一个工具，结合 telegram 的机器人。<br>将 github 首页的 All activity 动态，通过 tg 发送给我，这样就能时刻关注大佬们的动态，第一时间知道他们又 star 了什么好玩的，fork 了什么牛逼的仓库了！  </p>
-<p>重要的一点：免费计划配额还不少，还支持 cron 定时任务，完美！<br>![](<a href="https://i.imgur.com/ODAAKoG.png">https://i.imgur.com/ODAAKoG.png</a> =500x)</p>
+<p>重要的一点：免费计划配额还不少，还支持 cron 定时任务，完美！  </p>
+<!-- ![](https://i.imgur.com/ODAAKoG.png =500x) -->
+<img src="https://i.imgur.com/ODAAKoG.png" width="500">
+
+
 <h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
 <li>cf 的 telegram 支持<br>参考：<a href="https://moe.best/tutorial/cfworker-telegraf-tgbot.html">Cloudflare Workers</a><br>作者详细解释了原理，演示了如何安装和使用，通过该文章很快的实现了 cf+telegram 发消息的功能</li>
 <li>解析 github 的 feed rss 源。<br>虽然 rss 的内容是 xml 的；我不想引入太重的 xml 解析库，于是我简单的通过正则提炼自己想要的信息，然后通过 telegraf 找到自己的 telegram chat id，直接给我发消息就可以了</li>
-<li>定时任务<br>使用 workers 的 cron 功能，定时抓取 github rss 数，再通过 telegram 机器人发送消息<br>![](<a href="https://i.imgur.com/GeJEP7J.png">https://i.imgur.com/GeJEP7J.png</a> =500x)</li>
+<li>定时任务<br>使用 workers 的 cron 功能，定时抓取 github rss 数，再通过 telegram 机器人发送消息<!-- ![](https://i.imgur.com/GeJEP7J.png =500x) -->
+<img src="https://i.imgur.com/GeJEP7J.png" width="500">
+
+</li>
 </ol>
-<h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><p>![](<a href="https://i.imgur.com/WssXWSt.png">https://i.imgur.com/WssXWSt.png</a> =500x)</p>
+<h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><!-- ![](https://i.imgur.com/WssXWSt.png =500x) -->
+<img src="https://i.imgur.com/WssXWSt.png" width="500">
+
 <h2 id="其他参考"><a href="#其他参考" class="headerlink" title="其他参考"></a>其他参考</h2><ul>
 <li><a href="https://developers.cloudflare.com/workers/">cf workers 帮助文档</a>  </li>
 <li><a href="https://github.com/lukeed/awesome-cloudflare-workers">https://github.com/lukeed/awesome-cloudflare-workers</a></li>
