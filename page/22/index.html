@@ -153,7 +153,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">285</span>
+          <span class="site-state-item-count">286</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -212,6 +212,104 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/11/02/old_blog/2007-11-02-%E4%BB%8Emicrosoftnet%E8%BF%9E%E6%8E%A5%E5%88%B0db2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/11/02/old_blog/2007-11-02-%E4%BB%8Emicrosoftnet%E8%BF%9E%E6%8E%A5%E5%88%B0db2/" class="post-title-link" itemprop="url">从 Microsoft.NET 连接到 DB2</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-11-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-11-02T00:00:00+00:00">2007-11-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Net/" itemprop="url" rel="index"><span itemprop="name">.Net</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="http://www.fireyang.com/image.axd?picture=image001.jpg" alt="" width="566" height="373">
+</p><ol>
+    <li>IBM DB2 UDB 8.1.2（需要安装服务器版的 DB2）<br>
+DB2Connection cn = new DB2Connection(<br>
+"Database=TEST;UserID=db2admin; Password=password;Server=IS500");<br>
+DB2Command cmd = new DB2Command("SELECT COUNT(*) FROM EMP01", cn);<br>
+int count = Convert.ToInt32(cmd.ExecuteScalar());</li>
+    <li>Microsoft Host Integration Server 2006<br>
+试用下载地址：<a target="_blank" rel="noopener" href="https://thesource.ofallevil.com/taiwan/hiserver/evaluation/trial/default.mspx">https://thesource.ofallevil.com/taiwan/hiserver/evaluation/trial/default.mspx</a></li>
+    <li>DataDirect Connect for .NET, Edition 2.0
+<a target="_blank" rel="noopener" href="http://www.ddtek.com/products/dotnet/dotnetrelhigh.asp">http://www.ddtek.com/products/dotnet/dotnetrelhigh.asp</a> (DataDirect)</li>
+    <li>Mono.Data.DB2Client
+<a target="_blank" rel="noopener" href="http://www.go-mono.com/ibmdb2.html">http://www.go-mono.com/ibmdb2.html</a> (Mono)</li>
+</ol>
+链接字符串：
+<h4>TCP/IP</h4>
+<span class="cpp-string"><span style="font-family: Courier New;">"Provider=DB2OLEDB;Network Transport Library=TCPIP;Network Address=XXX.XXX.XXX.XXX;Initial Catalog=MyCtlg;Package Collection =MyPkgCol;Default Schema=Schema;User ID=MyUser;Password=MyPW"</span></span>
+<h4>APPC</h4>
+<span class="cpp-string"><span style="font-family: Courier New;">"Provider=DB2OLEDB;APPC Local LU Alias=MyAlias;APPC Remote LU Alias =MyRemote;Initial Catalog=MyCtlg;Package Collection=MyPkgCol;Default Schema=Schema;UserID=MyUser;Password=MyPW"</span></span><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/02/old_blog/2007-10-02-/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -243,7 +341,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -336,7 +434,7 @@ Response.End();
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -423,7 +521,7 @@ Response.End();
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -545,7 +643,7 @@ Response.End();
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -639,7 +737,7 @@ Response.End();
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -749,7 +847,7 @@ Response.End();
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -875,7 +973,7 @@ public static DataSet SelectSqlRows(string connectionString,<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -965,7 +1063,7 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1048,7 +1146,7 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1075,106 +1173,6 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
 孔雀飞去，回忆悠长&nbsp;<br>
 玉龙雪山，闪耀着银光&nbsp;<br>
 秀色丽江，人在路上&nbsp;</h1><img src="/image.axd?picture=200710101.jpg" alt="" width="416" height="488"> 
-<p></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/10/01/old_blog/2007-10-01-%E8%8E%B7%E5%8F%96%E7%B1%BB%E7%9A%84%E6%89%80%E6%9C%89%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2007/10/01/old_blog/2007-10-01-%E8%8E%B7%E5%8F%96%E7%B1%BB%E7%9A%84%E6%89%80%E6%9C%89%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">获取类的所有属性和方法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2007-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2007-10-01T00:00:00+00:00">2007-10-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p></p><p>
-假设已经定义一个 User 类，使用如下的代码可以获取此类的公共属性和方法： 
-</p>
-<span style="font-size: 9pt; font-family: 新宋体"><span style="color: #2b91af"><span style="font-size: 9pt; font-family: 新宋体"><span style="color: #2b91af">Type</span><font color="#000000"> type_User = </font><span style="color: blue">typeof</span><font color="#000000">(</font><span style="color: #2b91af">User</span><font color="#000000">);</font></span><span style="font-size: 9pt; font-family: 新宋体"><span style="color: blue"> 
-<p style="margin: 0cm 0cm 0pt" class="MsoNormal">
-<span style="font-size: 9pt; color: blue; font-family: 新宋体">foreach</span><span style="font-size: 9pt; font-family: 新宋体"><font color="#000000"> (</font><span style="color: #2b91af">PropertyInfo</span><font color="#000000"> p </font><span style="color: blue">in</span><font color="#000000"> type_User.GetProperties())</font><span style="color: green">//GetProperties</span></span><span style="font-size: 9pt; color: green; font-family: 新宋体"> 为获取所有公共属性</span> 
-</p>
-</span></span><span style="font-size: 9pt; font-family: 新宋体"><font color="#000000"> {</font></span><span style="font-size: 9pt; font-family: 新宋体"><font color="#000000"><span><span style="font-size: 9pt; font-family: 新宋体"><span>&nbsp;&nbsp;&nbsp;</span>p.Name;<span style="color: green">//</span></span><span style="font-size: 9pt; color: green; font-family: 新宋体"> 属性的名称<span></span></span><span style="font-size: 9pt; font-family: 新宋体">}</span><span style="font-size: 9pt; font-family: 新宋体"><span style="color: blue">foreach</span> (<span style="color: #2b91af">MethodInfo</span> m <span style="color: blue">in</span> type_User.GetMethods())<span style="color: green">//GetProperties</span></span><span style="font-size: 9pt; color: green; font-family: 新宋体"> 为获取所有公共属性<span></span></span><span style="font-size: 9pt; font-family: 新宋体"> {</span><span style="font-size: 9pt; font-family: 新宋体"><span>&nbsp;&nbsp;&nbsp;</span>m.Name;<span style="color: green">//</span></span><span style="font-size: 9pt; color: green; font-family: 新宋体"> 方法的名称<span></span></span> 
-<p style="margin: 0cm 0cm 0pt" class="MsoNormal">
-<span style="font-size: 9pt; font-family: 新宋体">}</span> 
-</p>
-</span></font></span>
-<p style="margin: 0cm 0cm 0pt" class="MsoNormal">
-<span style="font-size: 9pt; font-family: 新宋体"><font color="#000000"> 如果要使用<span style="color: #2b91af"> PropertyInfo<font color="#000000"> 和<span style="color: #2b91af"> MethodInfo</span> 类需要引入 using System.Reflection; 命名空间。<br>
-详细信息查询 MSDN 帮助</font></span></font></span> 
-</p>
-</span></span>
-<p>
-&nbsp;
-</p>
 <p></p>
 
       

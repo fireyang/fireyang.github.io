@@ -153,7 +153,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">285</span>
+          <span class="site-state-item-count">286</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -212,6 +212,103 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/03/29/old_blog/2011-03-29-%E5%BC%BA%E5%A4%A7%E7%9A%84jsfl/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/03/29/old_blog/2011-03-29-%E5%BC%BA%E5%A4%A7%E7%9A%84jsfl/" class="post-title-link" itemprop="url">强大的 JSFL，开发 Flash 拓展插件</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2011-03-29 00:00:00" itemprop="dateCreated datePublished" datetime="2011-03-29T00:00:00+00:00">2011-03-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>看到 <a href="http://kevincao.com/tag/jsfl/" target="_blank">KevinCao</a> 兄写的 <a href="http://kevincao.com/2011/03/introduce-kafecomponent-part-2/" target="_blank">KafeButton</a> 拓展组件很给力，虽然我是做游戏的还没怎么用上，但是足见 jsfl 的强大。在新项目中，我也正可以用 jsfl 写一些拓展，好给设计人员自动生成模版和处理资源在找了比较多的资料，看到这个系列教程是最详细的，也是做的最好的，至少我觉得比官方的给力多了：</p>
+
+<p><a target="_blank" href="http://ajarproductions.com/blog/2011/03/23/creating-flash-extensions-pt-7-distributing/" rel="bookmark noopener">Creating Flash Extensions</a></p>
+
+<p>这个教程共有 7 篇文章：
+</p><ol>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/03/23/2011/02/08/creating-flash-extensions-pt1/">Creating Flash Extensions — Pt. 1: Introduction</a>：介绍 jsfl，如何从 history 中查看 jsfl，对 jsfl 有基础的认识 </li>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/02/23/2011/02/14/creating-flash-extensions%e2%80%94pt-2/">Creating Flash Extensions — Pt. 2: The DOM</a>：dom 结构，就是 fla 在 jsfl 语言中结构：
+<pre class="brush:js">fl.documents[0].timelines[0].layers[0].frames[0].elements[0];</pre>
+</li>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/03/23/2011/02/23/creating-flash-extensions-pt-3-manipulating-the-library/">Creating Flash Extensions — Pt. 3: Manipulating the Library</a>：如何操作资源库，作者通过对不同类型的资源进行文件夹管理，很实用.</li>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/03/23/2011/03/03/creating-flash-extensions-pt-4-ui/">Creating Flash Extensions — Pt. 4: User Interaction</a> ：创建一些交互界面，alert 弹窗，确认弹窗等.</li>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/03/03/2011/03/10/creating-flash-extensions-pt-5-swf-panels/">Creating Flash Extensions — Pt. 5: SWF Panels</a> : 用 swf 发布来做自定义面板，是不是很库呢？作者也推荐了几款相应的 swf 面板组件 </li>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/03/10/2011/03/16/creating-flash-extensions-pt-6-tools/">Creating Flash Extensions — Pt. 6: Custom Tools</a> : 自定义工具，这里可以让你自己做个画图工具了，呵呵<br>
+作者用一个画直线的工具来演示，很容易上手 </li>
+    <li><a target="_blank" rel="noopener" href="http://ajarproductions.com/blog/2011/03/16/2011/03/23/creating-flash-extensions-pt-7-distributing/">Creating Flash Extensions — Pt. 7: Distributing to Others</a> : 打包你开发的拓展，可以发给设计人员，也可以分享给其他人了</li>
+</ol>
+&nbsp;<p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/03/27/old_blog/2011-03-27-omnigraffle%E7%9A%84%E6%A8%A1%E7%89%88%E5%BA%93%E7%BD%91%E7%AB%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -243,7 +340,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -329,7 +426,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -414,7 +511,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -514,7 +611,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -597,7 +694,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -698,7 +795,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -782,7 +879,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -877,7 +974,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -965,7 +1062,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -992,108 +1089,6 @@
 <p>2010 年，大家一起拼搏，一起努力，成长的一年！</p>
 
 <p>2011 年应该就是丰收的一年了……</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/16/old_blog/2011-02-16-ubuntu-%E8%BF%9E%E6%8E%A5%E4%B8%89%E6%98%9F-i897i9000/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2011/02/16/old_blog/2011-02-16-ubuntu-%E8%BF%9E%E6%8E%A5%E4%B8%89%E6%98%9F-i897i9000/" class="post-title-link" itemprop="url">ubuntu 连接三星 i897|i9000</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2011-02-16 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-16T00:00:00+00:00">2011-02-16</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/android/" itemprop="url" rel="index"><span itemprop="name">android</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p></p><ol>
-    <li>下载 android sdk （linux）</li>
-    <li>使用命令 lsusb 查找你的硬件编号 (几下红色的字)：<br>
-Bus 004 Device 003: ID <span style="color: #ff0000;">04e8</span>:<span style="color: #ff0000;">681c</span> Samsung Electronics Co., Ltd Galaxy Portal/Spica Android Phone</li>
-    <li> 写一个 udev rule
-<span style="font-family: monospace;">把这些东西写入 /etc/udev/rules.d/51-android.rules<br>
-其中 04e8 和 681c 是你前面查询到的编码，而 USER 和 GROUP 是你当前登录系统对应的用户名和组名 </span>
-<pre class="brush:perl">SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="681c", ENV{ACL_MANAGE}="1"
-SUBSYSTEM=="usb", ATTRS{idVendor}=="04e8", OWNER="USER", GROUP="GROUP", MODE="0666"</pre>
-</li>
-    <li>重启应用，进入 sdk 目录
-<pre class="brush:perl">sudo /etc/init.d/udev restart
-./adb kill-server
-./adb start-server
-./adb devices</pre>
-我得到如下的结果:
-<pre class="brush:perl">List of devices attached
-I897    device</pre>
-如果失败，将得到：
-<pre class="brush:perl">List of devices attached
-????????????    no permissions</pre>
-</li>
-</ol><p></p>
 
       
     </div>

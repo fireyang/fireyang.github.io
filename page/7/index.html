@@ -153,7 +153,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">285</span>
+          <span class="site-state-item-count">286</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -212,6 +212,123 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/06/07/old_blog/2010-06-07-%E6%8F%90%E7%A4%BA%EF%BC%9A%E7%A7%BB%E9%99%A4%E4%B8%8D%E9%9C%80%E8%A6%81%E7%9A%84timer%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2010/06/07/old_blog/2010-06-07-%E6%8F%90%E7%A4%BA%EF%BC%9A%E7%A7%BB%E9%99%A4%E4%B8%8D%E9%9C%80%E8%A6%81%E7%9A%84timer%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/" class="post-title-link" itemprop="url">提示：移除不需要的 Timer 事件监听器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2010-06-07 00:00:00" itemprop="dateCreated datePublished" datetime="2010-06-07T00:00:00+00:00">2010-06-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>转自：<a href="http://blog.yoz.sk/2010/06/quick-tip-timer-listeners-doesnt-require-remove/" target="_blank">http://blog.yoz.sk/2010/06/quick-tip-timer-listeners-doesnt-require-remove/</a></p>
+
+<p>用处：用于匿名监听函数的 remove，很方便，再也不用担心匿名函数无法被移除的困扰了。</p>
+
+<p>基于分析器（或 net.hires.debug.Stats）你的 Timer 监听器在被移除时却不能被垃圾回收器回收。移除它们所有的引用是一个很好的做法，即使是匿名函数。
+</p><pre lang="actionscript3">package
+{
+    import flash.display.Sprite;
+    import flash.events.Event;
+    import flash.events.TimerEvent;
+    import flash.utils.Timer;</pre><p></p>
+
+<p>    import net.hires.debug.Stats;</p>
+
+<p>    [SWF(frameRate="60")]</p>
+
+<p>    public class WonderflApp extends Sprite<br>
+    {<br>
+        public function WonderflApp()<br>
+        {<br>
+            addChild(new Stats());<br>
+            addEventListener(Event.ENTER_FRAME, loop);<br>
+        }</p>
+
+<p>        public function loop(event:Event):void<br>
+        {<br>
+            for(var i:uint = 1; i &lt; 100; i++)<br>
+            {<br>
+                var timer:Timer = new Timer(100, 1);<br>
+                timer.addEventListener(TimerEvent.TIMER_COMPLETE,<br>
+                    function onTimer(event:TimerEvent):void{});<br>
+                timer.start();<br>
+            }<br>
+        }<br>
+    }<br>
+}
+简单的方法移除匿名函数的监听：
+</p><pre lang="actionscript3">EventDispatcher(event.currentTarget).removeEventListener(event.type, arguments.callee);</pre><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/06/03/old_blog/2010-06-03-md2%E5%8A%A8%E7%94%BB%E6%9F%A5%E7%9C%8B%E5%99%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -243,7 +360,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -341,7 +458,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -439,7 +556,7 @@ endfunction
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -553,7 +670,7 @@ PreloadSWF=c:\whatever\MicroProfiler.swf</li>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -635,7 +752,7 @@ PreloadSWF=c:\whatever\MicroProfiler.swf</li>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -720,7 +837,7 @@ sudo xulrunner-1.9.2 --register-global<br>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1141,7 +1258,7 @@ Save  and run the SWF. It works! And look what the decompiler says:
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1230,7 +1347,7 @@ Save  and run the SWF. It works! And look what the decompiler says:
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1327,7 +1444,7 @@ sudo chroot /mnt/newlinux
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1362,144 +1479,6 @@ sudo chroot /mnt/newlinux
 <p>找到 vimcdoc.vim 文档，找到 “set encoding=utf-8”，将词句注释掉，（再行首插入一个 "）</p>
 
 <p>这样就不再乱码了。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/02/22/old_blog/2010-02-22-%E5%8A%A8%E6%80%81%E7%90%83%E4%BD%93%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2010/02/22/old_blog/2010-02-22-%E5%8A%A8%E6%80%81%E7%90%83%E4%BD%93%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B/" class="post-title-link" itemprop="url">动态球体碰撞检测</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2010-02-22 00:00:00" itemprop="dateCreated datePublished" datetime="2010-02-22T00:00:00+00:00">2010-02-22</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/actionscript/" itemprop="url" rel="index"><span itemprop="name">actionscript</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p></p><h3>出处：<a id="oz0o" title="Dynamic Circle/Circle Collision Detection in ActionScript 3" href="http://blog.generalrelativity.org/actionscript-30/dynamic-circlecircle-collision-detection-in-actionscript-3/" target="_blank"><span style="color: #000000;">Dynamic Circle/Circle Collision Detection in ActionScript 3</span></a></h3>
-demo：<a href="http://lab.generalrelativity.org/circle_collision/" target="_blank">collision detection demo</a> 【点击并拖动球，观察速度矢量变化】
-<div>source：<a href="http://lab.generalrelativity.org/circle_collision/source/src.zip" target="_blank">source</a></div>
-<div id="x9dr"><img src="https://docs.google.com/File?id=dgdfg5dp_24gtnr57fv_b" alt=""></div>
-<h4>介绍：</h4>
-<span>两球的碰撞是碰撞检测中最普遍的一种。你可以简单比较两球的半径之和与它们圆心距离进行比较，如果它们的之和大于距离，那么球将发生碰撞。在模拟的每一个时间点里做这样的运算就可以了。</span><p></p>
-
-<p><span>在大多的情况下会做一定的优化，比如先判断两个球所在的矩形是否有发生碰撞（矩形碰撞略），这样能避免不断的进行开方运算，因为开方运算的开销是非常昂贵的。</span>
-</p><h4>问题：</h4>
-但是如果我们的球运行的速度非常快呢？在速度的开始和结束时间都没发生碰撞；但是在两个时间点之间却发生了碰撞的。
-<div>（这就是通常所说的穿透现象，就是速度过快，碰撞检测失效了……）</div>
-<div id="bbt3"><img src="https://docs.google.com/File?id=dgdfg5dp_25c3jmwcd4_b" alt=""></div>
-<h4>解决办法：</h4>
-我们计算两次可能的碰撞（给定固定的速度）-它们的开始碰撞时它们是非常临近的（如果它们彼此穿过并且不影响彼此的移动）。这里有两种非必然的情况；且第二种情况无论如何对我们是没有半点好处的，因此我们需要避免：
-<div>（A）如果球在间隔点上发生碰撞</div>
-<div>（B）发生的碰撞是在间隔点之间</div>
-<div>这个解决办法的提出在 Christer Ericson 的 Real-Time Collision Detection。他在这方面做了大量的工作，我只是在这里进行解释而已，让我们开始吧。</div>
-<h4>起源：</h4>
-首先我们假设一个变量0≤t≤1来表示规定速度内的间隔，这样球的位置遍是：<p></p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/parametrizedPosition.gif" alt="">
-</p><div>这里 X 表示初始位置，v 表示速度。因此在开始的时候，球的位置应该是 X+v*0=X, 如果 t 大于 0 的时候，就是 X+v 的一部分。我们需要一个关于 t 的一个方程，根据这个参数用来计算两个球之间的距离变化。</div>
-<img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceFunction.gif" alt=""><p></p>
-
-<p>其中</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/relativePosition.gif" alt=""> and&nbsp;<img src="http://blog.generalrelativity.org/images/continuousCircleCircle/relativeVelocity.gif" alt=""></p>
-
-<p>当 f 等于两球的半径之和时，这两球发生碰撞：</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceEqualsSumRadii.gif" alt=""></p>
-
-<p>这里的 r 表示半径。计算距离意味着我们需要做开发运算，之前也提到，这是非常不值得的。所以我们在等式的两边同时进行平方。</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/distanceSquared.gif" alt=""></p>
-
-<p>矢量之和再平方，进行分解后，类似标量的乘法的多项式运算</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/expanded.gif" alt=""></p>
-
-<p>将所有项移至等式的左边，转换成以 t 为未知数的一元二次方程，等式格式如下：</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/quadraticEquation.gif" alt=""></p>
-
-<p>其中</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/constants.gif" alt=""></p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/constantC.gif" alt=""></p>
-
-<p>根据一元二次方程的求根公式的它两个根：</p>
-
-<p><img src="http://blog.generalrelativity.org/images/continuousCircleCircle/roots.gif" alt="">
-</p><h5>性能考虑：</h5>
-所有的运算都需要处理器当然ActionScript也不能避免！我们能组织我们的检测方法
-<h4>实现：</h4>
-<div>PS：这里略了，因为已经有源码了，自己看，哈哈……</div>
-<h5>反弹作用：</h5>
-<div>PS：这里也略了，这里主要是涉及到一些动量守恒的原理，看代码一般能理解的，还有作者还加了弹性和刚体属性。</div><p></p>
 
       
     </div>

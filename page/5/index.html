@@ -153,7 +153,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">285</span>
+          <span class="site-state-item-count">286</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -212,6 +212,108 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/16/old_blog/2011-02-16-ubuntu-%E8%BF%9E%E6%8E%A5%E4%B8%89%E6%98%9F-i897i9000/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2011/02/16/old_blog/2011-02-16-ubuntu-%E8%BF%9E%E6%8E%A5%E4%B8%89%E6%98%9F-i897i9000/" class="post-title-link" itemprop="url">ubuntu 连接三星 i897|i9000</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2011-02-16 00:00:00" itemprop="dateCreated datePublished" datetime="2011-02-16T00:00:00+00:00">2011-02-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/android/" itemprop="url" rel="index"><span itemprop="name">android</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><ol>
+    <li>下载 android sdk （linux）</li>
+    <li>使用命令 lsusb 查找你的硬件编号 (几下红色的字)：<br>
+Bus 004 Device 003: ID <span style="color: #ff0000;">04e8</span>:<span style="color: #ff0000;">681c</span> Samsung Electronics Co., Ltd Galaxy Portal/Spica Android Phone</li>
+    <li> 写一个 udev rule
+<span style="font-family: monospace;">把这些东西写入 /etc/udev/rules.d/51-android.rules<br>
+其中 04e8 和 681c 是你前面查询到的编码，而 USER 和 GROUP 是你当前登录系统对应的用户名和组名 </span>
+<pre class="brush:perl">SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="681c", ENV{ACL_MANAGE}="1"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04e8", OWNER="USER", GROUP="GROUP", MODE="0666"</pre>
+</li>
+    <li>重启应用，进入 sdk 目录
+<pre class="brush:perl">sudo /etc/init.d/udev restart
+./adb kill-server
+./adb start-server
+./adb devices</pre>
+我得到如下的结果:
+<pre class="brush:perl">List of devices attached
+I897    device</pre>
+如果失败，将得到：
+<pre class="brush:perl">List of devices attached
+????????????    no permissions</pre>
+</li>
+</ol><p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2011/02/12/old_blog/2011-02-12-i9000%E6%89%8B%E6%9C%BA%E8%A2%AB%E9%94%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -243,7 +345,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -334,7 +436,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -429,7 +531,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -521,7 +623,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -608,7 +710,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -702,7 +804,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -789,7 +891,7 @@ sudo apt-get install appmenu-gtk</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -877,7 +979,7 @@ sudo apt-get install appmenu-gtk</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -968,7 +1070,7 @@ sudo apt-get install appmenu-gtk</p>
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1010,96 +1112,6 @@ sudo apt-get install appmenu-gtk</p>
     </p><li>最后，就可以分享你的这个包了……</li>
 
 <p>等我有好的东西了，再分享出来吧，目前没有，呵呵</p><p></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2010/08/29/old_blog/2010-08-29-%E6%88%91%E7%9A%84%E8%B7%91%E6%AD%A5%E8%B7%AF%E7%BA%BF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2010/08/29/old_blog/2010-08-29-%E6%88%91%E7%9A%84%E8%B7%91%E6%AD%A5%E8%B7%AF%E7%BA%BF/" class="post-title-link" itemprop="url">我的跑步路线</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2010-08-29 00:00:00" itemprop="dateCreated datePublished" datetime="2010-08-29T00:00:00+00:00">2010-08-29</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/" itemprop="url" rel="index"><span itemprop="name">杂七杂八</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img class="alignnone size-full wp-image-976" title="屏幕快照 2012-11-04 上午3.36.30" src="/media/2010/08/屏幕快照-2012-11-04-上午3.36.30.png" alt="" width="614" height="411"></p>
-
-<p>体检，说我略胖，需要加强锻炼，其实平时都有打羽毛球，朋友提倡多点有氧运动……</p>
-
-<p>我真膀子估计练不了瑜伽，哈哈，所以只能选择慢跑了</p>
-
-<p>这里离世纪公园还好，而且在晚上绕世纪公园跑的人也挺多的，线路也不错。</p>
-
-<p>以后要坚持锻炼，至少一周两次……</p>
-
-<p>&nbsp;</p>
 
       
     </div>

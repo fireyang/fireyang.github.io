@@ -153,7 +153,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">285</span>
+          <span class="site-state-item-count">286</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -212,6 +212,114 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-51ditu%E7%9A%84%E5%9C%B0%E5%9B%BE%E8%AF%91%E7%A0%81%E6%96%B9%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FireYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡说八道">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2007/08/02/old_blog/2007-08-02-51ditu%E7%9A%84%E5%9C%B0%E5%9B%BE%E8%AF%91%E7%A0%81%E6%96%B9%E5%BC%8F/" class="post-title-link" itemprop="url">51ditu 的地图译码方式</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p></p><div class="text">
+<p>
+使用方法: 
+</p>
+<ol>
+    <li>引入 javascript:<br>
+    &lt;script language="javascript" src="http://api.51ditu.com/js/search.js"&gt;&lt;/script&gt; </li>
+    <li>开始使用<br>
+    以下的一个范例演示了如何实现一个简单的搜索功能：在 “北京” 范围内搜索 “灵图”:<br>
+    &lt;script language="javascript"&gt;<br>
+    function showPoint(searchResult)<br>
+    {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (searchResult.searchPoints.length&gt;0)// 如果存在搜索结果<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var poi=searchResult.searchPoints [0];// 搜索结果中的第一项<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(poi.name+'<br>
+NTU 坐标:'+poi.point);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else{ <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert (' 无结果 ');&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    }<br>
+    var search=new LTLocalSearch(showPoint);<br>
+    search.setCity (' 北京 ');<br>
+    search.search (' 灵图 ');<br>
+    &lt;/script&gt; </li>
+</ol>
+</div>
+<p></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-ASP/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -243,7 +351,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -338,7 +446,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -440,7 +548,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -521,7 +629,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -602,7 +710,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -700,7 +808,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -802,7 +910,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -892,7 +1000,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -973,7 +1081,7 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
+        <time title="修改时间：2021-06-29 17:29:46" itemprop="dateModified" datetime="2021-06-29T17:29:46+00:00">2021-06-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1009,115 +1117,6 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
 </ol>
 <p><br></p>
 <img src="http://www.cnblogs.com/FireYang/aggbug/579395.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-01 21:17 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/01/579395.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://blog.fireyang.com/2007/08/02/old_blog/2007-08-02-aspnet%E4%B8%AD%E7%9A%84%E6%A0%87%E7%AD%BE%E6%98%A0%E5%B0%84%EF%BC%88tagmapping%EF%BC%89%EF%BC%88%E8%AF%91%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="FireYang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡说八道">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2007/08/02/old_blog/2007-08-02-aspnet%E4%B8%AD%E7%9A%84%E6%A0%87%E7%AD%BE%E6%98%A0%E5%B0%84%EF%BC%88tagmapping%EF%BC%89%EF%BC%88%E8%AF%91%EF%BC%89/" class="post-title-link" itemprop="url">ASP.NET 中的标签映射（Tag mapping ）（译）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2007-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2007-08-02T00:00:00+00:00">2007-08-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 17:36:42" itemprop="dateModified" datetime="2021-06-26T17:36:42+00:00">2021-06-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Net/" itemprop="url" rel="index"><span itemprop="name">.Net</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p> 译自：<a target="_blank" rel="noopener" href="http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx">http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx</a></p>
-
-<p>最近我开始在 <a target="_blank" rel="noopener" href="http://zyb.com/">ZYB</a> 工作但并没有看所有的代码。有一天我看到了一个 web.config 的一个特殊的节点 <a target="_blank" rel="noopener" href="http://msdn2.microsoft.com/en-us/library/ms164641.aspx">tagMapping</a>。我之前从来没有见到过，直到问了我周围的同事。基本上，它是在编译的时候将所有的一种类型转换成另一种类型。在自然语言的意思是它能将你整个网站中的所有例如 <em>System.Web.UI.WebControls.Textbox</em> 实例转换成另一个组件。</p>
-
-<p>如此酷的作用，我来做一个简单的示例。我已经建了一个简单的组件，这个组件继承自 TextBox 并重写了 Text 属性，因此它能 HTML 编码 text。我把它放置到 App_Code 文件夹下并命名为 SafeTextBox。</p>
-
-<p></p><p class="code"> <span class="kwrd">public</span> <span class="kwrd">class</span> SafeTextBox : System.Web.UI.WebControls.TextBox<br>
-{
-<span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">string</span> Text<br>
-{
-get<br>
-{
-<span class="kwrd">return</span> <span class="kwrd">base</span>.Text;<br>
-}
-set<br>
-{
-<span class="kwrd">base</span>.Text = System.Web.HttpUtility.HtmlEncode(<span class="kwrd">value</span>);<br>
-}
-}<br>
-}</p>
-
-<p>然后我需要在 web.config 中通过标签映射将所有的文本框和 SafeTextBox 实例关联起来。它能在整个网站中轻松的覆盖所有的 TextBox 实例。这个就是需要的 Web.config 配置：</p>
-
-<p></p><p class="code"> <span class="kwrd">&lt;</span><span class="html">pages</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">tagMapping</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">add</span> <span class="attr">tagType</span><span class="kwrd">="System.Web.UI.WebControls.TextBox"</span> <span class="attr">mappedTagType</span><span class="kwrd">="SafeTextBox"</span><span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">tagMapping</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">pages</span><span class="kwrd">&gt;</span></p>
-
-<p>这是一个聪明的方法将你自己的服务器组件应用到一个网站上去。 可惜的是直到最近我才知道有这种方法。</p><p></p><p></p>
 
       
     </div>
