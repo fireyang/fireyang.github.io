@@ -253,9 +253,10 @@ cond(no)-&gt;op2</textarea><textarea id="flowchart-0-options" style="display: no
 }</textarea><script>  var viz = new Viz();  var code = document.getElementById("graphviz-0-code").value;  viz.renderSVGElement(code)  .then(function(element) {    document.getElementById("graphviz-0").append(element)  });</script>]]></content>
   </entry>
   <entry>
-    <title></title>
+    <title>2022 年总结</title>
     <url>/2023/01/29/2023/2022_summarize/</url>
-    <content><![CDATA[<h1 id="2022年总结"><a href="#2022年总结" class="headerlink" title="2022年总结"></a>2022 年总结</h1><p><strong>关于疫情</strong></p>
+    <content><![CDATA[<h1 id="2022年总结"><a href="#2022年总结" class="headerlink" title="2022年总结"></a>2022 年总结</h1><p><a href="https://hackmd.io/ToB2jX-ATumJBfj_FquZDQ"><img src="https://hackmd.io/ToB2jX-ATumJBfj_FquZDQ/badge" alt="hackmd-github-sync-badge"></a></p>
+<p><strong>关于疫情</strong></p>
 <p>在上海，2022 年最让人记忆深刻的就是上海的封城。上半年的封闭三个月，从各种抢菜到参与小区志愿者，努力的尽自己的力量让家庭和身边的人都能挺过去。伴随着无数次的核酸，邻里的各种守望相助。再回看各种正负能量的视频，大家真的不容易。随着疫情降级，夹带着 “代价”，但是大家慢慢开始回归正常。</p>
 <blockquote>
 <p>上海解封那一天<br><img src="https://i.imgur.com/WCsuP9F.png"></p>
