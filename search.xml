@@ -3986,23 +3986,6 @@ sudo apt-get install wine<br>
       </tags>
   </entry>
   <entry>
-    <title>试用 google 的音乐搜索</title>
-    <url>/2008/08/06/old_blog/2008-08-06-%E8%AF%95%E7%94%A8google%E7%9A%84%E9%9F%B3%E4%B9%90%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<p>google 也推出了音乐搜索，而且试听支持 flash 播放器，很是喜欢，这样就跨平台了，我在 ubuntu 下也能用了</p>
-
-<p>可以去 <a href="http://www.google.cn/music" target="_blank">http://www.google.cn/music</a> 试试</p>
-
-<p><a href="/media/2008/08/akepxxza4oktos.jpg"><img class="alignnone size-medium wp-image-222" title="akepxxza4oktos" src="/media/2008/08/akepxxza4oktos-300x176.jpg" alt="" width="300" height="176"></a></p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>music</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>cctv &amp; adobe 共建奥运直播</title>
     <url>/2008/08/07/old_blog/2008-08-07-cctv-adobe%E5%85%B1%E5%BB%BA%E5%A5%A5%E8%BF%90%E7%9B%B4%E6%92%AD/</url>
     <content><![CDATA[<p>cctv 和 adobe 共同搭建奥运直播平台，采用了 flex 技术，做到还可以，内部还是需要插件，而且只支持 ie6。</p>
@@ -4113,6 +4096,23 @@ windows 下的使用方法参见：<a href="http://it-adv.apt-get.cn/bbs/viewthr
         <tag>ubuntu</tag>
         <tag>fetion</tag>
         <tag>短信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>试用 google 的音乐搜索</title>
+    <url>/2008/08/06/old_blog/2008-08-06-%E8%AF%95%E7%94%A8google%E7%9A%84%E9%9F%B3%E4%B9%90%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[<p>google 也推出了音乐搜索，而且试听支持 flash 播放器，很是喜欢，这样就跨平台了，我在 ubuntu 下也能用了</p>
+
+<p>可以去 <a href="http://www.google.cn/music" target="_blank">http://www.google.cn/music</a> 试试</p>
+
+<p><a href="/media/2008/08/akepxxza4oktos.jpg"><img class="alignnone size-medium wp-image-222" title="akepxxza4oktos" src="/media/2008/08/akepxxza4oktos-300x176.jpg" alt="" width="300" height="176"></a></p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>music</tag>
       </tags>
   </entry>
   <entry>
