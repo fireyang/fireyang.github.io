@@ -230,7 +230,7 @@
 <h3 id="流程圖"><a href="#流程圖" class="headerlink" title="流程圖"></a>流程圖</h3><p>您可以像是以下使用流程圖：</p>
 <div id="flowchart-0" class="flow-chart"></div>
 
-<h3 id="Graphviz"><a href="#Graphviz" class="headerlink" title="Graphviz"></a>Graphviz</h3><div id="graphviz-0"></div>
+<h3 id="Graphviz"><a href="#Graphviz" class="headerlink" title="Graphviz"></a>Graphviz</h3><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">digraph hierarchy {</span><br><span class="line"></span><br><span class="line">                nodesep=1.0 // increases the separation between nodes</span><br><span class="line">                </span><br><span class="line">                node [color=Red,fontname=Courier,shape=box] //All nodes will this shape and colour</span><br><span class="line">                edge [color=Blue, style=dashed] //All the lines look like this</span><br><span class="line"></span><br><span class="line">                Headteacher-&gt;{Deputy1 Deputy2 BusinessManager}</span><br><span class="line">                Deputy1-&gt;{Teacher1 Teacher2}</span><br><span class="line">                BusinessManager-&gt;ITManager</span><br><span class="line">                {rank=same;ITManager Teacher1 Teacher2}  // Put them on the same level</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=&gt;start: 開始
 e=&gt;end: 結束
 op=&gt;operation: 我的操作
@@ -239,22 +239,11 @@ cond=&gt;condition: 是或否？
 
 st-&gt;op-&gt;op2-&gt;cond
 cond(yes)-&gt;e
-cond(no)-&gt;op2</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://unpkg.com/viz.js@2.1.2/viz.js"></script><script src="https://unpkg.com/viz.js@2.1.2/full.render.js"></script><textarea id="graphviz-0-code" style="display: none">digraph hierarchy {
-
-                nodesep=1.0 // increases the separation between nodes
-                
-                node [color=Red,fontname=Courier,shape=box] //All nodes will this shape and colour
-                edge [color=Blue, style=dashed] //All the lines look like this
-
-                Headteacher-&gt;{Deputy1 Deputy2 BusinessManager}
-                Deputy1-&gt;{Teacher1 Teacher2}
-                BusinessManager-&gt;ITManager
-                {rank=same;ITManager Teacher1 Teacher2}  // Put them on the same level
-}</textarea><script>  var viz = new Viz();  var code = document.getElementById("graphviz-0-code").value;  viz.renderSVGElement(code)  .then(function(element) {    document.getElementById("graphviz-0").append(element)  });</script>]]></content>
+cond(no)-&gt;op2</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script>]]></content>
   </entry>
   <entry>
     <title>2022 年总结</title>
-    <url>/2023/02/15/2023/2022_summarize/</url>
+    <url>/2023/03/07/2023/2022_summarize/</url>
     <content><![CDATA[<h1 id="2022年总结"><a href="#2022年总结" class="headerlink" title="2022年总结"></a>2022 年总结</h1><p><strong>关于疫情</strong></p>
 <p>在上海，2022 年最让人记忆深刻的就是上海的封城。上半年的封闭三个月，从各种抢菜到参与小区志愿者，努力的尽自己的力量让家庭和身边的人都能挺过去。伴随着无数次的核酸，邻里的各种守望相助。再回看各种正负能量的视频，大家真的不容易。随着疫情降级，夹带着 “代价”，但是大家慢慢开始回归正常。</p>
 <blockquote>
@@ -3986,6 +3975,23 @@ sudo apt-get install wine<br>
       </tags>
   </entry>
   <entry>
+    <title>试用 google 的音乐搜索</title>
+    <url>/2008/08/06/old_blog/2008-08-06-%E8%AF%95%E7%94%A8google%E7%9A%84%E9%9F%B3%E4%B9%90%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[<p>google 也推出了音乐搜索，而且试听支持 flash 播放器，很是喜欢，这样就跨平台了，我在 ubuntu 下也能用了</p>
+
+<p>可以去 <a href="http://www.google.cn/music" target="_blank">http://www.google.cn/music</a> 试试</p>
+
+<p><a href="/media/2008/08/akepxxza4oktos.jpg"><img class="alignnone size-medium wp-image-222" title="akepxxza4oktos" src="/media/2008/08/akepxxza4oktos-300x176.jpg" alt="" width="300" height="176"></a></p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>music</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>cctv &amp; adobe 共建奥运直播</title>
     <url>/2008/08/07/old_blog/2008-08-07-cctv-adobe%E5%85%B1%E5%BB%BA%E5%A5%A5%E8%BF%90%E7%9B%B4%E6%92%AD/</url>
     <content><![CDATA[<p>cctv 和 adobe 共同搭建奥运直播平台，采用了 flex 技术，做到还可以，内部还是需要插件，而且只支持 ie6。</p>
@@ -4096,23 +4102,6 @@ windows 下的使用方法参见：<a href="http://it-adv.apt-get.cn/bbs/viewthr
         <tag>ubuntu</tag>
         <tag>fetion</tag>
         <tag>短信</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>试用 google 的音乐搜索</title>
-    <url>/2008/08/06/old_blog/2008-08-06-%E8%AF%95%E7%94%A8google%E7%9A%84%E9%9F%B3%E4%B9%90%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<p>google 也推出了音乐搜索，而且试听支持 flash 播放器，很是喜欢，这样就跨平台了，我在 ubuntu 下也能用了</p>
-
-<p>可以去 <a href="http://www.google.cn/music" target="_blank">http://www.google.cn/music</a> 试试</p>
-
-<p><a href="/media/2008/08/akepxxza4oktos.jpg"><img class="alignnone size-medium wp-image-222" title="akepxxza4oktos" src="/media/2008/08/akepxxza4oktos-300x176.jpg" alt="" width="300" height="176"></a></p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>music</tag>
       </tags>
   </entry>
   <entry>
