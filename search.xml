@@ -162,31 +162,6 @@
       </tags>
   </entry>
   <entry>
-    <title>cf worker + teletram 打造一个 github news</title>
-    <url>/2021/06/30/2021/cf_workers_get_github_active/</url>
-    <content><![CDATA[<h1 id="cf-worker-teletram-打造一个github-news"><a href="#cf-worker-teletram-打造一个github-news" class="headerlink" title="cf worker + teletram 打造一个github news"></a>cf worker + teletram 打造一个 github news</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>发现一个好玩具：<a href="https://workers.cloudflare.com/">https://workers.cloudflare.com/</a><br>cloudflare workers 可以理解为一个免费的 mini web server，详情请看官网。  </p>
-<p>免费撸一个工具，结合 telegram 的机器人。<br>将 github 首页的 All activity 动态，通过 tg 发送给我，这样就能时刻关注大佬们的动态，第一时间知道他们又 star 了什么好玩的，fork 了什么牛逼的仓库了！  </p>
-<p>重要的一点：免费计划配额还不少，还支持 cron 定时任务，完美！  </p>
-<!-- ![](https://i.imgur.com/ODAAKoG.png =500x) -->
-<img src="https://i.imgur.com/ODAAKoG.png" width="500">
-
-
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
-<li>cf 的 telegram 支持<br>参考：<a href="https://moe.best/tutorial/cfworker-telegraf-tgbot.html">Cloudflare Workers</a><br> 作者详细解释了原理，演示了如何安装和使用，通过该文章很快的实现了 cf+telegram 发消息的功能</li>
-<li>解析 github 的 feed rss 源。<br>虽然 rss 的内容是 xml 的；我不想引入太重的 xml 解析库，于是我简单的通过正则提炼自己想要的信息，然后通过 telegraf 找到自己的 telegram chat id，直接给我发消息就可以了</li>
-<li>定时任务<br>使用 workers 的 cron 功能，定时抓取 github rss 数，再通过 telegram 机器人发送消息<!-- ![](https://i.imgur.com/GeJEP7J.png =500x) -->
-<img src="https://i.imgur.com/GeJEP7J.png" width="500"></li>
-</ol>
-<h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><!-- ![](https://i.imgur.com/WssXWSt.png =500x) -->
-<img src="https://i.imgur.com/WssXWSt.png" width="500">
-
-<h2 id="其他参考"><a href="#其他参考" class="headerlink" title="其他参考"></a>其他参考</h2><ul>
-<li><a href="https://developers.cloudflare.com/workers/">cf workers 帮助文档</a>  </li>
-<li><a href="https://github.com/lukeed/awesome-cloudflare-workers">https://github.com/lukeed/awesome-cloudflare-workers</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>hackmd 第一篇文章</title>
     <url>/2021/06/26/2021/use_hackmd_write_blog/</url>
     <content><![CDATA[<h1 id="hackmd第一篇文章"><a href="#hackmd第一篇文章" class="headerlink" title="hackmd第一篇文章"></a>hackmd 第一篇文章</h1><p><a href="https://hackmd.io/">hackmd.io</a><br>很方便的同步 github 的仓库里的 md 文章，<br>写起来还是挺舒服的</p>
@@ -242,8 +217,33 @@ cond(yes)-&gt;e
 cond(no)-&gt;op2</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script>]]></content>
   </entry>
   <entry>
+    <title>cf worker + teletram 打造一个 github news</title>
+    <url>/2021/06/30/2021/cf_workers_get_github_active/</url>
+    <content><![CDATA[<h1 id="cf-worker-teletram-打造一个github-news"><a href="#cf-worker-teletram-打造一个github-news" class="headerlink" title="cf worker + teletram 打造一个github news"></a>cf worker + teletram 打造一个 github news</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>发现一个好玩具：<a href="https://workers.cloudflare.com/">https://workers.cloudflare.com/</a><br>cloudflare workers 可以理解为一个免费的 mini web server，详情请看官网。  </p>
+<p>免费撸一个工具，结合 telegram 的机器人。<br>将 github 首页的 All activity 动态，通过 tg 发送给我，这样就能时刻关注大佬们的动态，第一时间知道他们又 star 了什么好玩的，fork 了什么牛逼的仓库了！  </p>
+<p>重要的一点：免费计划配额还不少，还支持 cron 定时任务，完美！  </p>
+<!-- ![](https://i.imgur.com/ODAAKoG.png =500x) -->
+<img src="https://i.imgur.com/ODAAKoG.png" width="500">
+
+
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
+<li>cf 的 telegram 支持<br>参考：<a href="https://moe.best/tutorial/cfworker-telegraf-tgbot.html">Cloudflare Workers</a><br> 作者详细解释了原理，演示了如何安装和使用，通过该文章很快的实现了 cf+telegram 发消息的功能</li>
+<li>解析 github 的 feed rss 源。<br>虽然 rss 的内容是 xml 的；我不想引入太重的 xml 解析库，于是我简单的通过正则提炼自己想要的信息，然后通过 telegraf 找到自己的 telegram chat id，直接给我发消息就可以了</li>
+<li>定时任务<br>使用 workers 的 cron 功能，定时抓取 github rss 数，再通过 telegram 机器人发送消息<!-- ![](https://i.imgur.com/GeJEP7J.png =500x) -->
+<img src="https://i.imgur.com/GeJEP7J.png" width="500"></li>
+</ol>
+<h2 id="最终成果"><a href="#最终成果" class="headerlink" title="最终成果"></a>最终成果</h2><!-- ![](https://i.imgur.com/WssXWSt.png =500x) -->
+<img src="https://i.imgur.com/WssXWSt.png" width="500">
+
+<h2 id="其他参考"><a href="#其他参考" class="headerlink" title="其他参考"></a>其他参考</h2><ul>
+<li><a href="https://developers.cloudflare.com/workers/">cf workers 帮助文档</a>  </li>
+<li><a href="https://github.com/lukeed/awesome-cloudflare-workers">https://github.com/lukeed/awesome-cloudflare-workers</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>2022 年总结</title>
-    <url>/2023/03/07/2023/2022_summarize/</url>
+    <url>/2024/01/12/2023/2022_summarize/</url>
     <content><![CDATA[<h1 id="2022年总结"><a href="#2022年总结" class="headerlink" title="2022年总结"></a>2022 年总结</h1><p><strong>关于疫情</strong></p>
 <p>在上海，2022 年最让人记忆深刻的就是上海的封城。上半年的封闭三个月，从各种抢菜到参与小区志愿者，努力的尽自己的力量让家庭和身边的人都能挺过去。伴随着无数次的核酸，邻里的各种守望相助。再回看各种正负能量的视频，大家真的不容易。随着疫情降级，夹带着 “代价”，但是大家慢慢开始回归正常。</p>
 <blockquote>
@@ -284,6 +284,21 @@ cond(no)-&gt;op2</textarea><textarea id="flowchart-0-options" style="display: no
 <li>改掉叹气的习惯</li>
 <li>增加写作，每月至少一篇 blog</li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>封锁 csdn</title>
+    <url>/2021/06/26/2024/google_result_block_csdk/</url>
+    <content><![CDATA[<h1 id="封锁csdn"><a href="#封锁csdn" class="headerlink" title="封锁csdn"></a>封锁 csdn</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><ol>
+<li>在 google 的搜索结果中 csdn 很多文章靠前</li>
+<li> csdn 大部分文章要收费，每次需要在 google 的接过来去看这些<br><img src="https://hackmd.io/_uploads/rkM32O0dT.png" alt="image"></li>
+</ol>
+<h2 id="工具-uBlacklist"><a href="#工具-uBlacklist" class="headerlink" title="工具 uBlacklist"></a>工具 uBlacklist</h2><p><img src="https://hackmd.io/_uploads/HkEX6ORdT.png" alt="image"></p>
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe?pli=1">ublicklist</a></li>
+<li><a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist">中文搜索结果黑名单</a></li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p><img src="https://hackmd.io/_uploads/rJKDauAuT.png" alt="image"></p>
 ]]></content>
   </entry>
   <entry>
@@ -474,19 +489,6 @@ TextScript.removeBlurIn(m, delay);<br>
       </categories>
   </entry>
   <entry>
-    <title>能移动的 RichTextEdit</title>
-    <url>/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/</url>
-    <content><![CDATA[<p></p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">="*"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="100%"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;"none";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.*;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rte"</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">="5"</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">="floatControlBar()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rteControl"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="325"</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">="ToolBar"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
-<object style="WIDTH: 691px; HEIGHT: 441px" height="441" width="691" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-<param name="Movie" value="/images/cnblogs_com/fireyang/poptitle.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/poptitle.swf" width="500" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</object><br>
-<img src="http://www.cnblogs.com/FireYang/aggbug/622034.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 22:16 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/622034.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>欢迎加入 RIA SEED !</title>
     <url>/2007/01/02/old_blog/2007-01-02-%E6%AC%A2%E8%BF%8E%E5%8A%A0%E5%85%A5RIA+SEED+!/</url>
     <content><![CDATA[<p></p><div class="ghgrn">RIA SEED 是一个 google 的 groups, 以前是在 mmug 上的一群人组件的，讨论 mm 技术的一个园地.<br>现在在 google 上按了个家，继续 mm 精神，继续 RIA<br>希望更多的 RIA 开发者，在这里共享自己的经验.<br></div>
@@ -532,6 +534,19 @@ TextScript.removeBlurIn(m, delay);<br>
 
 <p><img src="http://www.cnblogs.com/FireYang/aggbug/631749.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-27 09:01 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/27/631749.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>能移动的 RichTextEdit</title>
+    <url>/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/</url>
+    <content><![CDATA[<p></p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">="*"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="100%"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;"none";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.*;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rte"</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">="5"</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">="floatControlBar()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rteControl"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="325"</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">="ToolBar"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+<object style="WIDTH: 691px; HEIGHT: 441px" height="441" width="691" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+<param name="Movie" value="/images/cnblogs_com/fireyang/poptitle.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/poptitle.swf" width="500" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object><br>
+<img src="http://www.cnblogs.com/FireYang/aggbug/622034.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 22:16 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/622034.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
   </entry>
   <entry>
     <title>Flex 的全局变量 (原创翻译)</title>
@@ -1278,6 +1293,17 @@ PingService.Send();<p></p>
       </tags>
   </entry>
   <entry>
+    <title>学习 Ajax 的好介绍：入门、深入</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E5%AD%A6%E4%B9%A0Ajax%E7%9A%84%E5%A5%BD%E4%BB%8B%E7%BB%8D%EF%BC%9A%E5%85%A5%E9%97%A8%E3%80%81%E6%B7%B1%E5%85%A5/</url>
+    <content><![CDATA[<p><a href="http://www.cnblogs.com/JeffreyZhao/archive/2006/10/16/Inside_Atlas_Series_Index.html">http://www.cnblogs.com/JeffreyZhao/archive/2006/10/16/Inside_Atlas_Series_Index.html</a><br>
+<a id="viewpost1_TitleUrl" href="http://www.cnblogs.com/JeffreyZhao/archive/2006/10/16/Inside_Atlas_Series_Index.html" class="singleposttitle"><font color="#223355">“深入 Atlas 系列” 文章导读</font></a> 
+</p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>在学习 BlogEngine 中使用到的技巧</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E5%9C%A8%E5%AD%A6%E4%B9%A0BlogEngine%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p></p><ol>
@@ -1313,17 +1339,6 @@ PingService.Send();<p></p>
 </ol>
 <p></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>学习 Ajax 的好介绍：入门、深入</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E5%AD%A6%E4%B9%A0Ajax%E7%9A%84%E5%A5%BD%E4%BB%8B%E7%BB%8D%EF%BC%9A%E5%85%A5%E9%97%A8%E3%80%81%E6%B7%B1%E5%85%A5/</url>
-    <content><![CDATA[<p><a href="http://www.cnblogs.com/JeffreyZhao/archive/2006/10/16/Inside_Atlas_Series_Index.html">http://www.cnblogs.com/JeffreyZhao/archive/2006/10/16/Inside_Atlas_Series_Index.html</a><br>
-<a id="viewpost1_TitleUrl" href="http://www.cnblogs.com/JeffreyZhao/archive/2006/10/16/Inside_Atlas_Series_Index.html" class="singleposttitle"><font color="#223355">“深入 Atlas 系列” 文章导读</font></a> 
-</p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
   </entry>
   <entry>
     <title>岁云暮矣多北风，此曲哀怨何时终。煤了你的心？</title>
@@ -1420,15 +1435,6 @@ PingService.Send();<p></p>
       </tags>
   </entry>
   <entry>
-    <title>测试 Windows Live Writer 来更新我的 Blog</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E6%B5%8B%E8%AF%95Windows+Live+Writer%E6%9D%A5%E6%9B%B4%E6%96%B0%E6%88%91%E7%9A%84Blog/</url>
-    <content><![CDATA[<p></p><p>用这个工具来更新的我 blog，看看效果</p><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>玉龙雪山</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1/</url>
     <content><![CDATA[<p></p><p>
@@ -1438,6 +1444,15 @@ PingService.Send();<p></p>
 <img src="http://lh5.google.com/shenhuan007/RwcDIH8hpTI/AAAAAAAAA_Q/iVueKGeAkQE/CIMG1957.JPG?imgmax=512" alt="" width="512" height="384"> 
 </p>
 <p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>测试 Windows Live Writer 来更新我的 Blog</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E6%B5%8B%E8%AF%95Windows+Live+Writer%E6%9D%A5%E6%9B%B4%E6%96%B0%E6%88%91%E7%9A%84Blog/</url>
+    <content><![CDATA[<p></p><p>用这个工具来更新的我 blog，看看效果</p><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1639,6 +1654,31 @@ QQ 的远程协助，开始用感觉还不错，如果有朋友有什么问题�
       </categories>
   </entry>
   <entry>
+    <title>Apollo 学习笔记一</title>
+    <url>/2007/09/02/old_blog/2007-09-02-apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</url>
+    <content><![CDATA[<p>首先了解下 apollo 下这个类集 flash.desktop.* 的一些类
+</p><ul>
+    <li>ClipboardManager 主要是作为与操作系统粘贴板互相拷贝的一个通道，在 flex 中只能读取粘贴板，而在 apollo 里可以直接读取。</li>
+    <li>DragManager 主要控制拖拽功能，这个拖拽可不只是在应用程序内部，这个拖拽是在整个桌面的，一大特色吧。</li>
+    <li>TransferableData 我理解为在 apollo 中的传输数据的一个容器，数据的类型可以为：text,url,bitmap,filelist (文件数组)</li>
+    <li> 附属的一些常量类，主要是保存常量信息比如： COPY : String = "copy" ；这样只是为了你写程序的时候避免拼写错误。
+<ul>
+    <li>DragActions：拖拽动作的属性：copy,link,move 和 none</li>
+    <li>DragOptions：拖拽的选项设置，是否允许 copy,link 和移动等</li>
+    <li> TransferableFormats：TransferableData 数据容器的类型</li>
+    <li> TransferableTransferMode：传递的模式，设置传递的是数据的克隆还是引用。</li>
+</ul>
+</li>
+</ul><p></p>
+]]></content>
+      <categories>
+        <category>flex</category>
+      </categories>
+      <tags>
+        <tag>apollo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>RAPI</title>
     <url>/2007/09/02/old_blog/2007-09-02-RAPI/</url>
     <content><![CDATA[<p></p><table border="1" cellspacing="0" cellpadding="0" width="442" class="MsoNormalTable" style="margin: auto auto auto 42.25pt; width: 331.75pt; border-collapse: collapse">
@@ -1718,31 +1758,6 @@ QQ 的远程协助，开始用感觉还不错，如果有朋友有什么问题�
       <categories>
         <category>未分类</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Apollo 学习笔记一</title>
-    <url>/2007/09/02/old_blog/2007-09-02-apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</url>
-    <content><![CDATA[<p>首先了解下 apollo 下这个类集 flash.desktop.* 的一些类
-</p><ul>
-    <li>ClipboardManager 主要是作为与操作系统粘贴板互相拷贝的一个通道，在 flex 中只能读取粘贴板，而在 apollo 里可以直接读取。</li>
-    <li>DragManager 主要控制拖拽功能，这个拖拽可不只是在应用程序内部，这个拖拽是在整个桌面的，一大特色吧。</li>
-    <li>TransferableData 我理解为在 apollo 中的传输数据的一个容器，数据的类型可以为：text,url,bitmap,filelist (文件数组)</li>
-    <li> 附属的一些常量类，主要是保存常量信息比如： COPY : String = "copy" ；这样只是为了你写程序的时候避免拼写错误。
-<ul>
-    <li>DragActions：拖拽动作的属性：copy,link,move 和 none</li>
-    <li>DragOptions：拖拽的选项设置，是否允许 copy,link 和移动等</li>
-    <li> TransferableFormats：TransferableData 数据容器的类型</li>
-    <li> TransferableTransferMode：传递的模式，设置传递的是数据的克隆还是引用。</li>
-</ul>
-</li>
-</ul><p></p>
-]]></content>
-      <categories>
-        <category>flex</category>
-      </categories>
-      <tags>
-        <tag>apollo</tag>
-      </tags>
   </entry>
   <entry>
     <title>几个头像制作网站</title>
@@ -2896,19 +2911,6 @@ Ruby on Rails</h1>
       </tags>
   </entry>
   <entry>
-    <title>firefox 中的 flashPlayer 可以全屏了</title>
-    <url>/2008/01/02/old_blog/2008-01-02-firefox%E4%B8%AD%E7%9A%84flashplayer%E5%8F%AF%E4%BB%A5%E5%85%A8%E5%B1%8F%E4%BA%86/</url>
-    <content><![CDATA[<p>值得高兴的事情，在 firefox 中也可以全屏了，庆祝下！！</p>
-]]></content>
-      <categories>
-        <category>关于RIA</category>
-      </categories>
-      <tags>
-        <tag>firefox</tag>
-        <tag>flashplayer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ubuntu 手动安装 Apache</title>
     <url>/2008/01/02/old_blog/2008-01-02-ubuntu%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85apache/</url>
     <content><![CDATA[<p>
@@ -2994,6 +2996,19 @@ rdesktop 192.168.100.x</span></p>
         <tag>ubuntu</tag>
         <tag>windows</tag>
         <tag>远程控制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>firefox 中的 flashPlayer 可以全屏了</title>
+    <url>/2008/01/02/old_blog/2008-01-02-firefox%E4%B8%AD%E7%9A%84flashplayer%E5%8F%AF%E4%BB%A5%E5%85%A8%E5%B1%8F%E4%BA%86/</url>
+    <content><![CDATA[<p>值得高兴的事情，在 firefox 中也可以全屏了，庆祝下！！</p>
+]]></content>
+      <categories>
+        <category>关于RIA</category>
+      </categories>
+      <tags>
+        <tag>firefox</tag>
+        <tag>flashplayer</tag>
       </tags>
   </entry>
   <entry>
@@ -3085,23 +3100,6 @@ rdesktop 192.168.100.x</span></p>
       </tags>
   </entry>
   <entry>
-    <title>yahoo 的全球新闻：falsh 的</title>
-    <url>/2008/02/01/old_blog/2008-02-01-yahoo%E7%9A%84%E5%85%A8%E7%90%83%E6%96%B0%E9%97%BB%EF%BC%9Afalsh%E7%9A%84/</url>
-    <content><![CDATA[<p> <a href="http://next.yahoo.net/download/newsglobe/index.html" target="_blank">http://next.yahoo.net/download/newsglobe/index.html</a></p>
-
-<p>比较酷</p>
-
-<p><img src="http://www.riapedia.com/files/yahoo_com_newsglobe.jpg" style="width: 658px; height: 472px" height="472" width="658"></p>
-]]></content>
-      <categories>
-        <category>关于RIA</category>
-      </categories>
-      <tags>
-        <tag>ria</tag>
-        <tag>应用</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>获取土豆的 flv 地址</title>
     <url>/2008/02/01/old_blog/2008-02-01-%E8%8E%B7%E5%8F%96%E5%9C%9F%E8%B1%86%E7%9A%84flv%E5%9C%B0%E5%9D%80/</url>
     <content><![CDATA[<p> 在土豆网打开一个播放页面地址，查看源代码，找到  var iid=14184880; 类似前面的这样，其中的后面的 7 位数字就是所要的 ID，再将 id 放到 http://www.tudou.com/player/v.php?id = 的后面，</p>
@@ -3150,6 +3148,23 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
       <tags>
         <tag>adobe</tag>
         <tag>开源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>yahoo 的全球新闻：falsh 的</title>
+    <url>/2008/02/01/old_blog/2008-02-01-yahoo%E7%9A%84%E5%85%A8%E7%90%83%E6%96%B0%E9%97%BB%EF%BC%9Afalsh%E7%9A%84/</url>
+    <content><![CDATA[<p> <a href="http://next.yahoo.net/download/newsglobe/index.html" target="_blank">http://next.yahoo.net/download/newsglobe/index.html</a></p>
+
+<p>比较酷</p>
+
+<p><img src="http://www.riapedia.com/files/yahoo_com_newsglobe.jpg" style="width: 658px; height: 472px" height="472" width="658"></p>
+]]></content>
+      <categories>
+        <category>关于RIA</category>
+      </categories>
+      <tags>
+        <tag>ria</tag>
+        <tag>应用</tag>
       </tags>
   </entry>
   <entry>
@@ -3365,25 +3380,6 @@ Linux  home/user_name/macromedia/Flash_Player/Logs/flashlog.txt</p>
       </tags>
   </entry>
   <entry>
-    <title>debian 支持 sql server 连接</title>
-    <url>/2008/04/03/old_blog/2008-04-03-debian%E6%94%AF%E6%8C%81sql-server%E8%BF%9E%E6%8E%A5/</url>
-    <content><![CDATA[<p></p><dl> <dt>如果你想要让 ubuntu 支持 sql server，需要安装以下的包 </dt> <dt><a href="http://packages.ubuntu.com/dapper/freetds-dev">freetds-dev</a></dt> <dd lang="en">MS SQL and Sybase client library (static libs and headers)</dd> <dt><a href="http://packages.ubuntu.com/dapper/libct3">libct3</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/libsybdb5">libsybdb5</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/tdsodbc">tdsodbc</a></dt> <dd lang="en">ODBC driver for connecting to MS SQL and Sybase SQL servers</dd> </dl>sudo apt-get install&nbsp;&nbsp; "包名称"<p></p>
-
-<p>再安装：<br>
-sudo apt-get install php5-sybase<br>
-然后重启，重启后就一切搞定<br>
-sudo /etc/init.d/apache2 restart</p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>sql server</tag>
-        <tag>ubuntu</tag>
-        <tag>freetds</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>被 pv3d 官网忽悠</title>
     <url>/2008/04/04/old_blog/2008-04-04-%E8%A2%ABpv3d%E5%AE%98%E7%BD%91%E5%BF%BD%E6%82%A0/</url>
     <content><![CDATA[<p>那天看到 http://pv3d.org/ 登出消息：
@@ -3401,6 +3397,25 @@ sudo /etc/init.d/apache2 restart</p>
         <tag>pv3d</tag>
         <tag>忽悠</tag>
         <tag>愚人节</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>debian 支持 sql server 连接</title>
+    <url>/2008/04/03/old_blog/2008-04-03-debian%E6%94%AF%E6%8C%81sql-server%E8%BF%9E%E6%8E%A5/</url>
+    <content><![CDATA[<p></p><dl> <dt>如果你想要让 ubuntu 支持 sql server，需要安装以下的包 </dt> <dt><a href="http://packages.ubuntu.com/dapper/freetds-dev">freetds-dev</a></dt> <dd lang="en">MS SQL and Sybase client library (static libs and headers)</dd> <dt><a href="http://packages.ubuntu.com/dapper/libct3">libct3</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/libsybdb5">libsybdb5</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/tdsodbc">tdsodbc</a></dt> <dd lang="en">ODBC driver for connecting to MS SQL and Sybase SQL servers</dd> </dl>sudo apt-get install&nbsp;&nbsp; "包名称"<p></p>
+
+<p>再安装：<br>
+sudo apt-get install php5-sybase<br>
+然后重启，重启后就一切搞定<br>
+sudo /etc/init.d/apache2 restart</p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>sql server</tag>
+        <tag>ubuntu</tag>
+        <tag>freetds</tag>
       </tags>
   </entry>
   <entry>
@@ -3698,20 +3713,6 @@ cd ies4linux-*<br>
       </tags>
   </entry>
   <entry>
-    <title>可恨的恶意评论</title>
-    <url>/2008/07/10/old_blog/2008-07-10-%E5%8F%AF%E6%81%A8%E7%9A%84%E6%81%B6%E6%84%8F%E8%AF%84%E8%AE%BA/</url>
-    <content><![CDATA[<p>最近发现很多恶意的评论，很是讨厌，所以弄了个插件，评论中一定要有中文，希望能减少那些垃圾评论。</p>
-
-<p>如果有朋友想给我留言，只能用中文，其实英文我也很差，谢谢合作了。</p>
-]]></content>
-      <categories>
-        <category>胡说八道</category>
-      </categories>
-      <tags>
-        <tag>评论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Air 调用其他应用程序</title>
     <url>/2008/07/12/old_blog/2008-07-12-air%E8%B0%83%E7%94%A8%E5%85%B6%E4%BB%96%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</url>
     <content><![CDATA[<p>如果用 air 去跳转到一个特定的文件，系统会根据这个文件的类型，启用他默认的应用程序，如下：
@@ -3751,6 +3752,20 @@ navigateToURL(request )<br>
         <tag>flex</tag>
         <tag>Air</tag>
         <tag>缩小</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可恨的恶意评论</title>
+    <url>/2008/07/10/old_blog/2008-07-10-%E5%8F%AF%E6%81%A8%E7%9A%84%E6%81%B6%E6%84%8F%E8%AF%84%E8%AE%BA/</url>
+    <content><![CDATA[<p>最近发现很多恶意的评论，很是讨厌，所以弄了个插件，评论中一定要有中文，希望能减少那些垃圾评论。</p>
+
+<p>如果有朋友想给我留言，只能用中文，其实英文我也很差，谢谢合作了。</p>
+]]></content>
+      <categories>
+        <category>胡说八道</category>
+      </categories>
+      <tags>
+        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -4168,37 +4183,6 @@ sudo rm 49-sansserif.conf</p>
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu 下安装和卸载 AIR</title>
-    <url>/2008/11/03/old_blog/2008-11-03-ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%B8%E8%BD%BDair/</url>
-    <content><![CDATA[<p></p><div class="entry-body">
-<div>
-<div class="item-body">
-<div></div></div></div><p></p>
-
-<p>安装：</p>
-
-<p>下载：<a href="http://download.macromedia.com/pub/labs/air/linux/adobeair_linux_b1_091508.bin" target="_blank">AIR for linux</a></p>
-
-<p>跳转到下载目录下：
-</p><blockquote>chmod +x adobeair_linux_b1_091508.bin</blockquote><p></p>
-
-<p>sudo ./adobeair_linux_b1_091508.bin
-卸载：
-</p><blockquote>dpkg -r adobeair-enu</blockquote>
-
-
-
-<p></p>
-</div>]]></content>
-      <categories>
-        <category>Air</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>Air</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Virtualbox 的系统硬盘直接下载（linux）</title>
     <url>/2008/11/03/old_blog/2008-11-03-virtualbox%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%A1%AC%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%EF%BC%88linux%EF%BC%89/</url>
     <content><![CDATA[<p></p><div class="entry-body">
@@ -4235,6 +4219,37 @@ sudo rm 49-sansserif.conf</p>
       <tags>
         <tag>ubuntu</tag>
         <tag>virtualbox</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu 下安装和卸载 AIR</title>
+    <url>/2008/11/03/old_blog/2008-11-03-ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%B8%E8%BD%BDair/</url>
+    <content><![CDATA[<p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div></div></div></div><p></p>
+
+<p>安装：</p>
+
+<p>下载：<a href="http://download.macromedia.com/pub/labs/air/linux/adobeair_linux_b1_091508.bin" target="_blank">AIR for linux</a></p>
+
+<p>跳转到下载目录下：
+</p><blockquote>chmod +x adobeair_linux_b1_091508.bin</blockquote><p></p>
+
+<p>sudo ./adobeair_linux_b1_091508.bin
+卸载：
+</p><blockquote>dpkg -r adobeair-enu</blockquote>
+
+
+
+<p></p>
+</div>]]></content>
+      <categories>
+        <category>Air</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>Air</tag>
       </tags>
   </entry>
   <entry>
@@ -4638,6 +4653,31 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </categories>
   </entry>
   <entry>
+    <title>ubuntu 下我的命令使用排行版</title>
+    <url>/2008/12/06/old_blog/2008-12-06-ubuntu%E4%B8%8B%E6%88%91%E7%9A%84%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%8E%92%E8%A1%8C%E7%89%88/</url>
+    <content><![CDATA[<p>在 ubuntu 下，用这个命令可以知道你使用哪个命令是频率最高的：
+</p><blockquote>history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head</blockquote>
+我的排行如下：
+<blockquote>120 ls<br>
+119 cd<br>
+48 cake<br>
+43 sudo<br>
+28 ping<br>
+25 rdesktop<br>
+19 gvim<br>
+18 xrandr<br>
+10 ifconfig<br>
+8 gcc</blockquote>
+你也不妨试试！<p></p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>c# 调用 RAPI 的连接判断</title>
     <url>/2008/12/01/old_blog/2008-12-01-c%E8%B0%83%E7%94%A8rapi%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%88%A4%E6%96%AD/</url>
     <content><![CDATA[<p>在 c# 中调用 rapi 来完成 windows ce 的文件操作。</p>
@@ -4675,31 +4715,6 @@ CeRapiInitEx(ref r);<br>
       </categories>
       <tags>
         <tag>.Net</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu 下我的命令使用排行版</title>
-    <url>/2008/12/06/old_blog/2008-12-06-ubuntu%E4%B8%8B%E6%88%91%E7%9A%84%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%8E%92%E8%A1%8C%E7%89%88/</url>
-    <content><![CDATA[<p>在 ubuntu 下，用这个命令可以知道你使用哪个命令是频率最高的：
-</p><blockquote>history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head</blockquote>
-我的排行如下：
-<blockquote>120 ls<br>
-119 cd<br>
-48 cake<br>
-43 sudo<br>
-28 ping<br>
-25 rdesktop<br>
-19 gvim<br>
-18 xrandr<br>
-10 ifconfig<br>
-8 gcc</blockquote>
-你也不妨试试！<p></p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -5341,6 +5356,23 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </tags>
   </entry>
   <entry>
+    <title>gitg 一个 git 查看工具（挺牛）</title>
+    <url>/2009/03/28/old_blog/2009-03-28-gitg%E4%B8%80%E4%B8%AAgit%E6%9F%A5%E7%9C%8B%E5%B7%A5%E5%85%B7%EF%BC%88%E6%8C%BA%E7%89%9B%EF%BC%89/</url>
+    <content><![CDATA[<p>项目地址：<a href="http://trac.novowork.com/gitg">http://trac.novowork.com/gitg</a></p>
+
+<p><a href="http://imtx.cn" target="_blank">TualatriX</a> 兄用的东西，关注下：</p>
+
+<p><img class="alignnone size-full wp-image-428" title="screenshot_0031" src="/media/2009/03/screenshot_0031.png" alt="screenshot_0031" width="785" height="549"></p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开源的 WM 项目 pocketwit</title>
     <url>/2009/03/27/old_blog/2009-03-27-%E5%BC%80%E6%BA%90%E7%9A%84wm%E9%A1%B9%E7%9B%AEpocketwit/</url>
     <content><![CDATA[<p></p><h1><a href="http://code.google.com/p/pocketwit/" target="_blank">pocketwit</a></h1>
@@ -5356,23 +5388,6 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       <tags>
         <tag>.Net</tag>
         <tag>wm6</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>gitg 一个 git 查看工具（挺牛）</title>
-    <url>/2009/03/28/old_blog/2009-03-28-gitg%E4%B8%80%E4%B8%AAgit%E6%9F%A5%E7%9C%8B%E5%B7%A5%E5%85%B7%EF%BC%88%E6%8C%BA%E7%89%9B%EF%BC%89/</url>
-    <content><![CDATA[<p>项目地址：<a href="http://trac.novowork.com/gitg">http://trac.novowork.com/gitg</a></p>
-
-<p><a href="http://imtx.cn" target="_blank">TualatriX</a> 兄用的东西，关注下：</p>
-
-<p><img class="alignnone size-full wp-image-428" title="screenshot_0031" src="/media/2009/03/screenshot_0031.png" alt="screenshot_0031" width="785" height="549"></p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -5447,21 +5462,6 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </categories>
   </entry>
   <entry>
-    <title>［原创翻译］Flex 性能，内存管理和对象缓存</title>
-    <url>/2009/04/22/old_blog/2009-04-22-%EF%BC%BB%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91%EF%BC%BDflex%E6%80%A7%E8%83%BD,%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<p><a href="/media/2008/05/flex-performance.pdf">Flex 性能，内存管理和对象缓存</a></p>
-]]></content>
-      <categories>
-        <category>actionscript</category>
-      </categories>
-      <tags>
-        <tag>actionscript</tag>
-        <tag>flex</tag>
-        <tag>性能</tag>
-        <tag>翻译</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>［原创翻译］Papervision3D 2.0 Alpha-Great While</title>
     <url>/2009/04/22/old_blog/2009-04-22-%EF%BC%BB%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91%EF%BC%BDpapervision3d20alpha-greatwhile/</url>
     <content><![CDATA[<p>个人原创翻译：如果转载请指明出处。</p>
@@ -5475,152 +5475,16 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </categories>
       <tags>
         <tag>flex</tag>
-        <tag>翻译</tag>
         <tag>3d</tag>
         <tag>Great While</tag>
         <tag>Papervision3D</tag>
+        <tag>翻译</tag>
       </tags>
   </entry>
   <entry>
-    <title>AS3 最佳技巧和实践</title>
-    <url>/2009/04/24/old_blog/2009-04-24-as3%E6%9C%80%E4%BD%B3%E6%8A%80%E5%B7%A7%E5%92%8C%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[<p>在网络上找到很多关于 AS3 实践优化的资料，自己整理下（自己还没有验证过，有时间再写测试代码）：
-</p><ol>
-    <li>new Array () 和 new Object () 比直接用 [] 和 {} 慢 3 倍的效率：
-<blockquote>var a = [];<br>
-var b = {};</blockquote>
-代替
-<blockquote>var a =new Array();<br>
-var b = new Object;</blockquote>
-</li>
-    <li> 数组的索引用整数：
-<code>list[int(0)]比直接用list[0]快。
-</code></li>
-    <li>Array 的创建是消耗是非常大的，所以不要这样做，尽可能重复利用，更新数组相对性能小很多：
-<pre><span class="category1">var</span> vanityCollection01 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();
-<span class="category1">var</span> vanityCollection02 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();
-<span class="category1">var</span> vanityCollection03 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();
-<span class="category1">var</span> vanityCollection04 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();</pre>
-</li>
-    <li>更快的数组拷贝：
-<pre><span class="category1">var</span> <span class="category2">copy</span> : <span class="category2">Array</span> = sourceArray.<span class="category2">concat</span>();</pre>
-</li>
-    <li>用 {} 的匿名对象创建比 new 快：
-<pre><span class="category1">var</span> <span class="category2">o</span> : * = {firstName:"<span class="quote">John</span>",lastName:"<span class="quote">Smith</span>",age:45 };
-NOT:
-<span class="category1">var</span> p : Person = <span class="category1">new</span> Person();
-p.firstName = "<span class="quote">John</span>";
-p.lastName = "<span class="quote">Smith</span>";
-p.age = 45;</pre>
-</li>
-    <li>静态函数应用，不需要创建对象实例：
-<pre>StringUtils.trim( "<span class="quote">text with space at end </span>" );
-类定义:
-package
-{
-     <span class="category1">public</span> final <span class="category1">class</span> StringUtils
-         {
-          <span class="category1">public</span> <span class="category1">static</span> <span class="category1">function</span> trim( s : <span class="category2">String</span> ) : <span class="category2">String</span>
-          {
-               <span class="category1">var</span> trimmed : <span class="category2">String</span>;
-               <span class="linecomment">// implementation... </span>
-               <span class="category1">return</span> trimmed;
-           }
-      }
-}</pre>
-</li>
-    <li>在应用程序中，常量定义是无法修改的：
-<pre><span class="category1">public</span> const APPLICATION_PUBLISHER : <span class="category2">String</span> = "<span class="quote">Kannopy, Inc.</span>";</pre>
-</li>
-    <li>不想被继承的类，可以用 final 来修饰：
-<pre><span class="category1">public</span> final <span class="category1">class</span> StringUtils</pre>
-</li>
-    <li>package 级别的函数和变量，不需要类和对象实例，直接调用（这些好像还没怎么用到）：
-<pre>createSnapShot( arg );</pre>
-不需要：
-<pre>someObjectInstance.createSnapShot( arg );</pre>
-<pre>SomeClass.createSnapShot( arg );</pre>
-类定义：
-<pre>package
-{
-     <span class="linecomment">// imports&amp;#133;; </span>
-     <span class="category1">public</span> <span class="category1">function</span> createSnapShot(<span class="category2">target</span>:IBitmapDrawable) : Bitmap
-     {
-          <span class="linecomment">// implementation&amp;#133; </span>
-      }
-}</pre>
-</li>
-    <li>if 和 switch 的效率是一样的，：
-<pre><span class="category1">if</span> ( condition )
-{
-     <span class="linecomment">// handle condition </span>
-} </pre></li></ol><p></p>
-
-<p><span class="category1">switch</span> ( condition )<br>
-{
-     <span class="category1">case</span> "<span class="quote">A</span>":<br>
-         <span class="linecomment">// logic to handle case A </span>
-     <span class="category1">break</span>; </p>
-
-<p>     <span class="category1">case</span> "<span class="quote">B</span>":<br>
-         <span class="linecomment">// logic to handle case B  </span>
-     <span class="category1">break</span>;<br>
-}
-
-</p><pre><code>&lt;li&gt;AVM中用int比Number在执行循环速度要快：
-</code></pre>
-<pre>(<span class="category1">var</span> i: <span class="category1">int</span> = 0; i &lt; n; i++) NOT <span class="category1">for</span> (<span class="category1">var</span> i: <span class="category2">Number</span> = 0; i &lt; n; i++)</pre>
-
-    <li>uint 要少用，比较慢：<code>
-</code>
-<pre><span class="category1">var</span> footerHex : uint = 0x00ccff;</pre>
-<pre><span class="category1">for</span> (;i&lt;n2;i++) Vector3D(array[<span class="category1">int</span>(i*2)]).<span class="category2">x</span> = 2;</pre>
-不要用（因为会自动转为 Number 的）：
-<pre><span class="category1">for</span> (;i&lt;n2;i++) Vector3D(array[i*2]).<span class="category2">x</span> = 2;</pre>
-</li>
-    <li>不要用 int 来赋值小数：
-<pre><span class="category1">var</span> decimal : <span class="category2">Number</span>  = 14.654;</pre>
-不要用（因为会自动转为 Number 的）：
-<pre><span class="category1">var</span> decimal : <span class="category1">int</span>  = 14.654;</pre>
-</li>
-    <li>用乘法来代替除法：5000/1000=&gt;5000*0.001：</li>
-    <li>不要在循环内执行相同的运算：
-<pre><span class="category1">for</span> (..){a*180/<span class="category2">Math</span>.<span class="category2">PI</span>;}
-声明: toRadians = a*180/<span class="category2">Math</span>.<span class="category2">PI</span>; 放置到循环外面</pre>
-<pre><span class="category1">for</span> (<span class="category1">var</span> i=0;i&lt; myArray.lengh;i++){ }</pre>
-应该采用：
-<pre><span class="category1">var</span> len : <span class="category1">int</span> = myArray.lengh;
-<span class="category1">for</span> (<span class="category1">var</span> i=0;i&lt;len;i++){}</pre>
-</li>
-    <li>使用完事件监听需要 remove 掉
-<pre>removeEventListener( Event.COMPLETE, onComplete );</pre>
-</li>
-    <li>使用 delete 释放内存
-<pre><span class="category1">delete</span> someObject;</pre>
-</li>
-    <li>使用正则表达式验证，使用字符串搜索
-<pre><span class="linecomment">// postal code validation example using regular expressions </span>
-<span class="category1">private</span> <span class="category1">var</span> regEx:RegExp = /^[A-Z][0-9][A-Z] [0-9][A-Z][0-9]$/i;
-<span class="category1">private</span> <span class="category1">function</span> validatePostal( event : Event ) : <span class="category1">void</span>
-{
-     <span class="category1">if</span>( regEx.test( zipTextInput.<span class="category2">text</span> ) )
-     {
-          <span class="linecomment">// handle invalid input case </span>
-      }
-} </pre></li><p></p>
-
-<p><span class="linecomment">// search a string using String methods </span>
-<span class="category1">var</span> string : <span class="category2">String</span> = "<span class="quote">Search me</span>";
-<span class="category1">var</span> searchIndex : <span class="category1">int</span> = string.<span class="category2">indexOf</span>( "<span class="quote">me</span>" );
-<span class="category1">var</span> search : <span class="category2">String</span> = string.<span class="category2">substring</span>( searchIndex, searchIndex + 2 );
-
-</p><pre><code>&lt;li&gt;重用对象特别是（DisplayObjects, URLLoader），保持内存使用平稳，因为创建这些对象会使得cpu和内存占用加大，可能导致画面不流畅。&lt;/li&gt;
-&lt;li&gt;使用delete释放内存
-</code></pre>
-<pre><span class="category1">delete</span> someObject;</pre>
-
-
-<p>继续补充中……</p><p></p>
+    <title>［原创翻译］Flex 性能，内存管理和对象缓存</title>
+    <url>/2009/04/22/old_blog/2009-04-22-%EF%BC%BB%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91%EF%BC%BDflex%E6%80%A7%E8%83%BD,%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<p><a href="/media/2008/05/flex-performance.pdf">Flex 性能，内存管理和对象缓存</a></p>
 ]]></content>
       <categories>
         <category>actionscript</category>
@@ -5628,6 +5492,8 @@ package
       <tags>
         <tag>actionscript</tag>
         <tag>flex</tag>
+        <tag>翻译</tag>
+        <tag>性能</tag>
       </tags>
   </entry>
   <entry>
@@ -6002,6 +5868,155 @@ package
         <tag>actionscript</tag>
         <tag>Flash</tag>
         <tag>game</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AS3 最佳技巧和实践</title>
+    <url>/2009/04/24/old_blog/2009-04-24-as3%E6%9C%80%E4%BD%B3%E6%8A%80%E5%B7%A7%E5%92%8C%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<p>在网络上找到很多关于 AS3 实践优化的资料，自己整理下（自己还没有验证过，有时间再写测试代码）：
+</p><ol>
+    <li>new Array () 和 new Object () 比直接用 [] 和 {} 慢 3 倍的效率：
+<blockquote>var a = [];<br>
+var b = {};</blockquote>
+代替
+<blockquote>var a =new Array();<br>
+var b = new Object;</blockquote>
+</li>
+    <li> 数组的索引用整数：
+<code>list[int(0)]比直接用list[0]快。
+</code></li>
+    <li>Array 的创建是消耗是非常大的，所以不要这样做，尽可能重复利用，更新数组相对性能小很多：
+<pre><span class="category1">var</span> vanityCollection01 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();
+<span class="category1">var</span> vanityCollection02 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();
+<span class="category1">var</span> vanityCollection03 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();
+<span class="category1">var</span> vanityCollection04 : <span class="category2">Array</span> = <span class="category1">new</span> <span class="category2">Array</span>();</pre>
+</li>
+    <li>更快的数组拷贝：
+<pre><span class="category1">var</span> <span class="category2">copy</span> : <span class="category2">Array</span> = sourceArray.<span class="category2">concat</span>();</pre>
+</li>
+    <li>用 {} 的匿名对象创建比 new 快：
+<pre><span class="category1">var</span> <span class="category2">o</span> : * = {firstName:"<span class="quote">John</span>",lastName:"<span class="quote">Smith</span>",age:45 };
+NOT:
+<span class="category1">var</span> p : Person = <span class="category1">new</span> Person();
+p.firstName = "<span class="quote">John</span>";
+p.lastName = "<span class="quote">Smith</span>";
+p.age = 45;</pre>
+</li>
+    <li>静态函数应用，不需要创建对象实例：
+<pre>StringUtils.trim( "<span class="quote">text with space at end </span>" );
+类定义:
+package
+{
+     <span class="category1">public</span> final <span class="category1">class</span> StringUtils
+         {
+          <span class="category1">public</span> <span class="category1">static</span> <span class="category1">function</span> trim( s : <span class="category2">String</span> ) : <span class="category2">String</span>
+          {
+               <span class="category1">var</span> trimmed : <span class="category2">String</span>;
+               <span class="linecomment">// implementation... </span>
+               <span class="category1">return</span> trimmed;
+           }
+      }
+}</pre>
+</li>
+    <li>在应用程序中，常量定义是无法修改的：
+<pre><span class="category1">public</span> const APPLICATION_PUBLISHER : <span class="category2">String</span> = "<span class="quote">Kannopy, Inc.</span>";</pre>
+</li>
+    <li>不想被继承的类，可以用 final 来修饰：
+<pre><span class="category1">public</span> final <span class="category1">class</span> StringUtils</pre>
+</li>
+    <li>package 级别的函数和变量，不需要类和对象实例，直接调用（这些好像还没怎么用到）：
+<pre>createSnapShot( arg );</pre>
+不需要：
+<pre>someObjectInstance.createSnapShot( arg );</pre>
+<pre>SomeClass.createSnapShot( arg );</pre>
+类定义：
+<pre>package
+{
+     <span class="linecomment">// imports&amp;#133;; </span>
+     <span class="category1">public</span> <span class="category1">function</span> createSnapShot(<span class="category2">target</span>:IBitmapDrawable) : Bitmap
+     {
+          <span class="linecomment">// implementation&amp;#133; </span>
+      }
+}</pre>
+</li>
+    <li>if 和 switch 的效率是一样的，：
+<pre><span class="category1">if</span> ( condition )
+{
+     <span class="linecomment">// handle condition </span>
+} </pre></li></ol><p></p>
+
+<p><span class="category1">switch</span> ( condition )<br>
+{
+     <span class="category1">case</span> "<span class="quote">A</span>":<br>
+         <span class="linecomment">// logic to handle case A </span>
+     <span class="category1">break</span>; </p>
+
+<p>     <span class="category1">case</span> "<span class="quote">B</span>":<br>
+         <span class="linecomment">// logic to handle case B  </span>
+     <span class="category1">break</span>;<br>
+}
+
+</p><pre><code>&lt;li&gt;AVM中用int比Number在执行循环速度要快：
+</code></pre>
+<pre>(<span class="category1">var</span> i: <span class="category1">int</span> = 0; i &lt; n; i++) NOT <span class="category1">for</span> (<span class="category1">var</span> i: <span class="category2">Number</span> = 0; i &lt; n; i++)</pre>
+
+    <li>uint 要少用，比较慢：<code>
+</code>
+<pre><span class="category1">var</span> footerHex : uint = 0x00ccff;</pre>
+<pre><span class="category1">for</span> (;i&lt;n2;i++) Vector3D(array[<span class="category1">int</span>(i*2)]).<span class="category2">x</span> = 2;</pre>
+不要用（因为会自动转为 Number 的）：
+<pre><span class="category1">for</span> (;i&lt;n2;i++) Vector3D(array[i*2]).<span class="category2">x</span> = 2;</pre>
+</li>
+    <li>不要用 int 来赋值小数：
+<pre><span class="category1">var</span> decimal : <span class="category2">Number</span>  = 14.654;</pre>
+不要用（因为会自动转为 Number 的）：
+<pre><span class="category1">var</span> decimal : <span class="category1">int</span>  = 14.654;</pre>
+</li>
+    <li>用乘法来代替除法：5000/1000=&gt;5000*0.001：</li>
+    <li>不要在循环内执行相同的运算：
+<pre><span class="category1">for</span> (..){a*180/<span class="category2">Math</span>.<span class="category2">PI</span>;}
+声明: toRadians = a*180/<span class="category2">Math</span>.<span class="category2">PI</span>; 放置到循环外面</pre>
+<pre><span class="category1">for</span> (<span class="category1">var</span> i=0;i&lt; myArray.lengh;i++){ }</pre>
+应该采用：
+<pre><span class="category1">var</span> len : <span class="category1">int</span> = myArray.lengh;
+<span class="category1">for</span> (<span class="category1">var</span> i=0;i&lt;len;i++){}</pre>
+</li>
+    <li>使用完事件监听需要 remove 掉
+<pre>removeEventListener( Event.COMPLETE, onComplete );</pre>
+</li>
+    <li>使用 delete 释放内存
+<pre><span class="category1">delete</span> someObject;</pre>
+</li>
+    <li>使用正则表达式验证，使用字符串搜索
+<pre><span class="linecomment">// postal code validation example using regular expressions </span>
+<span class="category1">private</span> <span class="category1">var</span> regEx:RegExp = /^[A-Z][0-9][A-Z] [0-9][A-Z][0-9]$/i;
+<span class="category1">private</span> <span class="category1">function</span> validatePostal( event : Event ) : <span class="category1">void</span>
+{
+     <span class="category1">if</span>( regEx.test( zipTextInput.<span class="category2">text</span> ) )
+     {
+          <span class="linecomment">// handle invalid input case </span>
+      }
+} </pre></li><p></p>
+
+<p><span class="linecomment">// search a string using String methods </span>
+<span class="category1">var</span> string : <span class="category2">String</span> = "<span class="quote">Search me</span>";
+<span class="category1">var</span> searchIndex : <span class="category1">int</span> = string.<span class="category2">indexOf</span>( "<span class="quote">me</span>" );
+<span class="category1">var</span> search : <span class="category2">String</span> = string.<span class="category2">substring</span>( searchIndex, searchIndex + 2 );
+
+</p><pre><code>&lt;li&gt;重用对象特别是（DisplayObjects, URLLoader），保持内存使用平稳，因为创建这些对象会使得cpu和内存占用加大，可能导致画面不流畅。&lt;/li&gt;
+&lt;li&gt;使用delete释放内存
+</code></pre>
+<pre><span class="category1">delete</span> someObject;</pre>
+
+
+<p>继续补充中……</p><p></p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>actionscript</tag>
+        <tag>flex</tag>
       </tags>
   </entry>
   <entry>
@@ -6389,25 +6404,6 @@ sh ./winetricks</blockquote>
       </tags>
   </entry>
   <entry>
-    <title>不错的 as 类库站点</title>
-    <url>/2009/08/05/old_blog/2009-08-05-%E4%B8%8D%E9%94%99%E7%9A%84as%E7%B1%BB%E5%BA%93%E7%AB%99%E7%82%B9/</url>
-    <content><![CDATA[<p>在整理个人类库发现国内居然有这么个站点，内容不错。</p>
-
-<p>介绍的类和包，都挺有用的，强烈推荐下：</p>
-
-<p><a href="http://asclass.yo2.cn/" target="_blank">http://asclass.yo2.cn/</a></p>
-
-<p>Flasher 们，赶紧去淘淘看，或许就有收获了！</p>
-]]></content>
-      <categories>
-        <category>actionscript</category>
-      </categories>
-      <tags>
-        <tag>actionscript</tag>
-        <tag>class</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux 小工具</title>
     <url>/2009/09/13/old_blog/2009-09-13-linux%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>最近一只在忙项目，都没打理这个 blog 了</p>
@@ -6434,6 +6430,25 @@ http://sourceforge.net/projects/screenwm/<p></p>
       <tags>
         <tag>vim</tag>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不错的 as 类库站点</title>
+    <url>/2009/08/05/old_blog/2009-08-05-%E4%B8%8D%E9%94%99%E7%9A%84as%E7%B1%BB%E5%BA%93%E7%AB%99%E7%82%B9/</url>
+    <content><![CDATA[<p>在整理个人类库发现国内居然有这么个站点，内容不错。</p>
+
+<p>介绍的类和包，都挺有用的，强烈推荐下：</p>
+
+<p><a href="http://asclass.yo2.cn/" target="_blank">http://asclass.yo2.cn/</a></p>
+
+<p>Flasher 们，赶紧去淘淘看，或许就有收获了！</p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>actionscript</tag>
+        <tag>class</tag>
       </tags>
   </entry>
   <entry>
@@ -6622,6 +6637,22 @@ Wiimote 和 Flash 之间的通信。
       </tags>
   </entry>
   <entry>
+    <title>FD 下的 exportswc 插件的错误解决</title>
+    <url>/2010/02/10/old_blog/2010-02-10-fd%E4%B8%8B%E7%9A%84exportswc%E6%8F%92%E4%BB%B6%E7%9A%84%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>在使用 exportswc 插件导出 swc 的时候，在安装过程中经常出现错误。</p>
+
+<p>记录下以备以后参考
+</p><ol>
+    <li>安装完后显示的按钮时灰色的。主要是你安装的版本可能不对，所以请到项目的官方网下载插件，这样能保证是最新的，因为我发现在搜索过来的基本不是最新的<br>
+官网下载：<a href="http://sourceforge.net/projects/exportswc/" target="_blank">http://sourceforge.net/projects/exportswc/</a></li>
+    <li> 如果你在导出的时候出现异常，一般都是环境变量的配置问题，所以请配置好你的 java 和 sdk 下的 bin 路径。（如果不知道怎么配置，搜索 jdk 的环境变量配置）</li>
+</ol><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>豆瓣同步</title>
     <url>/2009/12/30/old_blog/2009-12-30-%E8%B1%86%E7%93%A3-test/</url>
     <content><![CDATA[<p>最近发现很多朋友都在豆瓣，而我注册时很老的一批了，那时候只是看看 django 的成功案例。</p>
@@ -6636,22 +6667,6 @@ Wiimote 和 Flash 之间的通信。
 ]]></content>
       <categories>
         <category>杂七杂八</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>FD 下的 exportswc 插件的错误解决</title>
-    <url>/2010/02/10/old_blog/2010-02-10-fd%E4%B8%8B%E7%9A%84exportswc%E6%8F%92%E4%BB%B6%E7%9A%84%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>在使用 exportswc 插件导出 swc 的时候，在安装过程中经常出现错误。</p>
-
-<p>记录下以备以后参考
-</p><ol>
-    <li>安装完后显示的按钮时灰色的。主要是你安装的版本可能不对，所以请到项目的官方网下载插件，这样能保证是最新的，因为我发现在搜索过来的基本不是最新的<br>
-官网下载：<a href="http://sourceforge.net/projects/exportswc/" target="_blank">http://sourceforge.net/projects/exportswc/</a></li>
-    <li> 如果你在导出的时候出现异常，一般都是环境变量的配置问题，所以请配置好你的 java 和 sdk 下的 bin 路径。（如果不知道怎么配置，搜索 jdk 的环境变量配置）</li>
-</ol><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
       </categories>
   </entry>
   <entry>
@@ -6722,30 +6737,6 @@ demo：<a href="http://lab.generalrelativity.org/circle_collision/" target="_bla
       </categories>
   </entry>
   <entry>
-    <title>[原] 安装 vim 中文帮助后出现的乱码</title>
-    <url>/2010/04/08/old_blog/2010-04-08-%E5%AE%89%E8%A3%85vim%E4%B8%AD%E6%96%87%E5%B8%AE%E5%8A%A9%E5%90%8E%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<p>在 windows 下安装了 vim 后，再安装中文帮助，再次打开开始界面出现乱码了，在状态栏也经常输出乱码：</p>
-
-<p><a href="/media/2010/04/vim-help.jpg"><img class="alignnone size-full wp-image-572" title="vim help" src="/media/2010/04/vim-help.jpg" alt="" width="665" height="503"></a></p>
-
-<p>解决办法：</p>
-
-<p>windows：找到 vim 的安装目录，再进入插件目录（Vim\vimfiles\plugin），</p>
-
-<p>linux: 进入～/.vim/plugin</p>
-
-<p>找到 vimcdoc.vim 文档，找到 “set encoding=utf-8”，将词句注释掉，（再行首插入一个 "）</p>
-
-<p>这样就不再乱码了。</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>［原］ubuntu 10.04 修复 grub2</title>
     <url>/2010/04/11/old_blog/2010-04-11-%EF%BC%BB%E5%8E%9F%EF%BC%BDubuntu-10-04%E4%BF%AE%E5%A4%8Dgrub2/</url>
     <content><![CDATA[<p>在 ubuntu 系统之后安装其他系统，会将 ubuntu 的 grub 破坏掉，ubuntu 10.04 已经使用 grub2 了。我尝试用 9.04 的 livecd 去修复，一直报错，而且想 chroot 也不成，个人能力不行吧。</p>
@@ -6775,6 +6766,30 @@ sudo chroot /mnt/newlinux
       </tags>
   </entry>
   <entry>
+    <title>[原] 安装 vim 中文帮助后出现的乱码</title>
+    <url>/2010/04/08/old_blog/2010-04-08-%E5%AE%89%E8%A3%85vim%E4%B8%AD%E6%96%87%E5%B8%AE%E5%8A%A9%E5%90%8E%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<p>在 windows 下安装了 vim 后，再安装中文帮助，再次打开开始界面出现乱码了，在状态栏也经常输出乱码：</p>
+
+<p><a href="/media/2010/04/vim-help.jpg"><img class="alignnone size-full wp-image-572" title="vim help" src="/media/2010/04/vim-help.jpg" alt="" width="665" height="503"></a></p>
+
+<p>解决办法：</p>
+
+<p>windows：找到 vim 的安装目录，再进入插件目录（Vim\vimfiles\plugin），</p>
+
+<p>linux: 进入～/.vim/plugin</p>
+
+<p>找到 vimcdoc.vim 文档，找到 “set encoding=utf-8”，将词句注释掉，（再行首插入一个 "）</p>
+
+<p>这样就不再乱码了。</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[原] ubuntu 下 firefox 3.6 安装 java 插件</title>
     <url>/2010/04/12/old_blog/2010-04-12-%E5%8E%9Fubuntu%E4%B8%8Bfirefox-3-6%E5%AE%89%E8%A3%85java%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p></p><ol>
@@ -6791,6 +6806,23 @@ sudo chroot /mnt/newlinux
       <categories>
         <category>ubuntu</category>
       </categories>
+  </entry>
+  <entry>
+    <title>解决 prism 无法启动</title>
+    <url>/2010/04/17/old_blog/2010-04-17-%E8%A7%A3%E5%86%B3prism%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[<p>这几天在折腾 ubuntu 10.04 的内核升级，没想到把 prism 给破坏了……<br>
+错误提示：<br>
+Could not find compatible GRE between version 1.9.2 and 1.9.2.*.<br>
+执行修复：<br>
+sudo xulrunner-1.9.2 --register-global<br>
+不要问我原理，因为我也不知道，哈哈哈哈</p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
   </entry>
   <entry>
     <title>[译] 使用加密来保护你的 Flash 文件被反编译</title>
@@ -7147,23 +7179,6 @@ Save  and run the SWF. It works! And look what the decompiler says:
       </tags>
   </entry>
   <entry>
-    <title>解决 prism 无法启动</title>
-    <url>/2010/04/17/old_blog/2010-04-17-%E8%A7%A3%E5%86%B3prism%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<p>这几天在折腾 ubuntu 10.04 的内核升级，没想到把 prism 给破坏了……<br>
-错误提示：<br>
-Could not find compatible GRE between version 1.9.2 and 1.9.2.*.<br>
-执行修复：<br>
-sudo xulrunner-1.9.2 --register-global<br>
-不要问我原理，因为我也不知道，哈哈哈哈</p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>全国哀悼日，为玉树祈福</title>
     <url>/2010/04/20/old_blog/2010-04-20-%E5%85%A8%E5%9B%BD%E5%93%80%E6%82%BC%E6%97%A5%EF%BC%8C%E4%B8%BA%E7%8E%89%E6%A0%91%E7%A5%88%E7%A6%8F/</url>
     <content><![CDATA[<p><a href="/media/2010/04/screenshot_002.png"><img class="alignnone size-full wp-image-641" title="screenshot_002" src="/media/2010/04/screenshot_002.png" alt="" width="510" height="466"></a></p>
@@ -7285,6 +7300,47 @@ endfunction
       </tags>
   </entry>
   <entry>
+    <title>基于 GAE 的 blog</title>
+    <url>/2010/06/08/old_blog/2010-06-08-%E5%9F%BA%E4%BA%8Egae%E7%9A%84blog/</url>
+    <content><![CDATA[<p>如果你要开发基于 GAE 的开发，这个系统很值得参考哦：</p>
+
+<p><a href="http://code.google.com/p/cpedialog/" target="_blank">http://code.google.com/p/cpedialog/</a></p>
+
+<p>在 google code 上有开源代码，学习去吧。</p>
+
+<p>好像不是用 django 这个框架哦，呵呵</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>gae</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chipmunk 物理引擎</title>
+    <url>/2010/06/13/old_blog/2010-06-13-chipmunk%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</url>
+    <content><![CDATA[<p>今天在 youtube 上无意看到 Chipmunk 这个 2D 物理引擎。</p>
+
+<p>发现原来不只是 c，还有 object－c，好多好多哦……，看来很不错，以前一直关注 Box2D</p>
+
+<p>这个引擎也开始出 Flash 版本了，还是开源的，好好关注下……</p>
+
+<p>c 语言版本：<a href="http://code.google.com/p/chipmunk-physics/">http://code.google.com/p/chipmunk-physics/</a></p>
+
+<p>flash 版本（glaze）：<a href="http://code.google.com/p/glaze/">http://code.google.com/p/glaze/</a></p>
+
+<p><a href="/media/2010/06/logo1_med.png"><img class="alignnone size-full wp-image-688" title="logo1_med" src="/media/2010/06/logo1_med.png" alt="" width="400" height="131"></a><a href="/media/2010/06/balance_chipmunk.png"><img class="alignnone size-full wp-image-689" title="balance_chipmunk" src="/media/2010/06/balance_chipmunk.png" alt="" width="170" height="170"></a></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>引擎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提示：移除不需要的 Timer 事件监听器</title>
     <url>/2010/06/07/old_blog/2010-06-07-%E6%8F%90%E7%A4%BA%EF%BC%9A%E7%A7%BB%E9%99%A4%E4%B8%8D%E9%9C%80%E8%A6%81%E7%9A%84timer%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</url>
     <content><![CDATA[<p>转自：<a href="http://blog.yoz.sk/2010/06/quick-tip-timer-listeners-doesnt-require-remove/" target="_blank">http://blog.yoz.sk/2010/06/quick-tip-timer-listeners-doesnt-require-remove/</a></p>
@@ -7331,47 +7387,6 @@ endfunction
       </categories>
       <tags>
         <tag>actionscript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 GAE 的 blog</title>
-    <url>/2010/06/08/old_blog/2010-06-08-%E5%9F%BA%E4%BA%8Egae%E7%9A%84blog/</url>
-    <content><![CDATA[<p>如果你要开发基于 GAE 的开发，这个系统很值得参考哦：</p>
-
-<p><a href="http://code.google.com/p/cpedialog/" target="_blank">http://code.google.com/p/cpedialog/</a></p>
-
-<p>在 google code 上有开源代码，学习去吧。</p>
-
-<p>好像不是用 django 这个框架哦，呵呵</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>gae</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chipmunk 物理引擎</title>
-    <url>/2010/06/13/old_blog/2010-06-13-chipmunk%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</url>
-    <content><![CDATA[<p>今天在 youtube 上无意看到 Chipmunk 这个 2D 物理引擎。</p>
-
-<p>发现原来不只是 c，还有 object－c，好多好多哦……，看来很不错，以前一直关注 Box2D</p>
-
-<p>这个引擎也开始出 Flash 版本了，还是开源的，好好关注下……</p>
-
-<p>c 语言版本：<a href="http://code.google.com/p/chipmunk-physics/">http://code.google.com/p/chipmunk-physics/</a></p>
-
-<p>flash 版本（glaze）：<a href="http://code.google.com/p/glaze/">http://code.google.com/p/glaze/</a></p>
-
-<p><a href="/media/2010/06/logo1_med.png"><img class="alignnone size-full wp-image-688" title="logo1_med" src="/media/2010/06/logo1_med.png" alt="" width="400" height="131"></a><a href="/media/2010/06/balance_chipmunk.png"><img class="alignnone size-full wp-image-689" title="balance_chipmunk" src="/media/2010/06/balance_chipmunk.png" alt="" width="170" height="170"></a></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>引擎</tag>
       </tags>
   </entry>
   <entry>
@@ -7860,22 +7875,6 @@ I897	device</pre>
       </categories>
   </entry>
   <entry>
-    <title>960 的网页标准</title>
-    <url>/2011/02/18/old_blog/2011-02-18-960%E7%9A%84%E7%BD%91%E9%A1%B5%E6%A0%87%E5%87%86/</url>
-    <content><![CDATA[<p></p><p style="text-align: center;"><a href="http://960.gs/" target="_blank"><img class="size-full wp-image-806 aligncenter" title="20110218" src="/media/2011/02/20110218.jpg" alt="" width="334" height="203"></a></p>
-地址：<a href="http://960.gs/">http://960.gs/</a><p></p>
-
-<p>960 的网页标准是被推荐的，这个可以找到你需要的工具和教程。<br>
-还有大量的示例网站，值得推荐和收藏……</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>网页设计</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>FlashFireBug 的发布</title>
     <url>/2011/02/18/old_blog/2011-02-18-flashfirebug%E7%9A%84%E5%8F%91%E5%B8%83/</url>
     <content><![CDATA[<p></p><p style="text-align: center;"><a href="http://www.o-minds.com/products/flashfirebug" target="_blank"><img class="size-full wp-image-816 aligncenter" title="201102181" src="/media/2011/02/201102181.jpg" alt="" width="527" height="140"></a></p>
@@ -7902,6 +7901,22 @@ I897	device</pre>
         <tag>actionscript</tag>
         <tag>Debuger</tag>
         <tag>firebug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>960 的网页标准</title>
+    <url>/2011/02/18/old_blog/2011-02-18-960%E7%9A%84%E7%BD%91%E9%A1%B5%E6%A0%87%E5%87%86/</url>
+    <content><![CDATA[<p></p><p style="text-align: center;"><a href="http://960.gs/" target="_blank"><img class="size-full wp-image-806 aligncenter" title="20110218" src="/media/2011/02/20110218.jpg" alt="" width="334" height="203"></a></p>
+地址：<a href="http://960.gs/">http://960.gs/</a><p></p>
+
+<p>960 的网页标准是被推荐的，这个可以找到你需要的工具和教程。<br>
+还有大量的示例网站，值得推荐和收藏……</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>网页设计</tag>
       </tags>
   </entry>
   <entry>
@@ -8405,6 +8420,25 @@ source mysandbox/bin/deactivate
       </categories>
   </entry>
   <entry>
+    <title>物理引擎编辑工具：Cadet</title>
+    <url>/2013/03/27/old_blog/2013-03-27-%E6%8E%A8%E8%8D%90%E4%B8%AA%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%EF%BC%9Acadet/</url>
+    <content><![CDATA[<p><img class="alignnone size-full wp-image-1017" title="8CCE016E-6EF4-41D6-BAD3-363A935ECF37" src="/media/2013/03/8CCE016E-6EF4-41D6-BAD3-363A935ECF37.jpg" alt="" width="504" height="534"></p>
+
+<p>地址：<a href="http://unwrong.com/cadet">http://unwrong.com/cadet</a></p>
+
+<p>提供了两个免费的编辑器，分布支持 2d 和 3d，2d 主要就是针对 box2d 引擎，其他不多说了，自己体会吧。</p>
+
+<p>可直观的看到，还可以直接预览编辑结果 (使用教程暂时不介绍了)：</p>
+
+<p><img class="alignnone size-full wp-image-1018" title="4EFFD25F-AE45-4CC3-9389-46DC697AB376" src="/media/2013/03/4EFFD25F-AE45-4CC3-9389-46DC697AB376.jpg" alt="" width="839" height="522"></p>
+
+<p>&nbsp;</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+  </entry>
+  <entry>
     <title>推荐一个强大的游戏开发工具：ShoeBox</title>
     <url>/2013/03/27/old_blog/2013-03-27-%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%EF%BC%9Ashoebox/</url>
     <content><![CDATA[<p><img class="alignnone size-full wp-image-1003" title="9B74E658-6B07-4208-BC99-0D459E646242" src="/media/2013/03/9B74E658-6B07-4208-BC99-0D459E646242.png" alt="" width="650" height="224"></p>
@@ -8429,25 +8463,6 @@ source mysandbox/bin/deactivate
         <tag>actionscript</tag>
         <tag>Air</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>物理引擎编辑工具：Cadet</title>
-    <url>/2013/03/27/old_blog/2013-03-27-%E6%8E%A8%E8%8D%90%E4%B8%AA%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%EF%BC%9Acadet/</url>
-    <content><![CDATA[<p><img class="alignnone size-full wp-image-1017" title="8CCE016E-6EF4-41D6-BAD3-363A935ECF37" src="/media/2013/03/8CCE016E-6EF4-41D6-BAD3-363A935ECF37.jpg" alt="" width="504" height="534"></p>
-
-<p>地址：<a href="http://unwrong.com/cadet">http://unwrong.com/cadet</a></p>
-
-<p>提供了两个免费的编辑器，分布支持 2d 和 3d，2d 主要就是针对 box2d 引擎，其他不多说了，自己体会吧。</p>
-
-<p>可直观的看到，还可以直接预览编辑结果 (使用教程暂时不介绍了)：</p>
-
-<p><img class="alignnone size-full wp-image-1018" title="4EFFD25F-AE45-4CC3-9389-46DC697AB376" src="/media/2013/03/4EFFD25F-AE45-4CC3-9389-46DC697AB376.jpg" alt="" width="839" height="522"></p>
-
-<p>&nbsp;</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
   </entry>
   <entry>
     <title>支持 AS 的跨平台开发引擎：Loom SDK</title>
