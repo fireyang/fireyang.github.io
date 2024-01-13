@@ -12,6 +12,29 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo Blog 【2020】</title>
+    <url>/2020/12/16/blog-2020-update/</url>
+    <content><![CDATA[<h1 id="Hexo-Blog-【2020】"><a href="#Hexo-Blog-【2020】" class="headerlink" title="Hexo Blog 【2020】"></a>Hexo Blog 【2020】</h1><p>目标：又到了年尾了，折腾下 blog。升级下版本，切换部署方式到 Github 的 Actions！</p>
+<h2 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级 hexo</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">## 手动 ，a全选</span></span><br><span class="line">yarn upgrade-interactive --latest</span><br><span class="line"><span class="comment"># 查看版本，会提示hexo config的错误，简单修复</span></span><br><span class="line">npx hexo version</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="升级主题theme-next"><a href="#升级主题theme-next" class="headerlink" title="升级主题theme-next"></a>升级主题 theme-next</h2><p><a href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a><br>8.0 最新（hexo 5.0 以上）</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yarn add hexo-theme-next</span><br><span class="line"><span class="comment"># 复制配置模板</span></span><br><span class="line"><span class="built_in">cp</span> node_modules/hexo-theme-next/_config.yml _config.next.yml</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置 _config.next.yml -&gt; pangu:true</span></span><br><span class="line">yarn add  hexo-pangu</span><br><span class="line"><span class="comment"># 配置 _config.next.yml</span></span><br><span class="line"><span class="comment"># localsearch:</span></span><br><span class="line"><span class="comment">#     enable:true</span></span><br><span class="line">yarn add hexo-generator-searchdb</span><br><span class="line"><span class="comment"># hexo 配置</span></span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">      content: <span class="literal">true</span></span><br><span class="line">        format: html</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="部署方式"><a href="#部署方式" class="headerlink" title="部署方式"></a>部署方式</h1><p>之前的部署是由 Travis CI 来做，现在迁移到 Github 的 Action。全由 github 的技术栈来生成。</p>
+<p>直接打开看：<a href="https://github.com/fireyang/hexoBlog/blob/deploy/.github/workflows/deploy.yml">deploy.yml</a></p>
+<p>ACTION_DEPLOY_KEY 的生成，直接看：参考（4）</p>
+<p>参考</p>
+<ol>
+<li><a href="https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/">利用 Github Actions 自动部署 Hexo 博客</a></li>
+<li><a href="https://hexo.io/docs/github-pages">https://hexo.io/docs/github-pages</a></li>
+<li><a href="https://github.com/peaceiris/actions-gh-pages">https://github.com/peaceiris/actions-gh-pages</a></li>
+<li><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">https://github.com/peaceiris/actions-gh-pages#️-create-ssh-deploy-key</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>Mac 下用 Latex 写简历</title>
     <url>/2019/04/11/latex-write-resume/</url>
     <content><![CDATA[<!-- # Mac下用Latex写简历 -->
@@ -52,29 +75,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo Blog 【2020】</title>
-    <url>/2020/12/16/blog-2020-update/</url>
-    <content><![CDATA[<h1 id="Hexo-Blog-【2020】"><a href="#Hexo-Blog-【2020】" class="headerlink" title="Hexo Blog 【2020】"></a>Hexo Blog 【2020】</h1><p>目标：又到了年尾了，折腾下 blog。升级下版本，切换部署方式到 Github 的 Actions！</p>
-<h2 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级 hexo</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">## 手动 ，a全选</span></span><br><span class="line">yarn upgrade-interactive --latest</span><br><span class="line"><span class="comment"># 查看版本，会提示hexo config的错误，简单修复</span></span><br><span class="line">npx hexo version</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="升级主题theme-next"><a href="#升级主题theme-next" class="headerlink" title="升级主题theme-next"></a>升级主题 theme-next</h2><p><a href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a><br>8.0 最新（hexo 5.0 以上）</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">yarn add hexo-theme-next</span><br><span class="line"><span class="comment"># 复制配置模板</span></span><br><span class="line"><span class="built_in">cp</span> node_modules/hexo-theme-next/_config.yml _config.next.yml</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 配置 _config.next.yml -&gt; pangu:true</span></span><br><span class="line">yarn add  hexo-pangu</span><br><span class="line"><span class="comment"># 配置 _config.next.yml</span></span><br><span class="line"><span class="comment"># localsearch:</span></span><br><span class="line"><span class="comment">#     enable:true</span></span><br><span class="line">yarn add hexo-generator-searchdb</span><br><span class="line"><span class="comment"># hexo 配置</span></span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">      content: <span class="literal">true</span></span><br><span class="line">        format: html</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="部署方式"><a href="#部署方式" class="headerlink" title="部署方式"></a>部署方式</h1><p>之前的部署是由 Travis CI 来做，现在迁移到 Github 的 Action。全由 github 的技术栈来生成。</p>
-<p>直接打开看：<a href="https://github.com/fireyang/hexoBlog/blob/deploy/.github/workflows/deploy.yml">deploy.yml</a></p>
-<p>ACTION_DEPLOY_KEY 的生成，直接看：参考（4）</p>
-<p>参考</p>
-<ol>
-<li><a href="https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/">利用 Github Actions 自动部署 Hexo 博客</a></li>
-<li><a href="https://hexo.io/docs/github-pages">https://hexo.io/docs/github-pages</a></li>
-<li><a href="https://github.com/peaceiris/actions-gh-pages">https://github.com/peaceiris/actions-gh-pages</a></li>
-<li><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">https://github.com/peaceiris/actions-gh-pages#️-create-ssh-deploy-key</a></li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
     <title>Mac OS 下 rust 交叉编译 armv7</title>
     <url>/2019/03/20/mac-rust-cross-compile-armv7/</url>
     <content><![CDATA[<h1 id="Mac-OS下rust交叉编译armv7"><a href="#Mac-OS下rust交叉编译armv7" class="headerlink" title="Mac OS下rust交叉编译armv7"></a>Mac OS 下 rust 交叉编译 armv7</h1><p>参考来源：<a href="https://sigmaris.info/blog/2019/02/cross-compiling-rust-on-mac-os-for-an-arm-linux-router/">Cross compiling Rust on Mac OS for an ARM Linux router</a></p>
@@ -93,20 +93,6 @@
 ]]></content>
       <tags>
         <tag>mac, rust, armv7, cross-compile</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VScode 在 mac 下 vim 的长按问题</title>
-    <url>/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/</url>
-    <content><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>mac 下的 VScode vim 插件，常按 hjkl 键无法持续移动光标</p>
-<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>终端下执行命令：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></tbody></table></figure>
-<p>复原:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></tbody></table></figure>
-
-]]></content>
-      <tags>
-        <tag>vim, mac</tag>
       </tags>
   </entry>
   <entry>
@@ -132,6 +118,20 @@
       </tags>
   </entry>
   <entry>
+    <title>VScode 在 mac 下 vim 的长按问题</title>
+    <url>/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/</url>
+    <content><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>mac 下的 VScode vim 插件，常按 hjkl 键无法持续移动光标</p>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>终端下执行命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></tbody></table></figure>
+<p>复原:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></tbody></table></figure>
+
+]]></content>
+      <tags>
+        <tag>vim, mac</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>max 下 asdf 安装 erlang</title>
     <url>/2019/01/21/2018/2019-01-21-asdf-install-erlang/</url>
     <content><![CDATA[<h1 id="asdf安装erlang"><a href="#asdf安装erlang" class="headerlink" title="asdf安装erlang"></a>asdf 安装 erlang</h1><h2 id="安装asdf"><a href="#安装asdf" class="headerlink" title="安装asdf"></a>安装 asdf</h2><p>参考地址: <a href="https://github.com/asdf-vm/asdf">https://github.com/asdf-vm/asdf</a></p>
@@ -146,6 +146,19 @@
       </categories>
       <tags>
         <tag>erlang asdf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更换 brew 源</title>
+    <url>/2019/01/21/2018/2019-01-21-brew-change-source/</url>
+    <content><![CDATA[<h1 id="更换brew国内镜像"><a href="#更换brew国内镜像" class="headerlink" title="更换brew国内镜像"></a>更换 brew 国内镜像</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cd "$(brew --repo)"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line"></span><br><span class="line">cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line"></span><br><span class="line">brew update</span><br></pre></td></tr></tbody></table></figure>
+
+]]></content>
+      <categories>
+        <category>brew</category>
+      </categories>
+      <tags>
+        <tag>brew</tag>
       </tags>
   </entry>
   <entry>
@@ -172,19 +185,6 @@
 <li><a href="https://github.com/lukeed/awesome-cloudflare-workers">https://github.com/lukeed/awesome-cloudflare-workers</a></li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>更换 brew 源</title>
-    <url>/2019/01/21/2018/2019-01-21-brew-change-source/</url>
-    <content><![CDATA[<h1 id="更换brew国内镜像"><a href="#更换brew国内镜像" class="headerlink" title="更换brew国内镜像"></a>更换 brew 国内镜像</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cd "$(brew --repo)"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line"></span><br><span class="line">cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</span><br><span class="line">git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line"></span><br><span class="line">brew update</span><br></pre></td></tr></tbody></table></figure>
-
-]]></content>
-      <categories>
-        <category>brew</category>
-      </categories>
-      <tags>
-        <tag>brew</tag>
-      </tags>
   </entry>
   <entry>
     <title>hackmd 第一篇文章</title>
@@ -345,26 +345,6 @@ TextScript.removeBlurIn(m, delay);<br>
       </categories>
   </entry>
   <entry>
-    <title>actionscript 3.0 cookbook</title>
-    <url>/2006/11/02/old_blog/2006-11-02-actionscript+3/</url>
-    <content><![CDATA[<p></p><p>个人很喜欢 OReilly 的书，也放出来共享下！<br><br><img height="240" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/17_113615_actionscript_3_cookbook.jpg" width="240" border="0"><br><span style="COLOR: maroon"><a href="http://www.cnblogs.com/Files/FireYang/ActionScript_3.rar"><span style="COLOR: maroon">OReilly.ActionScript.3.0.Cookbook.Oct.2006.chm<br></span></a><a href="http://www.cnblogs.com/Files/FireYang/AS3CBLibrary.zip">源代码下载</a></span></p>
-<img src="http://www.cnblogs.com/FireYang/aggbug/569606.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-23 11:15 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/23/569606.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在.net 中，把 flash 嵌入到 c# 应用程序中！</title>
-    <url>/2006/10/02/old_blog/2006-10-02-%E5%9C%A8/</url>
-    <content><![CDATA[<p>原文链接:<a href="http://www.adobe.com/devnet/flash/articles/stock_history03.html" target="_blank">http://www.adobe.com/devnet/flash/articles/stock_history03.html<br></a>翻译 ing
-<img src="http://www.cnblogs.com/FireYang/aggbug/534541.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-10-20 11:15 <a href="http://www.cnblogs.com/FireYang/archive/2006/10/20/534541.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>flex 制作 swc 文件</title>
     <url>/2006/10/02/old_blog/2006-10-02-flex%E5%88%B6%E4%BD%9Cswc%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<p>用 compc 编译器直接编译<br>命令：<br>compc -source-path&nbsp;（源文件路径，不能省略） -output&nbsp;（swc 文件路径和名称） -include-classes （类名称）<br>如：compc -source-path . -output CustomPreloaderSWC.swc -include-classes preload.CustomPreloader <br><br>如何导入简单声明文件<br>如：<br>
@@ -386,10 +366,20 @@ TextScript.removeBlurIn(m, delay);<br>
       </categories>
   </entry>
   <entry>
-    <title>北京记事：老刘的珍贵礼物</title>
-    <url>/2006/12/02/old_blog/2006-12-02-%E5%8C%97%E4%BA%AC%E8%AE%B0%E4%BA%8B%EF%BC%9A%E8%80%81%E5%88%98%E7%9A%84%E7%8F%8D%E8%B4%B5%E7%A4%BC%E7%89%A9/</url>
-    <content><![CDATA[<p>到了北京几天后，比完了 ITAT 就去见老刘，老刘是我在计算机群里认识的朋友，由于是初次见面，彼此都不认识，只是通过手机中简单的约定找到了彼此，第一眼看到老刘，有一种亲切感，他长的很 “可爱”（希望他别 K 我）。而最让我感动的是他的礼物，现在贴上来铭记一下：<br><img height="661" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/flashcommserver.jpg" width="504" border="0">
-<img src="http://www.cnblogs.com/FireYang/aggbug/603466.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-25 22:07 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/25/603466.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+    <title>在.net 中，把 flash 嵌入到 c# 应用程序中！</title>
+    <url>/2006/10/02/old_blog/2006-10-02-%E5%9C%A8/</url>
+    <content><![CDATA[<p>原文链接:<a href="http://www.adobe.com/devnet/flash/articles/stock_history03.html" target="_blank">http://www.adobe.com/devnet/flash/articles/stock_history03.html<br></a>翻译 ing
+<img src="http://www.cnblogs.com/FireYang/aggbug/534541.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-10-20 11:15 <a href="http://www.cnblogs.com/FireYang/archive/2006/10/20/534541.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>actionscript 3.0 cookbook</title>
+    <url>/2006/11/02/old_blog/2006-11-02-actionscript+3/</url>
+    <content><![CDATA[<p></p><p>个人很喜欢 OReilly 的书，也放出来共享下！<br><br><img height="240" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/17_113615_actionscript_3_cookbook.jpg" width="240" border="0"><br><span style="COLOR: maroon"><a href="http://www.cnblogs.com/Files/FireYang/ActionScript_3.rar"><span style="COLOR: maroon">OReilly.ActionScript.3.0.Cookbook.Oct.2006.chm<br></span></a><a href="http://www.cnblogs.com/Files/FireYang/AS3CBLibrary.zip">源代码下载</a></span></p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/569606.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-23 11:15 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/23/569606.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -402,6 +392,26 @@ TextScript.removeBlurIn(m, delay);<br>
 </p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">&lt;?</span><span style="COLOR: #000000">xml&nbsp;version</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">1.0</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;encoding</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">utf-8</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Application&nbsp;xmlns:mx</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">http://www.adobe.com/2006/mxml</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;layout</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">vertical</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">initApp()</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Script</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;!</span><span style="COLOR: #000000">[CDATA[<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;On&nbsp;startup</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;initApp():</span><span style="COLOR: #0000ff">void</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Set&nbsp;filter&nbsp;function<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Be&nbsp;careful&nbsp;to&nbsp;set&nbsp;filterFunction<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;only&nbsp;after&nbsp;ArrayCollection&nbsp;has&nbsp;been<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;populated.</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myData.filterFunction</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">processFilter;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;Filter&nbsp;function</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;function&nbsp;processFilter(item:Object):Boolean<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;result:Boolean</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">false</span><span style="COLOR: #000000">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #008000">//</span><span style="COLOR: #008000">&nbsp;If&nbsp;no&nbsp;filter&nbsp;text,&nbsp;or&nbsp;a&nbsp;match,&nbsp;then&nbsp;true</span><span style="COLOR: #008000"><br></span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(</span><span style="COLOR: #000000">!</span><span style="COLOR: #000000">item.name.length<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">||</span><span style="COLOR: #000000">&nbsp;item.name.toUpperCase().indexOf(txtFilter.text.toUpperCase())&nbsp;</span><span style="COLOR: #000000">&gt;=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">0</span><span style="COLOR: #000000">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">true</span><span style="COLOR: #000000">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;result;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>]]</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:Script</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;!--</span><span style="COLOR: #000000">&nbsp;Data&nbsp;(use&nbsp;ArrayCollection)&nbsp;</span><span style="COLOR: #000000">--&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:ArrayCollection&nbsp;id</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">myData</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:source</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Ben&nbsp;Forta</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Oak&nbsp;Park,&nbsp;MI</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(248)555-5555</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Jane&nbsp;Doe</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">New&nbsp;York,&nbsp;NY</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(212)555-1234</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Jim&nbsp;Jones</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Atlanta,&nbsp;GA</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(414)555-1212</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Roberta&nbsp;Roberts</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Chicago,&nbsp;IL</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(312)555-4321</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Object&nbsp;name</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Steve&nbsp;Stevens</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Boston,&nbsp;MA</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">(617)555-5656</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:source</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:ArrayCollection</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;!--</span><span style="COLOR: #000000">&nbsp;UI&nbsp;</span><span style="COLOR: #000000">--&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:HBox&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:Label&nbsp;text</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Filter:</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:TextInput&nbsp;id</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">txtFilter</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;change</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">myData.refresh()</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:HBox</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGrid&nbsp;dataProvider</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">{myData}</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;height</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">100%</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:columns</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Name</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">name</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Location</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">location</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;</span><span style="COLOR: #000000">mx:DataGridColumn&nbsp;headerText</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Phone</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataField</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">phone</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:columns</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:DataGrid</span><span style="COLOR: #000000">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #000000">&lt;/</span><span style="COLOR: #000000">mx:Application</span><span style="COLOR: #000000">&gt;</span></div>
 <p><br>其中主要的是 ArrayCollection 的 filterFunction 属性，他的使用方法如下:<br>ArrayCollection 的 filterFunction 属性是继承自 ListCollectionView 的，还有其他类具有这个功能，以下是一个继承关系图，详细的可以看 flex 的帮助文件：<br><img height="132" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/arraycolection.JPG" width="499" border="0"><br>filterFunction 属性的值是一个函数 (Function)：<br>参数：Object 类型的一个值，也可以不带参数；<br>返回值：Boolean 类型的值，如果返回值为 True 就把这个 Object 放到里面，反之亦然。<br>其函数格式事例如下：<br>f(item:Object):Boolean<br>在函数里面进行处理，以上的例子就是如此：<br>&nbsp;public function processFilter(item:Object):Boolean<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var result:Boolean=false;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&nbsp;查看文本框里的字符串长度或字符串的匹配（大小写都可以），然后返回结果。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!item.name.length || item.name.toUpperCase().indexOf(txtFilter.text.toUpperCase()) &gt;= 0)<br>&nbsp;&nbsp;&nbsp; &nbsp;result=true;<br>&nbsp;&nbsp;&nbsp; &nbsp;return result;<br>&nbsp;}<br><span style="COLOR: red">注意：filterFunction 函数只有在对象建立的时候和调用 reflash () 的时候执行的，所以一定要在显示之前调用下 reflash ()，否则显示就不正常了，切记！切记！</span><br></p>
 <img src="http://www.cnblogs.com/FireYang/aggbug/594048.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-16 10:43 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/16/594048.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>北京记事：老刘的珍贵礼物</title>
+    <url>/2006/12/02/old_blog/2006-12-02-%E5%8C%97%E4%BA%AC%E8%AE%B0%E4%BA%8B%EF%BC%9A%E8%80%81%E5%88%98%E7%9A%84%E7%8F%8D%E8%B4%B5%E7%A4%BC%E7%89%A9/</url>
+    <content><![CDATA[<p>到了北京几天后，比完了 ITAT 就去见老刘，老刘是我在计算机群里认识的朋友，由于是初次见面，彼此都不认识，只是通过手机中简单的约定找到了彼此，第一眼看到老刘，有一种亲切感，他长的很 “可爱”（希望他别 K 我）。而最让我感动的是他的礼物，现在贴上来铭记一下：<br><img height="661" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/flashcommserver.jpg" width="504" border="0">
+<img src="http://www.cnblogs.com/FireYang/aggbug/603466.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-25 22:07 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/25/603466.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Advanced ActionScript 3 with Design Patterns</title>
+    <url>/2006/12/03/old_blog/2006-12-03-Advanced+ActionScript+3+with+Design+Patterns+/</url>
+    <content><![CDATA[<p>又得到一本新的 ActionScript 3.0 的电子书，贴上来共享一下<br><a href="http://www.cnblogs.com/Files/FireYang/Adobe.Press.Advanced.ActionScript.3.with.Design.Patterns.Nov.2006.rar" target="_blank">Advanced ActionScript 3 with Design Patterns </a><br><img height="500" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/as3p.jpg" width="405" border="0">
+<img src="http://www.cnblogs.com/FireYang/aggbug/608063.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-30 17:25 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/30/608063.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -480,16 +490,6 @@ TextScript.removeBlurIn(m, delay);<br>
       </categories>
   </entry>
   <entry>
-    <title>Advanced ActionScript 3 with Design Patterns</title>
-    <url>/2006/12/03/old_blog/2006-12-03-Advanced+ActionScript+3+with+Design+Patterns+/</url>
-    <content><![CDATA[<p>又得到一本新的 ActionScript 3.0 的电子书，贴上来共享一下<br><a href="http://www.cnblogs.com/Files/FireYang/Adobe.Press.Advanced.ActionScript.3.with.Design.Patterns.Nov.2006.rar" target="_blank">Advanced ActionScript 3 with Design Patterns </a><br><img height="500" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/as3p.jpg" width="405" border="0">
-<img src="http://www.cnblogs.com/FireYang/aggbug/608063.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-30 17:25 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/30/608063.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>能移动的 RichTextEdit</title>
     <url>/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/</url>
     <content><![CDATA[<p></p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">="*"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="100%"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;"none";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.*;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rte"</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">="5"</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">="floatControlBar()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rteControl"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="325"</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">="ToolBar"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
@@ -550,6 +550,24 @@ TextScript.removeBlurIn(m, delay);<br>
 ]]></content>
   </entry>
   <entry>
+    <title>Flex 的全局变量 (原创翻译)</title>
+    <url>/2007/02/01/old_blog/2007-02-01-Flex%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F(%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91)/</url>
+    <content><![CDATA[<p>原文:<br>
+</p><h2 id="post-38"><a href="http://weblogs.macromedia.com/mesh/archives/2007/02/global_variable.html" rel="bookmark">Global Variables within Flex Applications</a> </h2>
+<p class="entry">
+</p><h3 class="entry">在 Flex 应用程序中的全局变量</h3>
+<p class="entry">最近在 <a href="http://tech.groups.yahoo.com/group/flexcomponents/"><font color="#002c99">Flex Components</font></a> 的邮件列表里经常有这样的一些提问：如果在 Flex 应用程序中设置全局变量？由于它的经常出现，所以在我的 blog 上（当然是指原文的作者）贴出答案。<br>其实非常简单，只用在你的主应用程序类里（mx:Application ）定义一个公有（public）的变量就可以了，如下：</p>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;var&nbsp;foo:String&nbsp;=&nbsp;"bar";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+你能在应用程序的任何地方访问到这个变量，像这样：<br>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">Application.application.foo</span></div>
+如果有需要，你也可以设置一个绑定变量。（添加一个bindable标签）<br>欢迎在回复里提出问题或意见。（无论是原文还是我的blog）
+<img src="http://www.cnblogs.com/FireYang/aggbug/646722.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-02-10 10:30 <a href="http://www.cnblogs.com/FireYang/archive/2007/02/10/646722.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>51ditu 的地图译码方式</title>
     <url>/2007/08/02/old_blog/2007-08-02-51ditu%E7%9A%84%E5%9C%B0%E5%9B%BE%E8%AF%91%E7%A0%81%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<p></p><div class="text">
@@ -605,24 +623,6 @@ NTU 坐标:'+poi.point);<br>
     <li>配置文件属性</li>
 </ul>
 <p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Flex 的全局变量 (原创翻译)</title>
-    <url>/2007/02/01/old_blog/2007-02-01-Flex%E7%9A%84%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F(%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91)/</url>
-    <content><![CDATA[<p>原文:<br>
-</p><h2 id="post-38"><a href="http://weblogs.macromedia.com/mesh/archives/2007/02/global_variable.html" rel="bookmark">Global Variables within Flex Applications</a> </h2>
-<p class="entry">
-</p><h3 class="entry">在 Flex 应用程序中的全局变量</h3>
-<p class="entry">最近在 <a href="http://tech.groups.yahoo.com/group/flexcomponents/"><font color="#002c99">Flex Components</font></a> 的邮件列表里经常有这样的一些提问：如果在 Flex 应用程序中设置全局变量？由于它的经常出现，所以在我的 blog 上（当然是指原文的作者）贴出答案。<br>其实非常简单，只用在你的主应用程序类里（mx:Application ）定义一个公有（public）的变量就可以了，如下：</p>
-<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;var&nbsp;foo:String&nbsp;=&nbsp;"bar";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
-你能在应用程序的任何地方访问到这个变量，像这样：<br>
-<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">Application.application.foo</span></div>
-如果有需要，你也可以设置一个绑定变量。（添加一个bindable标签）<br>欢迎在回复里提出问题或意见。（无论是原文还是我的blog）
-<img src="http://www.cnblogs.com/FireYang/aggbug/646722.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-02-10 10:30 <a href="http://www.cnblogs.com/FireYang/archive/2007/02/10/646722.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -767,6 +767,28 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
       </categories>
   </entry>
   <entry>
+    <title>actionscript 代码练习作品</title>
+    <url>/2007/08/02/old_blog/2007-08-02-actionscript%E4%BB%A3%E7%A0%81%E7%BB%83%E4%B9%A0%E4%BD%9C%E5%93%81/</url>
+    <content><![CDATA[<p></p><p dir="ltr" style="MARGIN-RIGHT: 0px">开始联系 actiongscript，发现自己写代码的熟练度太低了，是该好好练练，贴起来以提醒自己是一名程序员，是一名 flash 的 fans.</p>
+<ol>
+    <li>跟随： </li>
+    <ul>
+        <li>代码：<br>
+        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #008080">&nbsp;1</span>&nbsp;<span style="COLOR: #000000">stop();<br></span><span style="COLOR: #008080">&nbsp;2</span>&nbsp;<span style="COLOR: #000000">i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;3</span>&nbsp;<span style="COLOR: #000000">xStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;4</span>&nbsp;<span style="COLOR: #000000">yStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;5</span>&nbsp;<span style="COLOR: #000000">xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;6</span>&nbsp;<span style="COLOR: #000000">yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;7</span>&nbsp;<span style="COLOR: #000000">mc.lineStyle(</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">,&nbsp;ox000000,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">&nbsp;8</span>&nbsp;<span style="COLOR: #000000">_root.onEnterFrame&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;function()&nbsp;{<br></span><span style="COLOR: #008080">&nbsp;9</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;c&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">mc</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i);<br></span><span style="COLOR: #008080">10</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineStyle(1</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0xff0000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">11</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">12</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_xmouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">xStart)</span><span style="COLOR: #000000">*</span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">13</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_ymouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">yStart)</span><span style="COLOR: #000000">*</span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">14</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineTo(xStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;xd,&nbsp;yStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;yd);<br></span><span style="COLOR: #008080">15</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">16</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">17</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">18</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;line&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">linew</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;i</span><span style="COLOR: #000000">++</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">19</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineStyle(0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0x000000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">20</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">20</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">21</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineTo(_xmouse,&nbsp;_ymouse);<br></span><span style="COLOR: #008080">22</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">23</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">24</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">25</span>&nbsp;<span style="COLOR: #000000">};<br></span><span style="COLOR: #008080">26</span>&nbsp;<span style="COLOR: #000000"></span></div>
+        </li><li>demo<br>
+        <object style="WIDTH: 534px; HEIGHT: 389px" height="389" width="534" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+                                                                                                                                                                                                                <param name="Movie" value="/images/cnblogs_com/fireyang/lineflow.swf"> <param name="Quality" value="high"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/lineflow.swf" width="200" height="200" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+        </object></li>
+    </ul>
+</ol>
+<p><br></p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/579395.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-01 21:17 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/01/579395.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>ASP.NET 中的标签映射（Tag mapping ）（译）</title>
     <url>/2007/08/02/old_blog/2007-08-02-aspnet%E4%B8%AD%E7%9A%84%E6%A0%87%E7%AD%BE%E6%98%A0%E5%B0%84%EF%BC%88tagmapping%EF%BC%89%EF%BC%88%E8%AF%91%EF%BC%89/</url>
     <content><![CDATA[<p> 译自：<a href="http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx">http://blog.madskristensen.dk/post/Tag-mapping-in-ASPNET.aspx</a></p>
@@ -808,41 +830,6 @@ set<br>
       </tags>
   </entry>
   <entry>
-    <title>actionscript 代码练习作品</title>
-    <url>/2007/08/02/old_blog/2007-08-02-actionscript%E4%BB%A3%E7%A0%81%E7%BB%83%E4%B9%A0%E4%BD%9C%E5%93%81/</url>
-    <content><![CDATA[<p></p><p dir="ltr" style="MARGIN-RIGHT: 0px">开始联系 actiongscript，发现自己写代码的熟练度太低了，是该好好练练，贴起来以提醒自己是一名程序员，是一名 flash 的 fans.</p>
-<ol>
-    <li>跟随： </li>
-    <ul>
-        <li>代码：<br>
-        <div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #008080">&nbsp;1</span>&nbsp;<span style="COLOR: #000000">stop();<br></span><span style="COLOR: #008080">&nbsp;2</span>&nbsp;<span style="COLOR: #000000">i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;3</span>&nbsp;<span style="COLOR: #000000">xStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;4</span>&nbsp;<span style="COLOR: #000000">yStart&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;5</span>&nbsp;<span style="COLOR: #000000">xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;6</span>&nbsp;<span style="COLOR: #000000">yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">2</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">&nbsp;7</span>&nbsp;<span style="COLOR: #000000">mc.lineStyle(</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">,&nbsp;ox000000,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">&nbsp;8</span>&nbsp;<span style="COLOR: #000000">_root.onEnterFrame&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;function()&nbsp;{<br></span><span style="COLOR: #008080">&nbsp;9</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;c&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">mc</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i);<br></span><span style="COLOR: #008080">10</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineStyle(1</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0xff0000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">11</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">12</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;xd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_xmouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">xStart)</span><span style="COLOR: #000000">*</span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">13</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;yd&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;(_ymouse</span><span style="COLOR: #000000">-</span><span style="COLOR: #000000">yStart)</span><span style="COLOR: #000000">*</span><span style="COLOR: #000000">0.05</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">14</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;c.lineTo(xStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;xd,&nbsp;yStart&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;yd);<br></span><span style="COLOR: #008080">15</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">16</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">17</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">18</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;line&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;_root.createEmptyMovieClip(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">linew</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">i,&nbsp;i</span><span style="COLOR: #000000">++</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">19</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineStyle(0</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">0x000000</span><span style="COLOR: #000000">,&nbsp;</span><span style="COLOR: #000000">20</span><span style="COLOR: #000000">);<br></span><span style="COLOR: #008080">20</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.moveTo(xStart,&nbsp;yStart);<br></span><span style="COLOR: #008080">21</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;line.lineTo(_xmouse,&nbsp;_ymouse);<br></span><span style="COLOR: #008080">22</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">if</span><span style="COLOR: #000000">&nbsp;(i&nbsp;</span><span style="COLOR: #000000">==</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">100</span><span style="COLOR: #000000">)&nbsp;{<br></span><span style="COLOR: #008080">23</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">;<br></span><span style="COLOR: #008080">24</span>&nbsp;<span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;}<br></span><span style="COLOR: #008080">25</span>&nbsp;<span style="COLOR: #000000">};<br></span><span style="COLOR: #008080">26</span>&nbsp;<span style="COLOR: #000000"></span></div>
-        </li><li>demo<br>
-        <object style="WIDTH: 534px; HEIGHT: 389px" height="389" width="534" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                                                                                                                                                                                                                <param name="Movie" value="/images/cnblogs_com/fireyang/lineflow.swf"> <param name="Quality" value="high"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/lineflow.swf" width="200" height="200" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-        </object></li>
-    </ul>
-</ol>
-<p><br></p>
-<img src="http://www.cnblogs.com/FireYang/aggbug/579395.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-12-01 21:17 <a href="http://www.cnblogs.com/FireYang/archive/2006/12/01/579395.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>c# 编写 flash 系统，自动生成！</title>
-    <url>/2007/08/02/old_blog/2007-08-02-c#%E7%BC%96%E5%86%99flash%E7%B3%BB%E7%BB%9F%EF%BC%8C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%81/</url>
-    <content><![CDATA[<p>看到一个可以像在.net 中做 web app 一样，做 flash！<br>有点不足就是没有可视化的组件，在开发效率上有点地下<br>网址：<a href="http://www.globfx.com/">http://www.globfx.com/</a><br>图标看上去就不错，呵呵！<img height="91" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/logo_globfx.jpg" width="200" border="0"><br>它可以支持 windows 下的 vs2003 和 vs2005，也有独立的 c# SDK framework, 有比较多的 samples 和帮助文档。 <br>贴一个 demo：<br>
-<object height="500" width="600" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-<param name="Movie" value="/images/cnblogs_com/fireyang/SlideShow.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/SlideShow.swf" width="600" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</object>
-<img src="http://www.cnblogs.com/FireYang/aggbug/543657.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-10-29 17:09 <a href="http://www.cnblogs.com/FireYang/archive/2006/10/29/543657.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>BlogEngine.NET 的优势</title>
     <url>/2007/08/02/old_blog/2007-08-02-blogenginenet%E7%9A%84%E4%BC%98%E5%8A%BF/</url>
     <content><![CDATA[<p> 我的 Blog 选用 BlogEngine.NET 作为我的 Blog，有以下几点优势:
@@ -866,6 +853,19 @@ set<br>
         <tag>.Net</tag>
         <tag>BlogEngine</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>c# 编写 flash 系统，自动生成！</title>
+    <url>/2007/08/02/old_blog/2007-08-02-c#%E7%BC%96%E5%86%99flash%E7%B3%BB%E7%BB%9F%EF%BC%8C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%81/</url>
+    <content><![CDATA[<p>看到一个可以像在.net 中做 web app 一样，做 flash！<br>有点不足就是没有可视化的组件，在开发效率上有点地下<br>网址：<a href="http://www.globfx.com/">http://www.globfx.com/</a><br>图标看上去就不错，呵呵！<img height="91" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/logo_globfx.jpg" width="200" border="0"><br>它可以支持 windows 下的 vs2003 和 vs2005，也有独立的 c# SDK framework, 有比较多的 samples 和帮助文档。 <br>贴一个 demo：<br>
+<object height="500" width="600" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+<param name="Movie" value="/images/cnblogs_com/fireyang/SlideShow.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/SlideShow.swf" width="600" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object>
+<img src="http://www.cnblogs.com/FireYang/aggbug/543657.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-10-29 17:09 <a href="http://www.cnblogs.com/FireYang/archive/2006/10/29/543657.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
   </entry>
   <entry>
     <title>Cairngorm 的简单结构图</title>
@@ -915,20 +915,6 @@ set<br>
       </tags>
   </entry>
   <entry>
-    <title>flex 与.net WebService 的通信（原创）</title>
-    <url>/2007/08/02/old_blog/2007-08-02-flex%E4%B8%8E/</url>
-    <content><![CDATA[<p>flex 其实就是把要发送的数据通过 soap 的形式发送给服务器，至于你如何处理这些数据，不同的语言有不同的方法，曾经用过 java 的 aixs，比较陌生，在这里我用.net 的 web service 来处理，其实原理都是一样的，只是手段不同而已，随便说一下 flex 好像不能对 soap 的头信息进行修改，如果要对 soap 进行了解可以查看相关信息。<br>下面做一个简单的 demo，a+b=c 这样的形式，把 a 和 b 的数据发送到 web service 上，然后再回传到 flex，显示出来。<br>首先是 flex 的代码如下：（可以用项目来做，也可以单个文件通过 mxmlc 来编译）<br>
-</p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:WebService&nbsp;</span><span style="COLOR: #ff0000">wsdl</span><span style="COLOR: #0000ff">="http://localhost/flexService/Service1.asmx?wsdl"</span><span style="COLOR: #ff0000">&nbsp;showBusyCursor</span><span style="COLOR: #0000ff">="true"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="ws"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:operation&nbsp;</span><span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="HelloWorld"</span><span style="COLOR: #ff0000">&nbsp;</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:request&nbsp;</span><span style="COLOR: #ff0000">xmlns</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">a</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">{a.text}</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">a</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">b</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">{b.text}</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">b</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:request</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:operation</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:WebService</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="110"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="a"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="170"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="b"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="239"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="c"</span><span style="COLOR: #ff0000">&nbsp;text</span><span style="COLOR: #0000ff">="{ws.HelloWorld.lastResult}"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Button&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="200"</span><span style="COLOR: #ff0000">&nbsp;label</span><span style="COLOR: #0000ff">="="</span><span style="COLOR: #ff0000">&nbsp;fontSize</span><span style="COLOR: #0000ff">="12"</span><span style="COLOR: #ff0000">&nbsp;click</span><span style="COLOR: #0000ff">="ws.HelloWorld.send()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Label&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="140"</span><span style="COLOR: #ff0000">&nbsp;text</span><span style="COLOR: #0000ff">="+"</span><span style="COLOR: #ff0000">&nbsp;fontSize</span><span style="COLOR: #0000ff">="12"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="25"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="22"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
-再是net上的代码：（新建web service项目，把helloWorld改过来，偷懒-_-！）<br>
-<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[WebMethod]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">int</span><span style="COLOR: #000000">&nbsp;HelloWorld(</span><span style="COLOR: #0000ff">int</span><span style="COLOR: #000000">&nbsp;a,</span><span style="COLOR: #0000ff">int</span><span style="COLOR: #000000">&nbsp;b)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;a</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">b;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></div>
-因为在flex里运用了绑定（binding）技术，不需要像在flash里考虑他是否已经把数据load下来，它在得到数据后会自动更新到组件上，减少了程序员的工作量。<br>再一点是，web service可以返回一个类，它可以和flex里的类相匹配，很方便整体数据的传递。<br>接受数据的格式有多种，可以看我以前的文章，<a class="postTitle2" id="viewpost1_TitleUrl" href="http://www.cnblogs.com/FireYang/archive/2006/07/23/457549.html"><font color="#56b6e9">Flex 中获取 web service 返回值的多种方法</font></a> 
-<img src="http://www.cnblogs.com/FireYang/aggbug/548215.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-02 18:11 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/02/548215.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Flex 中嵌入字体</title>
     <url>/2007/08/02/old_blog/2007-08-02-flex%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%AD%97%E4%BD%93/</url>
     <content><![CDATA[<p>使用以下的形式就可以将你本地电脑上的字体嵌入到 Flex 中
@@ -957,6 +943,20 @@ font-family: ArialEmbedded;<br>
         <tag>flex</tag>
         <tag>font</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>flex 与.net WebService 的通信（原创）</title>
+    <url>/2007/08/02/old_blog/2007-08-02-flex%E4%B8%8E/</url>
+    <content><![CDATA[<p>flex 其实就是把要发送的数据通过 soap 的形式发送给服务器，至于你如何处理这些数据，不同的语言有不同的方法，曾经用过 java 的 aixs，比较陌生，在这里我用.net 的 web service 来处理，其实原理都是一样的，只是手段不同而已，随便说一下 flex 好像不能对 soap 的头信息进行修改，如果要对 soap 进行了解可以查看相关信息。<br>下面做一个简单的 demo，a+b=c 这样的形式，把 a 和 b 的数据发送到 web service 上，然后再回传到 flex，显示出来。<br>首先是 flex 的代码如下：（可以用项目来做，也可以单个文件通过 mxmlc 来编译）<br>
+</p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:WebService&nbsp;</span><span style="COLOR: #ff0000">wsdl</span><span style="COLOR: #0000ff">="http://localhost/flexService/Service1.asmx?wsdl"</span><span style="COLOR: #ff0000">&nbsp;showBusyCursor</span><span style="COLOR: #0000ff">="true"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="ws"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:operation&nbsp;</span><span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="HelloWorld"</span><span style="COLOR: #ff0000">&nbsp;</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:request&nbsp;</span><span style="COLOR: #ff0000">xmlns</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">a</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">{a.text}</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">a</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">b</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">{b.text}</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">b</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:request</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:operation</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:WebService</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="110"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="a"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="170"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="b"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="239"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="c"</span><span style="COLOR: #ff0000">&nbsp;text</span><span style="COLOR: #0000ff">="{ws.HelloWorld.lastResult}"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Button&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="200"</span><span style="COLOR: #ff0000">&nbsp;label</span><span style="COLOR: #0000ff">="="</span><span style="COLOR: #ff0000">&nbsp;fontSize</span><span style="COLOR: #0000ff">="12"</span><span style="COLOR: #ff0000">&nbsp;click</span><span style="COLOR: #0000ff">="ws.HelloWorld.send()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Label&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="72"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="140"</span><span style="COLOR: #ff0000">&nbsp;text</span><span style="COLOR: #0000ff">="+"</span><span style="COLOR: #ff0000">&nbsp;fontSize</span><span style="COLOR: #0000ff">="12"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="25"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="22"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+再是net上的代码：（新建web service项目，把helloWorld改过来，偷懒-_-！）<br>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[WebMethod]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">int</span><span style="COLOR: #000000">&nbsp;HelloWorld(</span><span style="COLOR: #0000ff">int</span><span style="COLOR: #000000">&nbsp;a,</span><span style="COLOR: #0000ff">int</span><span style="COLOR: #000000">&nbsp;b)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;a</span><span style="COLOR: #000000">+</span><span style="COLOR: #000000">b;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></div>
+因为在flex里运用了绑定（binding）技术，不需要像在flash里考虑他是否已经把数据load下来，它在得到数据后会自动更新到组件上，减少了程序员的工作量。<br>再一点是，web service可以返回一个类，它可以和flex里的类相匹配，很方便整体数据的传递。<br>接受数据的格式有多种，可以看我以前的文章，<a class="postTitle2" id="viewpost1_TitleUrl" href="http://www.cnblogs.com/FireYang/archive/2006/07/23/457549.html"><font color="#56b6e9">Flex 中获取 web service 返回值的多种方法</font></a> 
+<img src="http://www.cnblogs.com/FireYang/aggbug/548215.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-02 18:11 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/02/548215.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
   </entry>
   <entry>
     <title>google 的自定义搜索</title>
@@ -996,15 +996,6 @@ font-family: ArialEmbedded;<br>
       </tags>
   </entry>
   <entry>
-    <title>vs 2005 配置自带的 sqlexpress</title>
-    <url>/2007/08/02/old_blog/2007-08-02-vs+2005+%E9%85%8D%E7%BD%AE%E8%87%AA%E5%B8%A6%E7%9A%84sqlexpress/</url>
-    <content><![CDATA[<p></p><p>开始使用用 vs 2005 添加数据库的时候服务器名一直使用 localhost 或 127.0.0.1，老是弹出错误提示，error 40 的错误，后来才知道</p> <p>在 sql server&nbsp;2005 添加的服务器名是这样添加的 servernameSQLExpress 或.SQLExpress。再测试链接，提示成功！欢呼下！！！</p><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>papervision3d 正式公测</title>
     <url>/2007/08/02/old_blog/2007-08-02-papervision3d+%E6%AD%A3%E5%BC%8F%E5%85%AC%E6%B5%8B/</url>
     <content><![CDATA[<p></p><p>
@@ -1014,6 +1005,15 @@ font-family: ArialEmbedded;<br>
 在 googleCode 中下载：<a href="http://code.google.com/p/papervision3d/" target="_blank" title="papervision3d下载地址">下载地址</a>
 </p>
 <p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>vs 2005 配置自带的 sqlexpress</title>
+    <url>/2007/08/02/old_blog/2007-08-02-vs+2005+%E9%85%8D%E7%BD%AE%E8%87%AA%E5%B8%A6%E7%9A%84sqlexpress/</url>
+    <content><![CDATA[<p></p><p>开始使用用 vs 2005 添加数据库的时候服务器名一直使用 localhost 或 127.0.0.1，老是弹出错误提示，error 40 的错误，后来才知道</p> <p>在 sql server&nbsp;2005 添加的服务器名是这样添加的 servernameSQLExpress 或.SQLExpress。再测试链接，提示成功！欢呼下！！！</p><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1129,19 +1129,6 @@ font-family: ArialEmbedded;<br>
       </tags>
   </entry>
   <entry>
-    <title>从.net 的 dataset 读到 flex 的 datagrid</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E4%BB%8E/</url>
-    <content><![CDATA[<p>flex 端：<br>
-</p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:WebService&nbsp;</span><span style="COLOR: #ff0000">wsdl</span><span style="COLOR: #0000ff">="http://localhost/flexService/Service1.asmx?wsdl"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="ws1"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:operation&nbsp;</span><span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="sqlcheck"</span><span style="COLOR: #ff0000">&nbsp;result</span><span style="COLOR: #0000ff">="ResultHandler()"</span><span style="COLOR: #ff0000">&nbsp;</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:request</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">sql</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">{sql.text}</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">sql</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:request</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:operation</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:WebService</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.rpc.events.ResultEvent;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bindable]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;var&nbsp;asd:XML;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;ResultHandler():void{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asd&nbsp;=&nbsp;new&nbsp;XML(ws1.sqlcheck.lastResult);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dg_comments.dataProvider&nbsp;=&nbsp;asd.children();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="43"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="82"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="348"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="24"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="sql"</span><span style="COLOR: #ff0000">&nbsp;text</span><span style="COLOR: #0000ff">="select&nbsp;分类，型号，备注 1, 备注 2&nbsp;from&nbsp;products_detail"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Button&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="399"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="84"</span><span style="COLOR: #ff0000">&nbsp;label</span><span style="COLOR: #0000ff">="查询"</span><span style="COLOR: #ff0000">&nbsp;fontSize</span><span style="COLOR: #0000ff">="12"</span><span style="COLOR: #ff0000">&nbsp;click</span><span style="COLOR: #0000ff">="ws1.sqlcheck.send()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGrid&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="27"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="135"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="466"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="152"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="dg_comments"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:columns</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="分类"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="分类"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="型号"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="型号"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="备注 1"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="备注 1"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="备注 2"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="备注 2"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:columns</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:DataGrid</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span></div>
-<br>.net端：<br>
-<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">[WebMethod]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">string</span><span style="COLOR: #000000">&nbsp;sqlcheck(</span><span style="COLOR: #0000ff">string</span><span style="COLOR: #000000">&nbsp;sql)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OleDbConnection&nbsp;connection&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;OleDbConnection();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connection.ConnectionString</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Provider=Microsoft.Jet.OleDb.4.0;Data&nbsp;Source=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connection.ConnectionString&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;Server.MapPath(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">product.mdb</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.Data.OleDb.OleDbDataAdapter&nbsp;tempAdapter&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;OleDbDataAdapter(sql,connection);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataSet&nbsp;dataset&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;DataSet(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">temp</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAdapter.Fill(dataset);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;&nbsp;dataset.GetXml();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></div>
-<img src="http://www.cnblogs.com/FireYang/aggbug/548919.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-03 12:37 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/03/548919.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>关于 flex 皮肤</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E5%85%B3%E4%BA%8Eflex%E7%9A%AE%E8%82%A4/</url>
     <content><![CDATA[<p><a href="http://www.adobe.com/devnet/flex/articles/flex_skins.html">http://www.adobe.com/devnet/flex/articles/flex_skins.html</a>
@@ -1205,6 +1192,19 @@ font-family: ArialEmbedded;<br>
     </li>
 </ol>
 <p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>从.net 的 dataset 读到 flex 的 datagrid</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E4%BB%8E/</url>
+    <content><![CDATA[<p>flex 端：<br>
+</p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;layout</span><span style="COLOR: #0000ff">="absolute"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:WebService&nbsp;</span><span style="COLOR: #ff0000">wsdl</span><span style="COLOR: #0000ff">="http://localhost/flexService/Service1.asmx?wsdl"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="ws1"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:operation&nbsp;</span><span style="COLOR: #ff0000">name</span><span style="COLOR: #0000ff">="sqlcheck"</span><span style="COLOR: #ff0000">&nbsp;result</span><span style="COLOR: #0000ff">="ResultHandler()"</span><span style="COLOR: #ff0000">&nbsp;</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:request</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">sql</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">{sql.text}</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">sql</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:request</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:operation</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:WebService</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.rpc.events.ResultEvent;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bindable]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;var&nbsp;asd:XML;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;ResultHandler():void{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asd&nbsp;=&nbsp;new&nbsp;XML(ws1.sqlcheck.lastResult);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dg_comments.dataProvider&nbsp;=&nbsp;asd.children();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TextInput&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="43"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="82"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="348"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="24"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="sql"</span><span style="COLOR: #ff0000">&nbsp;text</span><span style="COLOR: #0000ff">="select&nbsp;分类，型号，备注 1, 备注 2&nbsp;from&nbsp;products_detail"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Button&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="399"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="84"</span><span style="COLOR: #ff0000">&nbsp;label</span><span style="COLOR: #0000ff">="查询"</span><span style="COLOR: #ff0000">&nbsp;fontSize</span><span style="COLOR: #0000ff">="12"</span><span style="COLOR: #ff0000">&nbsp;click</span><span style="COLOR: #0000ff">="ws1.sqlcheck.send()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGrid&nbsp;</span><span style="COLOR: #ff0000">x</span><span style="COLOR: #0000ff">="27"</span><span style="COLOR: #ff0000">&nbsp;y</span><span style="COLOR: #0000ff">="135"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="466"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="152"</span><span style="COLOR: #ff0000">&nbsp;id</span><span style="COLOR: #0000ff">="dg_comments"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:columns</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="分类"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="分类"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="型号"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="型号"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="备注 1"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="备注 1"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:DataGridColumn&nbsp;</span><span style="COLOR: #ff0000">headerText</span><span style="COLOR: #0000ff">="备注 2"</span><span style="COLOR: #ff0000">&nbsp;dataField</span><span style="COLOR: #0000ff">="备注 2"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:columns</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:DataGrid</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br></span></div>
+<br>.net端：<br>
+<div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #000000">[WebMethod]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">public</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">string</span><span style="COLOR: #000000">&nbsp;sqlcheck(</span><span style="COLOR: #0000ff">string</span><span style="COLOR: #000000">&nbsp;sql)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OleDbConnection&nbsp;connection&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;OleDbConnection();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connection.ConnectionString</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Provider=Microsoft.Jet.OleDb.4.0;Data&nbsp;Source=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connection.ConnectionString&nbsp;</span><span style="COLOR: #000000">+=</span><span style="COLOR: #000000">&nbsp;Server.MapPath(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">product.mdb</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.Data.OleDb.OleDbDataAdapter&nbsp;tempAdapter&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;OleDbDataAdapter(sql,connection);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataSet&nbsp;dataset&nbsp;</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">&nbsp;</span><span style="COLOR: #0000ff">new</span><span style="COLOR: #000000">&nbsp;DataSet(</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">temp</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempAdapter.Fill(dataset);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">return</span><span style="COLOR: #000000">&nbsp;&nbsp;dataset.GetXml();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></div>
+<img src="http://www.cnblogs.com/FireYang/aggbug/548919.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-03 12:37 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/03/548919.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1460,43 +1460,6 @@ PingService.Send();<p></p>
       </categories>
   </entry>
   <entry>
-    <title>若干个.NET 框架</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E8%8B%A5%E5%B9%B2%E4%B8%AAnet%E6%A1%86%E6%9E%B6/</url>
-    <content><![CDATA[<p> Enterprise Library
-<a href="http://www.codeplex.com/entlib">http://www.codeplex.com/entlib</a>
-<a href="http://msdn.microsoft.com/entlib/">http://msdn.microsoft.com/entlib/</a></p>
-
-<p>Castle Windsor
-<a href="http://www.castleproject.org/container/index.html">http://www.castleproject.org/container/index.html</a></p>
-
-<p>StructureMap
-<a href="http://structuremap.sourceforge.net/">http://structuremap.sourceforge.net/</a></p>
-
-<p>Spring.NET
-<a href="http://www.springframework.net/">http://www.springframework.net/</a></p>
-
-<p>Ninject
-<a href="http://kohari.org/projects/ninject/">http://kohari.org/projects/ninject/</a></p>
-
-<p>NHibernate
-<a href="http://www.hibernate.org/343.html">http://www.hibernate.org/343.html</a></p>
-
-<p>log4net
-<a href="http://logging.apache.org/log4net/">http://logging.apache.org/log4net/</a></p>
-
-<p>Quartz.NET<br>
-Enterprise Job Scheduler for .NET Platform
-<a href="http://quartznet.sourceforge.net/">http://quartznet.sourceforge.net/</a></p>
-]]></content>
-      <categories>
-        <category>.Net</category>
-      </categories>
-      <tags>
-        <tag>.Net</tag>
-        <tag>framework</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站无法访问，只能代理</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E7%BD%91%E7%AB%99%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%EF%BC%8C%E5%8F%AA%E8%83%BD%E4%BB%A3%E7%90%86/</url>
     <content><![CDATA[<p>发信人: hijack (孤读一身), 板面: OpenSource<br>
@@ -1588,6 +1551,43 @@ winxp 的 hosts 文件路径为 C:WINDOWSsystem32driversetchosts</li>
       </tags>
   </entry>
   <entry>
+    <title>若干个.NET 框架</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E8%8B%A5%E5%B9%B2%E4%B8%AAnet%E6%A1%86%E6%9E%B6/</url>
+    <content><![CDATA[<p> Enterprise Library
+<a href="http://www.codeplex.com/entlib">http://www.codeplex.com/entlib</a>
+<a href="http://msdn.microsoft.com/entlib/">http://msdn.microsoft.com/entlib/</a></p>
+
+<p>Castle Windsor
+<a href="http://www.castleproject.org/container/index.html">http://www.castleproject.org/container/index.html</a></p>
+
+<p>StructureMap
+<a href="http://structuremap.sourceforge.net/">http://structuremap.sourceforge.net/</a></p>
+
+<p>Spring.NET
+<a href="http://www.springframework.net/">http://www.springframework.net/</a></p>
+
+<p>Ninject
+<a href="http://kohari.org/projects/ninject/">http://kohari.org/projects/ninject/</a></p>
+
+<p>NHibernate
+<a href="http://www.hibernate.org/343.html">http://www.hibernate.org/343.html</a></p>
+
+<p>log4net
+<a href="http://logging.apache.org/log4net/">http://logging.apache.org/log4net/</a></p>
+
+<p>Quartz.NET<br>
+Enterprise Job Scheduler for .NET Platform
+<a href="http://quartznet.sourceforge.net/">http://quartznet.sourceforge.net/</a></p>
+]]></content>
+      <categories>
+        <category>.Net</category>
+      </categories>
+      <tags>
+        <tag>.Net</tag>
+        <tag>framework</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>读 “戒嗔的白粥馆”</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E8%AF%BB+%E2%80%9C%E6%88%92%E5%97%94%E7%9A%84%E7%99%BD%E7%B2%A5%E9%A6%86%E2%80%9D/</url>
     <content><![CDATA[<p></p><p>
@@ -1653,6 +1653,31 @@ QQ 的远程协助，开始用感觉还不错，如果有朋友有什么问题�
       <categories>
         <category>未分类</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Apollo 学习笔记一</title>
+    <url>/2007/09/02/old_blog/2007-09-02-apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</url>
+    <content><![CDATA[<p>首先了解下 apollo 下这个类集 flash.desktop.* 的一些类
+</p><ul>
+    <li>ClipboardManager 主要是作为与操作系统粘贴板互相拷贝的一个通道，在 flex 中只能读取粘贴板，而在 apollo 里可以直接读取。</li>
+    <li>DragManager 主要控制拖拽功能，这个拖拽可不只是在应用程序内部，这个拖拽是在整个桌面的，一大特色吧。</li>
+    <li>TransferableData 我理解为在 apollo 中的传输数据的一个容器，数据的类型可以为：text,url,bitmap,filelist (文件数组)</li>
+    <li> 附属的一些常量类，主要是保存常量信息比如： COPY : String = "copy" ；这样只是为了你写程序的时候避免拼写错误。
+<ul>
+    <li>DragActions：拖拽动作的属性：copy,link,move 和 none</li>
+    <li>DragOptions：拖拽的选项设置，是否允许 copy,link 和移动等</li>
+    <li> TransferableFormats：TransferableData 数据容器的类型</li>
+    <li> TransferableTransferMode：传递的模式，设置传递的是数据的克隆还是引用。</li>
+</ul>
+</li>
+</ul><p></p>
+]]></content>
+      <categories>
+        <category>flex</category>
+      </categories>
+      <tags>
+        <tag>apollo</tag>
+      </tags>
   </entry>
   <entry>
     <title>RAPI</title>
@@ -1734,31 +1759,6 @@ QQ 的远程协助，开始用感觉还不错，如果有朋友有什么问题�
       <categories>
         <category>未分类</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Apollo 学习笔记一</title>
-    <url>/2007/09/02/old_blog/2007-09-02-apollo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/</url>
-    <content><![CDATA[<p>首先了解下 apollo 下这个类集 flash.desktop.* 的一些类
-</p><ul>
-    <li>ClipboardManager 主要是作为与操作系统粘贴板互相拷贝的一个通道，在 flex 中只能读取粘贴板，而在 apollo 里可以直接读取。</li>
-    <li>DragManager 主要控制拖拽功能，这个拖拽可不只是在应用程序内部，这个拖拽是在整个桌面的，一大特色吧。</li>
-    <li>TransferableData 我理解为在 apollo 中的传输数据的一个容器，数据的类型可以为：text,url,bitmap,filelist (文件数组)</li>
-    <li> 附属的一些常量类，主要是保存常量信息比如： COPY : String = "copy" ；这样只是为了你写程序的时候避免拼写错误。
-<ul>
-    <li>DragActions：拖拽动作的属性：copy,link,move 和 none</li>
-    <li>DragOptions：拖拽的选项设置，是否允许 copy,link 和移动等</li>
-    <li> TransferableFormats：TransferableData 数据容器的类型</li>
-    <li> TransferableTransferMode：传递的模式，设置传递的是数据的克隆还是引用。</li>
-</ul>
-</li>
-</ul><p></p>
-]]></content>
-      <categories>
-        <category>flex</category>
-      </categories>
-      <tags>
-        <tag>apollo</tag>
-      </tags>
   </entry>
   <entry>
     <title>几个头像制作网站</title>
@@ -2469,19 +2469,6 @@ John C. Bland II is CEO and Chief Developer for Katapult Media, Inc. (<a href="h
 ]]></content>
   </entry>
   <entry>
-    <title>读取存储过程中的参数方法</title>
-    <url>/2007/10/01/old_blog/2007-10-01-%E8%AF%BB%E5%8F%96%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p></p><p>
-SqlCommandBuilder.DeriveParameters (command)，其中的 command 就是一个 SqlCommand 的对象，这个 command.CommandType = CommandType.StoredProcedure;<br>
-这样 command 的参数列表就被自动分配了
-</p>
-<p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>获取类的所有属性和方法</title>
     <url>/2007/10/01/old_blog/2007-10-01-%E8%8E%B7%E5%8F%96%E7%B1%BB%E7%9A%84%E6%89%80%E6%9C%89%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p></p><p>
@@ -2511,16 +2498,13 @@ SqlCommandBuilder.DeriveParameters (command)，其中的 command 就是一个 Sq
       </categories>
   </entry>
   <entry>
-    <title>Channel V 在线</title>
-    <url>/2007/10/02/old_blog/2007-10-02-Channel+V+%E5%9C%A8%E7%BA%BF/</url>
-    <content><![CDATA[<p><object classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" width="299" height="299">
-    <param name="src" value="mms://61.139.37.135/v">
-    <param name="url" value="mms://61.139.37.135/v">
-    <param name="width" value="299">
-    <param name="height" value="299">
-    <embed type="application/x-mplayer2" src="mms://61.139.37.135/v" width="299" height="299">
-</object>
+    <title>读取存储过程中的参数方法</title>
+    <url>/2007/10/01/old_blog/2007-10-01-%E8%AF%BB%E5%8F%96%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p></p><p>
+SqlCommandBuilder.DeriveParameters (command)，其中的 command 就是一个 SqlCommand 的对象，这个 command.CommandType = CommandType.StoredProcedure;<br>
+这样 command 的参数列表就被自动分配了
 </p>
+<p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -2543,6 +2527,22 @@ Response.End();
 <pre>&nbsp;Request["name"] 中的name就是变量的名称，是url后？name=fireyang等这样的形式。
 </pre>
 <p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Channel V 在线</title>
+    <url>/2007/10/02/old_blog/2007-10-02-Channel+V+%E5%9C%A8%E7%BA%BF/</url>
+    <content><![CDATA[<p><object classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" width="299" height="299">
+    <param name="src" value="mms://61.139.37.135/v">
+    <param name="url" value="mms://61.139.37.135/v">
+    <param name="width" value="299">
+    <param name="height" value="299">
+    <embed type="application/x-mplayer2" src="mms://61.139.37.135/v" width="299" height="299">
+</object>
+</p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -3060,6 +3060,23 @@ sudo update-rc.d apache.server defaults
       </tags>
   </entry>
   <entry>
+    <title>Ubuntu 下切换 JDK 版本</title>
+    <url>/2008/02/01/old_blog/2008-02-01-ubuntu%E4%B8%8B%E5%88%87%E6%8D%A2jdk%E7%89%88%E6%9C%AC/</url>
+    <content><![CDATA[<p>
+</p><ol>
+    <li>sudo update-alternatives --config java<br>
+这个语句将你系统下的所有 jdk 版本显示出来，你再输入索引号就可以了；</li>
+</ol><p></p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于如果保存 gvim 的配置</title>
     <url>/2008/01/03/old_blog/2008-01-03-%E5%85%B3%E4%BA%8E%E5%A6%82%E6%9E%9C%E4%BF%9D%E5%AD%98gvim%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>
@@ -3081,51 +3098,6 @@ sudo update-rc.d apache.server defaults
       <tags>
         <tag>ubuntu</tag>
         <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu 下切换 JDK 版本</title>
-    <url>/2008/02/01/old_blog/2008-02-01-ubuntu%E4%B8%8B%E5%88%87%E6%8D%A2jdk%E7%89%88%E6%9C%AC/</url>
-    <content><![CDATA[<p>
-</p><ol>
-    <li>sudo update-alternatives --config java<br>
-这个语句将你系统下的所有 jdk 版本显示出来，你再输入索引号就可以了；</li>
-</ol><p></p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取土豆的 flv 地址</title>
-    <url>/2008/02/01/old_blog/2008-02-01-%E8%8E%B7%E5%8F%96%E5%9C%9F%E8%B1%86%E7%9A%84flv%E5%9C%B0%E5%9D%80/</url>
-    <content><![CDATA[<p> 在土豆网打开一个播放页面地址，查看源代码，找到  var iid=14184880; 类似前面的这样，其中的后面的 7 位数字就是所要的 ID，再将 id 放到 http://www.tudou.com/player/v.php?id = 的后面，</p>
-
-<p>这样便能得到类似如下的信息：其中的 4 个连接都可以下载了</p>
-
-<p>&lt;v c="109400" h="1" e="4" n="22" q="斗牛要不要 12 [预告]" i="P7qmtFpLNl8" y="1"&gt;<br>
-&lt;f w="10"&gt;<br>
-http://player0093.tudou.com/flv/014/184/880/14184880.flv<br>
-&lt;/f&gt;<br>
-&lt;f w="25"&gt;<br>
-http://51hot.tudou.com/flv/014/184/880/14184880.flv<br>
-&lt;/f&gt;<br>
-&lt;f w="16"&gt;<br>
-http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
-&lt;/f&gt;<br>
-&lt;f w="20"&gt;http://hot.tudou.com/flv/014/184/880/14184880.flv&lt;/f&gt;<br>
-&lt;/v&gt;</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>土豆</tag>
-        <tag>破解</tag>
       </tags>
   </entry>
   <entry>
@@ -3183,6 +3155,34 @@ http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
       </categories>
       <tags>
         <tag>actionscript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取土豆的 flv 地址</title>
+    <url>/2008/02/01/old_blog/2008-02-01-%E8%8E%B7%E5%8F%96%E5%9C%9F%E8%B1%86%E7%9A%84flv%E5%9C%B0%E5%9D%80/</url>
+    <content><![CDATA[<p> 在土豆网打开一个播放页面地址，查看源代码，找到  var iid=14184880; 类似前面的这样，其中的后面的 7 位数字就是所要的 ID，再将 id 放到 http://www.tudou.com/player/v.php?id = 的后面，</p>
+
+<p>这样便能得到类似如下的信息：其中的 4 个连接都可以下载了</p>
+
+<p>&lt;v c="109400" h="1" e="4" n="22" q="斗牛要不要 12 [预告]" i="P7qmtFpLNl8" y="1"&gt;<br>
+&lt;f w="10"&gt;<br>
+http://player0093.tudou.com/flv/014/184/880/14184880.flv<br>
+&lt;/f&gt;<br>
+&lt;f w="25"&gt;<br>
+http://51hot.tudou.com/flv/014/184/880/14184880.flv<br>
+&lt;/f&gt;<br>
+&lt;f w="16"&gt;<br>
+http://hot-sjhl.tudou.com/flv/014/184/880/14184880.flv<br>
+&lt;/f&gt;<br>
+&lt;f w="20"&gt;http://hot.tudou.com/flv/014/184/880/14184880.flv&lt;/f&gt;<br>
+&lt;/v&gt;</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>土豆</tag>
+        <tag>破解</tag>
       </tags>
   </entry>
   <entry>
@@ -3381,26 +3381,6 @@ Linux  home/user_name/macromedia/Flash_Player/Logs/flashlog.txt</p>
       </tags>
   </entry>
   <entry>
-    <title>被 pv3d 官网忽悠</title>
-    <url>/2008/04/04/old_blog/2008-04-04-%E8%A2%ABpv3d%E5%AE%98%E7%BD%91%E5%BF%BD%E6%82%A0/</url>
-    <content><![CDATA[<p>那天看到 http://pv3d.org/ 登出消息：
-</p><h2><a title="Permanent Link to Papervision4D 1.0 Alpha is out!" rel="bookmark" href="http://pv3d.org/2008/04/01/papervision4d-10-alpha-is-out/" target="_blank">Papervision4D 1.0 Alpha is out!</a></h2>
-以为是发布新的版本了，晕！<p></p>
-
-<p>才发现被忽悠了，这年头谁都不可靠。</p>
-
-<p>http://pv3d.org/2008/04/01/papervision4d-10-alpha-is-out/</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>pv3d</tag>
-        <tag>忽悠</tag>
-        <tag>愚人节</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>debian 支持 sql server 连接</title>
     <url>/2008/04/03/old_blog/2008-04-03-debian%E6%94%AF%E6%8C%81sql-server%E8%BF%9E%E6%8E%A5/</url>
     <content><![CDATA[<p></p><dl> <dt>如果你想要让 ubuntu 支持 sql server，需要安装以下的包 </dt> <dt><a href="http://packages.ubuntu.com/dapper/freetds-dev">freetds-dev</a></dt> <dd lang="en">MS SQL and Sybase client library (static libs and headers)</dd> <dt><a href="http://packages.ubuntu.com/dapper/libct3">libct3</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/libsybdb5">libsybdb5</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/tdsodbc">tdsodbc</a></dt> <dd lang="en">ODBC driver for connecting to MS SQL and Sybase SQL servers</dd> </dl>sudo apt-get install&nbsp;&nbsp; "包名称"<p></p>
@@ -3420,21 +3400,23 @@ sudo /etc/init.d/apache2 restart</p>
       </tags>
   </entry>
   <entry>
-    <title>基于 python 的 Google App Engine</title>
-    <url>/2008/04/09/old_blog/2008-04-09-%E5%9F%BA%E4%BA%8Epython%E7%9A%84google-app-engine/</url>
-    <content><![CDATA[<p><img src="http://code.google.com/appengine/images/appengine_lowres.jpg" alt="" width="100" height="79"></p><p>
-</p><h1><a href="http://code.google.com/appengine/" target="_blank">Google App Engine</a></h1>
-看到google code又发布了新的东西，稍微看了下，是一个SDK，采用了python技术，开发web应用程序。<br>
-python发展的势头很大，工具也渐渐完善，相信前途无量阿，持续关注。<p></p><p></p>
+    <title>被 pv3d 官网忽悠</title>
+    <url>/2008/04/04/old_blog/2008-04-04-%E8%A2%ABpv3d%E5%AE%98%E7%BD%91%E5%BF%BD%E6%82%A0/</url>
+    <content><![CDATA[<p>那天看到 http://pv3d.org/ 登出消息：
+</p><h2><a title="Permanent Link to Papervision4D 1.0 Alpha is out!" rel="bookmark" href="http://pv3d.org/2008/04/01/papervision4d-10-alpha-is-out/" target="_blank">Papervision4D 1.0 Alpha is out!</a></h2>
+以为是发布新的版本了，晕！<p></p>
+
+<p>才发现被忽悠了，这年头谁都不可靠。</p>
+
+<p>http://pv3d.org/2008/04/01/papervision4d-10-alpha-is-out/</p>
 ]]></content>
       <categories>
-        <category>python</category>
+        <category>杂七杂八</category>
       </categories>
       <tags>
-        <tag>google</tag>
-        <tag>python</tag>
-        <tag>engine</tag>
-        <tag>sdk</tag>
+        <tag>pv3d</tag>
+        <tag>忽悠</tag>
+        <tag>愚人节</tag>
       </tags>
   </entry>
   <entry>
@@ -3457,6 +3439,24 @@ sudo ./db2setup</blockquote><p></p>
       <tags>
         <tag>database</tag>
         <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 python 的 Google App Engine</title>
+    <url>/2008/04/09/old_blog/2008-04-09-%E5%9F%BA%E4%BA%8Epython%E7%9A%84google-app-engine/</url>
+    <content><![CDATA[<p><img src="http://code.google.com/appengine/images/appengine_lowres.jpg" alt="" width="100" height="79"></p><p>
+</p><h1><a href="http://code.google.com/appengine/" target="_blank">Google App Engine</a></h1>
+看到google code又发布了新的东西，稍微看了下，是一个SDK，采用了python技术，开发web应用程序。<br>
+python发展的势头很大，工具也渐渐完善，相信前途无量阿，持续关注。<p></p><p></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>python</tag>
+        <tag>engine</tag>
+        <tag>sdk</tag>
       </tags>
   </entry>
   <entry>
@@ -3878,35 +3878,6 @@ navigateToURL(request )<br>
       </tags>
   </entry>
   <entry>
-    <title>qq for linux，终于发布了</title>
-    <url>/2008/07/31/old_blog/2008-07-31-qq-for-linux%EF%BC%8C%E7%BB%88%E4%BA%8E%E5%8F%91%E5%B8%83%E4%BA%86/</url>
-    <content><![CDATA[<p><a href="http://im.qq.com/qq/linux/" target="_blank"><img src="http://im-img.qq.com/qq/linux/images/public/logo.gif" alt="QQ for Linux首页" width="159" height="41"></a></p>
-
-<p>腾讯履行承诺，终于出来了</p>
-
-<p>下载地址：<a href="http://im.qq.com/qq/linux/download.shtml" target="_blank">http://im.qq.com/qq/linux/download.shtml</a></p>
-
-<p>在 ubuntu 下成功使用了，但是还很简陋，只能聊天。</p>
-
-<p>1. 不支持自定义头像</p>
-
-<p>2. 显示全部／显示在线，不能切换。</p>
-
-<p>3. 没有传统的模式，都是采用树状的，人多了不好找阿</p>
-
-<p>4. 不支持文件传输，不支持截图</p>
-
-<p>5. 双击任务栏图标，不能直接打开信息。</p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>qq</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ubunt 下 wine＋TM2008 Preview4 稳定运行</title>
     <url>/2008/07/29/old_blog/2008-07-29-ubunt%E4%B8%8Bwine%EF%BC%8Btm2008-preview4%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<p>在 <a href="http://czk.8866.org">czk</a> 的指导下成功运行了 TM2008 Preview4，而且很稳定。</p>
@@ -3952,6 +3923,35 @@ sudo apt-get install wine<br>
       </tags>
   </entry>
   <entry>
+    <title>qq for linux，终于发布了</title>
+    <url>/2008/07/31/old_blog/2008-07-31-qq-for-linux%EF%BC%8C%E7%BB%88%E4%BA%8E%E5%8F%91%E5%B8%83%E4%BA%86/</url>
+    <content><![CDATA[<p><a href="http://im.qq.com/qq/linux/" target="_blank"><img src="http://im-img.qq.com/qq/linux/images/public/logo.gif" alt="QQ for Linux首页" width="159" height="41"></a></p>
+
+<p>腾讯履行承诺，终于出来了</p>
+
+<p>下载地址：<a href="http://im.qq.com/qq/linux/download.shtml" target="_blank">http://im.qq.com/qq/linux/download.shtml</a></p>
+
+<p>在 ubuntu 下成功使用了，但是还很简陋，只能聊天。</p>
+
+<p>1. 不支持自定义头像</p>
+
+<p>2. 显示全部／显示在线，不能切换。</p>
+
+<p>3. 没有传统的模式，都是采用树状的，人多了不好找阿</p>
+
+<p>4. 不支持文件传输，不支持截图</p>
+
+<p>5. 双击任务栏图标，不能直接打开信息。</p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>qq</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2008 年需要学的 100 种工具</title>
     <url>/2008/08/01/old_blog/2008-08-01-2008%E5%B9%B4%E9%9C%80%E8%A6%81%E5%AD%A6%E7%9A%84100%E7%A7%8D%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>详细地址：<a href="http://www.c4lpt.co.uk/recommended/top100.html" target="_blank">Top 100 Tools for Learning 2008</a></p>
@@ -3967,6 +3967,23 @@ sudo apt-get install wine<br>
         <tag>学习</tag>
         <tag>2008</tag>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>试用 google 的音乐搜索</title>
+    <url>/2008/08/06/old_blog/2008-08-06-%E8%AF%95%E7%94%A8google%E7%9A%84%E9%9F%B3%E4%B9%90%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[<p>google 也推出了音乐搜索，而且试听支持 flash 播放器，很是喜欢，这样就跨平台了，我在 ubuntu 下也能用了</p>
+
+<p>可以去 <a href="http://www.google.cn/music" target="_blank">http://www.google.cn/music</a> 试试</p>
+
+<p><a href="/media/2008/08/akepxxza4oktos.jpg"><img class="alignnone size-medium wp-image-222" title="akepxxza4oktos" src="/media/2008/08/akepxxza4oktos-300x176.jpg" alt="" width="300" height="176"></a></p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>music</tag>
       </tags>
   </entry>
   <entry>
@@ -3988,23 +4005,6 @@ sudo apt-get install wine<br>
       <tags>
         <tag>Flash</tag>
         <tag>头像</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>试用 google 的音乐搜索</title>
-    <url>/2008/08/06/old_blog/2008-08-06-%E8%AF%95%E7%94%A8google%E7%9A%84%E9%9F%B3%E4%B9%90%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<p>google 也推出了音乐搜索，而且试听支持 flash 播放器，很是喜欢，这样就跨平台了，我在 ubuntu 下也能用了</p>
-
-<p>可以去 <a href="http://www.google.cn/music" target="_blank">http://www.google.cn/music</a> 试试</p>
-
-<p><a href="/media/2008/08/akepxxza4oktos.jpg"><img class="alignnone size-medium wp-image-222" title="akepxxza4oktos" src="/media/2008/08/akepxxza4oktos-300x176.jpg" alt="" width="300" height="176"></a></p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>music</tag>
       </tags>
   </entry>
   <entry>
@@ -4160,6 +4160,30 @@ sudo rm 49-sansserif.conf</p>
       </tags>
   </entry>
   <entry>
+    <title>简单易用的屏幕录制工具</title>
+    <url>/2008/09/18/old_blog/2008-09-18-%E7%AE%80%E5%8D%95%E6%98%93%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>vnc2swf 是一款简单易用的屏幕录制工具，有 python 和 c 两种版本，这样就支持跨平台了。</p>
+
+<p>官方完站：<a href="http://www.unixuser.org/~euske/vnc2swf/index.html" target="_blank">vnc2swf</a></p>
+
+<p>如果你是用 ubuntu，安装就更简单了，执行下面的命令：
+</p><ul>
+    <li>sudo apt-get install pyvnc2swf</li>
+</ul>
+然后在终端下运行 vnc2swf就会出现这样的界面了：<p></p>
+
+<p><a href="/media/2008/09/my7zkyhjzq4yjssyxe.jpg"><img class="alignnone size-medium wp-image-241" title="my7zkyhjzq4yjssyxe" src="/media/2008/09/my7zkyhjzq4yjssyxe.jpg" alt="" width="235" height="65"></a></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>pyvnc2swf</tag>
+        <tag>vnc2swf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu 下安装和卸载 AIR</title>
     <url>/2008/11/03/old_blog/2008-11-03-ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%B8%E8%BD%BDair/</url>
     <content><![CDATA[<p></p><div class="entry-body">
@@ -4188,30 +4212,6 @@ sudo rm 49-sansserif.conf</p>
       <tags>
         <tag>ubuntu</tag>
         <tag>Air</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简单易用的屏幕录制工具</title>
-    <url>/2008/09/18/old_blog/2008-09-18-%E7%AE%80%E5%8D%95%E6%98%93%E7%94%A8%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>vnc2swf 是一款简单易用的屏幕录制工具，有 python 和 c 两种版本，这样就支持跨平台了。</p>
-
-<p>官方完站：<a href="http://www.unixuser.org/~euske/vnc2swf/index.html" target="_blank">vnc2swf</a></p>
-
-<p>如果你是用 ubuntu，安装就更简单了，执行下面的命令：
-</p><ul>
-    <li>sudo apt-get install pyvnc2swf</li>
-</ul>
-然后在终端下运行 vnc2swf就会出现这样的界面了：<p></p>
-
-<p><a href="/media/2008/09/my7zkyhjzq4yjssyxe.jpg"><img class="alignnone size-medium wp-image-241" title="my7zkyhjzq4yjssyxe" src="/media/2008/09/my7zkyhjzq4yjssyxe.jpg" alt="" width="235" height="65"></a></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>pyvnc2swf</tag>
-        <tag>vnc2swf</tag>
       </tags>
   </entry>
   <entry>
@@ -4251,6 +4251,20 @@ sudo rm 49-sansserif.conf</p>
       <tags>
         <tag>ubuntu</tag>
         <tag>virtualbox</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“黑屏” 只为友善提醒？</title>
+    <url>/2008/11/03/old_blog/2008-11-03-%E2%80%9C%E9%BB%91%E5%B1%8F%E2%80%9D%E5%8F%AA%E4%B8%BA%E5%8F%8B%E5%96%84%E6%8F%90%E9%86%92%EF%BC%9F/</url>
+    <content><![CDATA[<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf"><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf" align="middle"></object>
+还是老话：提高自己，不要让别人垄断你。</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>windows</tag>
+        <tag>黑屏</tag>
       </tags>
   </entry>
   <entry>
@@ -4329,20 +4343,6 @@ sudo rm 49-sansserif.conf</p>
       <tags>
         <tag>大罗山</tag>
         <tag>旅游</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>“黑屏” 只为友善提醒？</title>
-    <url>/2008/11/03/old_blog/2008-11-03-%E2%80%9C%E9%BB%91%E5%B1%8F%E2%80%9D%E5%8F%AA%E4%B8%BA%E5%8F%8B%E5%96%84%E6%8F%90%E9%86%92%EF%BC%9F/</url>
-    <content><![CDATA[<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf"><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf" align="middle"></object>
-还是老话：提高自己，不要让别人垄断你。</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>windows</tag>
-        <tag>黑屏</tag>
       </tags>
   </entry>
   <entry>
@@ -4509,6 +4509,26 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </tags>
   </entry>
   <entry>
+    <title>qq 十周年，点点滴滴，值得回味</title>
+    <url>/2008/11/13/old_blog/2008-11-13-qq%E5%8D%81%E5%91%A8%E5%B9%B4%EF%BC%8C%E7%82%B9%E7%82%B9%E6%BB%B4%E6%BB%B4%EF%BC%8C%E5%80%BC%E5%BE%97%E5%9B%9E%E5%91%B3/</url>
+    <content><![CDATA[<p>qq 十周年了，没想到自己开始接触 qq 也有 6 个年头了。</p>
+
+<p>qq 增强了朋友间的联系，为多彩的生活又增色不少，心存感激……</p>
+
+<p>这是我的第 2 个 qq，可惜我已找不到我第一个加的网友。</p>
+
+<p><a href="/media/2008/11/yn9_xfu12lcf4a2o.jpg"><img class="alignnone size-medium wp-image-266" title="yn9_xfu12lcf4a2o" src="/media/2008/11/yn9_xfu12lcf4a2o-198x300.jpg" alt="" width="198" height="300"></a></p>
+
+<p>你也去看看你的 qq 脚步吧：<a href="http://10.qq.com" target="_blank">http://10.qq.com</a></p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>qq</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>广电总局该管的要管</title>
     <url>/2008/11/15/old_blog/2008-11-15-%E5%B9%BF%E7%94%B5%E6%80%BB%E5%B1%80%E8%AF%A5%E7%AE%A1%E7%9A%84%E8%A6%81%E7%AE%A1/</url>
     <content><![CDATA[<p>这几天心血来潮，想看看电视，发现现在的电视真的很低俗。
@@ -4557,26 +4577,6 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </tags>
   </entry>
   <entry>
-    <title>qq 十周年，点点滴滴，值得回味</title>
-    <url>/2008/11/13/old_blog/2008-11-13-qq%E5%8D%81%E5%91%A8%E5%B9%B4%EF%BC%8C%E7%82%B9%E7%82%B9%E6%BB%B4%E6%BB%B4%EF%BC%8C%E5%80%BC%E5%BE%97%E5%9B%9E%E5%91%B3/</url>
-    <content><![CDATA[<p>qq 十周年了，没想到自己开始接触 qq 也有 6 个年头了。</p>
-
-<p>qq 增强了朋友间的联系，为多彩的生活又增色不少，心存感激……</p>
-
-<p>这是我的第 2 个 qq，可惜我已找不到我第一个加的网友。</p>
-
-<p><a href="/media/2008/11/yn9_xfu12lcf4a2o.jpg"><img class="alignnone size-medium wp-image-266" title="yn9_xfu12lcf4a2o" src="/media/2008/11/yn9_xfu12lcf4a2o-198x300.jpg" alt="" width="198" height="300"></a></p>
-
-<p>你也去看看你的 qq 脚步吧：<a href="http://10.qq.com" target="_blank">http://10.qq.com</a></p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>qq</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ubuntu 的双显示器</title>
     <url>/2008/11/18/old_blog/2008-11-18-ubuntu%E7%9A%84%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8/</url>
     <content><![CDATA[<p>在 ubuntu 8.10 自带了 xrandr，可以将支持多显示器了。<br>
@@ -4592,29 +4592,6 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       <tags>
         <tag>ubuntu</tag>
         <tag>双屏</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客中添加了 “阅读共享”</title>
-    <url>/2008/11/22/old_blog/2008-11-22-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E4%BA%86%E2%80%9C%E9%98%85%E8%AF%BB%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
-    <content><![CDATA[<p>在一些博客中很多人喜欢转载别人的东西，但是每次需要添加一个新的日志，然后操作，这些感觉也是比较繁琐的事情，</p>
-
-<p>现在用 google 的 reader 可以很简单的转载了，现在就可以共享我在阅读过程中所收集的好文了……</p>
-
-<p><a href="/media/2008/11/sendpix1.jpg"><img class="alignnone size-medium wp-image-280" title="sendpix1" src="/media/2008/11/sendpix1-300x65.jpg" alt="" width="300" height="65">
-</a>可以看在 blog 的标题上看到 “阅读共享” 的按钮了</p>
-
-<p>你可以直接访问：<a href="https://www.google.com/reader/shared/17729877104157620646" target="_blank">fireyang 的共享项目</a>；出来的界面如下：</p>
-
-<p><a href="/media/2008/11/sendpix0.jpg"><img class="alignnone size-medium wp-image-281" title="sendpix0" src="/media/2008/11/sendpix0-300x33.jpg" alt="" width="300" height="33"></a></p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>reader</tag>
-        <tag>共享</tag>
       </tags>
   </entry>
   <entry>
@@ -4654,28 +4631,26 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </categories>
   </entry>
   <entry>
-    <title>ubuntu 下我的命令使用排行版</title>
-    <url>/2008/12/06/old_blog/2008-12-06-ubuntu%E4%B8%8B%E6%88%91%E7%9A%84%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%8E%92%E8%A1%8C%E7%89%88/</url>
-    <content><![CDATA[<p>在 ubuntu 下，用这个命令可以知道你使用哪个命令是频率最高的：
-</p><blockquote>history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head</blockquote>
-我的排行如下：
-<blockquote>120 ls<br>
-119 cd<br>
-48 cake<br>
-43 sudo<br>
-28 ping<br>
-25 rdesktop<br>
-19 gvim<br>
-18 xrandr<br>
-10 ifconfig<br>
-8 gcc</blockquote>
-你也不妨试试！<p></p>
+    <title>博客中添加了 “阅读共享”</title>
+    <url>/2008/11/22/old_blog/2008-11-22-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E4%BA%86%E2%80%9C%E9%98%85%E8%AF%BB%E5%85%B1%E4%BA%AB%E2%80%9D/</url>
+    <content><![CDATA[<p>在一些博客中很多人喜欢转载别人的东西，但是每次需要添加一个新的日志，然后操作，这些感觉也是比较繁琐的事情，</p>
+
+<p>现在用 google 的 reader 可以很简单的转载了，现在就可以共享我在阅读过程中所收集的好文了……</p>
+
+<p><a href="/media/2008/11/sendpix1.jpg"><img class="alignnone size-medium wp-image-280" title="sendpix1" src="/media/2008/11/sendpix1-300x65.jpg" alt="" width="300" height="65">
+</a>可以看在 blog 的标题上看到 “阅读共享” 的按钮了</p>
+
+<p>你可以直接访问：<a href="https://www.google.com/reader/shared/17729877104157620646" target="_blank">fireyang 的共享项目</a>；出来的界面如下：</p>
+
+<p><a href="/media/2008/11/sendpix0.jpg"><img class="alignnone size-medium wp-image-281" title="sendpix0" src="/media/2008/11/sendpix0-300x33.jpg" alt="" width="300" height="33"></a></p>
 ]]></content>
       <categories>
-        <category>ubuntu</category>
+        <category>杂七杂八</category>
       </categories>
       <tags>
-        <tag>ubuntu</tag>
+        <tag>google</tag>
+        <tag>reader</tag>
+        <tag>共享</tag>
       </tags>
   </entry>
   <entry>
@@ -4716,6 +4691,31 @@ CeRapiInitEx(ref r);<br>
       </categories>
       <tags>
         <tag>.Net</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu 下我的命令使用排行版</title>
+    <url>/2008/12/06/old_blog/2008-12-06-ubuntu%E4%B8%8B%E6%88%91%E7%9A%84%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%8E%92%E8%A1%8C%E7%89%88/</url>
+    <content><![CDATA[<p>在 ubuntu 下，用这个命令可以知道你使用哪个命令是频率最高的：
+</p><blockquote>history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head</blockquote>
+我的排行如下：
+<blockquote>120 ls<br>
+119 cd<br>
+48 cake<br>
+43 sudo<br>
+28 ping<br>
+25 rdesktop<br>
+19 gvim<br>
+18 xrandr<br>
+10 ifconfig<br>
+8 gcc</blockquote>
+你也不妨试试！<p></p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -4788,19 +4788,6 @@ CeRapiInitEx(ref r);<br>
       </tags>
   </entry>
   <entry>
-    <title>python 的 cheat sheet</title>
-    <url>/2009/01/29/old_blog/2009-01-29-python%E7%9A%84cheat-sheet/</url>
-    <content><![CDATA[<p></p><h1>python-cheat-sheet</h1>
-<a href="http://www.addedbytes.com/cheat-sheets/python-cheat-sheet/" target="_blank"><strong>下载</strong></a><p></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>删除 ubuntu 上安装的 air 程序</title>
     <url>/2009/01/29/old_blog/2009-01-29-%E5%88%A0%E9%99%A4ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E7%9A%84air%E7%A8%8B%E5%BA%8F/</url>
     <content><![CDATA[<p>在 ubuntu 上安装 air 程序比较方便。但是没有直观的删除操作，只能命令行下删除，操作如下：
@@ -4817,6 +4804,19 @@ sudo dpkg -r allname (allname 为查找的程序全名)</li>
       <tags>
         <tag>ubuntu</tag>
         <tag>Air</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python 的 cheat sheet</title>
+    <url>/2009/01/29/old_blog/2009-01-29-python%E7%9A%84cheat-sheet/</url>
+    <content><![CDATA[<p></p><h1>python-cheat-sheet</h1>
+<a href="http://www.addedbytes.com/cheat-sheets/python-cheat-sheet/" target="_blank"><strong>下载</strong></a><p></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -4983,6 +4983,40 @@ Google 推出了一个新的服务 Google Sync。同步你的手机和 Gamil 上
       </tags>
   </entry>
   <entry>
+    <title>郁闷，系统分析师没过</title>
+    <url>/2009/02/13/old_blog/2009-02-13-%E9%83%81%E9%97%B7%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E5%B8%88%E6%B2%A1%E8%BF%87/</url>
+    <content><![CDATA[<p>2009 年下半年的系统分析师成绩出来了</p>
+
+<p>上午：46&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下午：52&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 论文：36</p>
+
+<p>看来论文还需要加强。</p>
+
+<p>继续学习……</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Flex in a Week 视频教程</title>
+    <url>/2009/02/22/old_blog/2009-02-22-flex-in-a-week%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p></p><h1><a href="http://www.adobe.com/devnet/flex/videotraining/" target="_blank">Flex in a Week</a></h1>
+你也可以下载过来离线观看，如下步骤：
+<ol>
+    <li> 安装 <a href="http://get.adobe.com/amp/" target="_blank">Adobe Media Player</a>。</li>
+    <li> 在顶部菜单点击 "My Favorites" 。</li>
+    <li> 点击下面的 "Add RSS Feed" 。</li>
+    <li> 粘贴 <a href="http://sessions.adobe.com/FlexInAWeek/feed.xml" target="_blank">http://sessions.adobe.com/FlexInAWeek/feed.xml</a></li>
+</ol><p></p>
+]]></content>
+      <categories>
+        <category>flex</category>
+      </categories>
+      <tags>
+        <tag>flex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>原创翻译：在 windows 下安装 cakephp</title>
     <url>/2009/02/13/old_blog/2009-02-13-%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91%EF%BC%9A%E5%9C%A8windows%E4%B8%8B%E5%AE%89%E8%A3%85cakephp/</url>
     <content><![CDATA[<p>很多初学者在使用 cakephp 的时候，连基本的配置都需要花费大量的时间，其实我也是摸索了一段时间；<br>
@@ -5094,38 +5128,13 @@ c:\PHP;C:\PHP\cake1_2\cake\console;</li>
       </tags>
   </entry>
   <entry>
-    <title>郁闷，系统分析师没过</title>
-    <url>/2009/02/13/old_blog/2009-02-13-%E9%83%81%E9%97%B7%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E5%B8%88%E6%B2%A1%E8%BF%87/</url>
-    <content><![CDATA[<p>2009 年下半年的系统分析师成绩出来了</p>
-
-<p>上午：46&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下午：52&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 论文：36</p>
-
-<p>看来论文还需要加强。</p>
-
-<p>继续学习……</p>
+    <title>备案原因，这几天无法正常打开</title>
+    <url>/2009/02/26/old_blog/2009-02-26-%E5%A4%87%E6%A1%88%E5%8E%9F%E5%9B%A0%EF%BC%8C%E8%BF%99%E5%87%A0%E5%A4%A9%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80/</url>
+    <content><![CDATA[<p>网络整治，还是要配合的</p>
 ]]></content>
       <categories>
         <category>杂七杂八</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Flex in a Week 视频教程</title>
-    <url>/2009/02/22/old_blog/2009-02-22-flex-in-a-week%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p></p><h1><a href="http://www.adobe.com/devnet/flex/videotraining/" target="_blank">Flex in a Week</a></h1>
-你也可以下载过来离线观看，如下步骤：
-<ol>
-    <li> 安装 <a href="http://get.adobe.com/amp/" target="_blank">Adobe Media Player</a>。</li>
-    <li> 在顶部菜单点击 "My Favorites" 。</li>
-    <li> 点击下面的 "Add RSS Feed" 。</li>
-    <li> 粘贴 <a href="http://sessions.adobe.com/FlexInAWeek/feed.xml" target="_blank">http://sessions.adobe.com/FlexInAWeek/feed.xml</a></li>
-</ol><p></p>
-]]></content>
-      <categories>
-        <category>flex</category>
-      </categories>
-      <tags>
-        <tag>flex</tag>
-      </tags>
   </entry>
   <entry>
     <title>免费文献搜索引擎</title>
@@ -5147,13 +5156,19 @@ c:\PHP;C:\PHP\cake1_2\cake\console;</li>
       </categories>
   </entry>
   <entry>
-    <title>备案原因，这几天无法正常打开</title>
-    <url>/2009/02/26/old_blog/2009-02-26-%E5%A4%87%E6%A1%88%E5%8E%9F%E5%9B%A0%EF%BC%8C%E8%BF%99%E5%87%A0%E5%A4%A9%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80/</url>
-    <content><![CDATA[<p>网络整治，还是要配合的</p>
+    <title>Arthropod 一个 Flash&amp;AIR 的调试器</title>
+    <url>/2009/03/11/old_blog/2009-03-11-arthropod-%E4%B8%80%E4%B8%AAflashair%E7%9A%84%E8%B0%83%E8%AF%95%E5%99%A8/</url>
+    <content><![CDATA[<p><img class="alignnone size-full wp-image-378" title="screenshot_001" src="/media/2009/03/screenshot_001.png" alt="screenshot_001" width="388" height="122"></p>
+
+<p><a href="http://arthropod.stopp.se/" target="_blank">http://arthropod.stopp.se/</a></p>
 ]]></content>
       <categories>
-        <category>杂七杂八</category>
+        <category>Air</category>
       </categories>
+      <tags>
+        <tag>Flash</tag>
+        <tag>Air</tag>
+      </tags>
   </entry>
   <entry>
     <title>Adobe UI 设计比赛网站，很多资源</title>
@@ -5179,21 +5194,6 @@ c:\PHP;C:\PHP\cake1_2\cake\console;</li>
         <tag>Air</tag>
         <tag>skin</tag>
         <tag>ui</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Arthropod 一个 Flash&amp;AIR 的调试器</title>
-    <url>/2009/03/11/old_blog/2009-03-11-arthropod-%E4%B8%80%E4%B8%AAflashair%E7%9A%84%E8%B0%83%E8%AF%95%E5%99%A8/</url>
-    <content><![CDATA[<p><img class="alignnone size-full wp-image-378" title="screenshot_001" src="/media/2009/03/screenshot_001.png" alt="screenshot_001" width="388" height="122"></p>
-
-<p><a href="http://arthropod.stopp.se/" target="_blank">http://arthropod.stopp.se/</a></p>
-]]></content>
-      <categories>
-        <category>Air</category>
-      </categories>
-      <tags>
-        <tag>Flash</tag>
-        <tag>Air</tag>
       </tags>
   </entry>
   <entry>
@@ -5278,30 +5278,6 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </tags>
   </entry>
   <entry>
-    <title>AmFast 另一个 python 的 AFM3</title>
-    <url>/2009/03/24/old_blog/2009-03-24-amfast-%E5%8F%A6%E4%B8%80%E4%B8%AApython%E7%9A%84afm3/</url>
-    <content><![CDATA[<p></p><h1><a href="http://code.google.com/p/amfast/" target="_blank">AmFast</a></h1>
-特色：<p></p>
-
-<p>・AmFast 的底层的编码和解码采用了 C 语言，因此效率比 PyAmf 快 18 倍左右（本人没有测试过）.<br>
-・编码器和解码器需要用户定义 Python 对象，并允许自定义编码 / 解码过程。<br>
-・支持自定义类映射<br>
-・支持 NetConnection 和 RemoteObject 进行 Remoting.<br>
-・Remoting 头上可以设置标记，快速的实现用户验证等，还有其他 AMF 的特性<br>
-・支持 Actionscript 代码类的映射
-</p><h2><a href="http://code.google.com/p/amfast/" target="_blank">项目站点</a></h2>
-<h2><a href="http://limscoder.blogspot.com/" target="_blank">博客</a></h2><p></p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>AFM3</tag>
-        <tag>amfast</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微软的开源 web 平台</title>
     <url>/2009/03/25/old_blog/2009-03-25-%E5%BE%AE%E8%BD%AF%E7%9A%84%E5%BC%80%E6%BA%90web%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<p><img class="alignnone size-full wp-image-405" title="aaa" src="/media/2009/03/aaa.jpg" alt="aaa" width="237" height="62"></p>
@@ -5334,6 +5310,30 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </tags>
   </entry>
   <entry>
+    <title>AmFast 另一个 python 的 AFM3</title>
+    <url>/2009/03/24/old_blog/2009-03-24-amfast-%E5%8F%A6%E4%B8%80%E4%B8%AApython%E7%9A%84afm3/</url>
+    <content><![CDATA[<p></p><h1><a href="http://code.google.com/p/amfast/" target="_blank">AmFast</a></h1>
+特色：<p></p>
+
+<p>・AmFast 的底层的编码和解码采用了 C 语言，因此效率比 PyAmf 快 18 倍左右（本人没有测试过）.<br>
+・编码器和解码器需要用户定义 Python 对象，并允许自定义编码 / 解码过程。<br>
+・支持自定义类映射<br>
+・支持 NetConnection 和 RemoteObject 进行 Remoting.<br>
+・Remoting 头上可以设置标记，快速的实现用户验证等，还有其他 AMF 的特性<br>
+・支持 Actionscript 代码类的映射
+</p><h2><a href="http://code.google.com/p/amfast/" target="_blank">项目站点</a></h2>
+<h2><a href="http://limscoder.blogspot.com/" target="_blank">博客</a></h2><p></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>AFM3</tag>
+        <tag>amfast</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ping.fm+twitter+plurk，新的微博客</title>
     <url>/2009/03/26/old_blog/2009-03-26-pingfmtwitterplurk%EF%BC%8C%E6%96%B0%E7%9A%84%E5%BE%AE%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p><img class="alignnone size-full wp-image-413" title="aaa1" src="/media/2009/03/aaa1.jpg" alt="aaa1" width="275" height="140">
@@ -5357,6 +5357,23 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </tags>
   </entry>
   <entry>
+    <title>gitg 一个 git 查看工具（挺牛）</title>
+    <url>/2009/03/28/old_blog/2009-03-28-gitg%E4%B8%80%E4%B8%AAgit%E6%9F%A5%E7%9C%8B%E5%B7%A5%E5%85%B7%EF%BC%88%E6%8C%BA%E7%89%9B%EF%BC%89/</url>
+    <content><![CDATA[<p>项目地址：<a href="http://trac.novowork.com/gitg">http://trac.novowork.com/gitg</a></p>
+
+<p><a href="http://imtx.cn" target="_blank">TualatriX</a> 兄用的东西，关注下：</p>
+
+<p><img class="alignnone size-full wp-image-428" title="screenshot_0031" src="/media/2009/03/screenshot_0031.png" alt="screenshot_0031" width="785" height="549"></p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开源的 WM 项目 pocketwit</title>
     <url>/2009/03/27/old_blog/2009-03-27-%E5%BC%80%E6%BA%90%E7%9A%84wm%E9%A1%B9%E7%9B%AEpocketwit/</url>
     <content><![CDATA[<p></p><h1><a href="http://code.google.com/p/pocketwit/" target="_blank">pocketwit</a></h1>
@@ -5372,23 +5389,6 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       <tags>
         <tag>.Net</tag>
         <tag>wm6</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>gitg 一个 git 查看工具（挺牛）</title>
-    <url>/2009/03/28/old_blog/2009-03-28-gitg%E4%B8%80%E4%B8%AAgit%E6%9F%A5%E7%9C%8B%E5%B7%A5%E5%85%B7%EF%BC%88%E6%8C%BA%E7%89%9B%EF%BC%89/</url>
-    <content><![CDATA[<p>项目地址：<a href="http://trac.novowork.com/gitg">http://trac.novowork.com/gitg</a></p>
-
-<p><a href="http://imtx.cn" target="_blank">TualatriX</a> 兄用的东西，关注下：</p>
-
-<p><img class="alignnone size-full wp-image-428" title="screenshot_0031" src="/media/2009/03/screenshot_0031.png" alt="screenshot_0031" width="785" height="549"></p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -6081,25 +6081,6 @@ package
       </categories>
   </entry>
   <entry>
-    <title>Gmail 太过人性不喜欢！</title>
-    <url>/2009/05/20/old_blog/2009-05-20-gmail%E5%A4%AA%E8%BF%87%E4%BA%BA%E6%80%A7%E4%B8%8D%E5%96%9C%E6%AC%A2%EF%BC%81/</url>
-    <content><![CDATA[<p><img class="alignnone size-full wp-image-491" title="9ky3ll_uypwmh5" src="/media/2009/05/9ky3ll_uypwmh5.jpg" alt="9ky3ll_uypwmh5" width="507" height="171"></p>
-
-<p>打算用 gmail 发送邮件，里面带了个附件，zip 格式压缩的，这个附件包含有 bat 执行文件。</p>
-
-<p>gmail 给出这样的提示，并且不给发送，后来改用 rar 压缩，发送成功。</p>
-
-<p>自己的邮箱，居然因为这样而不能发送，太人性化了，也不太方便，呵呵</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>gmail</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Js 中的小问题，未解</title>
     <url>/2009/05/21/old_blog/2009-05-21-js%E4%B8%AD%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%EF%BC%8C%E6%9C%AA%E8%A7%A3/</url>
     <content><![CDATA[<p>最近在用 js 的时候出现这样的问题：
@@ -6124,6 +6105,40 @@ b/100 //<span class="objectBox objectBox-number">60.73</span></span></blockquote
       </tags>
   </entry>
   <entry>
+    <title>twitter” 终于 “被墙了</title>
+    <url>/2009/06/03/old_blog/2009-06-03-twitter%E2%80%9D%E7%BB%88%E4%BA%8E%E2%80%9C%E8%A2%AB%E5%A2%99%E4%BA%86/</url>
+    <content><![CDATA[<p>一直担心 twitter 会被墙，理由很简单，他没有在中国备案。</p>
+
+<p>这事早在预料之中，只是时间问题，所以所有的推友们，都做足了思想准备</p>
+
+<p>在六四来临之际，终于 “预言” 成真了。</p>
+
+<p>继续这翻墙的日子……</p>
+]]></content>
+      <categories>
+        <category>胡说八道</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Gmail 太过人性不喜欢！</title>
+    <url>/2009/05/20/old_blog/2009-05-20-gmail%E5%A4%AA%E8%BF%87%E4%BA%BA%E6%80%A7%E4%B8%8D%E5%96%9C%E6%AC%A2%EF%BC%81/</url>
+    <content><![CDATA[<p><img class="alignnone size-full wp-image-491" title="9ky3ll_uypwmh5" src="/media/2009/05/9ky3ll_uypwmh5.jpg" alt="9ky3ll_uypwmh5" width="507" height="171"></p>
+
+<p>打算用 gmail 发送邮件，里面带了个附件，zip 格式压缩的，这个附件包含有 bat 执行文件。</p>
+
+<p>gmail 给出这样的提示，并且不给发送，后来改用 rar 压缩，发送成功。</p>
+
+<p>自己的邮箱，居然因为这样而不能发送，太人性化了，也不太方便，呵呵</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>gmail</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Flash 开发者应该掌握的东西</title>
     <url>/2009/06/09/old_blog/2009-06-09-flash%E5%BC%80%E5%8F%91%E8%80%85%E5%BA%94%E8%AF%A5%E6%8E%8C%E6%8F%A1%E7%9A%84%E4%B8%9C%E8%A5%BF/</url>
     <content><![CDATA[<p>无意中看到这样的一个 flash 站点，有几个特色
@@ -6145,48 +6160,6 @@ b/100 //<span class="objectBox objectBox-number">60.73</span></span></blockquote
         <tag>actionscript</tag>
         <tag>Flash</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>twitter” 终于 “被墙了</title>
-    <url>/2009/06/03/old_blog/2009-06-03-twitter%E2%80%9D%E7%BB%88%E4%BA%8E%E2%80%9C%E8%A2%AB%E5%A2%99%E4%BA%86/</url>
-    <content><![CDATA[<p>一直担心 twitter 会被墙，理由很简单，他没有在中国备案。</p>
-
-<p>这事早在预料之中，只是时间问题，所以所有的推友们，都做足了思想准备</p>
-
-<p>在六四来临之际，终于 “预言” 成真了。</p>
-
-<p>继续这翻墙的日子……</p>
-]]></content>
-      <categories>
-        <category>胡说八道</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>绿坝、花季，浪费国民血汗钱</title>
-    <url>/2009/06/10/old_blog/2009-06-10-%E7%BB%BF%E5%9D%9D%E3%80%81%E8%8A%B1%E5%AD%A3%EF%BC%8C%E6%B5%AA%E8%B4%B9%E5%9B%BD%E6%B0%91%E8%A1%80%E6%B1%97%E9%92%B1/</url>
-    <content><![CDATA[<p>这两天听说工信部推出了一个免费过滤软件。而且在国内一定要预装该软件。真是考虑 “周全” 阿。</p>
-
-<p>据说花了 4000 多万元的财政支出，买断其一年的使用权。</p>
-
-<p>第一次发觉做小软件可以赚这么多钱，it 的友人們应该觉得欣慰了。</p>
-
-<p>但是有几点是值得商榷的。</p>
-
-<p>一、是不是当领导后出手就变得阔绰，据说是标准的采购流程定下来的。从中可以看出，财政支出真是阔绰，真应该让这些领导去菜市场学学怎么讨价还价，花钱一点都不省，难道是刺激消费？</p>
-
-<p>二、政府这样的强制手段，难道不属于垄断和霸王消费？我花钱买电脑，买系统，为什么你非要在我自己电脑上预装这该死的玩意。</p>
-
-<p>三、这软件我用不到，那是不是这部分财政支出，不算上我那份。怎么也得给我的个税上返还点，虽然没有多少钱，我还真不想施舍给这样的 “领导” 去摆阔。</p>
-
-<p>四、这些软件有测试过么？据一朋友测试，好像对过滤效果很差。什么裸照阿、不雅文字阿都无法过滤，倒是几个热门的，言论比较自由的社区，真的被过滤了</p>
-
-<p>五、外交部说不会封闭国外网站。但是很多 IT 人都知道，GFW 的存在，已经过滤老多了。</p>
-
-<p>其实总结如下：领导都认为群众是愚昧的，是需要引导的，群众的眼睛不再雪亮了。</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
   </entry>
   <entry>
     <title>ubuntu+flex ant task 的问题</title>
@@ -6223,6 +6196,33 @@ b/100 //<span class="objectBox objectBox-number">60.73</span></span></blockquote
         <tag>ubuntu</tag>
         <tag>ant</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>绿坝、花季，浪费国民血汗钱</title>
+    <url>/2009/06/10/old_blog/2009-06-10-%E7%BB%BF%E5%9D%9D%E3%80%81%E8%8A%B1%E5%AD%A3%EF%BC%8C%E6%B5%AA%E8%B4%B9%E5%9B%BD%E6%B0%91%E8%A1%80%E6%B1%97%E9%92%B1/</url>
+    <content><![CDATA[<p>这两天听说工信部推出了一个免费过滤软件。而且在国内一定要预装该软件。真是考虑 “周全” 阿。</p>
+
+<p>据说花了 4000 多万元的财政支出，买断其一年的使用权。</p>
+
+<p>第一次发觉做小软件可以赚这么多钱，it 的友人們应该觉得欣慰了。</p>
+
+<p>但是有几点是值得商榷的。</p>
+
+<p>一、是不是当领导后出手就变得阔绰，据说是标准的采购流程定下来的。从中可以看出，财政支出真是阔绰，真应该让这些领导去菜市场学学怎么讨价还价，花钱一点都不省，难道是刺激消费？</p>
+
+<p>二、政府这样的强制手段，难道不属于垄断和霸王消费？我花钱买电脑，买系统，为什么你非要在我自己电脑上预装这该死的玩意。</p>
+
+<p>三、这软件我用不到，那是不是这部分财政支出，不算上我那份。怎么也得给我的个税上返还点，虽然没有多少钱，我还真不想施舍给这样的 “领导” 去摆阔。</p>
+
+<p>四、这些软件有测试过么？据一朋友测试，好像对过滤效果很差。什么裸照阿、不雅文字阿都无法过滤，倒是几个热门的，言论比较自由的社区，真的被过滤了</p>
+
+<p>五、外交部说不会封闭国外网站。但是很多 IT 人都知道，GFW 的存在，已经过滤老多了。</p>
+
+<p>其实总结如下：领导都认为群众是愚昧的，是需要引导的，群众的眼睛不再雪亮了。</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
   </entry>
   <entry>
     <title>getDefinitionByName+Embed 使用，未定义错误</title>
@@ -6405,25 +6405,6 @@ sh ./winetricks</blockquote>
       </tags>
   </entry>
   <entry>
-    <title>不错的 as 类库站点</title>
-    <url>/2009/08/05/old_blog/2009-08-05-%E4%B8%8D%E9%94%99%E7%9A%84as%E7%B1%BB%E5%BA%93%E7%AB%99%E7%82%B9/</url>
-    <content><![CDATA[<p>在整理个人类库发现国内居然有这么个站点，内容不错。</p>
-
-<p>介绍的类和包，都挺有用的，强烈推荐下：</p>
-
-<p><a href="http://asclass.yo2.cn/" target="_blank">http://asclass.yo2.cn/</a></p>
-
-<p>Flasher 们，赶紧去淘淘看，或许就有收获了！</p>
-]]></content>
-      <categories>
-        <category>actionscript</category>
-      </categories>
-      <tags>
-        <tag>actionscript</tag>
-        <tag>class</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux 小工具</title>
     <url>/2009/09/13/old_blog/2009-09-13-linux%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>最近一只在忙项目，都没打理这个 blog 了</p>
@@ -6450,6 +6431,25 @@ http://sourceforge.net/projects/screenwm/<p></p>
       <tags>
         <tag>vim</tag>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不错的 as 类库站点</title>
+    <url>/2009/08/05/old_blog/2009-08-05-%E4%B8%8D%E9%94%99%E7%9A%84as%E7%B1%BB%E5%BA%93%E7%AB%99%E7%82%B9/</url>
+    <content><![CDATA[<p>在整理个人类库发现国内居然有这么个站点，内容不错。</p>
+
+<p>介绍的类和包，都挺有用的，强烈推荐下：</p>
+
+<p><a href="http://asclass.yo2.cn/" target="_blank">http://asclass.yo2.cn/</a></p>
+
+<p>Flasher 们，赶紧去淘淘看，或许就有收获了！</p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>actionscript</tag>
+        <tag>class</tag>
       </tags>
   </entry>
   <entry>
@@ -6807,23 +6807,6 @@ sudo chroot /mnt/newlinux
       <categories>
         <category>ubuntu</category>
       </categories>
-  </entry>
-  <entry>
-    <title>解决 prism 无法启动</title>
-    <url>/2010/04/17/old_blog/2010-04-17-%E8%A7%A3%E5%86%B3prism%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<p>这几天在折腾 ubuntu 10.04 的内核升级，没想到把 prism 给破坏了……<br>
-错误提示：<br>
-Could not find compatible GRE between version 1.9.2 and 1.9.2.*.<br>
-执行修复：<br>
-sudo xulrunner-1.9.2 --register-global<br>
-不要问我原理，因为我也不知道，哈哈哈哈</p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-      </tags>
   </entry>
   <entry>
     <title>[译] 使用加密来保护你的 Flash 文件被反编译</title>
@@ -7191,6 +7174,23 @@ Save  and run the SWF. It works! And look what the decompiler says:
       </categories>
   </entry>
   <entry>
+    <title>解决 prism 无法启动</title>
+    <url>/2010/04/17/old_blog/2010-04-17-%E8%A7%A3%E5%86%B3prism%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[<p>这几天在折腾 ubuntu 10.04 的内核升级，没想到把 prism 给破坏了……<br>
+错误提示：<br>
+Could not find compatible GRE between version 1.9.2 and 1.9.2.*.<br>
+执行修复：<br>
+sudo xulrunner-1.9.2 --register-global<br>
+不要问我原理，因为我也不知道，哈哈哈哈</p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于 mm.cfg 的终极调试和评测</title>
     <url>/2010/04/22/old_blog/2010-04-22-%E7%BB%88%E6%9E%81%E8%B0%83%E8%AF%95%E5%92%8C%E8%AF%84%E6%B5%8B/</url>
     <content><![CDATA[<p></p><h2>介绍：</h2>
@@ -7238,37 +7238,6 @@ PreloadSWF=c:\whatever\MicroProfiler.swf</li>
       </tags>
   </entry>
   <entry>
-    <title>不错的 vim 下的 as3 类库……</title>
-    <url>/2010/04/23/old_blog/2010-04-23-%E4%B8%8D%E9%94%99%E7%9A%84vim%E4%B8%8B%E7%9A%84as3%E7%B1%BB%E5%BA%93%E2%80%A6%E2%80%A6/</url>
-    <content><![CDATA[<p>看到 emptyhua 同学的这篇文章：
-</p><h2><a rel="bookmark" href="http://bluehua.org/2010/04/21/1135.html" target="_blank">ubuntu 上 flex 开发相关</a></h2>
-他已经将所有的sdk的类库都导出了，做了个简单的自动补全……<p></p>
-
-<p>希望用 vim 开发 as 的人越来越多</p>
-
-<p>使用：
-</p><ol>
-    <li>字典文件下载 : <a href="http://bluehua.org/wp-content/uploads/2010/04/as3_dict.zip">as3_dict</a></li>
-    <li>vim 添加:
-<pre lang="vim">"将字典文件放到相应的目录就可以了,这里是~/.vim/as3_dict.txt
-au FileType actionscript call AddAS3Dict()
-function AddAS3Dict()
-    set dictionary-=~/.vim/as3_dict.txt dictionary+=~/.vim/as3_dict.txt
-    set complete-=k complete+=k
-endfunction
-</pre>
-</li>
-</ol><p></p>
-]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>flex</tag>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>md2 动画查看器</title>
     <url>/2010/06/03/old_blog/2010-06-03-md2%E5%8A%A8%E7%94%BB%E6%9F%A5%E7%9C%8B%E5%99%A8/</url>
     <content><![CDATA[<p>最近在接触 Pv3d 的东西，需要用到 md2 来做动画。</p>
@@ -7298,6 +7267,37 @@ endfunction
         <tag>Papervision3D</tag>
         <tag>md2</tag>
         <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不错的 vim 下的 as3 类库……</title>
+    <url>/2010/04/23/old_blog/2010-04-23-%E4%B8%8D%E9%94%99%E7%9A%84vim%E4%B8%8B%E7%9A%84as3%E7%B1%BB%E5%BA%93%E2%80%A6%E2%80%A6/</url>
+    <content><![CDATA[<p>看到 emptyhua 同学的这篇文章：
+</p><h2><a rel="bookmark" href="http://bluehua.org/2010/04/21/1135.html" target="_blank">ubuntu 上 flex 开发相关</a></h2>
+他已经将所有的sdk的类库都导出了，做了个简单的自动补全……<p></p>
+
+<p>希望用 vim 开发 as 的人越来越多</p>
+
+<p>使用：
+</p><ol>
+    <li>字典文件下载 : <a href="http://bluehua.org/wp-content/uploads/2010/04/as3_dict.zip">as3_dict</a></li>
+    <li>vim 添加:
+<pre lang="vim">"将字典文件放到相应的目录就可以了,这里是~/.vim/as3_dict.txt
+au FileType actionscript call AddAS3Dict()
+function AddAS3Dict()
+    set dictionary-=~/.vim/as3_dict.txt dictionary+=~/.vim/as3_dict.txt
+    set complete-=k complete+=k
+endfunction
+</pre>
+</li>
+</ol><p></p>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>flex</tag>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -7350,6 +7350,25 @@ endfunction
       </tags>
   </entry>
   <entry>
+    <title>基于 GAE 的 blog</title>
+    <url>/2010/06/08/old_blog/2010-06-08-%E5%9F%BA%E4%BA%8Egae%E7%9A%84blog/</url>
+    <content><![CDATA[<p>如果你要开发基于 GAE 的开发，这个系统很值得参考哦：</p>
+
+<p><a href="http://code.google.com/p/cpedialog/" target="_blank">http://code.google.com/p/cpedialog/</a></p>
+
+<p>在 google code 上有开源代码，学习去吧。</p>
+
+<p>好像不是用 django 这个框架哦，呵呵</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>gae</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chipmunk 物理引擎</title>
     <url>/2010/06/13/old_blog/2010-06-13-chipmunk%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</url>
     <content><![CDATA[<p>今天在 youtube 上无意看到 Chipmunk 这个 2D 物理引擎。</p>
@@ -7369,25 +7388,6 @@ endfunction
       </categories>
       <tags>
         <tag>引擎</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 GAE 的 blog</title>
-    <url>/2010/06/08/old_blog/2010-06-08-%E5%9F%BA%E4%BA%8Egae%E7%9A%84blog/</url>
-    <content><![CDATA[<p>如果你要开发基于 GAE 的开发，这个系统很值得参考哦：</p>
-
-<p><a href="http://code.google.com/p/cpedialog/" target="_blank">http://code.google.com/p/cpedialog/</a></p>
-
-<p>在 google code 上有开源代码，学习去吧。</p>
-
-<p>好像不是用 django 这个框架哦，呵呵</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>gae</tag>
       </tags>
   </entry>
   <entry>
@@ -7644,6 +7644,26 @@ spritesheet: 270 336</p>
       </tags>
   </entry>
   <entry>
+    <title>君子善假于物</title>
+    <url>/2010/11/17/old_blog/2010-11-17-%E5%90%9B%E5%AD%90%E5%96%84%E5%81%87%E4%BA%8E%E7%89%A9/</url>
+    <content><![CDATA[<p>君子善假于物，意思很明显，就是要善于利用工具……</p>
+
+<p>所以好的工具往往能提高效率，有用的软件当然更值得推荐：</p>
+
+<p>这里推荐一个专门 “推荐软件” 的 site：<a href="http://alternativeto.net/">http://alternativeto.net/</a></p>
+
+<p>排行第一就是：dropbox（有在用，很好用）</p>
+
+<p>其他慢慢自己淘吧……</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>寻路算法</title>
     <url>/2010/11/15/old_blog/2010-11-15-%E5%AF%BB%E8%B7%AF%E6%89%8B%E6%9C%BA/</url>
     <content><![CDATA[<p>一直有关注寂寞火山的微博，见他分享了这个内容，在此做下记录，怕很快刷掉了……
@@ -7664,26 +7684,6 @@ spritesheet: 270 336</p>
       </categories>
       <tags>
         <tag>A*</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>君子善假于物</title>
-    <url>/2010/11/17/old_blog/2010-11-17-%E5%90%9B%E5%AD%90%E5%96%84%E5%81%87%E4%BA%8E%E7%89%A9/</url>
-    <content><![CDATA[<p>君子善假于物，意思很明显，就是要善于利用工具……</p>
-
-<p>所以好的工具往往能提高效率，有用的软件当然更值得推荐：</p>
-
-<p>这里推荐一个专门 “推荐软件” 的 site：<a href="http://alternativeto.net/">http://alternativeto.net/</a></p>
-
-<p>排行第一就是：dropbox（有在用，很好用）</p>
-
-<p>其他慢慢自己淘吧……</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
@@ -8118,6 +8118,27 @@ I897	device</pre>
       </tags>
   </entry>
   <entry>
+    <title>jekyll 的使用技巧</title>
+    <url>/2012/07/29/old_blog/2012-07-29-use-jekyll/</url>
+    <content><![CDATA[<h2 id="模版收集"><a href="#模版收集" class="headerlink" title="模版收集"></a>模版收集</h2><ul>
+<li><a href="https://github.com/mbleigh/mbleigh.github.com/">mbleigh.github.com</a></li>
+<li><a href="http://blog.lenage.com/about/">blog.lenage.com</a></li>
+</ul>
+<h2 id="Pygments的语法高亮"><a href="#Pygments的语法高亮" class="headerlink" title="Pygments的语法高亮"></a>Pygments 的语法高亮</h2><p>ruby 语法测试：</p>
+<p>def foo<br>  puts ‘foo’<br>end</p>
+<p>actionscript：</p>
+<p>function a(c:int):void{<br>    if(c==0){<br>        return 1;<br>    }else{<br>        return 0;<br>    }<br>}</p>
+<h2 id="gist的代码嵌入"><a href="#gist的代码嵌入" class="headerlink" title="gist的代码嵌入"></a>gist 的代码嵌入</h2><p>插件：<a href="https://gist.github.com/803483">gist-tag</a></p>
+<p>坚持测试下语法高亮，可惜无法显示行号</p>
+]]></content>
+      <categories>
+        <category>jekyll</category>
+      </categories>
+      <tags>
+        <tag>jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开始用 jekyll 来记录日志</title>
     <url>/2012/07/27/old_blog/2012-07-27-start/</url>
     <content><![CDATA[<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>看到这篇文章: <a href="http://www.yangzhiping.com/tech/github.html">如何高效利用 GitHub</a> 很喜欢 git 的强大！</p>
@@ -8151,24 +8172,17 @@ I897	device</pre>
       </tags>
   </entry>
   <entry>
-    <title>jekyll 的使用技巧</title>
-    <url>/2012/07/29/old_blog/2012-07-29-use-jekyll/</url>
-    <content><![CDATA[<h2 id="模版收集"><a href="#模版收集" class="headerlink" title="模版收集"></a>模版收集</h2><ul>
-<li><a href="https://github.com/mbleigh/mbleigh.github.com/">mbleigh.github.com</a></li>
-<li><a href="http://blog.lenage.com/about/">blog.lenage.com</a></li>
+    <title>git-flow 资料</title>
+    <url>/2012/08/07/old_blog/2012-08-07-start-git-flow/</url>
+    <content><![CDATA[<ul>
+<li><a href="http://www.jeffkit.info/2010/12/842/">开始实践 git-flow</a></li>
 </ul>
-<h2 id="Pygments的语法高亮"><a href="#Pygments的语法高亮" class="headerlink" title="Pygments的语法高亮"></a>Pygments 的语法高亮</h2><p>ruby 语法测试：</p>
-<p>def foo<br>  puts ‘foo’<br>end</p>
-<p>actionscript：</p>
-<p>function a(c:int):void{<br>    if(c==0){<br>        return 1;<br>    }else{<br>        return 0;<br>    }<br>}</p>
-<h2 id="gist的代码嵌入"><a href="#gist的代码嵌入" class="headerlink" title="gist的代码嵌入"></a>gist 的代码嵌入</h2><p>插件：<a href="https://gist.github.com/803483">gist-tag</a></p>
-<p>坚持测试下语法高亮，可惜无法显示行号</p>
 ]]></content>
       <categories>
-        <category>jekyll</category>
+        <category>git</category>
       </categories>
       <tags>
-        <tag>jekyll</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -8192,20 +8206,6 @@ I897	device</pre>
       <tags>
         <tag>entity framework</tag>
         <tag>develop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git-flow 资料</title>
-    <url>/2012/08/07/old_blog/2012-08-07-start-git-flow/</url>
-    <content><![CDATA[<ul>
-<li><a href="http://www.jeffkit.info/2010/12/842/">开始实践 git-flow</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -8299,22 +8299,6 @@ source mysandbox/bin/deactivate
       </tags>
   </entry>
   <entry>
-    <title>[转] AS 文本位图描边</title>
-    <url>/2012/10/16/old_blog/2012-10-16-actionscript-skills/</url>
-    <content><![CDATA[<h2 id="文本位图描边"><a href="#文本位图描边" class="headerlink" title="文本位图描边"></a>文本位图描边</h2><p>来源：James Li 的<a href="http://jamesli.cn/blog/?p=1489">《使用位图滤镜为动态文本描边》</a><br>import flash.display.Bitmap;<br>import flash.text.TextField;<br>import flash.filters.*;<br>import flash.geom.Point;</p>
-<p>var field:TextField = getChildByName(“tf”) as TextField;<br>var bitmap:Bitmap = new Bitmap();<br>var bitmapData:BitmapData = new BitmapData(field.width+10,<br>    field.height+10, true,0x00);<br>bitmapData.draw(field,new Matrix(1,0,0,1,5,0));<br>var matrix:Array = [0,1,0,<br>                    1,1,1,<br>                    0,1,0<br>                    ];<br>// 发光滤镜<br>bitmapData.applyFilter(bitmapData, bitmapData.rect,new Point(),<br>    new GlowFilter(0x000000,1.0,2.0,2.0,10,2));<br>// 卷积滤镜，减轻锯齿<br>bitmapData.applyFilter(bitmapData, bitmapData.rect, new Point(),<br>    new ConvolutionFilter(3,3,matrix,3));</p>
-<p>bitmap.bitmapData = bitmapData;</p>
-<p>bitmap.x = field.x + field.width + 10;<br>bitmap.y = field.y;</p>
-<p>addChild(bitmap);</p>
-]]></content>
-      <categories>
-        <category>actionscript</category>
-      </categories>
-      <tags>
-        <tag>actionscript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>在 github pages 上写文章</title>
     <url>/2012/11/05/old_blog/2012-11-05-%E5%9C%A8github-pages%E4%B8%8A%E5%86%99%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<p>自从喜欢上用 git，开始在 github 上游荡，这个 blog 很久没有更新了。</p>
@@ -8330,6 +8314,22 @@ source mysandbox/bin/deactivate
       <categories>
         <category>其他</category>
       </categories>
+  </entry>
+  <entry>
+    <title>[转] AS 文本位图描边</title>
+    <url>/2012/10/16/old_blog/2012-10-16-actionscript-skills/</url>
+    <content><![CDATA[<h2 id="文本位图描边"><a href="#文本位图描边" class="headerlink" title="文本位图描边"></a>文本位图描边</h2><p>来源：James Li 的<a href="http://jamesli.cn/blog/?p=1489">《使用位图滤镜为动态文本描边》</a><br>import flash.display.Bitmap;<br>import flash.text.TextField;<br>import flash.filters.*;<br>import flash.geom.Point;</p>
+<p>var field:TextField = getChildByName(“tf”) as TextField;<br>var bitmap:Bitmap = new Bitmap();<br>var bitmapData:BitmapData = new BitmapData(field.width+10,<br>    field.height+10, true,0x00);<br>bitmapData.draw(field,new Matrix(1,0,0,1,5,0));<br>var matrix:Array = [0,1,0,<br>                    1,1,1,<br>                    0,1,0<br>                    ];<br>// 发光滤镜<br>bitmapData.applyFilter(bitmapData, bitmapData.rect,new Point(),<br>    new GlowFilter(0x000000,1.0,2.0,2.0,10,2));<br>// 卷积滤镜，减轻锯齿<br>bitmapData.applyFilter(bitmapData, bitmapData.rect, new Point(),<br>    new ConvolutionFilter(3,3,matrix,3));</p>
+<p>bitmap.bitmapData = bitmapData;</p>
+<p>bitmap.x = field.x + field.width + 10;<br>bitmap.y = field.y;</p>
+<p>addChild(bitmap);</p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>actionscript</tag>
+      </tags>
   </entry>
   <entry>
     <title>通过 Adobe Scout 了解 Flash Player</title>
@@ -8392,32 +8392,6 @@ source mysandbox/bin/deactivate
       </categories>
   </entry>
   <entry>
-    <title>推荐一个强大的游戏开发工具：ShoeBox</title>
-    <url>/2013/03/27/old_blog/2013-03-27-%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%EF%BC%9Ashoebox/</url>
-    <content><![CDATA[<p><img class="alignnone size-full wp-image-1003" title="9B74E658-6B07-4208-BC99-0D459E646242" src="/media/2013/03/9B74E658-6B07-4208-BC99-0D459E646242.png" alt="" width="650" height="224"></p>
-
-<p>地址：<a title="http://renderhjs.net/shoebox/" href="http://renderhjs.net/shoebox/" target="_blank">http://renderhjs.net/shoebox/</a></p>
-
-<p>免费的游戏开发的素材整理工具，免费的，界面不错，基于 AIR，跨平台。</p>
-
-<p>功能：
-</p><ol>
-    <li>打包图片，支持各种导出格式：cocos2d，starling，unity3d……</li>
-    <li> 图片的 9 宫格处理</li>
-    <li>支持命令行调用，可以自定义脚本，批量处理</li>
-    <li>等等……（我太懒了！）</li>
-</ol>
-英文详细介绍：<a title="http://renderhjs.net/shoebox/manual.htm" href="http://renderhjs.net/shoebox/manual.htm" target="_blank">http://renderhjs.net/shoebox/manual.htm</a><p></p>
-]]></content>
-      <categories>
-        <category>Air</category>
-      </categories>
-      <tags>
-        <tag>actionscript</tag>
-        <tag>Air</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2012 的 Github Game Off</title>
     <url>/2013/03/09/old_blog/2013-03-09-2012%E7%9A%84github-game-off/</url>
     <content><![CDATA[<p><img class="alignnone size-full wp-image-995" title="DD0619E4-F2C9-4461-BFF0-C7ACD480E459" src="/media/2013/03/DD0619E4-F2C9-4461-BFF0-C7ACD480E459.jpg" alt="" width="637" height="247"></p>
@@ -8444,6 +8418,32 @@ source mysandbox/bin/deactivate
       <tags>
         <tag>GameJam</tag>
         <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>推荐一个强大的游戏开发工具：ShoeBox</title>
+    <url>/2013/03/27/old_blog/2013-03-27-%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%EF%BC%9Ashoebox/</url>
+    <content><![CDATA[<p><img class="alignnone size-full wp-image-1003" title="9B74E658-6B07-4208-BC99-0D459E646242" src="/media/2013/03/9B74E658-6B07-4208-BC99-0D459E646242.png" alt="" width="650" height="224"></p>
+
+<p>地址：<a title="http://renderhjs.net/shoebox/" href="http://renderhjs.net/shoebox/" target="_blank">http://renderhjs.net/shoebox/</a></p>
+
+<p>免费的游戏开发的素材整理工具，免费的，界面不错，基于 AIR，跨平台。</p>
+
+<p>功能：
+</p><ol>
+    <li>打包图片，支持各种导出格式：cocos2d，starling，unity3d……</li>
+    <li> 图片的 9 宫格处理</li>
+    <li>支持命令行调用，可以自定义脚本，批量处理</li>
+    <li>等等……（我太懒了！）</li>
+</ol>
+英文详细介绍：<a title="http://renderhjs.net/shoebox/manual.htm" href="http://renderhjs.net/shoebox/manual.htm" target="_blank">http://renderhjs.net/shoebox/manual.htm</a><p></p>
+]]></content>
+      <categories>
+        <category>Air</category>
+      </categories>
+      <tags>
+        <tag>actionscript</tag>
+        <tag>Air</tag>
       </tags>
   </entry>
   <entry>
