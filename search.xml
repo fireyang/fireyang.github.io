@@ -75,20 +75,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VScode 在 mac 下 vim 的长按问题</title>
-    <url>/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/</url>
-    <content><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>mac 下的 VScode vim 插件，常按 hjkl 键无法持续移动光标</p>
-<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>终端下执行命令：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></tbody></table></figure>
-<p>复原:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></tbody></table></figure>
-
-]]></content>
-      <tags>
-        <tag>vim, mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac OS 下 rust 交叉编译 armv7</title>
     <url>/2019/03/20/mac-rust-cross-compile-armv7/</url>
     <content><![CDATA[<h1 id="Mac-OS下rust交叉编译armv7"><a href="#Mac-OS下rust交叉编译armv7" class="headerlink" title="Mac OS下rust交叉编译armv7"></a>Mac OS 下 rust 交叉编译 armv7</h1><p>参考来源：<a href="https://sigmaris.info/blog/2019/02/cross-compiling-rust-on-mac-os-for-an-arm-linux-router/">Cross compiling Rust on Mac OS for an ARM Linux router</a></p>
@@ -107,6 +93,20 @@
 ]]></content>
       <tags>
         <tag>mac, rust, armv7, cross-compile</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VScode 在 mac 下 vim 的长按问题</title>
+    <url>/2018/01/16/mac-visual-studio-code-vim-hold-key-bug/</url>
+    <content><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>mac 下的 VScode vim 插件，常按 hjkl 键无法持续移动光标</p>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>终端下执行命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false</span><br></pre></td></tr></tbody></table></figure>
+<p>复原:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true</span><br></pre></td></tr></tbody></table></figure>
+
+]]></content>
+      <tags>
+        <tag>vim, mac</tag>
       </tags>
   </entry>
   <entry>
@@ -418,6 +418,66 @@ TextScript.removeBlurIn(m, delay);<br>
       </categories>
   </entry>
   <entry>
+    <title>能移动的 RichTextEdit</title>
+    <url>/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/</url>
+    <content><![CDATA[<p></p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">="*"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="100%"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;"none";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.*;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rte"</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">="5"</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">="floatControlBar()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rteControl"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="325"</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">="ToolBar"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
+<object style="WIDTH: 691px; HEIGHT: 441px" height="441" width="691" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+<param name="Movie" value="/images/cnblogs_com/fireyang/poptitle.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/poptitle.swf" width="500" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object><br>
+<img src="http://www.cnblogs.com/FireYang/aggbug/622034.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 22:16 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/622034.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>欢迎加入 RIA SEED !</title>
+    <url>/2007/01/02/old_blog/2007-01-02-%E6%AC%A2%E8%BF%8E%E5%8A%A0%E5%85%A5RIA+SEED+!/</url>
+    <content><![CDATA[<p></p><div class="ghgrn">RIA SEED 是一个 google 的 groups, 以前是在 mmug 上的一群人组件的，讨论 mm 技术的一个园地.<br>现在在 google 上按了个家，继续 mm 精神，继续 RIA<br>希望更多的 RIA 开发者，在这里共享自己的经验.<br></div>
+<table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
+        </tr>
+        <tr>
+            <td style="PADDING-LEFT: 5px; FONT-SIZE: 125%"><strong>RIA SEED (OLD MMUGCN) </strong> </td>
+        </tr>
+        <tr>
+            <td style="PADDING-LEFT: 5px"><a href="http://groups.google.com/group/riaseed?hl=zh-CN">访问此论坛</a> </td>
+        </tr>
+    </tbody>
+</table>
+<pre><code>    &lt;tr&gt;
+        &lt;td align="right"&gt;&lt;a href="http://groups.google.com/group/riaseed?hl=zh-CN"&gt;访问此论坛&lt;/a&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+</code></pre><table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0" border="0">
+    <tbody>
+        <tr>
+            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
+        </tr>
+        <tr>
+            <td style="PADDING-LEFT: 5px"><strong>订阅 RIA SEED (OLD MMUGCN)</strong> </td>
+        </tr>
+        <form action="http://groups.google.com/group/riaseed/boxsubscribe"></form>
+            <input type="hidden" value="zh-CN" name="hl">
+            <tr>
+                <td style="PADDING-LEFT: 5px"> 电子邮件： <input name="email"> <input type="submit" value="订阅" name="sub"> </td>
+            </tr>
+        
+
+</tbody></table>
+<p><span style="COLOR: red">如果要 gmial 的邀请，请留言，我这里还有很多．<br><span style="COLOR: #000000">功能 (简单介绍):</span></span></p>
+<ol>
+    <li><span style="COLOR: red"><span style="COLOR: #000000">上传文件</span></span></li>
+    <li><span style="COLOR: red"><span style="COLOR: #000000">直接把资料发送到邮件，可以设置，主题或所有内容</span></span></li>
+    <li><span style="COLOR: red"><span style="COLOR: #000000">有自带的 wiki 功能 </span></span></li>
+</ol>
+
+<p><img src="http://www.cnblogs.com/FireYang/aggbug/631749.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-27 09:01 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/27/631749.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
+]]></content>
+  </entry>
+  <entry>
     <title>as 3.0 一百个小技巧</title>
     <url>/2007/01/01/old_blog/2007-01-01-as+3/</url>
     <content><![CDATA[<p></p><p><strong><a href="http://www.kirupa.com/forum/showthread.php?t=223798" target="_blank"><strong>ActionScript 3 Tip of the Day</strong> </a></strong><br>从上面的连接进去，那里的小技巧用处大的很。收藏了先。<br>想想还是把它翻译过来吧</p>
@@ -488,66 +548,6 @@ TextScript.removeBlurIn(m, delay);<br>
       <categories>
         <category>未分类</category>
       </categories>
-  </entry>
-  <entry>
-    <title>能移动的 RichTextEdit</title>
-    <url>/2007/01/01/old_blog/2007-01-01-%E8%83%BD%E7%A7%BB%E5%8A%A8%E7%9A%84RichTextEdit/</url>
-    <content><![CDATA[<p></p><div style="BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 13px; PADDING-BOTTOM: 4px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 98%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #eeeeee"><span style="COLOR: #0000ff">&lt;?</span><span style="COLOR: #ff00ff">xml&nbsp;version="1.0"&nbsp;encoding="utf-8"</span><span style="COLOR: #0000ff">?&gt;</span><span style="COLOR: #000000"><br></span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Application&nbsp;</span><span style="COLOR: #ff0000">xmlns:mx</span><span style="COLOR: #0000ff">="http://www.adobe.com/2006/mxml"</span><span style="COLOR: #ff0000">&nbsp;xmlns</span><span style="COLOR: #0000ff">="*"</span><span style="COLOR: #ff0000">&nbsp;height</span><span style="COLOR: #0000ff">="100%"</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TitleWindow&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundAlpha:&nbsp;0.9;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderColor:&nbsp;#9199A4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderAlpha:&nbsp;1.0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderStyle:&nbsp;"none";&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borderThickness:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingBottom:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingLeft:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingRight:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paddingTop:&nbsp;0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Style</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;![CDATA[</span><span style="COLOR: #808080">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;mx.managers.*;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;function&nbsp;floatControlBar()&nbsp;:&nbsp;void&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.parent.removeChild(rteControl);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rteControl.addChild(DisplayObject(rte.toolbar));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rte.showControlBar=false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx.managers.PopUpManager.addPopUp(rteControl,&nbsp;rte,&nbsp;false);&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span style="COLOR: #0000ff">]]&gt;</span><span style="COLOR: #000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Script</span><span style="COLOR: #0000ff">&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:RichTextEditor&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rte"</span><span style="COLOR: #ff0000">&nbsp;htmlText</span><span style="COLOR: #0000ff">=""</span><span style="COLOR: #ff0000">&nbsp;headerHeight</span><span style="COLOR: #0000ff">="5"</span><span style="COLOR: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;creationComplete</span><span style="COLOR: #0000ff">="floatControlBar()"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="COLOR: #0000ff">&lt;</span><span style="COLOR: #800000">mx:TitleWindow&nbsp;</span><span style="COLOR: #ff0000">id</span><span style="COLOR: #0000ff">="rteControl"</span><span style="COLOR: #ff0000">&nbsp;width</span><span style="COLOR: #0000ff">="325"</span><span style="COLOR: #ff0000">&nbsp;title</span><span style="COLOR: #0000ff">="ToolBar"</span><span style="COLOR: #0000ff">/&gt;</span><span style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<br></span><span style="COLOR: #0000ff">&lt;/</span><span style="COLOR: #800000">mx:Application</span><span style="COLOR: #0000ff">&gt;</span></div>
-<object style="WIDTH: 691px; HEIGHT: 441px" height="441" width="691" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-<param name="Movie" value="/images/cnblogs_com/fireyang/poptitle.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/poptitle.swf" width="500" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</object><br>
-<img src="http://www.cnblogs.com/FireYang/aggbug/622034.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-16 22:16 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/16/622034.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>欢迎加入 RIA SEED !</title>
-    <url>/2007/01/02/old_blog/2007-01-02-%E6%AC%A2%E8%BF%8E%E5%8A%A0%E5%85%A5RIA+SEED+!/</url>
-    <content><![CDATA[<p></p><div class="ghgrn">RIA SEED 是一个 google 的 groups, 以前是在 mmug 上的一群人组件的，讨论 mm 技术的一个园地.<br>现在在 google 上按了个家，继续 mm 精神，继续 RIA<br>希望更多的 RIA 开发者，在这里共享自己的经验.<br></div>
-<table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0">
-    <tbody>
-        <tr>
-            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
-        </tr>
-        <tr>
-            <td style="PADDING-LEFT: 5px; FONT-SIZE: 125%"><strong>RIA SEED (OLD MMUGCN) </strong> </td>
-        </tr>
-        <tr>
-            <td style="PADDING-LEFT: 5px"><a href="http://groups.google.com/group/riaseed?hl=zh-CN">访问此论坛</a> </td>
-        </tr>
-    </tbody>
-</table>
-<pre><code>    &lt;tr&gt;
-        &lt;td align="right"&gt;&lt;a href="http://groups.google.com/group/riaseed?hl=zh-CN"&gt;访问此论坛&lt;/a&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/tbody&gt;
-</code></pre><table style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #fff" cellspacing="0" border="0">
-    <tbody>
-        <tr>
-            <td><img height="26" alt="Google 网上论坛 Beta 版" src="http://groups.google.com/groups/img/3/groups_bar_zh-CN.gif" width="132"> </td>
-        </tr>
-        <tr>
-            <td style="PADDING-LEFT: 5px"><strong>订阅 RIA SEED (OLD MMUGCN)</strong> </td>
-        </tr>
-        <form action="http://groups.google.com/group/riaseed/boxsubscribe"></form>
-            <input type="hidden" value="zh-CN" name="hl">
-            <tr>
-                <td style="PADDING-LEFT: 5px"> 电子邮件： <input name="email"> <input type="submit" value="订阅" name="sub"> </td>
-            </tr>
-        
-
-</tbody></table>
-<p><span style="COLOR: red">如果要 gmial 的邀请，请留言，我这里还有很多．<br><span style="COLOR: #000000">功能 (简单介绍):</span></span></p>
-<ol>
-    <li><span style="COLOR: red"><span style="COLOR: #000000">上传文件</span></span></li>
-    <li><span style="COLOR: red"><span style="COLOR: #000000">直接把资料发送到邮件，可以设置，主题或所有内容</span></span></li>
-    <li><span style="COLOR: red"><span style="COLOR: #000000">有自带的 wiki 功能 </span></span></li>
-</ol>
-
-<p><img src="http://www.cnblogs.com/FireYang/aggbug/631749.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2007-01-27 09:01 <a href="http://www.cnblogs.com/FireYang/archive/2007/01/27/631749.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p><p></p>
-]]></content>
   </entry>
   <entry>
     <title>Flex 的全局变量 (原创翻译)</title>
@@ -629,16 +629,6 @@ NTU 坐标:'+poi.point);<br>
       </categories>
   </entry>
   <entry>
-    <title>Adobe 的 Soundbooth 测试版体验</title>
-    <url>/2007/08/02/old_blog/2007-08-02-Adobe%E7%9A%84Soundbooth%E6%B5%8B%E8%AF%95%E7%89%88%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<p></p><p>在 Adobe 的 labs 下可以下到 Soundbooth 的测试版．<br><a href="http://labs.adobe.com/downloads/soundbooth.html">http://labs.adobe.com/downloads/soundbooth.html</a><br><img height="301" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/asd.jpg" width="448" border="0"><br>跟 cooledit 很相似，但是功能上还是很薄弱，不过这可能是 Adobe 在音频领域迈出的一大步了．<br>据说在将来的版本里功能会很强大．<br>Adobe 在多媒体领域发展的越来越大了，从以前的图像处理到现在的视频领域，都有所涉及了，特别是 flv 格式的视频，在 net 上的运用越来越普遍了．<br>希望 Adobe 越做越好，在多媒体的道路上走的更远．</p>
-<img src="http://www.cnblogs.com/FireYang/aggbug/555445.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-09 15:53 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/09/555445.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Access 的 update 注意</title>
     <url>/2007/08/02/old_blog/2007-08-02-Access%E7%9A%84update%E6%B3%A8%E6%84%8F/</url>
     <content><![CDATA[<p></p><p>
@@ -664,6 +654,16 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
 以上两种形式能可以，这是在 access 中发现的，不知道在其他数据库是否也存在这样的问题，留意下。 
 </p>
 <p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Adobe 的 Soundbooth 测试版体验</title>
+    <url>/2007/08/02/old_blog/2007-08-02-Adobe%E7%9A%84Soundbooth%E6%B5%8B%E8%AF%95%E7%89%88%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<p></p><p>在 Adobe 的 labs 下可以下到 Soundbooth 的测试版．<br><a href="http://labs.adobe.com/downloads/soundbooth.html">http://labs.adobe.com/downloads/soundbooth.html</a><br><img height="301" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/asd.jpg" width="448" border="0"><br>跟 cooledit 很相似，但是功能上还是很薄弱，不过这可能是 Adobe 在音频领域迈出的一大步了．<br>据说在将来的版本里功能会很强大．<br>Adobe 在多媒体领域发展的越来越大了，从以前的图像处理到现在的视频领域，都有所涉及了，特别是 flv 格式的视频，在 net 上的运用越来越普遍了．<br>希望 Adobe 越做越好，在多媒体的道路上走的更远．</p>
+<img src="http://www.cnblogs.com/FireYang/aggbug/555445.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-09 15:53 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/09/555445.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -707,25 +707,6 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
       </categories>
   </entry>
   <entry>
-    <title>Flex 中 CSS 的应用</title>
-    <url>/2007/08/02/old_blog/2007-08-02-Flex%E4%B8%ADCSS%E7%9A%84%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<p></p><p>
-这里的 css 应用的教程，很详细 
-</p>
-<p>
-<a href="http://www.andymcintosh.com/360Flex/" target="_blank">Creating a Visual Experience</a> 
-</p>
-<p>
-&nbsp;
-</p>
-<img src="/image.axd?picture=css200710081.jpg" alt="" width="589" height="192"> <img src="/image.axd?picture=css200710082.jpg" alt="" width="633" height="350"> <img src="/image.axd?picture=css200710083.jpg" alt="" width="486" height="328">
-<p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Flash 调试器 REDbug</title>
     <url>/2007/08/02/old_blog/2007-08-02-Flash%E8%B0%83%E8%AF%95%E5%99%A8REDbug/</url>
     <content><![CDATA[<p></p><p>
@@ -750,6 +731,25 @@ update be_Posts set title = ' 玉龙雪山 3' where postID = {a9c2dc1f-87d2-4bf2
     </ul>
     </li>
 </ul>
+<p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Flex 中 CSS 的应用</title>
+    <url>/2007/08/02/old_blog/2007-08-02-Flex%E4%B8%ADCSS%E7%9A%84%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<p></p><p>
+这里的 css 应用的教程，很详细 
+</p>
+<p>
+<a href="http://www.andymcintosh.com/360Flex/" target="_blank">Creating a Visual Experience</a> 
+</p>
+<p>
+&nbsp;
+</p>
+<img src="/image.axd?picture=css200710081.jpg" alt="" width="589" height="192"> <img src="/image.axd?picture=css200710082.jpg" alt="" width="633" height="350"> <img src="/image.axd?picture=css200710083.jpg" alt="" width="486" height="328">
 <p></p>
 ]]></content>
       <categories>
@@ -855,19 +855,6 @@ set<br>
       </tags>
   </entry>
   <entry>
-    <title>c# 编写 flash 系统，自动生成！</title>
-    <url>/2007/08/02/old_blog/2007-08-02-c#%E7%BC%96%E5%86%99flash%E7%B3%BB%E7%BB%9F%EF%BC%8C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%81/</url>
-    <content><![CDATA[<p>看到一个可以像在.net 中做 web app 一样，做 flash！<br>有点不足就是没有可视化的组件，在开发效率上有点地下<br>网址：<a href="http://www.globfx.com/">http://www.globfx.com/</a><br>图标看上去就不错，呵呵！<img height="91" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/logo_globfx.jpg" width="200" border="0"><br>它可以支持 windows 下的 vs2003 和 vs2005，也有独立的 c# SDK framework, 有比较多的 samples 和帮助文档。 <br>贴一个 demo：<br>
-<object height="500" width="600" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-<param name="Movie" value="/images/cnblogs_com/fireyang/SlideShow.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/SlideShow.swf" width="600" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</object>
-<img src="http://www.cnblogs.com/FireYang/aggbug/543657.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-10-29 17:09 <a href="http://www.cnblogs.com/FireYang/archive/2006/10/29/543657.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Cairngorm 的简单结构图</title>
     <url>/2007/08/02/old_blog/2007-08-02-cairngorm%E7%9A%84%E7%AE%80%E5%8D%95%E7%BB%93%E6%9E%84%E5%9B%BE/</url>
     <content><![CDATA[<p>更加详细的信息：<a href="http://cairngormdocs.org/" target="_blank">http://cairngormdocs.org/</a></p>
@@ -883,6 +870,19 @@ set<br>
         <tag>Cairngorm</tag>
         <tag>flex</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>c# 编写 flash 系统，自动生成！</title>
+    <url>/2007/08/02/old_blog/2007-08-02-c#%E7%BC%96%E5%86%99flash%E7%B3%BB%E7%BB%9F%EF%BC%8C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%81/</url>
+    <content><![CDATA[<p>看到一个可以像在.net 中做 web app 一样，做 flash！<br>有点不足就是没有可视化的组件，在开发效率上有点地下<br>网址：<a href="http://www.globfx.com/">http://www.globfx.com/</a><br>图标看上去就不错，呵呵！<img height="91" alt="" src="http://www.cnblogs.com/images/cnblogs_com/fireyang/logo_globfx.jpg" width="200" border="0"><br>它可以支持 windows 下的 vs2003 和 vs2005，也有独立的 c# SDK framework, 有比较多的 samples 和帮助文档。 <br>贴一个 demo：<br>
+<object height="500" width="600" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" xcodebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
+<param name="Movie" value="/images/cnblogs_com/fireyang/SlideShow.swf"> <param name="Quality" value="high"><param name="wmode" value="transparent"><embed src="http://www.cnblogs.com/images/cnblogs_com/fireyang/SlideShow.swf" width="600" height="500" quality="high" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object>
+<img src="http://www.cnblogs.com/FireYang/aggbug/543657.html" width="1" height="1"><br><br></p><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-10-29 17:09 <a href="http://www.cnblogs.com/FireYang/archive/2006/10/29/543657.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
   </entry>
   <entry>
     <title>DB2 参照约束的删除规则（delete rule）</title>
@@ -1076,23 +1076,6 @@ font-family: ArialEmbedded;<br>
       </categories>
   </entry>
   <entry>
-    <title>一个 FLV 播放器的 Apollo 例子</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E4%B8%80%E4%B8%AAflv%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84apollo%E4%BE%8B%E5%AD%90/</url>
-    <content><![CDATA[<p>使用 Flash CS3 和 <a href="http://gskinner.com/blog/archives/2007/07/creating_air_pr.html" target="_blank"><span style="color: #e16308;">AIRPanel extension</span></a> （Flash Apollo 扩展）, 使用了 <a href="http://code.google.com/p/tweener/" target="_blank"><span style="color: #e16308;">Tweener AS3 library</span></a> （一个移动效果的类）, 制作了这个 demo</p>
-
-<p>在这个 App 里你可以直接把 Flv 拖进去播放，点下面的相机按钮，可以弹出截图，在截图上右击，可以保存这个图片，这里提供<a href="http://theflexblog.com/SpitEmOut.zip" target="_blank">源码和示例</a>，一定要先安装 Apollo 执行环境</p>
-
-<p><img src="http://www.fireyang.com/image.axd?picture=spit.jpg" alt="" width="535" height="391"></p>
-]]></content>
-      <categories>
-        <category>flex</category>
-      </categories>
-      <tags>
-        <tag>apollo</tag>
-        <tag>flv</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一个 n 的 flex 组件（SpringGraph Flex Component）</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E4%B8%80%E4%B8%AAn%E7%9A%84flex%E7%BB%84%E4%BB%B6%EF%BC%88SpringGraph+Flex+Component%EF%BC%89/</url>
     <content><![CDATA[<p></p><p dir="ltr" style="MARGIN-RIGHT: 0px"><a href="http://mark-shepherd.com/blog/springgraph-flex-component/" target="_blank">SpringGraph Flex Component</a><br>有几个 demo，不多做解释，用了就知道强大了，关于如何使用，以后在慢慢写了。<br>Demo：（在 demo 里点右键可以选择查看他的源代码，真是一切为了大家啊，对作者敬个礼）<br></p>
@@ -1112,6 +1095,23 @@ font-family: ArialEmbedded;<br>
       <categories>
         <category>未分类</category>
       </categories>
+  </entry>
+  <entry>
+    <title>一个 FLV 播放器的 Apollo 例子</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E4%B8%80%E4%B8%AAflv%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84apollo%E4%BE%8B%E5%AD%90/</url>
+    <content><![CDATA[<p>使用 Flash CS3 和 <a href="http://gskinner.com/blog/archives/2007/07/creating_air_pr.html" target="_blank"><span style="color: #e16308;">AIRPanel extension</span></a> （Flash Apollo 扩展）, 使用了 <a href="http://code.google.com/p/tweener/" target="_blank"><span style="color: #e16308;">Tweener AS3 library</span></a> （一个移动效果的类）, 制作了这个 demo</p>
+
+<p>在这个 App 里你可以直接把 Flv 拖进去播放，点下面的相机按钮，可以弹出截图，在截图上右击，可以保存这个图片，这里提供<a href="http://theflexblog.com/SpitEmOut.zip" target="_blank">源码和示例</a>，一定要先安装 Apollo 执行环境</p>
+
+<p><img src="http://www.fireyang.com/image.axd?picture=spit.jpg" alt="" width="535" height="391"></p>
+]]></content>
+      <categories>
+        <category>flex</category>
+      </categories>
+      <tags>
+        <tag>apollo</tag>
+        <tag>flv</tag>
+      </tags>
   </entry>
   <entry>
     <title>上海留影</title>
@@ -1356,6 +1356,24 @@ PingService.Send();<p></p>
       </tags>
   </entry>
   <entry>
+    <title>我的 eclisp 工具配置！</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E6%88%91%E7%9A%84eclisp%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE%EF%BC%81/</url>
+    <content><![CDATA[<p></p><p dir="ltr" style="MARGIN-RIGHT: 0px">在我的 Eclipse 3.2 中我配置了我经常用的开发工具，可惜太耗内存，不然把自己的开发平台转到 Eclipse 上来。</p>
+<ol>
+    <li>pydev 的插件（只能在３.２里，在３.１的版本里不能安装）</li>
+    <ol>
+        <li>帮助＞＞软件更新＞＞查找并安装＞＞再按提示逐步安装．</li>
+        <li>填入： <a href="http://pydev.sf.net/updates/">http://pydev.sf.net/updates/</a>．</li>
+    </ol>
+    <li>flex 插件：</li>
+</ol>
+<img src="http://www.cnblogs.com/FireYang/aggbug/555387.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-09 15:07 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/09/555387.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>我的 Google Map 的 Key</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E6%88%91%E7%9A%84Google+Map%E7%9A%84Key/</url>
     <content><![CDATA[<p></p><ol>
@@ -1396,24 +1414,6 @@ PingService.Send();<p></p>
       </categories>
   </entry>
   <entry>
-    <title>我的 eclisp 工具配置！</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E6%88%91%E7%9A%84eclisp%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE%EF%BC%81/</url>
-    <content><![CDATA[<p></p><p dir="ltr" style="MARGIN-RIGHT: 0px">在我的 Eclipse 3.2 中我配置了我经常用的开发工具，可惜太耗内存，不然把自己的开发平台转到 Eclipse 上来。</p>
-<ol>
-    <li>pydev 的插件（只能在３.２里，在３.１的版本里不能安装）</li>
-    <ol>
-        <li>帮助＞＞软件更新＞＞查找并安装＞＞再按提示逐步安装．</li>
-        <li>填入： <a href="http://pydev.sf.net/updates/">http://pydev.sf.net/updates/</a>．</li>
-    </ol>
-    <li>flex 插件：</li>
-</ol>
-<img src="http://www.cnblogs.com/FireYang/aggbug/555387.html" width="1" height="1"><br><br><div align="right"><a style="text-decoration:none;" href="http://FireYang.cnblogs.com/" target="_blank">FireYang</a> 2006-11-09 15:07 <a href="http://www.cnblogs.com/FireYang/archive/2006/11/09/555387.html#Feedback" target="_blank" style="text-decoration:none;">发表评论</a></div><p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>我的饭否</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E6%88%91%E7%9A%84%E9%A5%AD%E5%90%A6/</url>
     <content><![CDATA[<p>[No text]</p>
@@ -1436,6 +1436,15 @@ PingService.Send();<p></p>
       </tags>
   </entry>
   <entry>
+    <title>测试 Windows Live Writer 来更新我的 Blog</title>
+    <url>/2007/08/02/old_blog/2007-08-02-%E6%B5%8B%E8%AF%95Windows+Live+Writer%E6%9D%A5%E6%9B%B4%E6%96%B0%E6%88%91%E7%9A%84Blog/</url>
+    <content><![CDATA[<p></p><p>用这个工具来更新的我 blog，看看效果</p><p></p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>玉龙雪山</title>
     <url>/2007/08/02/old_blog/2007-08-02-%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1/</url>
     <content><![CDATA[<p></p><p>
@@ -1445,15 +1454,6 @@ PingService.Send();<p></p>
 <img src="http://lh5.google.com/shenhuan007/RwcDIH8hpTI/AAAAAAAAA_Q/iVueKGeAkQE/CIMG1957.JPG?imgmax=512" alt="" width="512" height="384"> 
 </p>
 <p></p>
-]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>测试 Windows Live Writer 来更新我的 Blog</title>
-    <url>/2007/08/02/old_blog/2007-08-02-%E6%B5%8B%E8%AF%95Windows+Live+Writer%E6%9D%A5%E6%9B%B4%E6%96%B0%E6%88%91%E7%9A%84Blog/</url>
-    <content><![CDATA[<p></p><p>用这个工具来更新的我 blog，看看效果</p><p></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1948,13 +1948,11 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
       </categories>
   </entry>
   <entry>
-    <title>彩云之南</title>
-    <url>/2007/10/01/old_blog/2007-10-01-%E5%BD%A9%E4%BA%91%E4%B9%8B%E5%8D%97/</url>
-    <content><![CDATA[<p></p><h1>&nbsp;&nbsp;</h1>
-<h1>彩云之南，我心的方向&nbsp;<br>
-孔雀飞去，回忆悠长&nbsp;<br>
-玉龙雪山，闪耀着银光&nbsp;<br>
-秀色丽江，人在路上&nbsp;</h1><img src="/image.axd?picture=200710101.jpg" alt="" width="416" height="488"> 
+    <title>发人深省的一段话</title>
+    <url>/2007/10/01/old_blog/2007-10-01-%E5%8F%91%E4%BA%BA%E6%B7%B1%E7%9C%81%E7%9A%84%E4%B8%80%E6%AE%B5%E8%AF%9D/</url>
+    <content><![CDATA[<p></p><p>
+<font size="2">初从文，三年不中；后习武，校场发一矢，中鼓吏，逐之出；遂学医，有所成。 自撰一良方，服之，卒。</font>
+</p>
 <p></p>
 ]]></content>
       <categories>
@@ -1962,11 +1960,13 @@ String 所有的方法都是这样的设置的，以后要注意了，以免浪�
       </categories>
   </entry>
   <entry>
-    <title>发人深省的一段话</title>
-    <url>/2007/10/01/old_blog/2007-10-01-%E5%8F%91%E4%BA%BA%E6%B7%B1%E7%9C%81%E7%9A%84%E4%B8%80%E6%AE%B5%E8%AF%9D/</url>
-    <content><![CDATA[<p></p><p>
-<font size="2">初从文，三年不中；后习武，校场发一矢，中鼓吏，逐之出；遂学医，有所成。 自撰一良方，服之，卒。</font>
-</p>
+    <title>彩云之南</title>
+    <url>/2007/10/01/old_blog/2007-10-01-%E5%BD%A9%E4%BA%91%E4%B9%8B%E5%8D%97/</url>
+    <content><![CDATA[<p></p><h1>&nbsp;&nbsp;</h1>
+<h1>彩云之南，我心的方向&nbsp;<br>
+孔雀飞去，回忆悠长&nbsp;<br>
+玉龙雪山，闪耀着银光&nbsp;<br>
+秀色丽江，人在路上&nbsp;</h1><img src="/image.axd?picture=200710101.jpg" alt="" width="416" height="488"> 
 <p></p>
 ]]></content>
       <categories>
@@ -2791,6 +2791,28 @@ int count = Convert.ToInt32(cmd.ExecuteScalar());</li>
       </tags>
   </entry>
   <entry>
+    <title>google 的图表 API</title>
+    <url>/2007/12/02/old_blog/2007-12-02-google%E7%9A%84%E5%9B%BE%E8%A1%A8api/</url>
+    <content><![CDATA[<p> 相关连接：<a href="http://code.google.com/apis/chart/">http://code.google.com/apis/chart/</a></p>
+
+<p>你输入：<font face="Courier New"><a href="http://chart.apis.google.com/chart?cht=p3&amp;chd=s:hW&amp;chs=250x100&amp;chl=Hello|World">http://chart.apis.google.com/chart?cht=p3&amp;chd=s:hW&amp;chs=250x100&amp;chl=Hello|World</a></font></p>
+
+<p><font face="Courier New">可以得到这样的图形：</font><font face="Courier New"> </font></p>
+
+<p><font face="Courier New"><img src="http://chart.apis.google.com/chart?cht=p3&amp;chd=s:hW&amp;chs=250x100&amp;chl=Hello|World" alt="Yellow line chart" border="0" height="100" width="250"> </font></p>
+
+<p><font face="Courier New">详细资料，查看上面的连接 </font></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>api</tag>
+        <tag>图表</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>安装 ROR (Rails)</title>
     <url>/2007/12/01/old_blog/2007-12-01-%E5%AE%89%E8%A3%85ror(rails)/</url>
     <content><![CDATA[<p> 安装 Ruby：<br>
@@ -2826,28 +2848,6 @@ Ruby on Rails</h1>
       <tags>
         <tag>rails</tag>
         <tag>安装</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>google 的图表 API</title>
-    <url>/2007/12/02/old_blog/2007-12-02-google%E7%9A%84%E5%9B%BE%E8%A1%A8api/</url>
-    <content><![CDATA[<p> 相关连接：<a href="http://code.google.com/apis/chart/">http://code.google.com/apis/chart/</a></p>
-
-<p>你输入：<font face="Courier New"><a href="http://chart.apis.google.com/chart?cht=p3&amp;chd=s:hW&amp;chs=250x100&amp;chl=Hello|World">http://chart.apis.google.com/chart?cht=p3&amp;chd=s:hW&amp;chs=250x100&amp;chl=Hello|World</a></font></p>
-
-<p><font face="Courier New">可以得到这样的图形：</font><font face="Courier New"> </font></p>
-
-<p><font face="Courier New"><img src="http://chart.apis.google.com/chart?cht=p3&amp;chd=s:hW&amp;chs=250x100&amp;chl=Hello|World" alt="Yellow line chart" border="0" height="100" width="250"> </font></p>
-
-<p><font face="Courier New">详细资料，查看上面的连接 </font></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>api</tag>
-        <tag>图表</tag>
       </tags>
   </entry>
   <entry>
@@ -3238,6 +3238,21 @@ autocmd BufRead *.mxml set filetype=mxml</blockquote>
       </tags>
   </entry>
   <entry>
+    <title>喜欢开源，关注 ASWing</title>
+    <url>/2008/02/02/old_blog/2008-02-02-%E5%96%9C%E6%AC%A2%E5%BC%80%E6%BA%90%EF%BC%8C%E5%85%B3%E6%B3%A8aswing/</url>
+    <content><![CDATA[<p> 转到 ubuntu 有一段时间了，喜欢 AS 的我，开始关注 AS 的开源的东西，虽然已经安装了 linux 版的 flex，但是怎么能把 ASWing 给遗漏呢，</p>
+
+<p><a href="http://www.aswing.org/" target="_blank">http://www.aswing.org/</a>，时刻关注</p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>actionscript</tag>
+        <tag>aswing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在 ubuntu 中捕获 trace</title>
     <url>/2008/03/17/old_blog/2008-03-17-%E5%9C%A8ubuntu%E4%B8%AD%E6%8D%95%E8%8E%B7trace/</url>
     <content><![CDATA[<p>在 ubuntu 下的 firefox 中有一个这样的插件 flashtracer 插件，配置好他就能捕获你的 trace，当然你的 flashplayer 一定要是 debug 版本的</p>
@@ -3304,21 +3319,6 @@ Linux  home/user_name/macromedia/Flash_Player/Logs/flashlog.txt</p>
       </tags>
   </entry>
   <entry>
-    <title>喜欢开源，关注 ASWing</title>
-    <url>/2008/02/02/old_blog/2008-02-02-%E5%96%9C%E6%AC%A2%E5%BC%80%E6%BA%90%EF%BC%8C%E5%85%B3%E6%B3%A8aswing/</url>
-    <content><![CDATA[<p> 转到 ubuntu 有一段时间了，喜欢 AS 的我，开始关注 AS 的开源的东西，虽然已经安装了 linux 版的 flex，但是怎么能把 ASWing 给遗漏呢，</p>
-
-<p><a href="http://www.aswing.org/" target="_blank">http://www.aswing.org/</a>，时刻关注</p>
-]]></content>
-      <categories>
-        <category>actionscript</category>
-      </categories>
-      <tags>
-        <tag>actionscript</tag>
-        <tag>aswing</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搬家到 wordpress 上来了</title>
     <url>/2008/03/18/old_blog/2008-03-18-%E6%90%AC%E5%AE%B6%E5%88%B0wordpress%E4%B8%8A%E6%9D%A5%E4%BA%86/</url>
     <content><![CDATA[<p>现在我想最流行的 blog 也就是 wordpress 了，应该是比较完善，所以也迁移上来了，可能还有些数据不完整，慢慢整理了</p>
@@ -3381,6 +3381,25 @@ Linux  home/user_name/macromedia/Flash_Player/Logs/flashlog.txt</p>
       </tags>
   </entry>
   <entry>
+    <title>debian 支持 sql server 连接</title>
+    <url>/2008/04/03/old_blog/2008-04-03-debian%E6%94%AF%E6%8C%81sql-server%E8%BF%9E%E6%8E%A5/</url>
+    <content><![CDATA[<p></p><dl> <dt>如果你想要让 ubuntu 支持 sql server，需要安装以下的包 </dt> <dt><a href="http://packages.ubuntu.com/dapper/freetds-dev">freetds-dev</a></dt> <dd lang="en">MS SQL and Sybase client library (static libs and headers)</dd> <dt><a href="http://packages.ubuntu.com/dapper/libct3">libct3</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/libsybdb5">libsybdb5</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/tdsodbc">tdsodbc</a></dt> <dd lang="en">ODBC driver for connecting to MS SQL and Sybase SQL servers</dd> </dl>sudo apt-get install&nbsp;&nbsp; "包名称"<p></p>
+
+<p>再安装：<br>
+sudo apt-get install php5-sybase<br>
+然后重启，重启后就一切搞定<br>
+sudo /etc/init.d/apache2 restart</p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>sql server</tag>
+        <tag>ubuntu</tag>
+        <tag>freetds</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>被 pv3d 官网忽悠</title>
     <url>/2008/04/04/old_blog/2008-04-04-%E8%A2%ABpv3d%E5%AE%98%E7%BD%91%E5%BF%BD%E6%82%A0/</url>
     <content><![CDATA[<p>那天看到 http://pv3d.org/ 登出消息：
@@ -3398,25 +3417,6 @@ Linux  home/user_name/macromedia/Flash_Player/Logs/flashlog.txt</p>
         <tag>pv3d</tag>
         <tag>忽悠</tag>
         <tag>愚人节</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>debian 支持 sql server 连接</title>
-    <url>/2008/04/03/old_blog/2008-04-03-debian%E6%94%AF%E6%8C%81sql-server%E8%BF%9E%E6%8E%A5/</url>
-    <content><![CDATA[<p></p><dl> <dt>如果你想要让 ubuntu 支持 sql server，需要安装以下的包 </dt> <dt><a href="http://packages.ubuntu.com/dapper/freetds-dev">freetds-dev</a></dt> <dd lang="en">MS SQL and Sybase client library (static libs and headers)</dd> <dt><a href="http://packages.ubuntu.com/dapper/libct3">libct3</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/libsybdb5">libsybdb5</a></dt> <dd lang="en">libraries for connecting to MS SQL and Sybase SQL servers</dd> <dt><a href="http://packages.ubuntu.com/dapper/tdsodbc">tdsodbc</a></dt> <dd lang="en">ODBC driver for connecting to MS SQL and Sybase SQL servers</dd> </dl>sudo apt-get install&nbsp;&nbsp; "包名称"<p></p>
-
-<p>再安装：<br>
-sudo apt-get install php5-sybase<br>
-然后重启，重启后就一切搞定<br>
-sudo /etc/init.d/apache2 restart</p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>sql server</tag>
-        <tag>ubuntu</tag>
-        <tag>freetds</tag>
       </tags>
   </entry>
   <entry>
@@ -3609,6 +3609,22 @@ python发展的势头很大，工具也渐渐完善，相信前途无量阿，�
       </tags>
   </entry>
   <entry>
+    <title>免费使用的一个 Flash 图标插件</title>
+    <url>/2008/05/28/old_blog/2008-05-28-%E5%85%8D%E8%B4%B9%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%B8%AAflash%E5%9B%BE%E6%A0%87%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p></p><p style="text-align: justify;"><a href="http://teethgrinder.co.uk/open-flash-chart/download.php" target="_blank">http://teethgrinder.co.uk/open-flash-chart/download.php</a></p>
+<p style="text-align: justify;">你可以用这个来呈现你的图标，是免费的，对 php 的支持比较友好</p>
+<p style="text-align: justify;"><a href="/media/2008/05/2008-05-28-085127_479x512_scrot.png"> </a><a class="highslide-image" onclick="return hs.expand(this);" href="/media/2008/05/2008-05-28-085127_479x512_scrot.png"><img title="Click to enlarge" src="/media/2008/05/2008-05-28-085127_479x512_scrot.png" alt="image" width="219" height="234"></a></p><p></p>
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>chart</tag>
+        <tag>Flash</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为什么我的眼里常含泪水</title>
     <url>/2008/05/20/old_blog/2008-05-20-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E7%9C%BC%E9%87%8C%E5%B8%B8%E5%90%AB%E6%B3%AA%E6%B0%B4/</url>
     <content><![CDATA[<p></p><blockquote>我爱这土地<br>
@@ -3632,19 +3648,18 @@ python发展的势头很大，工具也渐渐完善，相信前途无量阿，�
       </categories>
   </entry>
   <entry>
-    <title>免费使用的一个 Flash 图标插件</title>
-    <url>/2008/05/28/old_blog/2008-05-28-%E5%85%8D%E8%B4%B9%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%B8%AAflash%E5%9B%BE%E6%A0%87%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p></p><p style="text-align: justify;"><a href="http://teethgrinder.co.uk/open-flash-chart/download.php" target="_blank">http://teethgrinder.co.uk/open-flash-chart/download.php</a></p>
-<p style="text-align: justify;">你可以用这个来呈现你的图标，是免费的，对 php 的支持比较友好</p>
-<p style="text-align: justify;"><a href="/media/2008/05/2008-05-28-085127_479x512_scrot.png"> </a><a class="highslide-image" onclick="return hs.expand(this);" href="/media/2008/05/2008-05-28-085127_479x512_scrot.png"><img title="Click to enlarge" src="/media/2008/05/2008-05-28-085127_479x512_scrot.png" alt="image" width="219" height="234"></a></p><p></p>
+    <title>Linux 服务器管理研讨活动 (温州）</title>
+    <url>/2008/06/07/old_blog/2008-06-07-linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E7%A0%94%E8%AE%A8%E6%B4%BB%E5%8A%A8%E6%B8%A9%E5%B7%9E%EF%BC%89/</url>
+    <content><![CDATA[<p>不论你是第一次接触 linux 服务器管理，还是这方面的高手，相信都能获得收获。</p>
+
+<p>报名地址：<a href="http://czk.8866.org/wiki/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E7%A0%94%E8%AE%A8%E6%B4%BB%E5%8A%A8">服务器管理研讨活动</a></p>
 ]]></content>
       <categories>
-        <category>php</category>
+        <category>ubuntu</category>
       </categories>
       <tags>
-        <tag>php</tag>
-        <tag>chart</tag>
-        <tag>Flash</tag>
+        <tag>ubuntu</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -3678,21 +3693,6 @@ cd ies4linux-*<br>
       </tags>
   </entry>
   <entry>
-    <title>Linux 服务器管理研讨活动 (温州）</title>
-    <url>/2008/06/07/old_blog/2008-06-07-linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E7%A0%94%E8%AE%A8%E6%B4%BB%E5%8A%A8%E6%B8%A9%E5%B7%9E%EF%BC%89/</url>
-    <content><![CDATA[<p>不论你是第一次接触 linux 服务器管理，还是这方面的高手，相信都能获得收获。</p>
-
-<p>报名地址：<a href="http://czk.8866.org/wiki/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E7%A0%94%E8%AE%A8%E6%B4%BB%E5%8A%A8">服务器管理研讨活动</a></p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Flex 中的透明 AIR 实现</title>
     <url>/2008/07/10/old_blog/2008-07-10-flex%E4%B8%AD%E7%9A%84%E9%80%8F%E6%98%8Eair%E5%AE%9E%E7%8E%B0/</url>
     <content><![CDATA[<p>关键的地方是：</p>
@@ -3711,20 +3711,6 @@ cd ies4linux-*<br>
       <tags>
         <tag>flex</tag>
         <tag>Air</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可恨的恶意评论</title>
-    <url>/2008/07/10/old_blog/2008-07-10-%E5%8F%AF%E6%81%A8%E7%9A%84%E6%81%B6%E6%84%8F%E8%AF%84%E8%AE%BA/</url>
-    <content><![CDATA[<p>最近发现很多恶意的评论，很是讨厌，所以弄了个插件，评论中一定要有中文，希望能减少那些垃圾评论。</p>
-
-<p>如果有朋友想给我留言，只能用中文，其实英文我也很差，谢谢合作了。</p>
-]]></content>
-      <categories>
-        <category>胡说八道</category>
-      </categories>
-      <tags>
-        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -3767,6 +3753,20 @@ navigateToURL(request )<br>
         <tag>flex</tag>
         <tag>Air</tag>
         <tag>缩小</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可恨的恶意评论</title>
+    <url>/2008/07/10/old_blog/2008-07-10-%E5%8F%AF%E6%81%A8%E7%9A%84%E6%81%B6%E6%84%8F%E8%AF%84%E8%AE%BA/</url>
+    <content><![CDATA[<p>最近发现很多恶意的评论，很是讨厌，所以弄了个插件，评论中一定要有中文，希望能减少那些垃圾评论。</p>
+
+<p>如果有朋友想给我留言，只能用中文，其实英文我也很差，谢谢合作了。</p>
+]]></content>
+      <categories>
+        <category>胡说八道</category>
+      </categories>
+      <tags>
+        <tag>评论</tag>
       </tags>
   </entry>
   <entry>
@@ -3923,6 +3923,24 @@ sudo apt-get install wine<br>
       </tags>
   </entry>
   <entry>
+    <title>2008 年需要学的 100 种工具</title>
+    <url>/2008/08/01/old_blog/2008-08-01-2008%E5%B9%B4%E9%9C%80%E8%A6%81%E5%AD%A6%E7%9A%84100%E7%A7%8D%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>详细地址：<a href="http://www.c4lpt.co.uk/recommended/top100.html" target="_blank">Top 100 Tools for Learning 2008</a></p>
+
+<p>在这里列出来的都是比较热门的东东：有直接在线的 web 应用，有推荐的框架和源代码的。</p>
+
+<p>赶紧去看看，别让自己落伍了。</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>2008</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>qq for linux，终于发布了</title>
     <url>/2008/07/31/old_blog/2008-07-31-qq-for-linux%EF%BC%8C%E7%BB%88%E4%BA%8E%E5%8F%91%E5%B8%83%E4%BA%86/</url>
     <content><![CDATA[<p><a href="http://im.qq.com/qq/linux/" target="_blank"><img src="http://im-img.qq.com/qq/linux/images/public/logo.gif" alt="QQ for Linux首页" width="159" height="41"></a></p>
@@ -3949,24 +3967,6 @@ sudo apt-get install wine<br>
       <tags>
         <tag>ubuntu</tag>
         <tag>qq</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2008 年需要学的 100 种工具</title>
-    <url>/2008/08/01/old_blog/2008-08-01-2008%E5%B9%B4%E9%9C%80%E8%A6%81%E5%AD%A6%E7%9A%84100%E7%A7%8D%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>详细地址：<a href="http://www.c4lpt.co.uk/recommended/top100.html" target="_blank">Top 100 Tools for Learning 2008</a></p>
-
-<p>在这里列出来的都是比较热门的东东：有直接在线的 web 应用，有推荐的框架和源代码的。</p>
-
-<p>赶紧去看看，别让自己落伍了。</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>2008</tag>
-        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -4215,45 +4215,6 @@ sudo rm 49-sansserif.conf</p>
       </tags>
   </entry>
   <entry>
-    <title>Virtualbox 的系统硬盘直接下载（linux）</title>
-    <url>/2008/11/03/old_blog/2008-11-03-virtualbox%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%A1%AC%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%EF%BC%88linux%EF%BC%89/</url>
-    <content><![CDATA[<p></p><div class="entry-body">
-<div>
-<div class="item-body">
-<div></div></div></div><p></p>
-
-<p>你可以用 virtualbox 很方便的虚拟一台机子，软件也很小。</p>
-
-<p>赶紧去看看吧：<a href="http://www.virtualbox.org/" target="_blank">http://www.virtualbox.org/</a>;</p>
-
-<p>目前最新的 2.02 的下载地址：
-</p><ul>
-    <li><strong>VirtualBox 2.0.2 for Windows hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_x86.msi" target="_blank"><span>x86</span></a> | <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_amd64.msi" target="_blank"><span>AMD64</span></a> <em>(only on Windows x64!)</em></li>
-</ul>
-<ul>
-    <li><strong>VirtualBox 2.0.2 for OS X hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-OSX_x86.dmg" target="_blank"><span>Intel Macs</span></a></li>
-</ul>
-<ul>
-    <li><strong><a href="http://www.virtualbox.org/wiki/Linux_Downloads" target="_blank">VirtualBox 2.0.2 for Linux hosts</a></strong></li>
-</ul>
-下载完上面的虚拟机，安装好后，可以在下面的网站下一个虚拟的硬盘，尝试 linux 了，<p></p>
-
-<p>还在等什么？赶紧行动！！！</p>
-
-<p><a href="http://veedee-eyes.com/veedeeeyes/" target="_blank">http://veedee-eyes.com/veedeeeyes/</a>
-
-
-</p>
-</div>]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>virtualbox</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>“黑屏” 只为友善提醒？</title>
     <url>/2008/11/03/old_blog/2008-11-03-%E2%80%9C%E9%BB%91%E5%B1%8F%E2%80%9D%E5%8F%AA%E4%B8%BA%E5%8F%8B%E5%96%84%E6%8F%90%E9%86%92%EF%BC%9F/</url>
     <content><![CDATA[<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf"><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XNDg3MzcxNDg=/v.swf" align="middle"></object>
@@ -4307,6 +4268,111 @@ sudo rm 49-sansserif.conf</p>
         <tag>ubuntu</tag>
         <tag>windows</tag>
         <tag>黑屏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Virtualbox 的系统硬盘直接下载（linux）</title>
+    <url>/2008/11/03/old_blog/2008-11-03-virtualbox%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%A1%AC%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%EF%BC%88linux%EF%BC%89/</url>
+    <content><![CDATA[<p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div></div></div></div><p></p>
+
+<p>你可以用 virtualbox 很方便的虚拟一台机子，软件也很小。</p>
+
+<p>赶紧去看看吧：<a href="http://www.virtualbox.org/" target="_blank">http://www.virtualbox.org/</a>;</p>
+
+<p>目前最新的 2.02 的下载地址：
+</p><ul>
+    <li><strong>VirtualBox 2.0.2 for Windows hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_x86.msi" target="_blank"><span>x86</span></a> | <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-Win_amd64.msi" target="_blank"><span>AMD64</span></a> <em>(only on Windows x64!)</em></li>
+</ul>
+<ul>
+    <li><strong>VirtualBox 2.0.2 for OS X hosts</strong> <a href="http://download.virtualbox.org/virtualbox/2.0.2/VirtualBox-2.0.2-36488-OSX_x86.dmg" target="_blank"><span>Intel Macs</span></a></li>
+</ul>
+<ul>
+    <li><strong><a href="http://www.virtualbox.org/wiki/Linux_Downloads" target="_blank">VirtualBox 2.0.2 for Linux hosts</a></strong></li>
+</ul>
+下载完上面的虚拟机，安装好后，可以在下面的网站下一个虚拟的硬盘，尝试 linux 了，<p></p>
+
+<p>还在等什么？赶紧行动！！！</p>
+
+<p><a href="http://veedee-eyes.com/veedeeeyes/" target="_blank">http://veedee-eyes.com/veedeeeyes/</a>
+
+
+</p>
+</div>]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>virtualbox</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>穿越大罗山</title>
+    <url>/2008/11/03/old_blog/2008-11-03-%E7%A9%BF%E8%B6%8A%E5%A4%A7%E7%BD%97%E5%B1%B1/</url>
+    <content><![CDATA[<p></p><div class="entry-body">
+<div>
+<div class="item-body">
+<div>
+<h1>远离烦恼，亲近自然</h1>
+在周末和一群好友，游荡在温州大罗山脉
+<p style="text-align: center;"><img title="大罗山200810271351" src="http://lh6.ggpht.com/shenhuan007/SQUXxkwmmpI/AAAAAAAADyQ/he1ayPcrmZY/s400/dscn0494.jpg" alt="" width="300" height="400"></p>
+<p style="text-align: center;">（前面就是悬崖峭壁了，伴随大雾，感觉好好 ）</p>
+<p style="text-align: center;"><img title="大罗山合影" src="http://lh4.ggpht.com/shenhuan007/SQUlut5UFRI/AAAAAAAAD0Y/B2MJQrlu8Jw/s512/dscn9924.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">（天河水库旁合影）</p>
+<p style="text-align: center;"><img title="大罗山4勇士" src="http://lh3.ggpht.com/shenhuan007/SQUllt2zvmI/AAAAAAAADzI/RcRJj7XiJVI/s512/imgp2182.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">（上顶四勇士，看上去平静，其实大风大雾，头发早已湿透）</p>
+<p style="text-align: center;"><img title="大罗山脚步依然" src="http://lh6.ggpht.com/shenhuan007/SQUYSJDArgI/AAAAAAAADoM/z-rvRXbd-84/s512/dscn0534.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">（天气和地势都很危险，但是我们的脚步坚决 ）</p>
+<p style="text-align: center;"><img title="大罗山下山之路" src="http://lh6.ggpht.com/shenhuan007/SQUYjYxDSgI/AAAAAAAAD2M/Y0UVTud9MtA/s400/dscn0552.jpg" alt="" width="300" height="400"><img title="大罗山千步梯" src="http://lh4.ggpht.com/shenhuan007/SQUYkuwkqVI/AAAAAAAAD2Q/rDwbkcZS2kE/s400/dscn0553.jpg" alt="" width="300" height="400"></p>
+<p style="text-align: center;">（其实这是在下山，千步梯，很高很陡）</p>
+<p style="text-align: center;"><img title="大罗山归途" src="http://lh4.ggpht.com/shenhuan007/SQUYmAAWVXI/AAAAAAAADq4/iWhkQNaArmw/s512/dscn0555.jpg" alt="" width="512" height="384"></p>
+<p style="text-align: center;">归途</p></div></div></div></div><p></p>
+
+<p></p><h2 style="text-align: left;">更多照片：<a href="http://picasaweb.google.com/shenhuan007/DvDpEJ#" target="_blank">穿越大罗山相册</a></h2>
+
+
+
+<p></p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>大罗山</tag>
+        <tag>旅游</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手册集成网站</title>
+    <url>/2008/11/11/old_blog/2008-11-11-%E6%89%8B%E5%86%8C%E9%9B%86%E6%88%90%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p><a href="http://zetcode.com/" target="_blank">http://zetcode.com/</a></p>
+
+<p>如果你正在寻找语言手册，或许在这里能找到你想要的，可以去看看：</p>
+
+<p>^_^! 转一下部分的手册链接:</p>
+
+<p><a href="http://zetcode.com/tutorials/wxwidgetstutorial">The wxWidgets tutorial</a>
+<a href="http://zetcode.com/wxpython">The wxPython tutorial</a>
+<a href="http://zetcode.com/tutorials/pyqt4">The PyQt4 tutorial</a>
+<a href="http://zetcode.com/tutorials/winapi">The winapi (Win32 API) tutorial</a>
+<a href="http://zetcode.com/tutorials/javaswingtutorial">The Java Swing tutorial</a>
+<a href="http://zetcode.com/tutorials/mysqlcapitutorial">The MySQL C API tutorial</a>
+<a href="http://zetcode.com/tutorials/cairographicstutorial">The Cairo graphics tutorial</a>
+<a href="http://zetcode.com/tutorials/jeetutorials">The Java EE 5 tutorials, Part 1</a>
+<a href="http://zetcode.com/tutorials/gtktutorial">The GTK+ tutorial</a>
+<a href="http://zetcode.com/tutorials/qt4tutorial">The Qt4 tutorial</a>
+<a href="http://zetcode.com/tutorials/pythontutorial">The Python tutorial</a>
+<a href="http://zetcode.com/tutorials/javagamestutorial">Java 2D games tutorial</a></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>手册</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -4429,72 +4495,6 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </tags>
   </entry>
   <entry>
-    <title>穿越大罗山</title>
-    <url>/2008/11/03/old_blog/2008-11-03-%E7%A9%BF%E8%B6%8A%E5%A4%A7%E7%BD%97%E5%B1%B1/</url>
-    <content><![CDATA[<p></p><div class="entry-body">
-<div>
-<div class="item-body">
-<div>
-<h1>远离烦恼，亲近自然</h1>
-在周末和一群好友，游荡在温州大罗山脉
-<p style="text-align: center;"><img title="大罗山200810271351" src="http://lh6.ggpht.com/shenhuan007/SQUXxkwmmpI/AAAAAAAADyQ/he1ayPcrmZY/s400/dscn0494.jpg" alt="" width="300" height="400"></p>
-<p style="text-align: center;">（前面就是悬崖峭壁了，伴随大雾，感觉好好 ）</p>
-<p style="text-align: center;"><img title="大罗山合影" src="http://lh4.ggpht.com/shenhuan007/SQUlut5UFRI/AAAAAAAAD0Y/B2MJQrlu8Jw/s512/dscn9924.jpg" alt="" width="512" height="384"></p>
-<p style="text-align: center;">（天河水库旁合影）</p>
-<p style="text-align: center;"><img title="大罗山4勇士" src="http://lh3.ggpht.com/shenhuan007/SQUllt2zvmI/AAAAAAAADzI/RcRJj7XiJVI/s512/imgp2182.jpg" alt="" width="512" height="384"></p>
-<p style="text-align: center;">（上顶四勇士，看上去平静，其实大风大雾，头发早已湿透）</p>
-<p style="text-align: center;"><img title="大罗山脚步依然" src="http://lh6.ggpht.com/shenhuan007/SQUYSJDArgI/AAAAAAAADoM/z-rvRXbd-84/s512/dscn0534.jpg" alt="" width="512" height="384"></p>
-<p style="text-align: center;">（天气和地势都很危险，但是我们的脚步坚决 ）</p>
-<p style="text-align: center;"><img title="大罗山下山之路" src="http://lh6.ggpht.com/shenhuan007/SQUYjYxDSgI/AAAAAAAAD2M/Y0UVTud9MtA/s400/dscn0552.jpg" alt="" width="300" height="400"><img title="大罗山千步梯" src="http://lh4.ggpht.com/shenhuan007/SQUYkuwkqVI/AAAAAAAAD2Q/rDwbkcZS2kE/s400/dscn0553.jpg" alt="" width="300" height="400"></p>
-<p style="text-align: center;">（其实这是在下山，千步梯，很高很陡）</p>
-<p style="text-align: center;"><img title="大罗山归途" src="http://lh4.ggpht.com/shenhuan007/SQUYmAAWVXI/AAAAAAAADq4/iWhkQNaArmw/s512/dscn0555.jpg" alt="" width="512" height="384"></p>
-<p style="text-align: center;">归途</p></div></div></div></div><p></p>
-
-<p></p><h2 style="text-align: left;">更多照片：<a href="http://picasaweb.google.com/shenhuan007/DvDpEJ#" target="_blank">穿越大罗山相册</a></h2>
-
-
-
-<p></p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>大罗山</tag>
-        <tag>旅游</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手册集成网站</title>
-    <url>/2008/11/11/old_blog/2008-11-11-%E6%89%8B%E5%86%8C%E9%9B%86%E6%88%90%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p><a href="http://zetcode.com/" target="_blank">http://zetcode.com/</a></p>
-
-<p>如果你正在寻找语言手册，或许在这里能找到你想要的，可以去看看：</p>
-
-<p>^_^! 转一下部分的手册链接:</p>
-
-<p><a href="http://zetcode.com/tutorials/wxwidgetstutorial">The wxWidgets tutorial</a>
-<a href="http://zetcode.com/wxpython">The wxPython tutorial</a>
-<a href="http://zetcode.com/tutorials/pyqt4">The PyQt4 tutorial</a>
-<a href="http://zetcode.com/tutorials/winapi">The winapi (Win32 API) tutorial</a>
-<a href="http://zetcode.com/tutorials/javaswingtutorial">The Java Swing tutorial</a>
-<a href="http://zetcode.com/tutorials/mysqlcapitutorial">The MySQL C API tutorial</a>
-<a href="http://zetcode.com/tutorials/cairographicstutorial">The Cairo graphics tutorial</a>
-<a href="http://zetcode.com/tutorials/jeetutorials">The Java EE 5 tutorials, Part 1</a>
-<a href="http://zetcode.com/tutorials/gtktutorial">The GTK+ tutorial</a>
-<a href="http://zetcode.com/tutorials/qt4tutorial">The Qt4 tutorial</a>
-<a href="http://zetcode.com/tutorials/pythontutorial">The Python tutorial</a>
-<a href="http://zetcode.com/tutorials/javagamestutorial">Java 2D games tutorial</a></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>手册</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>高中校庆（沙城高级中学）</title>
     <url>/2008/11/11/old_blog/2008-11-11-%E9%AB%98%E4%B8%AD%E6%A0%A1%E5%BA%86%EF%BC%88%E6%B2%99%E5%9F%8E%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6%EF%BC%89/</url>
     <content><![CDATA[<p>母校的十年校庆，发觉母校的硬件设施变化好大，怀念当时的 “艰苦岁月”。</p>
@@ -4563,20 +4563,6 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </categories>
   </entry>
   <entry>
-    <title>记忆中的 “稻香”</title>
-    <url>/2008/11/17/old_blog/2008-11-17-%E8%AE%B0%E5%BF%86%E4%B8%AD%E7%9A%84%E2%80%9C%E7%A8%BB%E9%A6%99%E2%80%9D/</url>
-    <content><![CDATA[<p></p><h3>偶听到周杰伦《稻香》，那歌词和节奏很不错。</h3>
-<h3>回忆那童年的点点滴滴，刚过农忙时节，更让人回想起家家户户收割的情景，稻香和泥土气息夹杂一起，那就是家乡的味道，不知道什么时候才可以再次回到那熟悉的感觉。</h3>
-<embed src="http://player.youku.com/player.php/sid/XNTIyMzMzNzI=/v.swf" quality="high" width="480" height="400" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash"><p></p>
-]]></content>
-      <categories>
-        <category>内心独白</category>
-      </categories>
-      <tags>
-        <tag>回忆</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ubuntu 的双显示器</title>
     <url>/2008/11/18/old_blog/2008-11-18-ubuntu%E7%9A%84%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8/</url>
     <content><![CDATA[<p>在 ubuntu 8.10 自带了 xrandr，可以将支持多显示器了。<br>
@@ -4592,6 +4578,20 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       <tags>
         <tag>ubuntu</tag>
         <tag>双屏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记忆中的 “稻香”</title>
+    <url>/2008/11/17/old_blog/2008-11-17-%E8%AE%B0%E5%BF%86%E4%B8%AD%E7%9A%84%E2%80%9C%E7%A8%BB%E9%A6%99%E2%80%9D/</url>
+    <content><![CDATA[<p></p><h3>偶听到周杰伦《稻香》，那歌词和节奏很不错。</h3>
+<h3>回忆那童年的点点滴滴，刚过农忙时节，更让人回想起家家户户收割的情景，稻香和泥土气息夹杂一起，那就是家乡的味道，不知道什么时候才可以再次回到那熟悉的感觉。</h3>
+<embed src="http://player.youku.com/player.php/sid/XNTIyMzMzNzI=/v.swf" quality="high" width="480" height="400" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash"><p></p>
+]]></content>
+      <categories>
+        <category>内心独白</category>
+      </categories>
+      <tags>
+        <tag>回忆</tag>
       </tags>
   </entry>
   <entry>
@@ -4637,6 +4637,46 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </tags>
   </entry>
   <entry>
+    <title>c# 调用 RAPI 的连接判断</title>
+    <url>/2008/12/01/old_blog/2008-12-01-c%E8%B0%83%E7%94%A8rapi%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%88%A4%E6%96%AD/</url>
+    <content><![CDATA[<p>在 c# 中调用 rapi 来完成 windows ce 的文件操作。</p>
+
+<p>详细参见：<a href="http://blog.csdn.net/jarvisj/archive/2005/06/05/387902.aspx" target="_blank">http://blog.csdn.net/jarvisj/archive/2005/06/05/387902.aspx</a></p>
+
+<p>详细 api 文档（msdn 英文）：<a href="http://msdn.microsoft.com/en-us/library/aa458022.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/aa458022.aspx</a></p>
+
+<p>但是如果用 CeRapiInit 来判断链接有一个问题：这个函数的运行过程是开始判断是否连接了设备，如果没有设备，这个进程将一直挂着，直到插上了设备才继续执行，这样就不能马上给出判断，所以可以采用 CeRapiInitEx 函数。</p>
+
+<p>CeRapiInit 和 CeRapiInitEx 的区别：前者是将进程一直挂着，等待设备的插入，而后者是即刻判断。</p>
+
+<p>主要讲解 CeRapiInitEx 的使用：
+</p><blockquote>// 接口声明<br>
+[DllImport("rapi.dll")]<br>
+public static extern void CeRapiInitEx(ref RAPIINIT pRapiInit);</blockquote><p></p>
+
+<p>// 自定义返回类型结构<br>
+[StructLayout(LayoutKind.Sequential)]<br>
+public struct RAPIINIT<br>
+{
+public int cbsize;<br>
+public IntPtr heRapiInit;<br>
+public UInt32 hrRapiInit;<br>
+};</p>
+
+<p>// 函数使用<br>
+RAPIINIT r = new RAPIINIT();<br>
+r.cbsize = Marshal.SizeOf(r);<br>
+CeRapiInitEx(ref r);<br>
+//r.hrRapiInit==0 判断连接成功</p>
+]]></content>
+      <categories>
+        <category>.Net</category>
+      </categories>
+      <tags>
+        <tag>.Net</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>谁敢监督你的领导</title>
     <url>/2008/11/26/old_blog/2008-11-26-%E8%B0%81%E6%95%A2%E7%9B%91%E7%9D%A3%E4%BD%A0%E7%9A%84%E9%A2%86%E5%AF%BC/</url>
     <content><![CDATA[<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle"><param name="src" value="http://player.youku.com/player.php/sid/XNTU1MDQ3Mjg=/v.swf"><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XNTU1MDQ3Mjg=/v.swf" align="middle"></object></p>
@@ -4679,46 +4719,6 @@ this.store.removeListener("load", this.doReconfiguration);<br>
       </tags>
   </entry>
   <entry>
-    <title>c# 调用 RAPI 的连接判断</title>
-    <url>/2008/12/01/old_blog/2008-12-01-c%E8%B0%83%E7%94%A8rapi%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%88%A4%E6%96%AD/</url>
-    <content><![CDATA[<p>在 c# 中调用 rapi 来完成 windows ce 的文件操作。</p>
-
-<p>详细参见：<a href="http://blog.csdn.net/jarvisj/archive/2005/06/05/387902.aspx" target="_blank">http://blog.csdn.net/jarvisj/archive/2005/06/05/387902.aspx</a></p>
-
-<p>详细 api 文档（msdn 英文）：<a href="http://msdn.microsoft.com/en-us/library/aa458022.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/aa458022.aspx</a></p>
-
-<p>但是如果用 CeRapiInit 来判断链接有一个问题：这个函数的运行过程是开始判断是否连接了设备，如果没有设备，这个进程将一直挂着，直到插上了设备才继续执行，这样就不能马上给出判断，所以可以采用 CeRapiInitEx 函数。</p>
-
-<p>CeRapiInit 和 CeRapiInitEx 的区别：前者是将进程一直挂着，等待设备的插入，而后者是即刻判断。</p>
-
-<p>主要讲解 CeRapiInitEx 的使用：
-</p><blockquote>// 接口声明<br>
-[DllImport("rapi.dll")]<br>
-public static extern void CeRapiInitEx(ref RAPIINIT pRapiInit);</blockquote><p></p>
-
-<p>// 自定义返回类型结构<br>
-[StructLayout(LayoutKind.Sequential)]<br>
-public struct RAPIINIT<br>
-{
-public int cbsize;<br>
-public IntPtr heRapiInit;<br>
-public UInt32 hrRapiInit;<br>
-};</p>
-
-<p>// 函数使用<br>
-RAPIINIT r = new RAPIINIT();<br>
-r.cbsize = Marshal.SizeOf(r);<br>
-CeRapiInitEx(ref r);<br>
-//r.hrRapiInit==0 判断连接成功</p>
-]]></content>
-      <categories>
-        <category>.Net</category>
-      </categories>
-      <tags>
-        <tag>.Net</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>命令行删除文件到回收站</title>
     <url>/2008/12/06/old_blog/2008-12-06-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%88%B0%E5%9B%9E%E6%94%B6%E7%AB%99/</url>
     <content><![CDATA[<p>如果你用 rm 移除文件，你将无法恢复，能不能先删除到回收站呢？</p>
@@ -4736,6 +4736,16 @@ CeRapiInitEx(ref r);<br>
       <tags>
         <tag>ubuntu</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>牛年了，新年快乐！</title>
+    <url>/2009/01/01/old_blog/2009-01-01-%E7%89%9B%E5%B9%B4%E4%BA%86%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/</url>
+    <content><![CDATA[<p></p><h1>新年新气象！</h1>
+新的一年，新的开始，努力做好自己……<p></p>
+]]></content>
+      <categories>
+        <category>胡说八道</category>
+      </categories>
   </entry>
   <entry>
     <title>试用 Google Friend Connect！</title>
@@ -4756,16 +4766,6 @@ CeRapiInitEx(ref r);<br>
         <tag>google</tag>
         <tag>openID</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>牛年了，新年快乐！</title>
-    <url>/2009/01/01/old_blog/2009-01-01-%E7%89%9B%E5%B9%B4%E4%BA%86%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/</url>
-    <content><![CDATA[<p></p><h1>新年新气象！</h1>
-新的一年，新的开始，努力做好自己……<p></p>
-]]></content>
-      <categories>
-        <category>胡说八道</category>
-      </categories>
   </entry>
   <entry>
     <title>75 个新的有用的 AIR javascript 代码</title>
@@ -5128,41 +5128,6 @@ c:\PHP;C:\PHP\cake1_2\cake\console;</li>
       </tags>
   </entry>
   <entry>
-    <title>备案原因，这几天无法正常打开</title>
-    <url>/2009/02/26/old_blog/2009-02-26-%E5%A4%87%E6%A1%88%E5%8E%9F%E5%9B%A0%EF%BC%8C%E8%BF%99%E5%87%A0%E5%A4%A9%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80/</url>
-    <content><![CDATA[<p>网络整治，还是要配合的</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Adobe UI 设计比赛网站，很多资源</title>
-    <url>/2009/03/07/old_blog/2009-03-07-adobe-ui%E8%AE%BE%E8%AE%A1%E6%AF%94%E8%B5%9B%E7%BD%91%E7%AB%99%EF%BC%8C%E5%BE%88%E5%A4%9A%E8%B5%84%E6%BA%90/</url>
-    <content><![CDATA[<p><img class="alignnone size-full wp-image-370" title="screenshot_003" src="/media/2009/03/screenshot_003.png" alt="screenshot_003" width="413" height="307"></p>
-
-<p>无意中发现这个网站；其中的设计作品支持下载</p>
-
-<p>好多优秀的皮肤（部分皮肤图片）：</p>
-
-<p><img class="alignnone size-full wp-image-371" title="aeon" src="/media/2009/03/aeon.jpg" alt="aeon" width="155" height="125"> <img class="alignnone size-full wp-image-373" title="icandy" src="/media/2009/03/icandy.jpg" alt="icandy" width="155" height="125"></p>
-
-<p><img class="alignnone size-full wp-image-372" title="brownie" src="/media/2009/03/brownie.jpg" alt="brownie" width="155" height="125"> <img class="alignnone size-full wp-image-374" title="kingnare" src="/media/2009/03/kingnare.jpg" alt="kingnare" width="155" height="125"></p>
-
-<p>还等什么，赶紧去看看吧：
-</p><h3><a href="http://www.scalenine.com" target="_blank"><strong>http://www.scalenine.com</strong></a></h3><p></p>
-]]></content>
-      <categories>
-        <category>flex</category>
-      </categories>
-      <tags>
-        <tag>flex</tag>
-        <tag>Air</tag>
-        <tag>skin</tag>
-        <tag>ui</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>免费文献搜索引擎</title>
     <url>/2009/02/27/old_blog/2009-02-27-%E5%85%8D%E8%B4%B9%E6%96%87%E7%8C%AE%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</url>
     <content><![CDATA[<p><strong>科学文献数字图书馆与搜索引擎（英文）</strong></p>
@@ -5176,6 +5141,15 @@ c:\PHP;C:\PHP\cake1_2\cake\console;</li>
 <p>注：论文是参考的，请尊重别人的劳动成果，请标注出处，千万别盗用。</p>
 
 <p>没文化可以学，没道德怎么能行</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>备案原因，这几天无法正常打开</title>
+    <url>/2009/02/26/old_blog/2009-02-26-%E5%A4%87%E6%A1%88%E5%8E%9F%E5%9B%A0%EF%BC%8C%E8%BF%99%E5%87%A0%E5%A4%A9%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80/</url>
+    <content><![CDATA[<p>网络整治，还是要配合的</p>
 ]]></content>
       <categories>
         <category>杂七杂八</category>
@@ -5214,6 +5188,32 @@ c:\PHP;C:\PHP\cake1_2\cake\console;</li>
         <tag>Air</tag>
         <tag>算法</tag>
         <tag>胡说八道</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Adobe UI 设计比赛网站，很多资源</title>
+    <url>/2009/03/07/old_blog/2009-03-07-adobe-ui%E8%AE%BE%E8%AE%A1%E6%AF%94%E8%B5%9B%E7%BD%91%E7%AB%99%EF%BC%8C%E5%BE%88%E5%A4%9A%E8%B5%84%E6%BA%90/</url>
+    <content><![CDATA[<p><img class="alignnone size-full wp-image-370" title="screenshot_003" src="/media/2009/03/screenshot_003.png" alt="screenshot_003" width="413" height="307"></p>
+
+<p>无意中发现这个网站；其中的设计作品支持下载</p>
+
+<p>好多优秀的皮肤（部分皮肤图片）：</p>
+
+<p><img class="alignnone size-full wp-image-371" title="aeon" src="/media/2009/03/aeon.jpg" alt="aeon" width="155" height="125"> <img class="alignnone size-full wp-image-373" title="icandy" src="/media/2009/03/icandy.jpg" alt="icandy" width="155" height="125"></p>
+
+<p><img class="alignnone size-full wp-image-372" title="brownie" src="/media/2009/03/brownie.jpg" alt="brownie" width="155" height="125"> <img class="alignnone size-full wp-image-374" title="kingnare" src="/media/2009/03/kingnare.jpg" alt="kingnare" width="155" height="125"></p>
+
+<p>还等什么，赶紧去看看吧：
+</p><h3><a href="http://www.scalenine.com" target="_blank"><strong>http://www.scalenine.com</strong></a></h3><p></p>
+]]></content>
+      <categories>
+        <category>flex</category>
+      </categories>
+      <tags>
+        <tag>flex</tag>
+        <tag>Air</tag>
+        <tag>skin</tag>
+        <tag>ui</tag>
       </tags>
   </entry>
   <entry>
@@ -5302,29 +5302,6 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </tags>
   </entry>
   <entry>
-    <title>ping.fm+twitter+plurk，新的微博客</title>
-    <url>/2009/03/26/old_blog/2009-03-26-pingfmtwitterplurk%EF%BC%8C%E6%96%B0%E7%9A%84%E5%BE%AE%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p><img class="alignnone size-full wp-image-413" title="aaa1" src="/media/2009/03/aaa1.jpg" alt="aaa1" width="275" height="140">
-</p><ol>
-    <li><a href="http://www.twitter.com" target="_blank">twitter</a> 用来作为国际化的微博客 </li>
-    <li><a href="http://ping.fm" target="_blank">ping.fm</a> 做为微博客的发布工具 </li>
-    <li><a href="http://www.plurk.com" target="_blank">plurk</a> 的时间轴工具不错</li>
-</ol>
-然后使用桌面工具twhirl发布一次，就同时更新所有的微博客，方便<p></p>
-
-<p><img class="alignnone size-full wp-image-414" title="bbb1" src="/media/2009/03/bbb1.jpg" alt="bbb1" width="517" height="596"></p>
-
-<p>还更新了：饭否，facebook</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-      <tags>
-        <tag>ping.fm</tag>
-        <tag>twitter</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微软的开源 web 平台</title>
     <url>/2009/03/25/old_blog/2009-03-25-%E5%BE%AE%E8%BD%AF%E7%9A%84%E5%BC%80%E6%BA%90web%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<p><img class="alignnone size-full wp-image-405" title="aaa" src="/media/2009/03/aaa.jpg" alt="aaa" width="237" height="62"></p>
@@ -5354,6 +5331,29 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
         <tag>web</tag>
         <tag>flatform</tag>
         <tag>microsoft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ping.fm+twitter+plurk，新的微博客</title>
+    <url>/2009/03/26/old_blog/2009-03-26-pingfmtwitterplurk%EF%BC%8C%E6%96%B0%E7%9A%84%E5%BE%AE%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p><img class="alignnone size-full wp-image-413" title="aaa1" src="/media/2009/03/aaa1.jpg" alt="aaa1" width="275" height="140">
+</p><ol>
+    <li><a href="http://www.twitter.com" target="_blank">twitter</a> 用来作为国际化的微博客 </li>
+    <li><a href="http://ping.fm" target="_blank">ping.fm</a> 做为微博客的发布工具 </li>
+    <li><a href="http://www.plurk.com" target="_blank">plurk</a> 的时间轴工具不错</li>
+</ol>
+然后使用桌面工具twhirl发布一次，就同时更新所有的微博客，方便<p></p>
+
+<p><img class="alignnone size-full wp-image-414" title="bbb1" src="/media/2009/03/bbb1.jpg" alt="bbb1" width="517" height="596"></p>
+
+<p>还更新了：饭否，facebook</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
+      <tags>
+        <tag>ping.fm</tag>
+        <tag>twitter</tag>
       </tags>
   </entry>
   <entry>
@@ -5448,21 +5448,6 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
       </tags>
   </entry>
   <entry>
-    <title>很雷人的招牌</title>
-    <url>/2009/04/14/old_blog/2009-04-14-%E5%BE%88%E9%9B%B7%E4%BA%BA%E7%9A%84%E6%8B%9B%E7%89%8C/</url>
-    <content><![CDATA[<p>昨天和几个同事去吃饭，无意间这路旁发现这个招牌.</p>
-
-<p>这店老板的文化程度着实高，我们一行人对这三个字全不认识.</p>
-
-<p><img class="alignnone size-medium wp-image-442" title="200904131757_052" src="/media/2009/04/200904131757_052-225x300.jpg" alt="200904131757_052" width="225" height="300"></p>
-
-<p>集体的力量查到：犇 bēn; 羴 shān; 鱻&nbsp; xiān</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-  </entry>
-  <entry>
     <title>［原创翻译］Flex 性能，内存管理和对象缓存</title>
     <url>/2009/04/22/old_blog/2009-04-22-%EF%BC%BB%E5%8E%9F%E5%88%9B%E7%BF%BB%E8%AF%91%EF%BC%BDflex%E6%80%A7%E8%83%BD,%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%92%8C%E5%AF%B9%E8%B1%A1%E7%BC%93%E5%AD%98/</url>
     <content><![CDATA[<p><a href="/media/2008/05/flex-performance.pdf">Flex 性能，内存管理和对象缓存</a></p>
@@ -5476,6 +5461,21 @@ alpha 版本的 AS 3 类 classes (2D 角色) ， <a title="在此访问" href="h
         <tag>性能</tag>
         <tag>翻译</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>很雷人的招牌</title>
+    <url>/2009/04/14/old_blog/2009-04-14-%E5%BE%88%E9%9B%B7%E4%BA%BA%E7%9A%84%E6%8B%9B%E7%89%8C/</url>
+    <content><![CDATA[<p>昨天和几个同事去吃饭，无意间这路旁发现这个招牌.</p>
+
+<p>这店老板的文化程度着实高，我们一行人对这三个字全不认识.</p>
+
+<p><img class="alignnone size-medium wp-image-442" title="200904131757_052" src="/media/2009/04/200904131757_052-225x300.jpg" alt="200904131757_052" width="225" height="300"></p>
+
+<p>集体的力量查到：犇 bēn; 羴 shān; 鱻&nbsp; xiān</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
   </entry>
   <entry>
     <title>［原创翻译］Papervision3D 2.0 Alpha-Great While</title>
@@ -5644,6 +5644,21 @@ package
       <tags>
         <tag>actionscript</tag>
         <tag>flex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不错的 Flex 视频教学（初学者）</title>
+    <url>/2009/04/28/old_blog/2009-04-28-%E4%B8%8D%E9%94%99%E7%9A%84flex%E8%A7%86%E9%A2%91%E6%95%99%E5%AD%A6%EF%BC%88%E5%88%9D%E5%AD%A6%E8%80%85%EF%BC%89/</url>
+    <content><![CDATA[<p></p><h3>一周学会 Flex 教学视频（中文字幕）</h3>
+<a href="http://www.riavideo.net/ODT/list.html" target="_blank">http://www.riavideo.net/ODT/list.html</a><p></p>
+]]></content>
+      <categories>
+        <category>flex</category>
+      </categories>
+      <tags>
+        <tag>flex</tag>
+        <tag>教程</tag>
+        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
@@ -6021,21 +6036,6 @@ package
       </tags>
   </entry>
   <entry>
-    <title>不错的 Flex 视频教学（初学者）</title>
-    <url>/2009/04/28/old_blog/2009-04-28-%E4%B8%8D%E9%94%99%E7%9A%84flex%E8%A7%86%E9%A2%91%E6%95%99%E5%AD%A6%EF%BC%88%E5%88%9D%E5%AD%A6%E8%80%85%EF%BC%89/</url>
-    <content><![CDATA[<p></p><h3>一周学会 Flex 教学视频（中文字幕）</h3>
-<a href="http://www.riavideo.net/ODT/list.html" target="_blank">http://www.riavideo.net/ODT/list.html</a><p></p>
-]]></content>
-      <categories>
-        <category>flex</category>
-      </categories>
-      <tags>
-        <tag>flex</tag>
-        <tag>教程</tag>
-        <tag>视频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>天佑市政？</title>
     <url>/2009/05/07/old_blog/2009-05-07-%E5%A4%A9%E4%BD%91%E5%B8%82%E6%94%BF%EF%BC%9F/</url>
     <content><![CDATA[<p>在东昌路上无意看到，不知道什么意思？</p>
@@ -6100,6 +6100,21 @@ package
       </tags>
   </entry>
   <entry>
+    <title>twitter” 终于 “被墙了</title>
+    <url>/2009/06/03/old_blog/2009-06-03-twitter%E2%80%9D%E7%BB%88%E4%BA%8E%E2%80%9C%E8%A2%AB%E5%A2%99%E4%BA%86/</url>
+    <content><![CDATA[<p>一直担心 twitter 会被墙，理由很简单，他没有在中国备案。</p>
+
+<p>这事早在预料之中，只是时间问题，所以所有的推友们，都做足了思想准备</p>
+
+<p>在六四来临之际，终于 “预言” 成真了。</p>
+
+<p>继续这翻墙的日子……</p>
+]]></content>
+      <categories>
+        <category>胡说八道</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Js 中的小问题，未解</title>
     <url>/2009/05/21/old_blog/2009-05-21-js%E4%B8%AD%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98%EF%BC%8C%E6%9C%AA%E8%A7%A3/</url>
     <content><![CDATA[<p>最近在用 js 的时候出现这样的问题：
@@ -6122,21 +6137,6 @@ b/100 //<span class="objectBox objectBox-number">60.73</span></span></blockquote
         <tag>ajax</tag>
         <tag>JavaScript</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>twitter” 终于 “被墙了</title>
-    <url>/2009/06/03/old_blog/2009-06-03-twitter%E2%80%9D%E7%BB%88%E4%BA%8E%E2%80%9C%E8%A2%AB%E5%A2%99%E4%BA%86/</url>
-    <content><![CDATA[<p>一直担心 twitter 会被墙，理由很简单，他没有在中国备案。</p>
-
-<p>这事早在预料之中，只是时间问题，所以所有的推友们，都做足了思想准备</p>
-
-<p>在六四来临之际，终于 “预言” 成真了。</p>
-
-<p>继续这翻墙的日子……</p>
-]]></content>
-      <categories>
-        <category>胡说八道</category>
-      </categories>
   </entry>
   <entry>
     <title>Flash 开发者应该掌握的东西</title>
@@ -6738,30 +6738,6 @@ demo：<a href="http://lab.generalrelativity.org/circle_collision/" target="_bla
       </categories>
   </entry>
   <entry>
-    <title>[原] 安装 vim 中文帮助后出现的乱码</title>
-    <url>/2010/04/08/old_blog/2010-04-08-%E5%AE%89%E8%A3%85vim%E4%B8%AD%E6%96%87%E5%B8%AE%E5%8A%A9%E5%90%8E%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<p>在 windows 下安装了 vim 后，再安装中文帮助，再次打开开始界面出现乱码了，在状态栏也经常输出乱码：</p>
-
-<p><a href="/media/2010/04/vim-help.jpg"><img class="alignnone size-full wp-image-572" title="vim help" src="/media/2010/04/vim-help.jpg" alt="" width="665" height="503"></a></p>
-
-<p>解决办法：</p>
-
-<p>windows：找到 vim 的安装目录，再进入插件目录（Vim\vimfiles\plugin），</p>
-
-<p>linux: 进入～/.vim/plugin</p>
-
-<p>找到 vimcdoc.vim 文档，找到 “set encoding=utf-8”，将词句注释掉，（再行首插入一个 "）</p>
-
-<p>这样就不再乱码了。</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>［原］ubuntu 10.04 修复 grub2</title>
     <url>/2010/04/11/old_blog/2010-04-11-%EF%BC%BB%E5%8E%9F%EF%BC%BDubuntu-10-04%E4%BF%AE%E5%A4%8Dgrub2/</url>
     <content><![CDATA[<p>在 ubuntu 系统之后安装其他系统，会将 ubuntu 的 grub 破坏掉，ubuntu 10.04 已经使用 grub2 了。我尝试用 9.04 的 livecd 去修复，一直报错，而且想 chroot 也不成，个人能力不行吧。</p>
@@ -6788,6 +6764,30 @@ sudo chroot /mnt/newlinux
       </categories>
       <tags>
         <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>[原] 安装 vim 中文帮助后出现的乱码</title>
+    <url>/2010/04/08/old_blog/2010-04-08-%E5%AE%89%E8%A3%85vim%E4%B8%AD%E6%96%87%E5%B8%AE%E5%8A%A9%E5%90%8E%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<p>在 windows 下安装了 vim 后，再安装中文帮助，再次打开开始界面出现乱码了，在状态栏也经常输出乱码：</p>
+
+<p><a href="/media/2010/04/vim-help.jpg"><img class="alignnone size-full wp-image-572" title="vim help" src="/media/2010/04/vim-help.jpg" alt="" width="665" height="503"></a></p>
+
+<p>解决办法：</p>
+
+<p>windows：找到 vim 的安装目录，再进入插件目录（Vim\vimfiles\plugin），</p>
+
+<p>linux: 进入～/.vim/plugin</p>
+
+<p>找到 vimcdoc.vim 文档，找到 “set encoding=utf-8”，将词句注释掉，（再行首插入一个 "）</p>
+
+<p>这样就不再乱码了。</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -7180,17 +7180,6 @@ sudo xulrunner-1.9.2 --register-global<br>
       </tags>
   </entry>
   <entry>
-    <title>全国哀悼日，为玉树祈福</title>
-    <url>/2010/04/20/old_blog/2010-04-20-%E5%85%A8%E5%9B%BD%E5%93%80%E6%82%BC%E6%97%A5%EF%BC%8C%E4%B8%BA%E7%8E%89%E6%A0%91%E7%A5%88%E7%A6%8F/</url>
-    <content><![CDATA[<p><a href="/media/2010/04/screenshot_002.png"><img class="alignnone size-full wp-image-641" title="screenshot_002" src="/media/2010/04/screenshot_002.png" alt="" width="510" height="466"></a></p>
-
-<p>图片来源：1g1g.com</p>
-]]></content>
-      <categories>
-        <category>内心独白</category>
-      </categories>
-  </entry>
-  <entry>
     <title>基于 mm.cfg 的终极调试和评测</title>
     <url>/2010/04/22/old_blog/2010-04-22-%E7%BB%88%E6%9E%81%E8%B0%83%E8%AF%95%E5%92%8C%E8%AF%84%E6%B5%8B/</url>
     <content><![CDATA[<p></p><h2>介绍：</h2>
@@ -7238,36 +7227,15 @@ PreloadSWF=c:\whatever\MicroProfiler.swf</li>
       </tags>
   </entry>
   <entry>
-    <title>md2 动画查看器</title>
-    <url>/2010/06/03/old_blog/2010-06-03-md2%E5%8A%A8%E7%94%BB%E6%9F%A5%E7%9C%8B%E5%99%A8/</url>
-    <content><![CDATA[<p>最近在接触 Pv3d 的东西，需要用到 md2 来做动画。</p>
+    <title>全国哀悼日，为玉树祈福</title>
+    <url>/2010/04/20/old_blog/2010-04-20-%E5%85%A8%E5%9B%BD%E5%93%80%E6%82%BC%E6%97%A5%EF%BC%8C%E4%B8%BA%E7%8E%89%E6%A0%91%E7%A5%88%E7%A6%8F/</url>
+    <content><![CDATA[<p><a href="/media/2010/04/screenshot_002.png"><img class="alignnone size-full wp-image-641" title="screenshot_002" src="/media/2010/04/screenshot_002.png" alt="" width="510" height="466"></a></p>
 
-<p>发现一个好用的工具：<a href="http://www.misfitcode.com/misfitmodel3d/screenshots.html" target="_blank">Misfit Model 3D</a>。</p>
-
-<p>由 Qt 开发，所以可以在 windows，也可以在 linux 下使用，很方便。</p>
-
-<p>功能：
-</p><ol>
-    <li>可以预览动画</li>
-    <li>调整物体的点（微调）</li>
-    <li>编辑 md2 动画的幀名称（这是我找到唯一一款可以多幀编辑的工具）。</li>
-</ol>
-<a href="/media/2010/06/misfitcode.jpg"><img class="alignnone size-full wp-image-684" title="misfitcode" src="/media/2010/06/misfitcode.jpg" alt="" width="664" height="574"></a><p></p>
-
-<p>用处：
-</p><ol>
-    <li>我在直接导入到 pv3d 中使用的时候，可以先预览下，可以观察下他的原点坐标的位置。</li>
-    <li>在导入 md2 的时候，需要为 md2 的各个动作对应的幀命名，在 3dmax 导出的时候没办法做到，所以用这个工具可以为动作命名，而且还不用一幀幀的来。</li>
-</ol><p></p>
+<p>图片来源：1g1g.com</p>
 ]]></content>
       <categories>
-        <category>actionscript</category>
+        <category>内心独白</category>
       </categories>
-      <tags>
-        <tag>Papervision3D</tag>
-        <tag>md2</tag>
-        <tag>tools</tag>
-      </tags>
   </entry>
   <entry>
     <title>不错的 vim 下的 as3 类库……</title>
@@ -7298,6 +7266,38 @@ endfunction
       <tags>
         <tag>flex</tag>
         <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>md2 动画查看器</title>
+    <url>/2010/06/03/old_blog/2010-06-03-md2%E5%8A%A8%E7%94%BB%E6%9F%A5%E7%9C%8B%E5%99%A8/</url>
+    <content><![CDATA[<p>最近在接触 Pv3d 的东西，需要用到 md2 来做动画。</p>
+
+<p>发现一个好用的工具：<a href="http://www.misfitcode.com/misfitmodel3d/screenshots.html" target="_blank">Misfit Model 3D</a>。</p>
+
+<p>由 Qt 开发，所以可以在 windows，也可以在 linux 下使用，很方便。</p>
+
+<p>功能：
+</p><ol>
+    <li>可以预览动画</li>
+    <li>调整物体的点（微调）</li>
+    <li>编辑 md2 动画的幀名称（这是我找到唯一一款可以多幀编辑的工具）。</li>
+</ol>
+<a href="/media/2010/06/misfitcode.jpg"><img class="alignnone size-full wp-image-684" title="misfitcode" src="/media/2010/06/misfitcode.jpg" alt="" width="664" height="574"></a><p></p>
+
+<p>用处：
+</p><ol>
+    <li>我在直接导入到 pv3d 中使用的时候，可以先预览下，可以观察下他的原点坐标的位置。</li>
+    <li>在导入 md2 的时候，需要为 md2 的各个动作对应的幀命名，在 3dmax 导出的时候没办法做到，所以用这个工具可以为动作命名，而且还不用一幀幀的来。</li>
+</ol><p></p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>Papervision3D</tag>
+        <tag>md2</tag>
+        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
@@ -7369,6 +7369,28 @@ endfunction
       </tags>
   </entry>
   <entry>
+    <title>Chipmunk 物理引擎</title>
+    <url>/2010/06/13/old_blog/2010-06-13-chipmunk%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</url>
+    <content><![CDATA[<p>今天在 youtube 上无意看到 Chipmunk 这个 2D 物理引擎。</p>
+
+<p>发现原来不只是 c，还有 object－c，好多好多哦……，看来很不错，以前一直关注 Box2D</p>
+
+<p>这个引擎也开始出 Flash 版本了，还是开源的，好好关注下……</p>
+
+<p>c 语言版本：<a href="http://code.google.com/p/chipmunk-physics/">http://code.google.com/p/chipmunk-physics/</a></p>
+
+<p>flash 版本（glaze）：<a href="http://code.google.com/p/glaze/">http://code.google.com/p/glaze/</a></p>
+
+<p><a href="/media/2010/06/logo1_med.png"><img class="alignnone size-full wp-image-688" title="logo1_med" src="/media/2010/06/logo1_med.png" alt="" width="400" height="131"></a><a href="/media/2010/06/balance_chipmunk.png"><img class="alignnone size-full wp-image-689" title="balance_chipmunk" src="/media/2010/06/balance_chipmunk.png" alt="" width="170" height="170"></a></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>引擎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AS 缓动生成器</title>
     <url>/2010/06/29/old_blog/2010-06-29-as%E7%BC%93%E5%8A%A8%E7%94%9F%E6%88%90%E5%99%A8/</url>
     <content><![CDATA[<p></p><p>【来源】：<a href="http://clockmaker.jp/blog-en/2010/06/easing-generator/">http://clockmaker.jp/blog-en/2010/06/easing-generator/</a></p>
@@ -7405,28 +7427,6 @@ endfunction
         <tag>actionscript</tag>
         <tag>Air</tag>
         <tag>tween</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chipmunk 物理引擎</title>
-    <url>/2010/06/13/old_blog/2010-06-13-chipmunk%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/</url>
-    <content><![CDATA[<p>今天在 youtube 上无意看到 Chipmunk 这个 2D 物理引擎。</p>
-
-<p>发现原来不只是 c，还有 object－c，好多好多哦……，看来很不错，以前一直关注 Box2D</p>
-
-<p>这个引擎也开始出 Flash 版本了，还是开源的，好好关注下……</p>
-
-<p>c 语言版本：<a href="http://code.google.com/p/chipmunk-physics/">http://code.google.com/p/chipmunk-physics/</a></p>
-
-<p>flash 版本（glaze）：<a href="http://code.google.com/p/glaze/">http://code.google.com/p/glaze/</a></p>
-
-<p><a href="/media/2010/06/logo1_med.png"><img class="alignnone size-full wp-image-688" title="logo1_med" src="/media/2010/06/logo1_med.png" alt="" width="400" height="131"></a><a href="/media/2010/06/balance_chipmunk.png"><img class="alignnone size-full wp-image-689" title="balance_chipmunk" src="/media/2010/06/balance_chipmunk.png" alt="" width="170" height="170"></a></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>引擎</tag>
       </tags>
   </entry>
   <entry>
@@ -7540,6 +7540,28 @@ addChild(myBigAssCanvas);</p>
       </tags>
   </entry>
   <entry>
+    <title>VirtualBox 中的 Debian 无法上网</title>
+    <url>/2010/08/11/old_blog/2010-08-11-virtualbox%E4%B8%AD%E7%9A%84debian%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91/</url>
+    <content><![CDATA[<p>之前因为在设置 virtualbox 的时候而修改了 vb 网卡的 mac 地址，但是 debian 中的 mac 地址并不会因此自动修改，</p>
+
+<p>所以才导致在 nat 模式下 debian 无法连到外网的问题，其实只需要在 debian 中更改 eth0 (eth1 也一样) 对应的物理地址就可以了。</p>
+
+<p>修改的文件如下：</p>
+
+<p>/etc/udev/rules.d/70-persistent-net.rules</p>
+
+<p>找到对应的 mac 数值，修改成跟你的 vb 的 mac 值一样就可以了，</p>
+
+<p>折腾了比较久，很杯具……</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mc 动画位图缓存</title>
     <url>/2010/08/17/old_blog/2010-08-17-719/</url>
     <content><![CDATA[<p>源： <a href="http://blog.touchmypixel.com/2008/11/caching-animation-frames-vs-spritesheets/" target="_blank">http://blog.touchmypixel.com/2008/11/caching-animation-frames-vs-spritesheets/ </a></p>
@@ -7566,28 +7588,6 @@ spritesheet: 270 336</p>
       <categories>
         <category>actionscript</category>
       </categories>
-  </entry>
-  <entry>
-    <title>VirtualBox 中的 Debian 无法上网</title>
-    <url>/2010/08/11/old_blog/2010-08-11-virtualbox%E4%B8%AD%E7%9A%84debian%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91/</url>
-    <content><![CDATA[<p>之前因为在设置 virtualbox 的时候而修改了 vb 网卡的 mac 地址，但是 debian 中的 mac 地址并不会因此自动修改，</p>
-
-<p>所以才导致在 nat 模式下 debian 无法连到外网的问题，其实只需要在 debian 中更改 eth0 (eth1 也一样) 对应的物理地址就可以了。</p>
-
-<p>修改的文件如下：</p>
-
-<p>/etc/udev/rules.d/70-persistent-net.rules</p>
-
-<p>找到对应的 mac 数值，修改成跟你的 vb 的 mac 值一样就可以了，</p>
-
-<p>折腾了比较久，很杯具……</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
   </entry>
   <entry>
     <title>我的跑步路线</title>
@@ -7687,6 +7687,25 @@ spritesheet: 270 336</p>
       </tags>
   </entry>
   <entry>
+    <title>ubuntu 下修复 menu_proxy_module_load 错误</title>
+    <url>/2010/11/30/old_blog/2010-11-30-ubuntu%E4%B8%8B%E4%BF%AE%E5%A4%8Dmenu_proxy_module_load%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<p>在终端启动 gedit 或 gvim 的时候，总是出现类似的问题：undefined symbol:&nbsp;<em>menu_proxy_module_load</em></p>
+
+<p>找了下发现是安装呢 macbuntu 的时候，之后再卸载后发生的问题，好像是多删除某个东西，</p>
+
+<p>在这里找到答案：<a href="http://alexsleat.co.uk/2010/10/19/gedit-failed-to-load-type-module-menu_proxy_module_load-ubuntu/">http://alexsleat.co.uk/2010/10/19/gedit-failed-to-load-type-module-menu_proxy_module_load-ubuntu/</a></p>
+
+<p>只需要重新安装下就可以了，执行命令如下：<br>
+sudo apt-get install appmenu-gtk</p>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>flash 游戏开发系统学习</title>
     <url>/2010/12/09/old_blog/2010-12-09-flash%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>发现这个网站很惊奇，这里是从新手让你成长为一名 flash 游戏开发者的系统学习的地方，做的很好</p>
@@ -7708,25 +7727,6 @@ spritesheet: 270 336</p>
       <categories>
         <category>actionscript</category>
       </categories>
-  </entry>
-  <entry>
-    <title>ubuntu 下修复 menu_proxy_module_load 错误</title>
-    <url>/2010/11/30/old_blog/2010-11-30-ubuntu%E4%B8%8B%E4%BF%AE%E5%A4%8Dmenu_proxy_module_load%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<p>在终端启动 gedit 或 gvim 的时候，总是出现类似的问题：undefined symbol:&nbsp;<em>menu_proxy_module_load</em></p>
-
-<p>找了下发现是安装呢 macbuntu 的时候，之后再卸载后发生的问题，好像是多删除某个东西，</p>
-
-<p>在这里找到答案：<a href="http://alexsleat.co.uk/2010/10/19/gedit-failed-to-load-type-module-menu_proxy_module_load-ubuntu/">http://alexsleat.co.uk/2010/10/19/gedit-failed-to-load-type-module-menu_proxy_module_load-ubuntu/</a></p>
-
-<p>只需要重新安装下就可以了，执行命令如下：<br>
-sudo apt-get install appmenu-gtk</p>
-]]></content>
-      <categories>
-        <category>ubuntu</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-      </tags>
   </entry>
   <entry>
     <title>alchemy 的 Box2D 版本</title>
@@ -7776,30 +7776,6 @@ sudo apt-get install appmenu-gtk</p>
       </tags>
   </entry>
   <entry>
-    <title>i9000 手机被锁</title>
-    <url>/2011/02/12/old_blog/2011-02-12-i9000%E6%89%8B%E6%9C%BA%E8%A2%AB%E9%94%81/</url>
-    <content><![CDATA[<p>这两天刚好去临安同学家参加婚礼，可是路上手机却出现了 “SIM 卡网络解锁 <em>PIN</em> 码” , 回来查了下原来很多人遇到这样的问题。</p>
-
-<p>解决：</p>
-
-<p>首先，查看是否只是锁了这个，在手机上输入：*#7465625# 确保只有网络锁那一项是锁定的。</p>
-
-<p>再下载这个应用到手机中运行：<a href="http://clarkehackworth.com/files/android/apks/SGS_Unlockv1.0.apk" target="_blank">Android 2.1</a> <a href="http://clarkehackworth.com/files/android/apks/SGS_Unlock.apk" target="_blank">Android 2.2</a></p>
-
-<p>将看到的号码记录下来，重启手机，插入 sim 卡。</p>
-
-<p>提示需要输入 pin 码的时候，输入你记录的号码就可以了。</p>
-
-]]></content>
-      <categories>
-        <category>android</category>
-      </categories>
-      <tags>
-        <tag>android</tag>
-        <tag>i897</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>构建自己的框架（JS）</title>
     <url>/2010/12/29/old_blog/2010-12-29-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A1%86%E6%9E%B6%EF%BC%88js%EF%BC%89/</url>
     <content><![CDATA[<p>年末到了，今年主要的游戏项目（sns），游戏架构是 JS+AS 来完成的，所以今年写 JS 反而比 AS 还多，对于 JS 我只是一个新手，一路上遇到很多问题，有时候也会浮躁不安，但是总的来说收获还是不少的，特别是比较喜欢用 vim 来写东西了，呵呵</p>
@@ -7825,6 +7801,30 @@ sudo apt-get install appmenu-gtk</p>
       <tags>
         <tag>ajax</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>i9000 手机被锁</title>
+    <url>/2011/02/12/old_blog/2011-02-12-i9000%E6%89%8B%E6%9C%BA%E8%A2%AB%E9%94%81/</url>
+    <content><![CDATA[<p>这两天刚好去临安同学家参加婚礼，可是路上手机却出现了 “SIM 卡网络解锁 <em>PIN</em> 码” , 回来查了下原来很多人遇到这样的问题。</p>
+
+<p>解决：</p>
+
+<p>首先，查看是否只是锁了这个，在手机上输入：*#7465625# 确保只有网络锁那一项是锁定的。</p>
+
+<p>再下载这个应用到手机中运行：<a href="http://clarkehackworth.com/files/android/apks/SGS_Unlockv1.0.apk" target="_blank">Android 2.1</a> <a href="http://clarkehackworth.com/files/android/apks/SGS_Unlock.apk" target="_blank">Android 2.2</a></p>
+
+<p>将看到的号码记录下来，重启手机，插入 sim 卡。</p>
+
+<p>提示需要输入 pin 码的时候，输入你记录的号码就可以了。</p>
+
+]]></content>
+      <categories>
+        <category>android</category>
+      </categories>
+      <tags>
+        <tag>android</tag>
+        <tag>i897</tag>
       </tags>
   </entry>
   <entry>
@@ -7863,19 +7863,6 @@ I897	device</pre>
       </tags>
   </entry>
   <entry>
-    <title>团队大合影</title>
-    <url>/2011/02/17/old_blog/2011-02-17-%E5%9B%A2%E9%98%9F%E5%A4%A7%E5%90%88%E5%BD%B1/</url>
-    <content><![CDATA[<p><a href="/media/2011/02/3d725e59h9aceb7d073ef690.jpg"><img class="alignnone size-full wp-image-794" title="3d725e59h9aceb7d073ef&amp;690" src="/media/2011/02/3d725e59h9aceb7d073ef690.jpg" alt="" width="679" height="510"></a></p>
-
-<p>2010 年，大家一起拼搏，一起努力，成长的一年！</p>
-
-<p>2011 年应该就是丰收的一年了……</p>
-]]></content>
-      <categories>
-        <category>杂七杂八</category>
-      </categories>
-  </entry>
-  <entry>
     <title>960 的网页标准</title>
     <url>/2011/02/18/old_blog/2011-02-18-960%E7%9A%84%E7%BD%91%E9%A1%B5%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<p></p><p style="text-align: center;"><a href="http://960.gs/" target="_blank"><img class="size-full wp-image-806 aligncenter" title="20110218" src="/media/2011/02/20110218.jpg" alt="" width="334" height="203"></a></p>
@@ -7890,6 +7877,19 @@ I897	device</pre>
       <tags>
         <tag>网页设计</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>团队大合影</title>
+    <url>/2011/02/17/old_blog/2011-02-17-%E5%9B%A2%E9%98%9F%E5%A4%A7%E5%90%88%E5%BD%B1/</url>
+    <content><![CDATA[<p><a href="/media/2011/02/3d725e59h9aceb7d073ef690.jpg"><img class="alignnone size-full wp-image-794" title="3d725e59h9aceb7d073ef&amp;690" src="/media/2011/02/3d725e59h9aceb7d073ef690.jpg" alt="" width="679" height="510"></a></p>
+
+<p>2010 年，大家一起拼搏，一起努力，成长的一年！</p>
+
+<p>2011 年应该就是丰收的一年了……</p>
+]]></content>
+      <categories>
+        <category>杂七杂八</category>
+      </categories>
   </entry>
   <entry>
     <title>FlashFireBug 的发布</title>
@@ -7918,6 +7918,27 @@ I897	device</pre>
         <tag>actionscript</tag>
         <tag>Debuger</tag>
         <tag>firebug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS 开发手机应用</title>
+    <url>/2011/02/18/old_blog/2011-02-18-js%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<p></p><p style="text-align: center;"><a href="/media/2011/02/201102182.jpg"><img class="size-full wp-image-823 aligncenter" title="201102182" src="/media/2011/02/201102182.jpg" alt="" width="463" height="187"></a></p>
+<p style="text-align: left;"><a href="/media/2011/02/201102182.jpg"></a><span style="font-size: small;">Appcelerator 公司推出了 Titanium sdk，让开发者可以用 js 语言开发的语言在任何平台上开发了……</span></p>
+通过它的架构图可以看出，只需要开发一次，就可以在若干平台上运行，真的有这么神奇么……你不妨自己试试……<p></p>
+
+<p><a href="/media/2011/02/gs_overview.png"><img class="alignnone size-full wp-image-824" title="gs_overview" src="/media/2011/02/gs_overview.png" alt="" width="600" height="313"></a></p>
+
+<p>模拟器什么的？android 还是 iphone 的开发语言什么的？统统都是浮云了……</p>
+
+<p><a href="/media/2011/02/gs_android_testandpackage.png"><img class="alignnone size-full wp-image-825" title="gs_android_testandpackage" src="/media/2011/02/gs_android_testandpackage.png" alt="" width="600" height="389"></a></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>android</tag>
       </tags>
   </entry>
   <entry>
@@ -7955,44 +7976,6 @@ I897	device</pre>
       </tags>
   </entry>
   <entry>
-    <title>JS 开发手机应用</title>
-    <url>/2011/02/18/old_blog/2011-02-18-js%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<p></p><p style="text-align: center;"><a href="/media/2011/02/201102182.jpg"><img class="size-full wp-image-823 aligncenter" title="201102182" src="/media/2011/02/201102182.jpg" alt="" width="463" height="187"></a></p>
-<p style="text-align: left;"><a href="/media/2011/02/201102182.jpg"></a><span style="font-size: small;">Appcelerator 公司推出了 Titanium sdk，让开发者可以用 js 语言开发的语言在任何平台上开发了……</span></p>
-通过它的架构图可以看出，只需要开发一次，就可以在若干平台上运行，真的有这么神奇么……你不妨自己试试……<p></p>
-
-<p><a href="/media/2011/02/gs_overview.png"><img class="alignnone size-full wp-image-824" title="gs_overview" src="/media/2011/02/gs_overview.png" alt="" width="600" height="313"></a></p>
-
-<p>模拟器什么的？android 还是 iphone 的开发语言什么的？统统都是浮云了……</p>
-
-<p><a href="/media/2011/02/gs_android_testandpackage.png"><img class="alignnone size-full wp-image-825" title="gs_android_testandpackage" src="/media/2011/02/gs_android_testandpackage.png" alt="" width="600" height="389"></a></p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>gtalk 也有 flash 版的客户端</title>
-    <url>/2011/02/28/old_blog/2011-02-28-gtalk%E4%B9%9F%E6%9C%89flash%E7%89%88%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF/</url>
-    <content><![CDATA[<p></p><p style="text-align: center;"><a href="/media/2011/02/201102281.png"><img class="size-full wp-image-846 aligncenter" title="201102281" src="/media/2011/02/201102281.png" alt="" width="543" height="306"></a></p>
-在我的印象里google是很少使用flash技术的，难得找到一个很泪奔。<p></p>
-
-<p>地址：<a href="http://talkgadget.google.com/talkgadget/client">http://talkgadget.google.com/talkgadget/client</a></p>
-]]></content>
-      <categories>
-        <category>actionscript</category>
-      </categories>
-      <tags>
-        <tag>google</tag>
-        <tag>Flash</tag>
-        <tag>gtalk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>FlashPlayer 支持 GPU 的 3D 出来了</title>
     <url>/2011/02/28/old_blog/2011-02-28-flashplayer-%E6%94%AF%E6%8C%81gpu%E7%9A%843d-%E5%87%BA%E6%9D%A5%E4%BA%86/</url>
     <content><![CDATA[<p><a href="/media/2011/02/20110228.png"><img class="alignnone size-full wp-image-842" title="20110228" src="/media/2011/02/20110228.png" alt="" width="585" height="208"></a></p>
@@ -8024,6 +8007,23 @@ I897	device</pre>
         <tag>actionscript</tag>
         <tag>flashplayer</tag>
         <tag>3d</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>gtalk 也有 flash 版的客户端</title>
+    <url>/2011/02/28/old_blog/2011-02-28-gtalk%E4%B9%9F%E6%9C%89flash%E7%89%88%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF/</url>
+    <content><![CDATA[<p></p><p style="text-align: center;"><a href="/media/2011/02/201102281.png"><img class="size-full wp-image-846 aligncenter" title="201102281" src="/media/2011/02/201102281.png" alt="" width="543" height="306"></a></p>
+在我的印象里google是很少使用flash技术的，难得找到一个很泪奔。<p></p>
+
+<p>地址：<a href="http://talkgadget.google.com/talkgadget/client">http://talkgadget.google.com/talkgadget/client</a></p>
+]]></content>
+      <categories>
+        <category>actionscript</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>Flash</tag>
+        <tag>gtalk</tag>
       </tags>
   </entry>
   <entry>
@@ -8151,6 +8151,27 @@ I897	device</pre>
       </tags>
   </entry>
   <entry>
+    <title>jekyll 的使用技巧</title>
+    <url>/2012/07/29/old_blog/2012-07-29-use-jekyll/</url>
+    <content><![CDATA[<h2 id="模版收集"><a href="#模版收集" class="headerlink" title="模版收集"></a>模版收集</h2><ul>
+<li><a href="https://github.com/mbleigh/mbleigh.github.com/">mbleigh.github.com</a></li>
+<li><a href="http://blog.lenage.com/about/">blog.lenage.com</a></li>
+</ul>
+<h2 id="Pygments的语法高亮"><a href="#Pygments的语法高亮" class="headerlink" title="Pygments的语法高亮"></a>Pygments 的语法高亮</h2><p>ruby 语法测试：</p>
+<p>def foo<br>  puts ‘foo’<br>end</p>
+<p>actionscript：</p>
+<p>function a(c:int):void{<br>    if(c==0){<br>        return 1;<br>    }else{<br>        return 0;<br>    }<br>}</p>
+<h2 id="gist的代码嵌入"><a href="#gist的代码嵌入" class="headerlink" title="gist的代码嵌入"></a>gist 的代码嵌入</h2><p>插件：<a href="https://gist.github.com/803483">gist-tag</a></p>
+<p>坚持测试下语法高亮，可惜无法显示行号</p>
+]]></content>
+      <categories>
+        <category>jekyll</category>
+      </categories>
+      <tags>
+        <tag>jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>游戏框架 --Entity Framework (实体框架)</title>
     <url>/2012/08/01/old_blog/2012-08-01-entity-framework/</url>
     <content><![CDATA[<h1 id="什么是Entity-Framework-实体框架"><a href="#什么是Entity-Framework-实体框架" class="headerlink" title="什么是Entity Framework(实体框架)"></a>什么是 Entity Framework (实体框架)</h1><h1 id="现有框架"><a href="#现有框架" class="headerlink" title="现有框架"></a>现有框架</h1><ul>
@@ -8171,27 +8192,6 @@ I897	device</pre>
       <tags>
         <tag>entity framework</tag>
         <tag>develop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jekyll 的使用技巧</title>
-    <url>/2012/07/29/old_blog/2012-07-29-use-jekyll/</url>
-    <content><![CDATA[<h2 id="模版收集"><a href="#模版收集" class="headerlink" title="模版收集"></a>模版收集</h2><ul>
-<li><a href="https://github.com/mbleigh/mbleigh.github.com/">mbleigh.github.com</a></li>
-<li><a href="http://blog.lenage.com/about/">blog.lenage.com</a></li>
-</ul>
-<h2 id="Pygments的语法高亮"><a href="#Pygments的语法高亮" class="headerlink" title="Pygments的语法高亮"></a>Pygments 的语法高亮</h2><p>ruby 语法测试：</p>
-<p>def foo<br>  puts ‘foo’<br>end</p>
-<p>actionscript：</p>
-<p>function a(c:int):void{<br>    if(c==0){<br>        return 1;<br>    }else{<br>        return 0;<br>    }<br>}</p>
-<h2 id="gist的代码嵌入"><a href="#gist的代码嵌入" class="headerlink" title="gist的代码嵌入"></a>gist 的代码嵌入</h2><p>插件：<a href="https://gist.github.com/803483">gist-tag</a></p>
-<p>坚持测试下语法高亮，可惜无法显示行号</p>
-]]></content>
-      <categories>
-        <category>jekyll</category>
-      </categories>
-      <tags>
-        <tag>jekyll</tag>
       </tags>
   </entry>
   <entry>
@@ -8286,6 +8286,19 @@ source mysandbox/bin/deactivate
 ]]></content>
   </entry>
   <entry>
+    <title>Sprite Sheet Tools 收集</title>
+    <url>/2012/09/15/old_blog/2012-09-15-sprit-sheet-tools/</url>
+    <content><![CDATA[<p>#Sprite Sheet Tools#<br>在游戏开发中，动画处理就是位图的逐帧播放，而一般的做法就是讲多图保存到一张位图中，而 sprite sheet tools 这一个过程的工具！</p>
+<h2 id="工具列表"><a href="#工具列表" class="headerlink" title="工具列表:"></a>工具列表:</h2><ul>
+<li><a href="http://www.codeandweb.com/texturepacker">TexturePacker</a></li>
+<li><a href="http://createjs.com/#!/Zoe">ZOE</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>[转] AS 文本位图描边</title>
     <url>/2012/10/16/old_blog/2012-10-16-actionscript-skills/</url>
     <content><![CDATA[<h2 id="文本位图描边"><a href="#文本位图描边" class="headerlink" title="文本位图描边"></a>文本位图描边</h2><p>来源：James Li 的<a href="http://jamesli.cn/blog/?p=1489">《使用位图滤镜为动态文本描边》</a><br>import flash.display.Bitmap;<br>import flash.text.TextField;<br>import flash.filters.*;<br>import flash.geom.Point;</p>
@@ -8299,19 +8312,6 @@ source mysandbox/bin/deactivate
       </categories>
       <tags>
         <tag>actionscript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sprite Sheet Tools 收集</title>
-    <url>/2012/09/15/old_blog/2012-09-15-sprit-sheet-tools/</url>
-    <content><![CDATA[<p>#Sprite Sheet Tools#<br>在游戏开发中，动画处理就是位图的逐帧播放，而一般的做法就是讲多图保存到一张位图中，而 sprite sheet tools 这一个过程的工具！</p>
-<h2 id="工具列表"><a href="#工具列表" class="headerlink" title="工具列表:"></a>工具列表:</h2><ul>
-<li><a href="http://www.codeandweb.com/texturepacker">TexturePacker</a></li>
-<li><a href="http://createjs.com/#!/Zoe">ZOE</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>tools</tag>
       </tags>
   </entry>
   <entry>
